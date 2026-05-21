@@ -1,0 +1,56 @@
+Finding 6 — Garbled/malformed item #1 (lines 68-69)
+  Chinese:
+    1) 最佳收益：感恩能让我们从积极的经历中更好的人际关系：感恩可以加强我们的人际关系
+  English:
+    Best Returns: Gratitude can lead us to stronger relationships by enhancing our interpersonal connections.
+  Issue: Two items appear fused together. "最佳收益" (Best Returns / Optimal Benefits) is actually the heading of item #5 (line 83). The body text mixes truncated content about positive experiences with content about better relationships. The English only covers the "better relationships" portion. Needs untangling — what should item 1 actually be?
+
+Finding 7 — Item 4 split awkwardly across lines (lines 77-81)
+  Chinese split: line 77 "...我们可以放慢这种" + line 80 "适应的速度..."
+  English split: line 78 "...slow down this adaptation." + line 81 "speed of adaptation and prolong..."
+  Issue: The English reads as a stutter: "slow down this adaptation. speed of adaptation..." Likely a line-wrapping artifact from the source document. Minor but noticeable.
+
+Finding 8 — Item 5 is bare-bones (lines 83-84)
+  Chinese: 5) 获得最佳收益。
+  English: 5) Achieving Optimal Benefits.
+  Issue: Every other item has 2-3 sentences of explanation. This one is only a heading with no body. Either content is missing from the source or was never written. Flag for review.
+
+Finding 9 — "使人内心调柔" mistranslated (line 102)
+  Chinese: 2) 使人内心调柔 、欢喜
+  English: Making Others' Hearts Softer and Happier
+  Issue: "使人" means "makes one" (the practitioner themselves), NOT "makes others." The English inserts "Others'" which changes the beneficiary from self to other. Should be: "Softens and Brings Joy to One's Own Heart" or "Making the Heart Gentle and Joyful."
+
+Finding 10 — "Practicum" is an odd word choice (line 213)
+  Chinese: 我的练习 1:
+  English: My Practicum 1:
+  Issue: "Practicum" is an academic term for supervised practical training. In a Buddhist study context, "My Practice 1" or "My Exercise 1" fits better. Line 216 correctly uses "My Practice 2" — inconsistent even within the same document.
+
+Finding 11 — Inconsistent section numbering in 小组交流流程 (lines 221-255)
+  Chinese uses 一、二、三、四、五 consistently. English is chaotic:
+    一 → Preparatory Practice          (no number)
+    二 → Part Two: Attentively...        (spelled-out ordinal)
+    三 → Third, based on...              (bare ordinal)
+    四 → Part Four: Group Recitation...  (spelled-out ordinal)
+    五 → V. Dedication                   (Roman numeral)
+  Issue: Four different numbering styles in five items. Pick one and normalize.
+
+Finding 12 — "慈经" translated oddly (line 225)
+  Chinese: 恭听《慈经》
+  English: Attentively Listening to the Mettavihari Sutta
+  Issue: 《慈经》 is the Karaniya Metta Sutta, commonly "Metta Sutta." "Mettavihari" is non-standard — it mixes Pali "metta" with "vihari" (one who dwells). Use "Metta Sutta" or "Karaniya Metta Sutta."
+
+Finding 13 — Gratitude prayer: inconsistent grammatical person (lines 233-252)
+  Chinese is consistently declarative/optative throughout (感恩... 愿...). English bounces:
+    "we should be grateful"   (1st plural, "should")
+    "I am grateful"           (1st singular, present — sudden "I")
+    "be grateful"             (bare imperative, lowercase start)
+    "May we"                  (1st plural optative)
+    "we hope that"            (1st plural, changes 愿 from optative to "hope")
+    "May people"              (3rd person)
+    "May the world"           (3rd person)
+  Issue: Pick one voice. The Chinese 愿... is optative throughout — "May we..." would match best.
+
+Finding 14 — "回向" numbering outlier (line 255)
+  Chinese: 五 、 回向
+  English: V. Dedication
+  Issue: All other sections use spelled-out words ("Part Two", "Third", "Part Four") — this one suddenly switches to Roman numeral "V." Normalize to match the chosen style.
