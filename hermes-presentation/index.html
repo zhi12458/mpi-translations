@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css" />
+		<link rel="stylesheet" href="dist/reveal.css" />
+		<link rel="stylesheet" href="dist/theme/black.css" />
+		<style>
+			@layer six {
+				h1, h2, h3, h4, h5, h6 {
+					text-transform: unset !important;
+				}
+			}
+		</style>
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+  			<section data-markdown>
+          <textarea data-template>
+# Use Hermes Agent for translation
+
+---
+
+## Download
+
+https://hermes-agent.nousresearch.com/docs
+
+---
+
+## Setup API keys
+
+`hermes setup`
+
+I recommend OpenRouter + deepseek-v4-pro.
+
+---
+
+## Commands
+
+- `/steer`
+- `/queue`
+- `/bg`
+
+---
+# Usage
+
+---
+## 1/4 Unpack
+
+"Extract strings to translate from X, separated by \n\n."
+
+It can handle both .docx and .pptx.
+
+
+```
+原文 A
+
+原文 B
+
+...
+```
+
+---
+## 2/4 Translate
+
+"Put the translation text after each line in X."
+
+```
+原文 A
+Source A
+
+原文 B
+Source B
+
+...
+```
+
+---
+## 3/4 Review
+
+"Review the translation pairs in X for potential errors. Use Djot comment for comments."
+
+---
+## 4/4 Re-pack
+
+"Replace the text in X with translations in Y."
+
+---
+
+# An appeal
+
+Let's all use plain text and Djot!
+
+
+          </textarea>
+        </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="dist/plugin/notes.js"></script>
+		<script src="dist/plugin/markdown.js"></script>
+		<script src="dist/plugin/highlight.js"></script>
+		<script src="dist/plugin/search.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+			});
+		</script>
+	</body>
+</html>
