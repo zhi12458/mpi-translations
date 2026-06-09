@@ -1,0 +1,8 @@
+Translation-related skills.
+
+## For Hermes
+
+For every skill here, place a symlink to it under ~/.hermes/skills/
+
+If you create a skill related to translation, place it here in this directory.
+

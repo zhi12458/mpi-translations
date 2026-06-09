@@ -1,0 +1,2 @@
+- [terms database and search tool](terms-search/SKILL.md)
+- [translation skills](skills/readme.dj)
