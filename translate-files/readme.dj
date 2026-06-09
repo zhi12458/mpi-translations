@@ -1,0 +1,8 @@
+
+## Translating text with an LLM
+
+1. Rough translation: Ask the agent to translate the entire text
+2. Key terms: Ask the agent to search the terms database to handle key terms within the source text.
+3. Self review: Start another agent session and let it compare original and translated text. Ask it to pinpoint problems.
+4. Review by another: Review the translated text as the agent's operator, or let someone else review the text.
+5. Review by yet another: Sent the translated text to someone else to read.
