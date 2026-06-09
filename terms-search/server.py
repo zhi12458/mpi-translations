@@ -10,8 +10,8 @@ app = Flask(__name__)
 
 HTML = r'''<!DOCTYPE html>
 <meta charset="utf-8">
-<title>Terms Search</title>
-<h1>Terms Search</h1>
+<title>静心学堂中英文翻译对照表</title>
+<h1>静心学堂（非官方）中英文翻译对照表</h1>
 <form method="get">
   <input name="q" value="{{ q }}" placeholder="query (e.g. 空性 emptiness)">
   <input name="loc" value="{{ loc }}" placeholder="loc filter">
