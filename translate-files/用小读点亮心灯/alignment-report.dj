@@ -1,0 +1,71 @@
+# Term Alignment Report
+
+File: translated.dj
+Database: /home/user/documents/mpi/terms-search/termlib.duckdb
+Date: 2026-06-09
+
+## Summary
+
+11 terms aligned. Source breakdown: DoT定稿 (9), 内部特色词 (1), 佛教术语 (1).
+
+## Changes
+
+### DoT定稿
+
+1. 三级修学
+   Three-level Study Program → Three-Stage Practice
+   (glossary + 2 body occurrences)
+
+2. 三无漏学
+   three undefiled studies → three uncontaminated forms of training
+   (glossary + 1 body occurrence: "three studies that lead beyond contamination")
+
+3. 心灯
+   heart lamp → lamp of awakening
+   (glossary + 2 body occurrences + title)
+
+4. 金刚经
+   Diamond Sūtra → Diamond Sutra
+   (glossary; body already correct)
+
+5. 贪嗔痴
+   anger (dveṣa) → hatred (dveṣa)
+   (glossary + 1 body occurrence: "greed, anger, and ignorance")
+
+6. 重要感、优越感、主宰欲
+   desire to control → Desire to Dominate
+   (glossary title-cased + 1 body occurrence lowercased)
+
+7. 闻思修
+   contemplating → thinking
+   (glossary + 3 body occurrences: "contemplating" and "cultivating" replaced)
+
+8. 普贤行愿品
+   Avatamsaka Sūtra → Avatamsaka Sutra
+   (glossary; body already correct)
+
+9. 轮回
+   samsara → Samsara
+   (glossary + 2 body occurrences)
+
+### 内部特色词
+
+10. 八步三禅
+    Eight Steps and Three Meditations → the Eight Steps and Three Meditations
+    (glossary only; body already had articles)
+
+### 佛教术语
+
+11. 菩萨道
+    Bodhisattva path → the Bodhisattva Path
+    (glossary + 1 body occurrence)
+
+## Not Changed
+
+Terms checked against database and found acceptable (no DoT/authoritative mismatch):
+  小读, 拈花堂, 随喜, 五蕴, 明心见性, 静心读书, 烦恼, 传灯, 分灯,
+  自觉, 法治, 无我利他, 法缘, 修福增慧, 法布施, 学人/主事/达人,
+  传灯使者, 传帮带, 无尽灯, 凡夫心, 愿心, 菩提种子, 多闻薰习,
+  心性之学, 季羡林, 心净则国土净, 多生累劫的善缘
+
+Terms absent from database: 静心读书, 传灯使者, 无尽灯, 分灯
