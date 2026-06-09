@@ -1,0 +1,224 @@
+# 1
+
+original: 学士 / 修士 / 胜士 / 智士
+translated: bachelor / monk / winner (Victory) / wise man
+
+These four identity-stage terms appear in multiple rows (11, 43, 473–476). They are consistently mistranslated:
+  学士 = "Beginner Practitioner" (not academic "bachelor")
+  修士 = "Practitioner" / "Adept" (not monastic "monk")
+  胜士 = "Excellent Practitioner" / "Superior Practitioner" (not competition "winner" or "Victory")
+  智士 = "Wisdom Practitioner" / "Sage" (not just "wise man")
+
+These are stages in a Buddhist study path, not academic degrees, monastic status, or competition results. Change globally.
+
+# 2
+
+original: 胜解
+translated: ultimate solution (rows 156, 213, 257, 289, 344)
+
+胜解 = "resolute conviction" / "determined understanding" (adhimokṣa). Not "solution" — this is a mental factor, not a fix.
+Suggested: "Resolute conviction"
+
+# 3
+
+original: 行舍、不放逸
+translated: Walk without letting go (rows 214, 258, 290)
+
+行舍 = equanimity / mental balance (upekṣā). 不放逸 = diligence / conscientiousness (apramāda).
+"Walk without letting go" is a nonsensical literal translation.
+Suggested: "Equanimity, diligence"
+
+# 4
+
+original: 无住心
+translated: no intention to live (row 356)
+
+无住心 = "non-abiding mind" (aprāptiṣṭhita-citta). "No intention to live" means something entirely different and alarming.
+Suggested: "non-abiding mind"
+
+# 5
+
+original: 依唯识见
+translated: based on knowledge and view alone (row 62)
+
+唯识 = Consciousness-Only / Yogācāra, a major Mahayana philosophical school.
+"Knowledge and view alone" is a misreading of the characters 唯 (only) + 识 (consciousness/knowledge).
+Suggested: "based on the Consciousness-Only view"
+
+# 6
+
+original: 依中观见
+translated: relying on the central vision (row 66)
+
+中观 = Madhyamaka / Middle Way, another major Mahayana school.
+"Central vision" misreads 中观 as 中(central) + 观(view).
+Suggested: "relying on the Madhyamaka view"
+
+# 7
+
+original: 无所得心
+translated: heart of nothing (rows 66, 71)
+
+无所得心 = "mind of non-attainment" / "mind of non-acquisition" (anupalabdha-citta).
+"Heart of nothing" is too literal and sounds nihilistic.
+Suggested: "mind of non-attainment"
+
+# 8
+
+original: 覆 / 悭 (in lists of 烦恼/mental afflictions)
+translated: subversion / thrift (rows 143, 182, 226, 270, 326, 380)
+
+覆 = "concealment" (hiding one's faults, mrakṣa). Not political "subversion."
+悭 = "stinginess / miserliness" (mātsarya). "Thrift" is a virtue in English — 悭 is a vice.
+Suggested: "concealment" and "stinginess" respectively. Change globally.
+
+# 9
+
+original: 同事 / 爱语 (四摄法 — Four All-embracing Virtues)
+translated: colleagues / love words (rows 123, 169, 200, 244, 313, 367)
+
+同事 in 四摄法 = "acting in harmony with others" (samānārthatā), not workplace "colleagues."
+爱语 in 四摄法 = "kind speech / affectionate speech" (priyavāditā), not romantic "love words."
+Suggested: "kind speech" and "acting in harmony" respectively. Change globally.
+
+# 10
+
+original: 布施
+translated: Give alms / Alms (rows 95, 129, 175, 206, 250, 319, 373)
+
+布施 = "generosity / giving" (dāna). "Alms" has narrow mendicant/monastic connotations in English. "Generosity" is the standard Buddhist translation.
+Suggested: "Generosity" (noun) / "Giving" (verb). Change globally.
+
+# 11
+
+original: 正念
+translated: righteous thoughts (rows 382, 596)
+
+正念 = "mindfulness" (sati / smṛti), one of the most standardized Buddhist translation terms.
+"Righteous thoughts" is wrong — it's a fundamental term and must be "mindfulness."
+Suggested: "mindfulness" everywhere.
+
+# 12
+
+original: 放逸、懈怠
+translated: laziness, laziness (rows 224, 268, 324, 378)
+
+Two distinct mental factors both rendered as "laziness":
+  放逸 (pramāda) = "carelessness / self-indulgence / heedlessness"
+  懈怠 (kausīdya) = "laziness / sloth"
+Suggested: "carelessness, laziness"
+
+# 13
+
+original: 定（止）、慧（观）
+translated: concentration, concentration (concentration), wisdom (contemplation) (rows 102, 136, 161, 219, 263, 295, 349)
+
+定（止）= concentration (śamatha). Currently "concentration" appears twice — the parenthetical should clarify.
+Suggested: "concentration (śamatha), wisdom (vipaśyanā)"
+
+# 14
+
+original: 我们在做正念禅修的过程中，需要检查自己这十二元素都具备了没有。
+translated: ...we need to check Is we have all these twelve elements... (rows 437, 447)
+
+"Is we" — reads as a literal machine translation of 是否. Should be "if we" or "whether we."
+Also: "...If we have it..." → the pronoun should be "them" (the twelve/ten elements).
+Suggested: "...we need to check whether we have all these twelve elements. If we have them..."
+
+# 15
+
+original: 您开始比较规律地练习正念有多少年？
+translated: How many years have it been since... (row 479)
+
+Subject-verb agreement: "has it been."
+Suggested: "How many years has it been since you started practicing mindfulness on a more regular basis?"
+
+# 16
+
+original: 通过不断重复，使相关心理成为常态；
+translated: ...the relevant mental qualities becomes the norm; (row 418)
+
+Subject-verb agreement: "qualities" (plural) needs "become."
+Suggested: "...the relevant mental qualities become the norm;"
+
+# 17
+
+original: 建立、培养、训练高级利他心理...训练、熟悉、提升、圆满初级和中级利他心理。
+translated: ...we train, familiarize, improve, and Complete primary and intermediate altruistic mental qualities. (row 72)
+
+"Complete" is randomly capitalized mid-sentence.
+Suggested: "...and complete primary and intermediate altruistic mental qualities."
+
+# 18
+
+original: 已暂停 (media player status)
+translated: Suspended (rows 539, 543)
+
+"Suspended" is unusual for media playback UI. Standard English is "Paused."
+Suggested: "Paused"
+
+# 19
+
+original: Android安卓下载
+translated: AndroidAndroid download (rows 386, 396)
+
+Duplicated word. "Android" already encodes the platform.
+Suggested: "Android download"
+
+# 20
+
+original: iOS苹果下载
+translated: IOS Apple download (rows 385, 395)
+
+"IOS" should be "iOS" (Apple's official capitalization).
+Suggested: "iOS Apple download"
+
+# 21
+
+original: 菩提导航APP
+translated: Bodhi Navigator App (row 22)
+
+Elsewhere called "Bodhi Navigation App." The product name should be consistent.
+Suggested: "Bodhi Navigation App" everywhere.
+
+# 22
+
+original: 同愿同行 共同成长
+translated: Walk with the same will and grow together (row 388)
+
+同愿同行 = "sharing the same aspiration, walking together."
+"Walk with the same will" is awkward and misses the 愿 (vow/aspiration) component.
+Suggested: "Sharing the same aspiration, walking together  www.pa.world"
+
+# 23
+
+original: 进入<b>服务大众全球共享平台</b>...
+translated: Enter </b> (A Global Platform for the Public)... (row 389)
+
+The opening <b> tag is missing; only a stray </b> appears.
+Suggested: "Enter <b>Service to the Public Global Sharing Platform</b> (A Global Platform for the Public)..."
+
+# 24
+
+original: 靠毅力硬盘，压石头、压大米
+translated: Rely on perseverance to hard drive, crush stones and rice (row 607)
+
+硬盘 here means "stubbornly / forcefully endure" (硬=hard, 盘=persist/endure — colloquial usage).
+Not "hard drive" (the computer component).
+Suggested: "Rely on perseverance and grit, [train by] pressing stones and rice"
+
+# 25
+
+original: 以上的剩余空间以获得更好的播放效果。
+translated: The remaining space above for better playback effect. (row 558)
+
+Garbled translation — reads as a fragment. Likely means: "Clear sufficient space [on device] for better playback."
+Suggested: "Ensure enough free space for better playback."
+
+# 26
+
+original: 您当前的浏览器，不支持视频播放，请
+translated: Your current browser does not support video playback, please (row 535)
+
+Sentence fragment ending with "please". The Chinese original likely continues with "请下载并使用chrome浏览器" from the next row — the rows got split.
+Check if this is a CSV-split issue or if "请" is a standalone UI element that should be a button label.
