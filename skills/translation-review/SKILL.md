@@ -1,93 +1,122 @@
 ---
 name: translation-review
-description: Review Chinese↔English translation pairs for quality issues — terminology errors, grammar, consistency, formatting. Works with CSV/XLSX files and writes edit suggestions in .dj format.
+description: Review Chinese↔English translations for quality issues — terminology, grammar, consistency, formatting. Two workflows: CSV/XLSX batch review (write .dj suggestions) and .dj comparison line-by-line review (surgical patching).
 ---
 
 # Translation Review
 
-## When to use
+Two workflows, used depending on input format.
 
-- User has a CSV or XLSX file with `Chinese`/`English` (or similar) columns
-- User asks you to "find problems," "check translations," or "review localization"
-- User mentions `.dj` edit-suggestions files
+## Workflow A: CSV/XLSX batch review
 
-## Workflow
+Use when input is a CSV/XLSX with `Chinese`/`English` columns. Produces an `edit-suggestions.dj` file.
 
 ### 1. Get the data into CSV
 
-If the file is XLSX, have the user export to CSV (or use `openpyxl` if installed). CSV is easier and faster to process. The user may also provide XHTML — CSV is preferred.
+If XLSX, export to CSV (or use `openpyxl`). CSV is faster.
 
 ### 2. Read the full file
 
-Use `read_file` with offsets to get the complete CSV into context. Don't sample — issues repeat across rows and you need full coverage.
+Use `read_file` with offsets for complete coverage. Don't sample.
 
 ### 3. Write a systematic analysis script
 
-Write a Python script to `/tmp/` and run it with `terminal: python3 /tmp/script.py`. Do NOT use heredocs (`<<'PYEOF'`) or `-c` — the terminal tool may block these. Always write to a temp file.
+Write to `/tmp/script.py`, run with `python3 /tmp/script.py`. No heredocs or `-c`.
 
 The script should:
-- Parse the CSV with `csv.DictReader`
-- Apply detection rules (regex-based) for each known issue category
-- Collect issues with: CSV row number, page context, CN text, EN text, problem description, suggested fix
-- Group/deduplicate identical issues across rows
+- Parse CSV with `csv.DictReader`
+- Apply detection rules per category
+- Collect issues: row number, CN text, EN text, problem, suggested fix
+- Group/deduplicate identical issues
 
-Common detection categories for Chinese→English:
-- **Buddhist terminology**: 正念→mindfulness (not "righteous thoughts"), 布施→generosity (not "alms"), 胜解→resolute conviction, etc.
-- **Identity terms**: 学士/修士/胜士/智士 are practice stages, not "bachelor/monk/winner/wise man"
-- **Literal machine translations**: "Is we"→"if we", "hard drive" for 硬盘 (endurance), "Walk without letting go" for 行舍不放逸
-- **四摄法 terms**: 同事→"acting in harmony" (not "colleagues"), 爱语→"kind speech" (not "love words")
-- **Grammar**: subject-verb agreement, "have it been"→"has it been", unbalanced quotes
-- **Typos/formatting**: "AndroidAndroid", "IOS"→"iOS", unbalanced HTML tags, Chinese punctuation in English
-- **UI terminology**: "Suspended"→"Paused" for media, product name consistency
-- **Inconsistency**: same CN term translated differently across rows (e.g., "Bodhi Navigator" vs "Bodhi Navigation")
+Common detection categories:
+- **Buddhist terminology**: 正念→mindfulness (not "righteous thoughts"), 布施→generosity (not "alms")
+- **Identity terms**: 学士/修士/胜士/智士 are practice stages, not titles
+- **Literal machine translations**: "hard drive" for 硬盘 (endurance)
+- **四摄法 terms**: 同事→"acting in harmony", 爱语→"kind speech"
+- **Grammar**: subject-verb agreement, unbalanced quotes
+- **Typos/formatting**: Chinese punctuation in English, "IOS"→"iOS"
+- **Inconsistency**: same CN term translated differently across rows
 
-### 4. Deduplicate into unique issue categories
-
-The same error pattern often repeats across many rows (e.g., "subversion" for 覆 appears in 6+ rows). Group these into single entries in the .dj file — one entry per unique problem, with a list of affected rows.
-
-### 5. Write edit-suggestions.dj
+### 4. Write edit-suggestions.dj
 
 Format:
-
 ```
 # 1
 
 original: <Chinese text or key term>
 translated: <current English>
 
-<Explanation of the problem and suggested fix.>
+<Explanation and suggested fix.>
 
 # 2
 ...
 ```
 
-Each entry gets a `# N` header, `original:` and `translated:` fields, then a free-text explanation. End with suggested replacement text. Mention affected row numbers. For globally-wrong terms, note "Change globally."
+One entry per problem category, not per row. Mention affected row numbers.
 
-Do NOT write one entry per CSV row — group by problem type.
+## Workflow B: .dj comparison file review
 
-### 6. Sanity check
+Use when input is a `.dj` comparison file (Chinese/English alternating line pairs). Produces `translation-findings.dj` and applies patches.
 
-Run a quick second pass to catch: empty English fields, Chinese characters leaking into English column, untranslated rows (CN == EN), trailing whitespace.
+### 1. Read the full file
+
+Use `terminal: cat` — `read_file` deduplicates within a session.
+
+### 2. Scan for problems (ordered by severity)
+
+**Terms database drift** (systematic):
+- Cross-reference glossary terms against the MPI terms database
+- HTTP API: `http://localhost:8910/search?q=...` (start: `python3 /home/user/documents/mpi/terms-search/server.py &`)
+- Prefer DoT定稿 > 内部特色词 > 佛教术语 > 经论名
+- Fix both glossary comments AND body text
+- See `references/terms-db-alignment.md` for batch-lookup patterns
+
+**Real errors** (affect meaning):
+- Mistranslation of key terms
+- Garbled/malformed source text
+- Wrong proper names or technical terms
+
+**Inconsistency** (confusing but not wrong):
+- Terminology drift across file
+- Numbering style chaos
+- Grammatical voice/person shifts
+
+**Cleanup needed**:
+- Processing artifacts (HTML comments, markers)
+- Stray spacing in Chinese text
+- Awkward line splits
+- Odd word choices
+
+**Missing content**: bare headings with no body — flag, don't invent.
+
+### 3. Dump findings to `translation-findings.dj`
+
+```
+Finding N — Title (line numbers)
+  Chinese: ...
+  English: ...
+  Issue: description
+```
+
+### 4. Apply fixes with `patch`
+
+Surgical string replacement. Verify every patch with `cat` — never rely on `read_file` (session dedup).
+
+## Buddhist terminology reference
+
+See `references/buddhist-terminology.md` for Chinese-English term mappings and common pitfalls.
 
 ## Pitfalls
 
-- **Don't use heredocs or `-c` for multi-line Python** — write to `/tmp/script.py` first, then `python3 /tmp/script.py`. The terminal tool may block heredocs as long-lived processes.
-- **Deduplicate aggressively** — 80+ raw issues may collapse to 20-25 unique categories. Writing one .dj entry per CSV row is useless noise.
-- **Buddhist terminology is technical** — don't guess. 正念 is mindfulness (sati), not "righteous thoughts." 唯识 is Yogācāra/Consciousness-Only, not "knowledge and view alone." When uncertain, flag for human review rather than confidently suggesting wrong fixes.
-- **Don't delete the comparison/对照 file** — translation projects keep these as intentional work artifacts.
+- **Don't use heredocs or `-c`** — write to `/tmp/script.py` first
+- **Deduplicate aggressively** — group by problem type, not per-row
+- **Buddhist terminology is technical** — don't guess. When uncertain, flag for review
+- **Never delete .dj comparison files** — intentional work artifacts
+- **Verify patches with `cat`** — `read_file` dedup makes it unreliable
+- **Re-read before fixing** — user may have made interim edits
 
-## .dj file format reference
+## References
 
-```
-# N
-
-original: <source text>
-translated: <current translation>
-
-<Free-text explanation and suggestion. Can be multiple paragraphs.>
-
-# N+1
-...
-```
-
-Entries may end with `{% TK %}` to mark "to check" items. The file lives alongside the source CSV/XLSX in the same directory.
+- `references/buddhist-terminology.md` — Chinese-English Buddhist term mappings and pitfalls
+- `references/terms-db-alignment.md` — Batch-aligning glossary terms against the MPI terms database
