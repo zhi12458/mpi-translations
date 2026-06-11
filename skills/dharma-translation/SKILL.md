@@ -1,75 +1,63 @@
 ---
 name: dharma-translation
-description: Translate Chinese Buddhist Dharma talks into English djot with annotations. Use when the user asks to translate a Dharma talk, 开示, Buddhist lecture, or similar material from Chinese to English.
+description: Translate Chinese↔English Buddhist/Dharma content using the MPI term database and Mindfulness Bell corpus for register guidance.
+category: research
 ---
 
-# Dharma Talk Translation
+# Dharma Translation
 
-## Trigger
+When translating Chinese↔English Buddhist/Dharma content, consult TWO resources before producing output:
 
-User asks to translate a Chinese Buddhist Dharma talk (开示, 讲座, 法义) to English, or convert a PDF of such material into a translated djot file.
+1. **Terms database** — for established term translations
+2. **Mindfulness Bell corpus** — for register/style patterns in English Buddhist prose
+
+## Resources
+
+### Terms DB
+- DB: `/home/user/documents/mpi/terms-search/termlib.duckdb`
+- CLI: `terms-search <query>`
+- HTTP API: port 8910 (`/search?q=...&src=...&limit=...`)
+- Source tables priority: DoT定稿 > 内部特色词 > 佛教术语 > 经论名
+- See `terms-search` skill for full API details
+
+### Mindfulness Bell Corpus
+- Location: `~/meta/www.files/public/The Mindfulness Bell/`
+- 6 issues: MB92–MB97 (2023–2026), each ~84–116 pages
+- Index: `index.yaml` (article titles, authors, pages)
+- **Articles**: `~/documents/jingxin-lessons/Mindfulness Bell/articles/MB{92..97}/*.md` — 93 individual markdown files with YAML frontmatter. Read directly with `read_file`.
+- Extraction script: `/tmp/extract_mb_articles.py` (re-run if PDFs change)
+
+## Register Reference (from MB corpus analysis)
+
+Four registers observed, useful as style targets:
+
+| Register | Example | Key features |
+|----------|---------|-------------|
+| Dharma talk | Thầy (MB94 "Roses and Garbage", MB97 "Go as a River") | Short sentences, concrete images, coined terms ("interbeing"), oral address ("It's clear?"), Sanskrit kept with narrative explanation |
+| Teaching lineage | Sister Đoan Nghiêm (MB93 "Our Patriarch Liễu Quán") | "We" voice, terms explained, cultural bridging ("like Jesus"), dates woven into narrative, still oral |
+| Personal narrative | Mick McEvoy (MB94 "Touching the True Nature") | First-person, confessional, borrowed Dharma vocabulary, emotional directness, vernacular |
+| Editorial | Brother Pháp Lưu (MB94 welcome letter) | Polished but warm, conceptual framing, "we" address |
+
+## Translation Principles (observed from MB corpus)
+
+1. **Terms**: Either keep Sanskrit w/ narrative explanation (bodhisattva, Māra) OR coin new English (interbeing, inter-are). Avoid clunky calques.
+2. **Cultural bridging**: Add bridges for Western readers. A Chinese text mentioning 孔子 can stay; explain the function. Đoan Nghiêm's "like Jesus" is the pattern.
+3. **Tone**: Chinese Dharma texts are typically more formal than English equivalents. Decide consciously: keep formality or warm up (Thầy style).
+4. **Voice**: Direct address ("you"), concrete images, and oral rhythm make Dharma land in English. Abstract noun chains (common in Chinese→English translationese) kill it.
+5. **Sutra quotes**: Use standard English Buddhist idiom. Check terse-idiom conventions (e.g., Diamond Sutra "lives" not "bodies").
 
 ## Workflow
 
-### 1. Extract source text from PDF
+1. Load both `terms-search` and `dharma-translation` skills
+2. For each key term in the source: search the terms DB first
+3. For register decisions: scan relevant MB articles matching the target register
+4. Translate directly in the response — never call external translation APIs
+5. After translation, offer to align against the terms DB for verification
 
-Prefer `pdftotext -layout` — it's the most reliable fallback and almost always available:
+## MB Article Quick-Find
 
-```bash
-pdftotext -layout input.pdf /tmp/extracted.txt
-```
-
-pypdf and pdfplumber may not be installed; pdftotext (poppler-utils) is the safe default.
-
-### 2. Convert to structured djot
-
-Clean the extracted text into a djot file (`original.dj`) with this structure:
-
-- `# Title` — h1, the talk title
-- Subtitle line — date and venue, prefixed with `——`
-- Opening remarks — body paragraphs before the first section
-- `## 一、Section Name` — h2 for each numbered section (一、二、三、etc.)
-- Closing line — revision date in parentheses
-
-Strip page numbers (standalone digits separated by form feeds `\f`). Join broken lines within paragraphs — Chinese text joins cleanly with `''.join()` since there are no inter-word spaces.
-
-### 3. Translate
-
-Translate directly — no external translation APIs. The model IS the translator.
-
-Key approach:
-- Preserve the djot structure exactly (headings, paragraphs)
-- Translate section headings preserving the Chinese numbering (一、→ 1., 二、→ 2., etc.)
-- Keep the original Chinese in `%` comment lines alongside the translation (see annotations below)
-
-### 4. Annotate in djot comments
-
-Use `%` comment lines before relevant paragraphs to annotate:
-
-- **Buddhist technical terms**: Sanskrit equivalents (e.g., 五蕴 → five aggregates / skandhas), doctrinal context
-- **Cultural references**: Historical figures, place names, sutra names with explanation
-- **Structural notes**: Why the speaker frames something a certain way, organizational philosophy
-- **Recurring metaphors**: The McDonald's analogy throughout, the lamp/light metaphor
-
-Format:
-```
-% Chinese term (pinyin) = English gloss, Sanskrit if applicable. Brief context.
-Paragraph text here...
-```
-
-For sutra quotes, annotate the sutra name with both Chinese and Sanskrit.
-For organizational terms (传帮带, 分灯, 三种精神), explain their meaning within the community's framework.
-
-### 5. Output files
-
-- `original.dj` — cleaned Chinese djot
-- `translated.dj` — English translation with `%` annotations
-
-## Pitfalls
-
-- Do NOT call external translation APIs. Translate directly.
-- Do NOT delete comparison/对照 files — they are intentional work artifacts.
-- pdftotext may produce hard line breaks at column boundaries; join within paragraphs using `''.join()` for Chinese.
-- Page numbers appear as isolated digits between form feeds (`\f`); strip them with regex.
-- Djot `%` comments work line-by-line; place them on their own lines before the relevant paragraph.
-- Keep annotations concise — one or two lines, not an essay.
+Common article types to search for register examples:
+- Thầy's Dharma talks: search index for "Thích Nhất Hạnh" + page ≤ 10
+- Sister/brother teachings: search for "Sister" or "Brother" + "DHARMA TEACHING"
+- Personal narratives: first-person voice, often pages 8–60
+- Lineage/history: "Patriarch," "ancestor," dates in text
