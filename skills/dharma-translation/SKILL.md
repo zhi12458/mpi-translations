@@ -15,13 +15,12 @@ When translating Chinese↔English Buddhist/Dharma content, consult TWO resource
 
 ### Terms DB
 - DB: `/home/user/documents/mpi/terms-search/termlib.duckdb`
-- CLI: `terms-search <query>`
-- HTTP API: port 8910 (`/search?q=...&src=...&limit=...`)
+- CLI: `/home/user/documents/mpi/terms-search/search.py <query>`
 - Source tables priority: DoT定稿 > 内部特色词 > 佛教术语 > 经论名
-- See `terms-search` skill for full API details
+- See `/home/user/documents/mpi/terms-search/SKILL.md` for full API details
 
 ### Mindfulness Bell Corpus
-- Location: `~/meta/www.files/public/The Mindfulness Bell/`
+- Location: `/home/user/meta/www.files/public/The Mindfulness Bell/`
 - 6 issues: MB92–MB97 (2023–2026), each ~84–116 pages
 - Index: `index.yaml` (article titles, authors, pages)
 - **Articles**: `~/documents/jingxin-lessons/Mindfulness Bell/articles/MB{92..97}/*.md` — 93 individual markdown files with YAML frontmatter. Read directly with `read_file`.

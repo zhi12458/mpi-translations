@@ -8,17 +8,27 @@ category: research
 
 Database: `/home/user/documents/mpi/terms-search/termlib.duckdb`
 CLI: `/home/user/documents/mpi/terms-search/search.py`
+Server: `/home/user/documents/mpi/terms-search/server.py`
 
-## Search
+## CLI (preferred)
 
 ```
-terms-search <query> [limit]
-terms-search <query> loc:<source>      # filter by 出处
-terms-search <query> src:<table>       # filter by source table
-terms-search src:<table>              # list all from table
+/home/user/documents/mpi/terms-search/search.py <query> [limit]
 ```
 
 Multi-word queries are ANDed. Searches both `zh` and `en` columns.
+
+## HTTP API (use only when CLI is insufficient)
+
+Start: `python3 /home/user/documents/mpi/terms-search/server.py` (port 8910)
+
+- `GET /` — plain HTML UI (form + results table, no CSS)
+- `GET /` — plain HTML UI (form + results table, no CSS)
+- `GET /search?q=...&loc=...&src=...&limit=...` — JSON `{count, results: [{zh, en, loc, source}]}`
+- `GET /sources` — JSON array of `{source, count}` for all source tables
+
+All params optional. Omit `limit` for all results. Query terms are ANDed across zh+en.
+Errors return `{"error": "..."}` with HTTP 500 (API) or shown inline (UI).
 
 ## Source tables
 
@@ -50,6 +60,17 @@ Key tables: `unified_terms_flat` (zh, en, loc, source), individual source tables
 ## Rebuilding
 
 Terms data comes from `/home/user/documents/mpi/guide/03 术语库/`. To rebuild:
-1. Convert source xlsx/ods → CSV+YAML in `_output/` (see `/tmp/convert_sheets3.py`)
-2. Rebuild DuckDB from CSVs (see `/tmp/duckdb_import.py` and `/tmp/fix_dot.py`)
+1. Convert source xlsx/ods → CSV+YAML in `_output/`
+2. Rebuild DuckDB from CSVs
 3. Materialize `unified_terms_flat` view → table for performance
+
+**Full rebuild pipeline:** See `references/termbase-rebuild.md` (absorbed from the `termbase-management` skill).
+
+## Translation Alignment
+
+When aligning translated djot files against the term database, load `references/translation-alignment.md` for the full workflow. Summary:
+1. Extract Chinese terms from `{% "..." %}` glossary blocks in the translated file
+2. Batch-search via HTTP API (`/search?q=...`)
+3. Prioritize DoT定稿 > 内部特色词 > 佛教术语
+4. Fix both glossary comments AND body-text occurrences
+5. Verify with grep

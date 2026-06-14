@@ -1,10 +1,15 @@
-Translation-related skills.
+# MPI Skills
 
-## For Hermes
+These skills are loaded via `skills.external_dirs` in `~/.hermes/config.yaml`.
 
-For every skill here, place a symlink to it under ~/.hermes/skills/ —
-run `fish install.fish` to set up all symlinks.
+## Setup
 
-If you create a skill related to translation, place it here in this directory
-and add its entry to install.fish.
+Add this to `~/.hermes/config.yaml`:
 
+```yaml
+skills:
+  external_dirs:
+  - /home/user/documents/mpi/skills
+```
+
+{% `hermes config set` stores list values as strings. Edit the YAML file directly to ensure proper list syntax. %}
