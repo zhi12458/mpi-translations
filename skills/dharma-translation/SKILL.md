@@ -17,7 +17,7 @@ When translating Chinese↔English Buddhist/Dharma content, consult TWO resource
 - DB: `/home/user/documents/mpi/terms-search/termlib.duckdb`
 - CLI: `/home/user/documents/mpi/terms-search/search.py <query>`
 - Source tables priority: DoT定稿 > 内部特色词 > 佛教术语 > 经论名
-- See `/home/user/documents/mpi/terms-search/SKILL.md` for full API details
+- See `terms-search` skill (via `skill_view`) or `AGENTS.md` for full usage
 
 ### Mindfulness Bell Corpus
 - Location: `/home/user/meta/www.files/public/The Mindfulness Bell/`
@@ -48,11 +48,48 @@ Four registers observed, useful as style targets:
 ## Workflow
 
 1. Load both `terms-search` and `dharma-translation` skills (and `mpi-project-conventions` for output conventions)
-2. For each key term in the source: search the terms DB first (HTTP API at port 8910)
+2. **Search terms DB FIRST — before producing any output.** Use the CLI: `/home/user/documents/mpi/terms-search/search.py <query>`. Query every key Buddhist/MPI term in the source. Prefer DoT定稿 > 内部特色词 > 佛教术语 > 经论名. Pitfall: skipping this step and translating from general knowledge produces incorrect terms that must be patched later.
 3. For register decisions: consult the register table above (scanning MB articles is optional)
 4. Translate directly — never call external translation APIs. Agent IS the model.
 5. Write `target.dj` alongside `source.dj`. Match source line count exactly.
-6. After translation, offer to align against the terms DB for verification
+6. **TOC**: strip link targets, render as bullet list (`- I. ...`). No `[text](#anchor)` markup — those are pandoc artifacts. The target is a standalone document.
+7. **Em-dash convention**: AGENTS.md mandates `—` (Unicode em-dash) → `---` (three hyphens) in English djot. When drafting, type `---` for em-dashes, not `—`. The Chinese source often uses `------` (six hyphens) as its em-dash equivalent — translate to `---`, never to `—`. Before declaring done, run a sanity check: `grep -c '—' target.dj` should be 0.
+8. After translation, offer to align against the terms DB for verification
+
+## Diacritics Convention
+
+Follow the terms DB, not academic Sanskrit. See `references/diacritics-convention.md` for the full rule table. Summary:
+
+- No diacritics: `Mahasthamaprapta`, `Yogacarabhumi-Sastra` (matches 佛教术语 / 经论名)
+- With diacritics: `Kṣitigarbha` (DoT定稿 uses this form)
+
+When in doubt, search the DB and use whatever form appears in the highest-priority source.
+
+## Bilingual Output
+
+After `target.dj` is finalized, create `bilingual.dj`: interleave source and target, one line at a time. Format:
+
+```
+source line
+
+target line
+
+source line
+
+target line
+```
+
+Use Python: `terminal("cat")` on both files, split on newlines, zip and interleave.
+
+## DOCX Output
+
+`.docx` files go to `/tmp/` — never commit binaries. Use `scripts/dj2docx.fish`:
+
+```fish
+fish scripts/dj2docx.fish path/to/target.dj
+```
+
+Pandoc auto-converts `---` → em dash, `--` → en dash in docx.
 
 ## MB Article Quick-Find
 

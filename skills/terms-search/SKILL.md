@@ -70,7 +70,7 @@ Terms data comes from `/home/user/documents/mpi/guide/03 术语库/`. To rebuild
 
 When aligning translated djot files against the term database, load `references/translation-alignment.md` for the full workflow. Summary:
 1. Extract Chinese terms from `{% "..." %}` glossary blocks in the translated file
-2. Batch-search via HTTP API (`/search?q=...`)
+2. Batch-search via CLI (`./search.py <term>`). Query each term individually.
 3. Prioritize DoT定稿 > 内部特色词 > 佛教术语
 4. Fix both glossary comments AND body-text occurrences
 5. Verify with grep

@@ -1,10 +1,10 @@
 # MPI Skills
 
-These skills are loaded via `skills.external_dirs` in `~/.hermes/config.yaml`.
+These skills live in this directory and are loaded via `~/.hermes/config.yaml`.
 
-## Setup
+## Install for Hermes
 
-Add this to `~/.hermes/config.yaml`:
+Add to `~/.hermes/config.yaml`:
 
 ```yaml
 skills:
@@ -12,4 +12,15 @@ skills:
   - /home/user/documents/mpi/skills
 ```
 
-{% `hermes config set` stores list values as strings. Edit the YAML file directly to ensure proper list syntax. %}
+{% Edit config.yaml directly — `hermes config set` stores list values as strings. %}
+
+## Skills
+
+| Name | What it does |
+|---|---|
+| `terms-search` | Full-text search across MPI term database |
+| `dharma-translation` | Translate Chinese↔English Buddhist content |
+| `translation-review` | Review translations for quality issues |
+| `chinese-text-normalize` | Normalize Chinese markdown line breaks |
+| `pptx-translate` | Translate PowerPoint files |
+| `pdf-to-docx-conversion` | Convert PDFs to DOCX with layout preservation |

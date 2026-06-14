@@ -1,4 +1,18 @@
+# MPI — Mindful Peace International
+
+## Directory Map
+
+| Directory | Contents |
+|---|---|
+| `skills/` | Hermes Agent skills — loaded via `~/.hermes/config.yaml` `external_dirs`. [Install guide →](skills/readme.dj) |
+| `terms-search/` | Term database (DuckDB) + search CLI (`search.py`). Priority: DoT定稿 > 内部特色词 > 佛教术语 |
+| `translate-files/` | Translation projects: `<topic>/<article>/` with `source.dj`, `target.dj`, `bilingual.dj` |
+| `scripts/` | Utility scripts (fish shell): `dj2docx.fish` |
+| `guide/` | Reference materials — 术语库 source data |
+| `AGENTS.md` | Project conventions for AI agents — translation workflow, djot rules, skill usage |
+
+## Links
+
 https://en.mindfulpeace.org/bookstore
 https://www.aryaread.com/
 https://web.aryaread.com/
-
