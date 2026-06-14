@@ -48,11 +48,12 @@ Four registers observed, useful as style targets:
 
 ## Workflow
 
-1. Load both `terms-search` and `dharma-translation` skills
-2. For each key term in the source: search the terms DB first
-3. For register decisions: scan relevant MB articles matching the target register
-4. Translate directly in the response — never call external translation APIs
-5. After translation, offer to align against the terms DB for verification
+1. Load both `terms-search` and `dharma-translation` skills (and `mpi-project-conventions` for output conventions)
+2. For each key term in the source: search the terms DB first (HTTP API at port 8910)
+3. For register decisions: consult the register table above (scanning MB articles is optional)
+4. Translate directly — never call external translation APIs. Agent IS the model.
+5. Write `target.dj` alongside `source.dj`. Match source line count exactly.
+6. After translation, offer to align against the terms DB for verification
 
 ## MB Article Quick-Find
 
