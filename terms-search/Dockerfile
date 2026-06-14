@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN pip install --no-cache-dir flask duckdb gunicorn
 
-COPY server.py search.py termlib.duckdb ./
+COPY . .
 
 EXPOSE 8910
 
