@@ -1,10 +1,25 @@
 # Edit Suggestions — 生命也可以被设计的
 
+## 引言（开头部分）
+
+- 第47行 `Philosopher Nietzsche`
++ 第47行 `philosopher Nietzsche`
+  说明：此处 philosopher 是描述性用语，并非正式头衔，应小写。
+  同一段上文 `the philosopher Zhou Guoping` 已用对。
+
 ## 一、教育是为了育人
 
 - 第130行 CN `我曾和岳麓书院岳麓书院国学研究院朱汉民院长对谈`
 + 第130行 CN `我曾和岳麓书院国学研究院朱汉民院长对谈`
   说明：Chinese source 中 "岳麓书院" 出现两次，疑为重复。
+
+## 二、人生最重要的设计
+
+### 2． 心理问题
+
+- 第233行 EN `warm or cold.. We should`
++ 第233行 EN `warm or cold. We should`
+  说明：双句号 typo。
 
 ## 三、生命可以被设计的依据
 
@@ -12,4 +27,20 @@
 
 - 第155行 EN heading `2. The Principles of Life's Continuity`
 + 第155行 EN heading `3. The Principles of Life's Continuity`
-  说明：TOC 中该条目中英文均为 "3"，正文 EN 标题却写为 "2."，疑为 typo。
+  说明：TOC 中该条目中英文均为 "3"，正文 EN 标题却写为 "2."，typographical error。
+
+## 四、人性，是设计生命的基础
+
+### 2．人的两面性
+
+- 第211–212行：CN 段落"关于这个问题，孟子进一步提出…"对应的英文有两个段落：
+  (1) "Building on this, Mencius introduced…"（已收录，第212行）
+  (2) "Buddhism teaches that every person possesses Buddha-nature…"（缺失）
+  说明：译者将一个中文段落拆成两个英文段落，bilingual.dj 只保留了第一个。
+  建议：将中文在"这一观点和佛法思想有关。"后拆分为二，使之与英文两段一一对应。
+
+## 全文
+
+- 27处英文 em-dash（Unicode `—`）应替换为三个连字符 `---`
+  说明：djot 规范要求英文 em-dash 用 `---` 表示，pandoc 输出 docx 时自动转换。
+  涉及行号：41, 44, 50, 56, 59, 65, 68, 74, 77, 80, 95, 104, 110, 116, 134, 146, 149, 158, 173, 200, 206, 212, 215, 218, 224, 233, 248
