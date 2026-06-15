@@ -1,0 +1,52 @@
+# Translation Findings — 生命也可以被设计的
+
+## 1. 内容删减：希特勒举例被移除（四、1．善用理性）
+
+  Chinese: 比如希特勒认为犹太人血统有问题，要建立纯净的血统，就得实施种族屠杀。这正是理性被扭曲为反人道的体现。
+  English: History shows that reason, when distorted by ideology, can even be used to justify atrocities such as genocide.
+
+  CN 用希特勒的具体历史案例说明"理性被扭曲为反人道"，EN 替换为泛泛的 "History shows..."。
+  "such as genocide" 提到了种族屠杀，但原文点名希特勒、犹太人血统的论证链被消解。
+
+## 2. 术语稀释："颠倒梦想"（二、2．心理问题）
+
+  Chinese: 《心经》所说的颠倒梦想
+  English: what the Heart Sutra describes as "delusional dreams"
+
+  "颠倒梦想" 是《心经》核心术语（viparyāsa），四颠倒：常乐我净。指凡夫对无常/苦/无我/不净的四种错误认知。
+  "delusional dreams" 偏文学化，丢失了术语的技术含量。
+  建议："inverted views and delusive thoughts" 或保留 "viparyāsa (the four inverted views)"。
+
+## 3. 双重翻译："本来面目"（二、1．人生问题）
+
+  Chinese: "本来面目"
+  English: "Original Face; Original Mind"
+
+  用分号并列两种译法 "Face" 和 "Mind"，像是译者未决断。
+  禅宗术语通常统一用 "Original Face"（对应"面目"），或 "True Nature"。
+  建议选一种，删掉分号后的备选。
+
+## 4. 添加概念："creator god"（三、2．人有自救能力）
+
+  Chinese: 但佛法不认同世界有一个主宰神
+  English: Buddhism does not acknowledge a creator god who governs the world
+
+  "主宰神" = ruling/controlling deity。译文加了 "creator"（创世神），原文无"创世"义。
+  佛经否定的是梵天式的创世主（creator），但"主宰神"范围更宽（包括印度教的大自在天等）。
+  建议：去掉 "creator"，改为 "a ruling deity who governs the world"。
+
+## 5. 语序颠倒：内圣外王（三、1．人生目的何在）
+
+  Chinese: 进一步，是内圣外王，成就圣贤人格
+  English: at a higher level, it aspires to serve the people with kingly virtue and achieve the character of a sage
+
+  "内圣外王" = 内（圣）→ 外（王）。原文先内后外，译文先外后内。
+  建议调整语序以符合原文逻辑递进。
+
+## 6. 程度弱化：一切 → many forms of（二、2．心理问题）
+
+  Chinese: 三毒是一切心理疾病的根源
+  English: the three poisons are the root of many forms of mental afflictions
+
+  "一切" → "many forms of"，从全称变为部分。
+  建议："the root of all mental afflictions"。

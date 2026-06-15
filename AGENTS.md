@@ -32,19 +32,108 @@ translate-files/<topic>/<article>/
 
 `.docx` output → `/tmp/`. Don't commit binaries.
 
-## Translation Workflow
+---
 
-1. Load `dharma-translation` and `terms-search` skills
-2. Search terms DB with `search.py` for key terms before translating
-3. Translate directly — agent IS the model, no external APIs
-4. Write `target.dj`, match source line count exactly
-5. TOC: bullet list, no link targets. No page numbers.
-6. Create `bilingual.dj` (interleave source/target lines)
+## Workflow A: Translation（翻译）
+
+Translate Chinese source into English. The agent IS the model — no external APIs.
+
+### Input
+
+Source text in `.dj` or `.docx` (Chinese only).
+
+### Deliverables
+
+- `source.dj` — extracted/cleaned Chinese
+- `target.dj` — English translation, line count matches source
+- `bilingual.dj` — interleaved (source line, target line adjacent, blank between pairs)
+- `edit-suggestions.dj` — terminology/consistency issues flagged for review
+
+### Rules
+
+1. Load `dharma-translation` and `terms-search` skills before starting.
+2. Search terms DB with `search.py` for key Buddhist terms.
+3. TOC: plain bullet lists, no link targets, no page numbers.
+4. Djot formatting:
+   - Emphasis: `*text*` (single asterisks). Never `**` (Markdown bold).
+   - Comments: `{% ... %}`
+   - Em dashes in English text: `---` (three hyphens). Pandoc converts to proper em dash in docx output.
+   - En dashes in English text: `--` (two hyphens).
+5. Preserve source formatting — don't add/remove emphasis.
+6. Translate in-response — never call external translation APIs.
+
+### Review
+
+After translating, run `translation-review` skill (Workflow B) to check:
+- Terminology consistency against terms DB
+- Grammar, fluency, calques
+- Missing content (mid-paragraph truncation)
+- Inconsistency (same term translated differently)
+
+---
+
+## Workflow B: Proofread（校对）
+
+Extract bilingual content from an existing DOCX manuscript and flag issues.
+The DOCX already contains BOTH Chinese and English — the English is the
+authoritative target, not something the agent creates.
+
+### Input
+
+A `.docx` manuscript with Chinese and English in parallel (typically
+paragraph-level alternation: Chinese, blank, English, blank).
+
+### Deliverables
+
+- `bilingual.dj` — extracted from DOCX (interleaved)
+- `edit-suggestions.dj` — mechanical/issues found in the manuscript
+
+### Extraction
+
+1. `pandoc input.docx -f docx -t plain --wrap=none` to plain text
+2. Script to extract CN/EN pairs. Write to `scripts/gen-bilingual-<name>-<hash>.py`.
+   Copy the approach from an existing script (e.g. `gen-bilingual-buddhist-attitude.py`).
+3. Write `bilingual.dj`.
+
+### What to flag (edit-suggestions.dj)
+
+Only flag objective/manuscript-level issues:
+
+- **Garbled text** — merged duplicate edits in source DOCX
+- **Double words** — `the The`, `is is`
+- **Double punctuation** — `warm or cold..`
+- **Numbering mismatches** — CN heading `三` vs EN heading `II`, or body heading
+  number doesn't match TOC
+- **Translator notes** — `（某某翻，某某审）` left in headings
+- **Missing content** — paragraphs present in CN but missing in EN (or vice versa)
+- **Duplicate text** — same name/phrase repeated (`岳麓书院岳麓书院`)
+- **Capitalization typos** — `Philosopher Nietzsche` → `philosopher Nietzsche`
+- **Stray/unusual characters** in either language
+
+### What NOT to flag
+
+Do NOT flag translation quality issues — the English is authoritative manuscript text:
+
+- Terminology choices (e.g. "delusional dreams" for 颠倒梦想)
+- Translation style, calques, fluency preferences
+- Djot formatting conventions (em-dashes, italics)
+- Word order, added concepts, degree weakening
+
+These belong to the **translation** workflow, not proofread.
+
+### Separate translation-quality findings
+
+If the user explicitly asks for a translation review of a proofread article,
+write findings to `translation-findings.dj` (separate from `edit-suggestions.dj`).
+Load the `translation-review` skill and follow its Workflow B.
+
+---
 
 ## Djot
 
 - Comments: `{% ... %}`
-- Dashes: `---` em, `--` en. Pandoc converts in docx output.
+- Emphasis: `*text*` (single asterisks)
+- Dashes in English: `---` em, `--` en. Pandoc converts in docx output.
 - Preserve source formatting — don't add/remove emphasis
 
 ## Scripts
@@ -58,3 +147,4 @@ regenerating the same Python in execute_code each turn.
 - `scripts/dj2docx.fish <target.dj>` — pandoc .dj → .docx in `/tmp/`
 - `scripts/proofread-pdf.py <docx> <pdf>` — word-level diff between manuscript and typeset PDF
 - `scripts/gen-bilingual.fish <dir>` — produce `bilingual.dj` from `source.dj` + `target.dj`
+- `scripts/gen-bilingual-<name>-<hash>.py` — article-specific extraction from DOCX
