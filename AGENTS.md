@@ -86,7 +86,8 @@ paragraph-level alternation: Chinese, blank, English, blank).
 ### Deliverables
 
 - `bilingual.dj` — extracted from DOCX (interleaved)
-- `edit-suggestions.dj` — mechanical/issues found in the manuscript
+- `edit-suggestions.dj` — mechanical/manuscript-level issues
+- `translation-findings.dj` — translation quality issues (always produced)
 
 ### Extraction
 
@@ -110,22 +111,23 @@ Only flag objective/manuscript-level issues:
 - **Capitalization typos** — `Philosopher Nietzsche` → `philosopher Nietzsche`
 - **Stray/unusual characters** in either language
 
-### What NOT to flag
+Do NOT flag translation quality issues here — those go to `translation-findings.dj`:
 
-Do NOT flag translation quality issues — the English is authoritative manuscript text:
-
-- Terminology choices (e.g. "delusional dreams" for 颠倒梦想)
-- Translation style, calques, fluency preferences
+- Terminology choices, translation style, calques, fluency
 - Djot formatting conventions (em-dashes, italics)
 - Word order, added concepts, degree weakening
 
-These belong to the **translation** workflow, not proofread.
+### Translation review (translation-findings.dj)
 
-### Separate translation-quality findings
+Always produced. Load `translation-review` skill after extraction, scan for:
 
-If the user explicitly asks for a translation review of a proofread article,
-write findings to `translation-findings.dj` (separate from `edit-suggestions.dj`).
-Load the `translation-review` skill and follow its Workflow B.
+- **Terminology** — key Buddhist terms rendered correctly
+- **Content omission** — specific examples/explanations dropped
+- **Added concepts** — words not in source (e.g. "creator" for 主宰)
+- **Degree shifts** — 一切 → "many", weakening of claims
+- **Terminology dilution** — technical terms rendered as literary paraphrase
+- **Double renderings** — multiple translations of the same term side by side
+- **Word order** — reversed logical sequence (e.g. 内圣外王)
 
 ---
 
