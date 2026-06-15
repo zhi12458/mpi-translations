@@ -18,6 +18,18 @@ Server: `/home/user/documents/mpi/terms-search/server.py`
 
 Multi-word queries are ANDed. Searches both `zh` and `en` columns.
 
+## Python module
+
+```python
+import sys
+sys.path.insert(0, '/home/user/documents/mpi/terms-search')
+from search import search
+results = search("空性", limit=5, src="DoT定稿")
+# → list of {zh, en, loc, source} dicts
+```
+
+Use this inside `execute_code` scripts for batch lookups — no subprocess needed.
+
 ## HTTP API (use only when CLI is insufficient)
 
 Start: `python3 /home/user/documents/mpi/terms-search/server.py` (port 8910)

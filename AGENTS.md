@@ -16,9 +16,9 @@ Available: `translation`, `terms-search`, `translation-review`, `chinese-text-no
 
 ## Terms Database
 
-- DB: `terms-search/termlib.duckdb`
-- CLI: `terms-search/search.py <query> [limit]` (preferred over HTTP)
-- Module: `from search import search; search("空性", limit=5, loc="...", src="...")` → list of `{zh, en, loc, source}` dicts
+See `terms-search` skill. Quick reference:
+- CLI: `terms-search/search.py <query> [limit]`
+- Module: `from search import search; search("空性", limit=5, src="DoT定稿")`
 - Priority: DoT定稿 > 内部特色词 > 佛教术语 > 经论名
 
 ## Directory Structure
