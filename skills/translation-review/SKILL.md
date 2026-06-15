@@ -197,6 +197,8 @@ Do not run extraction pipelines until scope is clear.
 
 - `references/buddhist-terminology.md` — Chinese-English Buddhist term mappings and pitfalls
 - `references/terms-db-alignment.md` — Batch-aligning glossary terms against the MPI terms database
+- `references/translation-pitfalls.md` — Recurring CN→EN mistranslation patterns (关爱→compassion, 生生增上, etc.)
+- `references/proofreading-patterns.md` — DOCX/PDF extraction techniques, block-based pairing, common manuscript issues
 
 ## Scripts
 
