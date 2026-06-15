@@ -56,7 +56,7 @@ Four registers observed, useful as style targets:
 7. **Em-dash convention**: AGENTS.md mandates `—` (Unicode em-dash) → `---` (three hyphens) in English djot. When drafting, type `---` for em-dashes, not `—`. The Chinese source often uses `------` (six hyphens) as its em-dash equivalent — translate to `---`, never to `—`. Before declaring done, run a sanity check: `grep -c '—' target.dj` should be 0.
 8. After translation, offer to align against the terms DB for verification
 
-## Diacritics Convention
+## Sanskrit Italicization\n\nSanskrit/foreign loan words must be italicized on **first occurrence** in the body text. Use `*term*` (djot emphasis). This applies to all non-English Buddhist terms:\n\n- Common: bodhisattva, bodhicitta, samsara, karma, nirvana, Sangha, sutra, Dharma\n- Less common: Mahayana, Sravaka, Vinaya, Lamrim, Ksitigarbha, Samantabhadra, Chan, Arhatship, Theravada\n\nDo NOT italicize subsequent occurrences of the same term. Track which terms have been italicized as you process the body. Only italicize in the running body text, not in TOC, headings, or title lines.\n\nPitfall: some terms like \"karma\" and \"Dharma\" are common enough in English Buddhist\npublishing to appear unitalicized. Follow the convention of the target publication;\nwhen in doubt, italicize on first use.\n\n## Diacritics Convention
 
 Follow the terms DB, not academic Sanskrit. See `references/diacritics-convention.md` for the full rule table. Summary:
 

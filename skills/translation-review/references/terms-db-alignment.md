@@ -2,36 +2,40 @@
 
 Batch-align translation glossary entries and body text against the MPI terms database.
 
-## Setup
+## Module API (preferred)
 
-Start the HTTP API server if not running:
+Import directly in `execute_code` scripts — no subprocess, no server, no text parsing:
+
+```python
+import sys
+sys.path.insert(0, '/home/user/documents/mpi/terms-search')
+from search import search
+
+results = search("三级修学", limit=5)
+results = search("空性", loc="心经", src="DoT定稿", limit=5)
+# returns list of {zh, en, loc, source} dicts
 ```
-python3 /home/user/documents/mpi/terms-search/server.py &
-```
-Server listens on port 8910.
 
 ## Batch lookup pattern
 
-Use Python via execute_code to query the API for multiple terms:
-
 ```python
-import urllib.request, json, urllib.parse
+import sys
+sys.path.insert(0, '/home/user/documents/mpi/terms-search')
+from search import search
 
 terms = ["三无漏学", "八步三禅", "闻思修", ...]
+author_sources = {"DoT定稿", "内部特色词", "佛教术语", "经论名"}
 
 for term in terms:
-    q = urllib.parse.quote(term)
-    resp = urllib.request.urlopen(f"http://localhost:8910/search?q={q}&limit=5", timeout=10)
-    data = json.loads(resp.read())
-    # Filter to authoritative sources
-    author_sources = ["DoT定稿", "内部特色词", "佛教术语", "经论名"]
-    relevant = [r for r in data["results"] if r["source"] in author_sources]
-    # Compare against current translation, report mismatches
+    results = search(term, limit=10)
+    relevant = [r for r in results if r["source"] in author_sources]
+    for r in relevant:
+        print(f"{r['zh']} → {r['en']}  [{r['source']}]")
 ```
 
-Or with curl:
-```
-curl -s "http://localhost:8910/search?q=三级修学&limit=5" | python3 -c "import sys,json; ..."
+Or filter to a single authoritative source directly:
+```python
+results = search("三级修学", src="DoT定稿", limit=5)
 ```
 
 ## Priority ranking
@@ -56,6 +60,5 @@ When the same term has entries in multiple source tables, prefer:
 ## Pitfalls
 
 - `replace_all` can create doubled words when the surrounding context already contains the replacement string (e.g., "The Eight Steps" → "The The Eight Steps"). Prefer targeted single-replacement patches.
-- The `search.py` CLI does not support `src:` or `loc:` filters — use the HTTP API.
 - Start patches from the bottom of the file upward to preserve line numbers.
 - Some DB entries are contextual phrases (e.g., "珍惜法缘" → a full sentence), not standalone term translations. Use standalone term entries where available.

@@ -18,6 +18,7 @@ Available: `terms-search`, `dharma-translation`, `translation-review`, `chinese-
 
 - DB: `terms-search/termlib.duckdb`
 - CLI: `terms-search/search.py <query> [limit]` (preferred over HTTP)
+- Module: `from search import search; search("空性", limit=5, loc="...", src="...")` → list of `{zh, en, loc, source}` dicts
 - Priority: DoT定稿 > 内部特色词 > 佛教术语 > 经论名
 
 ## Directory Structure
@@ -48,6 +49,10 @@ translate-files/<topic>/<article>/
 
 ## Scripts
 
-Fish shell in `scripts/`.
+Utility scripts in `scripts/` (fish for CLI wrappers, Python for data processing).
+Agents should write repetitive logic here and run via `terminal` rather than
+regenerating the same Python in execute_code each turn.
 
 - `scripts/dj2docx.fish <target.dj>` — pandoc to `/tmp/`
+- `scripts/proofread-pdf.py <docx> <pdf>` — word-level diff between manuscript and typeset PDF
+- `scripts/gen-bilingual.fish <dir>` — produce `bilingual.dj` from `source.dj` + `target.dj`

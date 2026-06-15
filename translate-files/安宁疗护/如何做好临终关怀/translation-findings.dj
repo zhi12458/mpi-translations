@@ -1,0 +1,23 @@
+# Translation Review — 如何做好临终关怀
+#
+# Source: source.dj (CN)
+# Target: target.dj (EN)
+# Date: 2026-06-15
+
+## Summary
+
+Translation quality: **excellent**. Accurate terminology, fluent English prose, correct Buddhist register throughout. Line count, heading count, and paragraph alignment all match. No mechanical issues (em-dashes, Chinese punctuation, markdown artifacts).
+
+## Findings
+
+### Fixed
+
+1. Source TOC had `[text](#anchor)\` markdown link format — replaced with clean bullet list matching target convention.
+
+### Notes (informational, no action needed)
+
+1. L51: "不必直接从往生切入" → "need not start directly with the topic of rebirth." The term 往生 in Pure Land context specifically means "rebirth in the Pure Land" — the target uses the more generic "rebirth." In context (preceded by mention of Buddha-name recitation), the meaning is clear enough.
+
+2. Terminology alignment with terms DB is solid across all key Buddhist terms: 三级修学→Three-Stage Practice, 道次第→Lamrim, 中有→intermediate existence, 往生净土→rebirth in the Pure Land, etc. Consistent usage throughout the file.
+
+3. Transliteration: "Amitabha" and "Amitabha Buddha" both appear — acceptable stylistic variation. "Kṣitigarbha" uses diacritics consistently for academic register.

@@ -1,6 +1,6 @@
 ---
 name: translation-review
-description: Review Chinese-English translations for quality issues - terminology, grammar, consistency, formatting. Two workflows: CSV/XLSX batch review (write .dj suggestions) and .dj comparison line-by-line review (surgical patching).
+description: Review Chinese-English translations for quality issues - terminology, grammar, consistency, formatting. Two workflows - CSV/XLSX batch review (write .dj suggestions) and .dj comparison line-by-line review (surgical patching).
 ---
 
 # Translation Review
@@ -22,7 +22,6 @@ Use `read_file` with offsets for complete coverage. Don't sample.
 ### 3. Write a systematic analysis script
 
 Write to `/tmp/script.py`, run with `python3 /tmp/script.py`. No heredocs or `-c`.
-
 The script should:
 - Parse CSV with `csv.DictReader`
 - Apply detection rules per category
@@ -68,7 +67,7 @@ Use `terminal: cat` — `read_file` deduplicates within a session.
 **Sanity checks first** (mechanical, no judgment needed):
 - **Line count**: source and target must match exactly. Mismatch means paragraphs were dropped, merged, or split.
 - **Em-dash convention**: AGENTS.md says English em-dash (`—`) → three hyphens (`---`). The Chinese source often uses `------` (six hyphens) as its em-dash equivalent — convert to `---` in target, not to a Unicode `—`. A find/replace `—` → `---` over the target file catches all instances at once; a typical long file has 30–50.
-- **TOC format**: AGENTS.md says TOC must be a plain bullet list, no link targets. If target still has `[I. Heading](#...)` markdown links, strip them.
+- **TOC format**: AGENTS.md says TOC must be a plain bullet list, no link targets. If target still has `[I. Heading](#...)` markdown links, strip them. Also check source TOC — per MPI conventions, both source and target should use clean bullet format.
 
 **Terms database drift** (systematic):
 - Cross-reference glossary terms against the MPI terms database
@@ -95,7 +94,9 @@ Use `terminal: cat` — `read_file` deduplicates within a session.
 - Redundant English calques: when the target mirrors a Chinese grammar pattern literally, it can read as a typo (e.g. "mind of death-mindfulness" for 念死之心 — should be "mindfulness of death").
 - Clunky idioms: 一念之差 → "a single thought of difference" is unidiomatic. Standard renderings exist (e.g. "a single errant thought", "a moment's carelessness", or rephrase as "a single thought can make all the difference").
 
-**Missing content**: bare headings with no body — flag, don't invent.
+**Missing content**:
+- **Bare headings** with no body — flag, don't invent.
+- **Mid-paragraph truncation** (common in MPI translations): CN paragraph covers 3–5 clauses but EN stops after 1–2 sentences. Detection: compare semantic density, not character count. CN often packs more meaning per character than EN. Signal: CN has quoted speech, poems, multiple examples, or a rhetorical climax that's absent from EN. Flag as "Missing Content" not "Incomplete" — these are usually draft-stage cutoffs, not intentional omissions.
 
 ### 3. Dump findings to `translation-findings.dj`
 
@@ -110,12 +111,62 @@ Finding N — Title (line numbers)
 
 Surgical string replacement. Verify every patch with `cat` — never rely on `read_file` (session dedup).
 
+### 5. Final sweep
+
+Run `python3 scripts/sweep.py <source.dj> <target.dj> [--stale term1,term2] [--new term1,term2]`. This runs all mechanical checks in one call: line parity, heading parity, Unicode em/en-dashes, Markdown bold, Chinese punctuation, TOC link artifacts, unbalanced quotes, and stale/new term assertions. Run even when no content patches were needed — it serves as final validation.
+
 ## Buddhist terminology reference
 
 See `references/buddhist-terminology.md` for Chinese-English term mappings and common pitfalls.
 
+## Workflow C: Typeset proofread (DOCX manuscript vs PDF layout)
+
+Use when the user gives a manuscript DOCX and a typeset PDF and asks to proofread.
+Goal: catch typesetting errors (missing text, typos, wrong special characters, bad line
+breaks), not translation quality.
+
+### 0. Clarify scope FIRST
+
+Before any extraction: ask what they want checked. "Proofread" can mean:
+- Text accuracy (missing/doubled words, typos introduced by typesetter)
+- Special characters (quotes, dashes, ellipses)
+- Formatting (page numbers, headers, TOC layout)
+- All of the above
+
+Do not run extraction pipelines until scope is clear.
+
+### 1. Extract text
+
+- DOCX → plain: `pandoc file.docx -f docx -t plain --wrap=none`
+- PDF → plain: `pdftotext -layout file.pdf` (preserves positional info)
+
+### 2. Clean PDF artifacts
+
+- Strip InDesign slug lines, page headers, page numbers
+- Join hyphenated line breaks (line ending `-` + next line starting lowercase)
+- Fix drop-cap artifacts (e.g. `L iving` → `Living`)
+
+### 3. Compare
+
+- Extract English paragraphs from DOCX (skip Chinese lines, match blank-line pattern)
+- Check each DOCX paragraph exists as substring in PDF body text
+- Flag paragraphs not found; investigate each (may be heading renumbering, not missing)
+
+### Pitfalls specific to this workflow
+
+- **PDF paragraph joining is lossy** — page breaks split paragraphs. Don't expect
+  perfect paragraph matching; check content coverage, not paragraph identity.
+- **Heading numbering differs** — DOCX has `1.`, `(1)`; PDF has `I`, `1)`. Ignore
+  heading-only differences.
+- **InDesign PDFs insert extra spaces** around drop caps and special characters.
+  Normalize multi-space to single space before comparison.
+
 ## Pitfalls
 
+- **Clarify scope before diving into extraction pipelines** — if the user says
+  "proofread this" or "校对这篇文章", ask what specifically they want checked
+  before running pandoc/pdftotext. Getting interrupted mid-pipeline wastes
+  context.
 - **Don't use heredocs or `-c`** — write to `/tmp/script.py` first
 - **Deduplicate aggressively** — group by problem type, not per-row
 - **Buddhist terminology is technical** — don't guess. When uncertain, flag for review
@@ -125,9 +176,13 @@ See `references/buddhist-terminology.md` for Chinese-English term mappings and c
 - **Em-dash drift**: AGENTS.md mandates `—` (Unicode em-dash) → `---` (three hyphens) in English djot. The Chinese source often uses `------` (six hyphens) as its em-dash equivalent; converters or translators may preserve it as a Unicode `—` in the target, which is a convention violation. Run a single find/replace `—` → `---` over the target. Long files typically have 30–50 such instances.
 - **Batch terminology lookups** — when checking many terms against the terms DB, run them in one `execute_code` script that loops over a query list and calls `search.py` via `subprocess.run`. One terminal call per term floods the context with repetitive output.
 - **Clunky idioms aren't translation errors, they're review items** — a literal calque of a Chinese idiom can read as a typo to a native English reader. Flag these under "Cleanup needed", not "Real errors", and suggest a standard rendering rather than trying to fix in place without confirmation.
-- **Stale-phrasing sweep before declaring done** — after applying patches, run a single script that asserts the target contains zero of the fixed-but-replaced strings, zero Unicode em/en-dashes, and the expected count of the new phrasings. Missed instances (e.g. "mind of death-mindfulness" fixed on L21–L24 but forgotten on L68) survive regular spot-checks. Use `stale = [...]` and `new = [...]` lists; print `[STILL PRESENT (N)]` and `[OK]` per item. Also assert `line_count == source.line_count` and `heading_count == source.heading_count`.
 
 ## References
 
 - `references/buddhist-terminology.md` — Chinese-English Buddhist term mappings and pitfalls
 - `references/terms-db-alignment.md` — Batch-aligning glossary terms against the MPI terms database
+
+## Scripts
+
+- `scripts/sweep.py` — Mechanical validation sweep for completed reviews
+- `scripts/review_csv.py` — Batch CSV/XLSX translation review

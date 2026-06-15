@@ -1,0 +1,282 @@
+# Translation Findings — 佛教徒的人生态度
+
+{% Full review of bilingual.dj (323 paragraphs, DOCX English as target). %}
+
+## A. Missing Content (Critical)
+
+Translation truncated mid-paragraph. CN paragraphs fully drafted in earlier sections, suggesting these were cut short.
+
+### A1. Line 66–67 — Missing 兴趣/先天后天/责任感
+
+CN covers: perception → looking back → 兴趣是最好的老师 → 先天因素（过去生积累）+ 后天培养 → 责任感使命感
+EN stops after first two sentences.
+
+### A2. Line 123–124 — Missing Jianzhen quote and conclusion
+
+EN stops at "became the founding patriarch of the Vinaya School in Japan."
+Missing: rhetorical question, Jianzhen's quote "传法事大，浩淼大海何足为惧", and paragraph conclusion.
+
+### A3. Line 231–232 — Missing nirvana discussion
+
+EN stops at "any worldly happiness is only a brief relief from suffering, fleeting and impermanent."
+Missing: entire nirvana discussion, root of suffering, illness metaphor.
+
+### A4. Line 237–238 — Missing Liang Qichao quote
+
+EN stops at "a lifelong commitment that extends endlessly into the future."
+Missing: rhetorical climax and Liang Qichao on the bodhisattva spirit.
+
+### A5. Line 303–304 — Missing three Chan poems
+
+EN ends with colon suggesting poems follow. Three Chan poems absent. Also missing paragraph conclusion about young people fearing Buddhism.
+
+### A6. Line 462–463 — Missing Buddha's motivation
+
+EN ends at "can we do so without regret?"
+Missing: Buddha witnessing suffering, seeking truth, and the question about what Buddhism means by contemplating death.
+
+### A7. Line 468–469 — Missing Confucius/Western philosophers
+
+EN: single short sentence. Missing: Confucius quote, Western philosophers, and the link between understanding death and life perspective.
+
+### A8. Line 519–520 — Missing rarity of human birth
+
+EN stops at "Shakyamuni Buddha attained enlightenment here in the human world—not in a heavenly one."
+Missing: the fingernail-dirt analogy and discussion of why human realm is ideal for practice.
+
+### A9. Line 558–559 — Missing Medicine Buddha Sutra content
+
+EN: single sentence. Missing: entire Medicine Buddha Sutra discussion about meeting material needs, healing illness, and end-of-life care.
+
+### A10. Line 597–598 — Missing end-of-life care continuation
+
+EN ends mid-paragraph. Missing: "所以多数人并没有十分的把握..." and the rest of the end-of-life care discussion.
+
+### A11. Line 657–658 — Missing pure wealth discussion
+
+EN ends after first sentence. Missing: discussion of career choice, precepts, and the relationship between right livelihood and practice.
+
+### A12. Line 660–661 — Missing Diamond Sutra merit comparison
+
+EN missing: the detailed seven-comparison passage from the Diamond Sutra about merit.
+
+---
+
+## B. Grammar
+
+### B1. Line 55 — Subject-verb agreement
+
+```
+- being proactive seem positive
++ being proactive seems positive
+```
+
+### B2. Line 205 — Parallel structure
+
+```
+- find the value of life or understanding the purpose of living
++ find the value of life or understand the purpose of living
+```
+
+### B3. Line 292 — Subject-verb agreement
+
+```
+- pessimism easily lead to despair
++ pessimism easily leads to despair
+```
+
+### B4. Line 394 — Missing space after comma
+
+```
+- Dependent Origination,Sentient beings
++ Dependent Origination, sentient beings
+```
+
+### B5. Line 493 — Missing auxiliary verb
+
+```
+- the Buddha inspired to pursue
++ the Buddha was inspired to pursue
+```
+
+### B6. Line 502 — Wrong phrasing
+
+```
+- lose their part to guide the public
++ lose their role in guiding the public
+```
+
+### B7. Line 517 — Wrong participle
+
+```
+- heavenly beings are only indulged in pleasures
++ heavenly beings are only indulging in pleasures
+```
+
+### B8. Line 526 — Word order
+
+```
+- but do deeply we understand
++ but do we deeply understand
+```
+
+### B9. Line 613 — Missing word
+
+```
+- and say that neglect their parents
++ and say that they neglect their parents
+```
+
+### B10. Line 643 — Redundant "both"
+
+```
+- both in both China and abroad
++ both in China and abroad
+```
+
+### B11. Line 676 — Subject-verb agreement
+
+```
+- community ... actively engage
++ community ... actively engages
+```
+
+### B12. Line 877 — Missing conjunction
+
+```
+- like glue, binds people together
++ like glue that binds people together
+```
+
+### B13. Line 901 — Missing "but"
+
+```
+- not only ... and should also
++ not only ... but also
+```
+
+### B14. Line 985 — Redundant wording
+
+```
+- identified its root causes of it
++ identified its root causes
+```
+
+---
+
+## C. Word Choice
+
+### C1. Line 31 — "Cherish life or face death"
+
+CN: 重生还是重死 = "focus on/value life or focus on/value death". "Face death" implies confronting death, not weighing it heavily. Consider: "Focus on life or on death."
+
+### C2. Line 742 — Spelling
+
+```
+- Chan adobe
++ Chan abode
+```
+
+### C3. Line 820 — "cynicism" for 厌世
+
+CN: 厌世 = world-weariness / pessimism toward life. "Cynicism" (犬儒主义) has different connotations in English.
+
+### C4. "ordination" vs "renunciation" for 出家
+
+Mixed usage throughout. Lines 226, 229, 235, 814, 817 use "ordination" (correct). Other sections use "renunciation." Standardize to "ordination."
+
+### C5. Line 988 — Terminology inconsistency
+
+"Twelvefold Dependent Arising" here vs "Twelve Links of Dependent Origination" elsewhere (line 886 etc.). Standardize.
+
+---
+
+## D. Chapter Numbering
+
+### D1. Line 844 — Wrong Roman numeral
+
+```
+- VI. To Love or Not to Love?
++ VII. To Love or Not to Love?
+```
+
+### D2. Line 994 — Chapter mismatch
+
+CN: 九、结束语. EN: VIII. Conclusion. Should be IX.
+
+---
+
+## E. PDF Typeset vs DOCX Manuscript — Substantive Differences
+
+The typeset PDF (二排) contains editorial changes not in the DOCX manuscript.
+These are documented for reference; which version is authoritative must be decided.
+
+### E1. "ordination" → "renunciation" (×3)
+
+DOCX: "ordination" / "Ordination" / "True ordination"
+PDF: "renunciation" / "Renunciation" / "True renunciation"
+CN: 出家. Standard translation is "ordination."
+
+### E2. "arising, abiding, emptying" → "forming, existing, vanishing"
+
+DOCX: "arising, abiding, decaying, and emptying"
+PDF: "forming, existing, decaying, and vanishing"
+CN: 成住坏空. Both are non-standard; standard is "formation, existence, decay, emptiness."
+
+### E3. "Arising," → "Origination,"
+
+Context: "Arising, abiding, changing, and ceasing" → "Origination, abiding, changing, and ceasing"
+
+### E4. "Attitude" → "Attitudes" (×3 in title)
+
+DOCX: "The Life Attitude of Buddhists" in some places
+PDF: "The Life Attitudes of Buddhists" throughout
+
+### E5. "renouncing the world" → "pessimistic toward life"
+
+DOCX: "view Buddhism as renouncing the world"
+PDF: "view it as pessimistic toward life"
+CN: 厌世
+
+### E6. "cynicism" → "pessimism toward life"
+
+DOCX: "while cynicism is passive and negative"
+PDF: "while pessimism toward life is passive and negative"
+CN: 厌世
+
+### E7. "being aimless" → "who feel"
+
+DOCX: "young people being aimless, hopeless"
+PDF: "young people who feel aimless and hopeless"
+CN: 没有目标
+
+### E8. "suffice. Its" → "be enough. That relief loses its"
+
+DOCX: "no amount of temporary relief will suffice. Its effectiveness diminishes"
+PDF: "no amount of temporary relief will be enough. That relief loses its effectiveness"
+Full sentence rewritten.
+
+### E9. "it—our" → "suffering—our"
+
+DOCX: "the root causes of it—our inner delusion"
+PDF: "the root causes of suffering—our inner delusion"
+
+### E10. "Buddhism" → "it"
+
+DOCX: "view Buddhism as renouncing the world"
+PDF: "view it as pessimistic toward life"
+
+### E11. "transcendence" → "renunciation"
+
+DOCX: "a proactive transcendence upon seeing the true nature"
+PDF: "a proactive renunciation upon seeing the true nature"
+CN: 主动超越
+
+### E12. Chapter numbering shifts
+
+DOCX uses "1.", "2.", etc. PDF uses "I", "II", etc. The DOCX uses "VIII" for chapter 8 while PDF shifts numbering (chapter 9 = "VIII" in PDF).
+
+### E13. Quote borders shifted
+
+PDF adds quotation marks around several words that DOCX leaves unquoted (e.g. "now", "this", "moment", "pure", "wealth").
+PDF adds a comma: "sutra" → "sutra," and "moment" → "moment,".
