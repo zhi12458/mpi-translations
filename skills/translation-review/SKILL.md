@@ -56,7 +56,23 @@ One entry per problem category, not per row. Mention affected row numbers.
 
 ## Workflow B: .dj comparison file review
 
-Use when input is a `.dj` comparison file (Chinese/English alternating line pairs). Produces `translation-findings.dj` and applies patches.
+Use when input is a `.dj` comparison file (Chinese/English alternating line pairs).
+
+### Two modes — always clarify which one
+
+AGENTS.md defines two workflows. Before starting, determine which mode you're in:
+
+1. **Translation review** (Workflow A in AGENTS.md): agent translated the text.
+   Authoritative `target.dj` does not exist yet. Review everything:
+   terminology, grammar, formatting, em-dashes, consistency, calques, missing content.
+   Produces `translation-findings.dj` and applies patches.
+
+2. **Proofread** (Workflow B in AGENTS.md): English comes from an existing DOCX
+   manuscript. It is authoritative. Only flag manuscript-level mechanical issues:
+   typos, double words, numbering mismatches, garbled text, duplicate text.
+   Produces `edit-suggestions.dj` ONLY — do NOT apply patches without asking.
+   Do NOT flag: terminology choices, djot formatting (em-dashes, italics),
+   translation style, calques, word order. These are translation-review concerns.
 
 ### 1. Read the full file
 
@@ -173,9 +189,9 @@ Do not run extraction pipelines until scope is clear.
 - **Never delete .dj comparison files** — intentional work artifacts
 - **Verify patches with `cat`** — `read_file` dedup makes it unreliable
 - **Re-read before fixing** — user may have made interim edits
-- **Em-dash drift**: AGENTS.md mandates `—` (Unicode em-dash) → `---` (three hyphens) in English djot. The Chinese source often uses `------` (six hyphens) as its em-dash equivalent; converters or translators may preserve it as a Unicode `—` in the target, which is a convention violation. Run a single find/replace `—` → `---` over the target. Long files typically have 30–50 such instances.
+- **Em-dash drift (translation mode only)**: AGENTS.md mandates `—` (Unicode em-dash) → `---` (three hyphens) in English djot for the translation workflow. When proofreading an existing DOCX manuscript, do NOT flag em-dashes — the manuscript's English is authoritative and this is a formatting concern for the translation workflow. If you're in translation mode and the target has Unicode em-dashes, run a single find/replace `—` → `---`. Long files typically have 30–50 such instances.
 - **Batch terminology lookups** — when checking many terms against the terms DB, run them in one `execute_code` script that loops over a query list and calls `search.py` via `subprocess.run`. One terminal call per term floods the context with repetitive output.
-- **Clunky idioms aren't translation errors, they're review items** — a literal calque of a Chinese idiom can read as a typo to a native English reader. Flag these under "Cleanup needed", not "Real errors", and suggest a standard rendering rather than trying to fix in place without confirmation.
+- **Proofread ≠ translation review** — when the user says "校对" or "proofread" and the input is a DOCX manuscript with existing English, you are in proofread mode. Do NOT flag translation quality, terminology, or djot formatting. Do NOT apply patches to bilingual.dj unless asked. Write `edit-suggestions.dj` with manuscript-level issues only. If the user later asks for translation review of the same article, write findings to a separate `translation-findings.dj`.
 
 ## References
 

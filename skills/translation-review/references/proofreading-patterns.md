@@ -1,6 +1,10 @@
 # Proofreading: Manuscript vs Typeset
 
-## Two workflows
+AGENTS.md defines two workflows: Translation (A) and Proofread (B).
+The workflows below are Proofread mode — English comes from an existing
+manuscript and is authoritative. Only flag mechanical/manuscript-level issues.
+
+## Two extraction workflows
 
 ### A. Bilingual from DOCX (standard)
 
@@ -92,3 +96,14 @@ On first occurrence in body text, wrap with `*term*`. Track seen terms across
 the full body. Terms: bodhisattva, bodhicitta, samsara, Dharma, karma, nirvana,
 Sangha, sutra, Mahayana, Sravaka, Vinaya, Lamrim, Ksitigarbha, Samantabhadra,
 Chan, Arhatship, Theravada.
+
+## Proofread scope boundary
+
+When proofreading a DOCX manuscript:
+- **DO flag**: typos, double words, double punctuation, numbering mismatches,
+  garbled text, translator notes, duplicate names, capitalization errors.
+- **Do NOT flag**: em-dash formatting (`—` vs `---`), terminology choices,
+  translation style, calques, word order. The manuscript English is authoritative.
+- **Do NOT apply fixes** — write `edit-suggestions.dj` only.
+- If the user asks for translation review separately, write findings to
+  `translation-findings.dj`.

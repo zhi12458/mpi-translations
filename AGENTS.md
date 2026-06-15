@@ -12,7 +12,7 @@ skills:
 
 {% `hermes config set` stringifies list values — edit config.yaml directly. %}
 
-Available: `terms-search`, `dharma-translation`, `translation-review`, `chinese-text-normalize`, `pptx-translate`, `pdf-to-docx-conversion`.
+Available: `translation`, `terms-search`, `translation-review`, `chinese-text-normalize`, `pptx-translate`, `pdf-to-docx-conversion`.
 
 ## Terms Database
 
@@ -51,8 +51,8 @@ Source text in `.dj` or `.docx` (Chinese only).
 
 ### Rules
 
-1. Load `dharma-translation` and `terms-search` skills before starting.
-2. Search terms DB with `search.py` for key Buddhist terms.
+1. Load `translation` and `terms-search` skills before starting.
+2. Search terms DB for key Buddhist terms.
 3. TOC: plain bullet lists, no link targets, no page numbers.
 4. Djot formatting:
    - Emphasis: `*text*` (single asterisks). Never `**` (Markdown bold).

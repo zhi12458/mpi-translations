@@ -18,8 +18,8 @@ skills:
 
 | Name | What it does |
 |---|---|
+| `translation` | Translate Chinese↔English Buddhist/Dharma content |
 | `terms-search` | Full-text search across MPI term database |
-| `dharma-translation` | Translate Chinese↔English Buddhist content |
 | `translation-review` | Review translations for quality issues |
 | `chinese-text-normalize` | Normalize Chinese markdown line breaks |
 | `pptx-translate` | Translate PowerPoint files |
