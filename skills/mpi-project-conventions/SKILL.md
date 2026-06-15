@@ -74,10 +74,7 @@ Remove entries for sibling articles — the combined TOC is a print-document art
 
 Structure: interleave Chinese source and English target paragraph-by-paragraph.
 
-**Preferred workflow**: when the DOCX manuscript has both languages in 1:1
-correspondence (Chinese, blank, English, blank), extract directly from DOCX.
-No PDF needed — the DOCX English IS the target. See
-`references/proofreading-patterns.md` for the extraction script logic.
+**Preferred workflow**: when the DOCX manuscript has both languages in 1:1\ncorrespondence, extract directly from DOCX. No PDF needed — the DOCX English IS\nthe target. Adapt `scripts/gen-bilingual-docx.py` as a starting point.\n\nPitfall: DOCX manuscripts sometimes order CN content before EN content within a\nsection (CN heading → CN body → EN heading → EN body) rather than strict\nCN→EN→CN→EN alternation. The simple extraction in `gen-bilingual-docx.py` fails\nfor these. Use block-based extraction instead — see\n`references/proofreading-patterns.md` for the approach.
 
 **Title & subtitle**: adjacent pair (source, target, no blank between), then a single blank line before the next pair.
 
@@ -129,6 +126,8 @@ This keeps the agent's output concise — the user sees the results, not the cod
 - `dj2docx.fish` — convert `target.dj` → `/tmp/<dirname>-英文.docx` via pandoc.
   Usage: `fish scripts/dj2docx.fish <path-to-target.dj>`
 - `proofread-pdf.py <docx> <pdf>` — compare manuscript DOCX against typeset PDF.
-- `gen-bilingual-docx.py` — generate `bilingual.dj` directly from DOCX manuscript
-  (English target comes from DOCX, not PDF). Article-specific; name with hash.
+- `gen-bilingual-docx.py` — template for generating `bilingual.dj` directly from DOCX manuscript.
+  Adapt for each article by changing paths and article-specific metadata.
+  For articles with mixed CN→EN ordering, use block-based extraction instead
+  of simple alternation (see `references/proofreading-patterns.md`).
 - `gen-bilingual.fish <article-dir>` — generate `bilingual.dj` from `source.dj` + `target.dj`.

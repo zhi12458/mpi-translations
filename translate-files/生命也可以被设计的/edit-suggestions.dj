@@ -1,0 +1,35 @@
+# Edit Suggestions — 生命也可以被设计的
+
+## 引言（开头部分）
+
+- 第47行 `Philosopher Nietzsche`
++ 第47行 `philosopher Nietzsche`
+  说明：此处 philosopher 是描述性用语，并非正式头衔，应小写。
+
+## 一、教育是为了育人
+
+- 第130行 CN `我曾和岳麓书院岳麓书院国学研究院朱汉民院长对谈`
++ 第130行 CN `我曾和岳麓书院国学研究院朱汉民院长对谈`
+  说明：Chinese source 中 "岳麓书院" 出现两次，疑为重复。
+
+## 三、生命可以被设计的依据
+
+### 3．生命延续的规律
+
+- 第155行 EN heading `2. The Principles of Life's Continuity`
++ 第155行 EN heading `3. The Principles of Life's Continuity`
+  说明：TOC 中该条目中英文均为 "3"，正文 EN 标题却写为 "2."，疑为 typo。
+
+## 二、人生最重要的设计
+
+### 2． 心理问题
+
+- 第233行 EN `warm or cold.. We should`
++ 第233行 EN `warm or cold. We should`
+  说明：双句号 typo。
+
+## 四、人性，是设计生命的基础
+
+### 2．人的两面性
+
+（已修复：中文段落已拆分为二，匹配英文两段结构。）

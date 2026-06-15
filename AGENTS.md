@@ -53,6 +53,8 @@ Utility scripts in `scripts/` (fish for CLI wrappers, Python for data processing
 Agents should write repetitive logic here and run via `terminal` rather than
 regenerating the same Python in execute_code each turn.
 
-- `scripts/dj2docx.fish <target.dj>` — pandoc to `/tmp/`
+- `scripts/docx2dj.fish <docx>` — pandoc .docx → .dj alongside the original
+- `scripts/split-bilingual.fish <combined.dj>` — split into source.dj (CN) + target.dj (EN)
+- `scripts/dj2docx.fish <target.dj>` — pandoc .dj → .docx in `/tmp/`
 - `scripts/proofread-pdf.py <docx> <pdf>` — word-level diff between manuscript and typeset PDF
 - `scripts/gen-bilingual.fish <dir>` — produce `bilingual.dj` from `source.dj` + `target.dj`
