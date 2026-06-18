@@ -6,8 +6,7 @@ Usage: python3 sweep.py <source.dj> <target.dj> [--stale term1,term2] [--new ter
 Checks:
   1. Non-empty line count parity (source == target)
   2. Heading count parity
-  3. Zero Unicode em-dash (—) / en-dash (–) in target
-  4. Zero Markdown bold (**) in target (djot uses single *)
+  3. Zero Markdown bold (**) in target (djot uses single *)
   5. Zero common Chinese punctuation in target
   6. Zero [text](#anchor) link artifacts in target TOC area (first 15 lines)
   7. Zero unbalanced double-quotes in target

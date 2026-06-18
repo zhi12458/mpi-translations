@@ -57,8 +57,6 @@ Source text in `.dj` or `.docx` (Chinese only).
 4. Djot formatting:
    - Emphasis: `*text*` (single asterisks). Never `**` (Markdown bold).
    - Comments: `{% ... %}`
-   - Em dashes in English text: `---` (three hyphens). Pandoc converts to proper em dash in docx output.
-   - En dashes in English text: `--` (two hyphens).
 5. Preserve source formatting — don't add/remove emphasis.
 6. Translate in-response — never call external translation APIs.
 

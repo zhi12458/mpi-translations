@@ -64,14 +64,14 @@ AGENTS.md defines two workflows. Before starting, determine which mode you're in
 
 1. **Translation review** (Workflow A in AGENTS.md): agent translated the text.
    Authoritative `target.dj` does not exist yet. Review everything:
-   terminology, grammar, formatting, em-dashes, consistency, calques, missing content.
+   terminology, grammar, formatting, consistency, calques, missing content.
    Produces `translation-findings.dj` and applies patches.
 
 2. **Proofread** (Workflow B in AGENTS.md): English comes from an existing DOCX
    manuscript. It is authoritative. Only flag manuscript-level mechanical issues:
    typos, double words, numbering mismatches, garbled text, duplicate text.
    Produces `edit-suggestions.dj` ONLY — do NOT apply patches without asking.
-   Do NOT flag: terminology choices, djot formatting (em-dashes, italics),
+   Do NOT flag: terminology choices, djot formatting,
    translation style, calques, word order. These are translation-review concerns.
 
 ### 1. Read the full file
@@ -97,7 +97,6 @@ category of error. Don't try to catch everything in one scan.
 - Mid-paragraph truncation: CN covers 3–5 clauses but EN stops after 1–2 sentences. Signal: CN has quoted speech, poems, or a rhetorical climax absent from EN. Flag as "Missing Content" not "Incomplete."
 
 **Pass 2 — mechanical/formatting** (also mechanical, but easy to skip):
-- **Em-dash convention**: AGENTS.md says English em-dash (`—`) → three hyphens (`---`). The Chinese source often uses `------` (six hyphens) as its em-dash equivalent — convert to `---` in target, not to a Unicode `—`. A find/replace `—` → `---` over the target file catches all instances at once; a typical long file has 30–50.
 - TOC format: AGENTS.md says TOC must be plain bullet list, no link targets. Strip `[I. Heading](#...)` markdown links if present.
 - Double words, double punctuation, capitalisation typos, processing artifacts, stray spacing in Chinese text
 - Numbering mismatches between CN and EN headings
@@ -216,8 +215,6 @@ Do not run extraction pipelines until scope is clear.
 - **Never delete .dj comparison files** — intentional work artifacts
 - **Verify patches with `cat`** — `read_file` dedup makes it unreliable
 - **Re-read before fixing** — user may have made interim edits
-- **Em-dash drift (translation mode only)**: AGENTS.md mandates `—` (Unicode em-dash) → `---` (three hyphens) in English djot for the translation workflow. When proofreading an existing DOCX manuscript, do NOT flag em-dashes — the manuscript's English is authoritative and this is a formatting concern for the translation workflow. If you're in translation mode and the target has Unicode em-dashes, run a single find/replace `—` → `---`. Long files typically have 30–50 such instances.
-  - **Before raising this**: confirm the user wants mechanical cleanup. The user may deliberately leave `—` in the .dj because it's their working source — the conversion to `---` is something they do themselves at the docx-export step, or they may want comments/findings only. Default: ask before applying a 100+ instance find/replace. If unsure, mention it in `translation-findings.dj` with a note that it's mechanical, but do NOT auto-apply.
 - **Batch terminology lookups** — when checking many terms against the terms DB, run them in one `execute_code` script that loops over a query list and calls `search.py` via `subprocess.run`. One terminal call per term floods the context with repetitive output.
 - **Proofread ≠ translation review** — when the user says "校对" or "proofread" and the input is a DOCX manuscript with existing English, you are in proofread mode. Do NOT flag translation quality, terminology, or djot formatting. Do NOT apply patches to bilingual.dj unless asked. Write `edit-suggestions.dj` with manuscript-level issues only. If the user later asks for translation review of the same article, write findings to a separate `translation-findings.dj`.
 
