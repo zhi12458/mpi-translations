@@ -7,7 +7,7 @@ Skills in `skills/`. Loaded via `~/.hermes/config.yaml`:
 ```yaml
 skills:
   external_dirs:
-  - /home/user/documents/mpi/skills
+  - $MPI_PROJECT_ROOT/skills
 ```
 
 {% `hermes config set` stringifies list values — edit config.yaml directly. %}

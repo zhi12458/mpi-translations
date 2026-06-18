@@ -87,7 +87,7 @@ Use `terminal: cat` — `read_file` deduplicates within a session.
 
 **Terms database drift** (systematic):
 - Cross-reference glossary terms against the MPI terms database
-- CLI preferred: `python3 /home/user/documents/mpi/terms-search/search.py <query>`. For a review, batch many queries in one `execute_code` script (subprocess loop) — one terminal call per term is slow and noisy.
+- CLI preferred: `python3 $MPI_PROJECT_ROOT/terms-search/search.py <query>`. For a review, batch many queries in one `execute_code` script (subprocess loop) — one terminal call per term is slow and noisy.
 - Source priority: DoT定稿 > 内部特色词 > 佛教术语 > 经论名
 - Fix both glossary comments AND body text
 - See `references/terms-db-alignment.md` for batch-lookup patterns

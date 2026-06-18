@@ -56,4 +56,5 @@ When translating guided meditation scripts, exercise guides, or posture instruct
 
 - `references/meditation-translation.md` — lighter workflow for meditation/mindfulness content
 - `references/markdown-to-djot.md` — converting .docx.md to .dj for translation prep
+- `references/bilingual-format.md` — bilingual.dj layout: source/target adjacent, blank separator between pairs
 - `references/diacritics-convention.md` — diacritics rules

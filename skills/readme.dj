@@ -9,7 +9,7 @@ Add to `~/.hermes/config.yaml`:
 ```yaml
 skills:
   external_dirs:
-  - /home/user/documents/mpi/skills
+  - $MPI_PROJECT_ROOT/skills
 ```
 
 {% Edit config.yaml directly — `hermes config set` stores list values as strings. %}

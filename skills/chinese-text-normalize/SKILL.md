@@ -34,6 +34,49 @@ The script handles three file patterns:
 - Inline page numbers (standalone 1-2 digit lines)
 - Trailing blank lines
 
+## Beyond the script: bold fragments, conjoined paragraphs, encoding
+
+The script handles simple fixed-width body text. Some PDF→markdown conversions produce more complex artifacts that need manual multi-pass Python scripts via `execute_code`:
+
+### Bold marker fragmentation
+
+`**...text...**` blocks split across blank lines with stray `**` at fragment boundaries:
+
+```
+**第三条 特色——依据五大要素，构建次第修学。营造良好氛围，提供有效**
+
+引导。
+```
+
+**Fix**: Join fragments, remove stray `**` from join point, add closing `**` to final result. See `references/bold-fragments.md` for full pattern catalog and multi-pass workflow.
+
+**Critical pitfall**: Do NOT join lines where BOTH the first and second line are complete bold blocks (start+end with `**`). These are separate entries, not fragments:
+```
+**第一条 ...之道。**    ← complete bold item
+                        ← blank line
+**第二条 ...合一。**    ← complete bold item (DON'T JOIN)
+```
+
+### Conjoined paragraphs
+
+Separate paragraphs/sections merged into one line — opposite problem to the script. Common in song lyrics, dense instructional sections. Requires semantic splitting. See `references/bold-fragments.md`.
+
+### Encoding artifacts
+
+`川` (U+5DDD) replacing `"` (curly quote) — search-and-replace: `" 道理川` → `"道理"`, `" 自己的川` → `"自己的"`.
+
+### Multi-pass approach
+
+1. **Pass 1**: Join word fragments split by blank lines (conservative — only when current line doesn't end with `。！？` or is NOT a complete bold block)
+2. **Pass 2**: Split obviously conjoined paragraphs (manual string replacements for known patterns)
+3. **Pass 3**: Fix stray bold markers, encoding artifacts, stray page numbers
+4. Verify after each pass; revert with `git checkout` if over-aggressive
+
+### Heuristic pitfalls
+
+- **Short-line join** (< 15 chars): Over-joins section headers with body, Q&A pairs (`正念是什么？\n\n就是...`). Only use for clear word-fragment continuations.
+- **Bold-end join**: Lines ending with `**` are ambiguous — either broken bold fragment or complete bold item. Check if the content before `**` forms a complete sentence (ends with `。`).
+
 ## Pitfalls
 
 - **TOC detection boundaries**: The vertical TOC end is detected by finding the first line with 3+ CJK characters. If a page number like "2" sits between TOC and body, it lands in the TOC section — harmless but visible.

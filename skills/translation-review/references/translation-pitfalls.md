@@ -73,5 +73,5 @@ initial/middle/great scope."
 ### Translating before consulting terms DB
 
 Always search key terms BEFORE translating. The dharma-translation skill says to do
-this, but it's easy to skip. Use the CLI: `/home/user/documents/mpi/terms-search/search.py <query>`.
+this, but it's easy to skip. Use the CLI: `$MPI_PROJECT_ROOT/terms-search/search.py <query>`.
 Prioritize DoT定稿 > 内部特色词 > 佛教术语 > 经论名.

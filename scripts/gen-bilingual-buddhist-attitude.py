@@ -6,11 +6,13 @@ Target: English from PDF typeset.
 Strategy: find each DOCX English paragraph in PDF body, extract
 the PDF text region for that paragraph using position boundaries.
 """
-import re, subprocess, os
+import re, subprocess
+from pathlib import Path
 
-DOCX = "/home/user/documents/mpi/translate-files/佛教徒的人生态度/定稿 佛教徒的人生态度 善鑫慧炬照禅道靖妙一观轩慈德20260527.docx"
-PDF = "/home/user/documents/mpi/translate-files/佛教徒的人生态度/0607-二排-果澄-佛教徒的人生态度-一校-多人-0607.pdf"
-OUT_DIR = "/home/user/documents/mpi/translate-files/佛教徒的人生态度"
+ROOT = Path(__file__).resolve().parent.parent
+DOCX = ROOT / "translate-files/佛教徒的人生态度/定稿 佛教徒的人生态度 善鑫慧炬照禅道靖妙一观轩慈德20260527.docx"
+PDF = ROOT / "translate-files/佛教徒的人生态度/0607-二排-果澄-佛教徒的人生态度-一校-多人-0607.pdf"
+OUT_DIR = ROOT / "translate-files/佛教徒的人生态度"
 
 
 def has_cjk(s):
@@ -256,5 +258,5 @@ if __name__ == '__main__':
     print("Extracting segments...")
     segments = extract_segments(pdf_body, positions)
     
-    out = os.path.join(OUT_DIR, 'bilingual.dj')
+    out = OUT_DIR / "bilingual.dj"
     generate(pairs, segments, out)

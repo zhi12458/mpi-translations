@@ -11,6 +11,23 @@ sed -n '1,218p' combined.md > a1.md
 sed -n '220,282p' combined.md > a2.md
 ```
 
+## TOC stripping
+
+Pandoc docx→md produces a markdown TOC with tab-separated page numbers:
+
+```markdown
+[一、对佛教的感悟\t1](#一、对佛教的感悟)
+[二、佛教与人类文明\t5](#二、佛教与人类文明)
+```
+
+Strip before conversion:
+
+```bash
+sed -i '/^\[.*\t.*\](#.*)$/d' input.md
+```
+
+Or in Python: skip lines matching `line.startswith("[") and "\t" in line and "](#" in line`.
+
 ## Heading anchor cleanup
 
 Pandoc's docx→md conversion adds `{#heading-id}` anchors to every heading:

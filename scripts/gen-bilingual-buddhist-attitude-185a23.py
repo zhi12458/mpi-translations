@@ -1,10 +1,12 @@
 """Generate bilingual.dj from DOCX manuscript only (no PDF).
 Source: Chinese from DOCX. Target: English from DOCX.
 """
-import re, subprocess, os
+import re, subprocess
+from pathlib import Path
 
-DOCX = "/home/user/documents/mpi/translate-files/佛教徒的人生态度/定稿 佛教徒的人生态度 善鑫慧炬照禅道靖妙一观轩慈德20260527.docx"
-OUT_DIR = "/home/user/documents/mpi/translate-files/佛教徒的人生态度"
+ROOT = Path(__file__).resolve().parent.parent
+DOCX = ROOT / "translate-files/佛教徒的人生态度/定稿 佛教徒的人生态度 善鑫慧炬照禅道靖妙一观轩慈德20260527.docx"
+OUT_DIR = ROOT / "translate-files/佛教徒的人生态度"
 
 def has_cjk(s):
     return any('\u4e00' <= c <= '\u9fff' for c in s)
@@ -124,5 +126,5 @@ if __name__ == '__main__':
     pairs = extract_pairs(text)
     print(f"  Pairs: {len(pairs)}")
     
-    out = os.path.join(OUT_DIR, 'bilingual.dj')
+    out = OUT_DIR / "bilingual.dj"
     generate(pairs, out)
