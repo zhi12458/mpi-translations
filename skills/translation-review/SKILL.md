@@ -76,43 +76,48 @@ AGENTS.md defines two workflows. Before starting, determine which mode you're in
 
 ### 1. Read the full file
 
-Use `terminal: cat` — `read_file` deduplicates within a session.
+Use `read_file` with `offset` and `limit` for full coverage of large files
+(this session had 322 lines, 93KB). For files >200 lines, paginate
+explicitly rather than reading the whole thing at once.
 
-### 2. Scan for problems (ordered by severity)
+If you have already read part of the file with `read_file` earlier in the
+session, use `terminal: cat` (or `sed -n 'A,Bp'`) to get an un-deduped view
+of the rest. `read_file` deduplicates within a session.
 
-**Sanity checks first** (mechanical, no judgment needed):
+### 2. Scan for problems — three passes, in order
+
+The review is best done in three distinct passes, each catching a different
+category of error. Don't try to catch everything in one scan.
+
+**Pass 1 — terminology + consistency + line count** (fast, mechanical):
 - **Line count**: source and target must match exactly. Mismatch means paragraphs were dropped, merged, or split.
-- **Em-dash convention**: AGENTS.md says English em-dash (`—`) → three hyphens (`---`). The Chinese source often uses `------` (six hyphens) as its em-dash equivalent — convert to `---` in target, not to a Unicode `—`. A find/replace `—` → `---` over the target file catches all instances at once; a typical long file has 30–50.
-- **TOC format**: AGENTS.md says TOC must be a plain bullet list, no link targets. If target still has `[I. Heading](#...)` markdown links, strip them. Also check source TOC — per MPI conventions, both source and target should use clean bullet format.
+- Same CN term translated differently across the file (e.g. 人生佛教/人间佛教 conflation, 恨→resentment, 修行/修学)
+- Buddhist terminology against the MPI terms DB (see terms-db-alignment below)
+- Mistranslation of key terms, wrong proper names, garbled text
+- Mid-paragraph truncation: CN covers 3–5 clauses but EN stops after 1–2 sentences. Signal: CN has quoted speech, poems, or a rhetorical climax absent from EN. Flag as "Missing Content" not "Incomplete."
 
-**Terms database drift** (systematic):
+**Pass 2 — mechanical/formatting** (also mechanical, but easy to skip):
+- **Em-dash convention**: AGENTS.md says English em-dash (`—`) → three hyphens (`---`). The Chinese source often uses `------` (six hyphens) as its em-dash equivalent — convert to `---` in target, not to a Unicode `—`. A find/replace `—` → `---` over the target file catches all instances at once; a typical long file has 30–50.
+- TOC format: AGENTS.md says TOC must be plain bullet list, no link targets. Strip `[I. Heading](#...)` markdown links if present.
+- Double words, double punctuation, capitalisation typos, processing artifacts, stray spacing in Chinese text
+- Numbering mismatches between CN and EN headings
+- Redundant English calques: when the target mirrors a Chinese grammar pattern literally, it can read as a typo (e.g. "mind of death-mindfulness" for 念死之心 — should be "mindfulness of death"). Clunky idioms: 一念之差 → "a single thought of difference" is unidiomatic. Standard renderings exist (e.g. "a single errant thought," "a moment's carelessness," or rephrase as "a single thought can make all the difference").
+
+**Pass 3 — flow/tonal/calques** (read the whole English as prose):
+- Re-read the full English target. Does it hang together as prose, or does it read as "translationese"?
+- Dramatic verbs that are calques of Chinese: "draw forth," "into full play," "shoulder," "look to with hope." See `references/translation-pitfalls.md` for the full calque checklist.
+- Subject-shift calques: English substitutes a concrete agent (practitioners, people) for an abstract system noun (Buddhism, religion) — see pitfalls.
+- Factual inconsistencies across paired descriptions of the same person/place/thing.
+- Tonal coherence inside parallel lists: verb choice should be identical across First/Second/Third items.
+- Intensifier drift: same intensifier ("profoundly important") used 3+ times in one section reads as over-translation.
+- The user may explicitly request this pass ("are the words together nicely?", "does it read well?"). Treat such prompts as a signal to do the full re-read, not just spot-check.
+
+**Terms database drift** (cross-cutting — apply during Pass 1):
 - Cross-reference glossary terms against the MPI terms database
 - CLI preferred: `python3 $MPI_PROJECT_ROOT/terms-search/search.py <query>`. For a review, batch many queries in one `execute_code` script (subprocess loop) — one terminal call per term is slow and noisy.
 - Source priority: DoT定稿 > 内部特色词 > 佛教术语 > 经论名
 - Fix both glossary comments AND body text
 - See `references/terms-db-alignment.md` for batch-lookup patterns
-
-**Real errors** (affect meaning):
-- Mistranslation of key terms
-- Garbled/malformed source text
-- Wrong proper names or technical terms
-
-**Inconsistency** (confusing but not wrong):
-- Terminology drift across file
-- Numbering style chaos
-- Grammatical voice/person shifts
-
-**Cleanup needed**:
-- Processing artifacts (HTML comments, markers)
-- Stray spacing in Chinese text
-- Awkward line splits
-- Odd word choices
-- Redundant English calques: when the target mirrors a Chinese grammar pattern literally, it can read as a typo (e.g. "mind of death-mindfulness" for 念死之心 — should be "mindfulness of death").
-- Clunky idioms: 一念之差 → "a single thought of difference" is unidiomatic. Standard renderings exist (e.g. "a single errant thought", "a moment's carelessness", or rephrase as "a single thought can make all the difference").
-
-**Missing content**:
-- **Bare headings** with no body — flag, don't invent.
-- **Mid-paragraph truncation** (common in MPI translations): CN paragraph covers 3–5 clauses but EN stops after 1–2 sentences. Detection: compare semantic density, not character count. CN often packs more meaning per character than EN. Signal: CN has quoted speech, poems, multiple examples, or a rhetorical climax that's absent from EN. Flag as "Missing Content" not "Incomplete" — these are usually draft-stage cutoffs, not intentional omissions.
 
 ### 3. Dump findings to `translation-findings.dj`
 
