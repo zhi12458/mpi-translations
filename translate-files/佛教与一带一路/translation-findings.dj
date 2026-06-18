@@ -1,0 +1,145 @@
+# First Pass Translation Findings — 佛教与一带一路
+
+82 pairs, all paired. No line count mismatch. No missing content truncation detected.
+
+---
+
+## I. Encountering Buddhism: Personal Reflections
+
+### Finding 1 — 人生佛教 → "Humanistic Buddhism" (L43–44, L52–53)
+
+- Chinese: 弘扬**人生佛教** / **人生佛教**建设
+- English: promoting **Humanistic Buddhism** / developing **Humanistic Buddhism**
+- Issue: 人生佛教 (Taixu's "Buddhism for Human Life") is distinct from 人间佛教 (Yinshun's "Humanistic Buddhism"). Conflating them erases a significant doctrinal distinction in modern Chinese Buddhism.
+- Suggest: "Buddhism for Human Life" or "Human Life Buddhism" (keep consistent across both occurrences).
+
+### Finding 2 — 修学 → "practice" (L49–50)
+
+- Chinese: 我在几十年的**修学**过程中发现
+- English: Through several decades of **practice**, I have discovered
+- Issue: 修学 combines 修 (practice/cultivation) and 学 (study). "Practice" alone drops the study dimension that Jiqun emphasizes throughout.
+- Suggest: "practice and study" or "cultivation and learning"
+
+### Finding 3 — 实践 → "efforts" (L55–56)
+
+- Chinese: 这些思考和**实践**，使我对佛法价值的认识日益深入
+- English: Through these reflections and **efforts**, my understanding of the Dharma's value has steadily deepened
+- Issue: 实践 means "practice/actual doing," not just "efforts." Loses the practical cultivation dimension.
+- Suggest: "practice"
+
+### Finding 4 — 永恒的困惑 → "perennial questions" (L46–47)
+
+- Chinese: 生命还有**永恒的困惑**
+- English: life also poses **perennial questions**
+- Issue: 永恒 means "eternal," not "perennial" (which means recurring). The point is that these questions are ultimate/eternal, not that they recur seasonally.
+- Suggest: "eternal questions" or "ultimate questions"
+
+---
+
+## II. Buddhism and Human Civilization
+
+### Finding 5 — 文明传播史 → "history of cultural transmission" (L67–68)
+
+- Chinese: 是**文明传播史**上的一个奇迹
+- English: is a miracle in the history of **cultural transmission**
+- Issue: 文明 is "civilization," not "culture." The passage is about civilizational spread (文明传播), not cultural transmission (文化传播).
+- Suggest: "history of civilizational transmission" or "history of the spread of civilizations"
+
+### Finding 6 — 西来东渐 inconsistent (L83, L85–86)
+
+- Chinese L83: 佛教**西来东渐**的意义 → EN: the significance of Buddhism's **eastward transmission**
+- Chinese L86: 佛教的**西来东渐** → EN: Buddhism's **journey from west to east**
+- Issue: Same term rendered two different ways. "Eastward transmission" is the more standard rendering.
+- Suggest: Use "eastward transmission" consistently.
+
+---
+
+## III. Buddhism and Traditional Chinese Culture
+
+### Finding 7 — 心性论 → "buddha-nature" (L108–109, L112–113)
+
+- Chinese: 佛教的轮回观和**心性论** / **心性论**就使生命有了深度
+- English: Buddhism's teachings on rebirth and **buddha-nature** / the theory of **buddha-nature** gives life depth
+- Issue: 心性 (mind-nature) is broader than 佛性 (buddha-nature). Jiqun is talking about the general Buddhist theory of mind and its nature, not specifically tathāgatagarbha doctrine. Later in the same paragraph, he contrasts it with 儒家思想 and 修身养性 — this is about mind-cultivation, not buddha-nature per se.
+- Suggest: "mind-nature" or "nature of mind" (both occurrences).
+
+### Finding 8 — 轮回 inconsistent (L92, L109, L112–113)
+
+- Chinese L92: 整个印度文化所关注的，正是**轮回**和解脱 → EN: precisely concerned with ***saṃsāra*** [cyclic existence] and liberation
+- Chinese L109: 佛教的**轮回**观 → EN: Buddhism's teachings on **rebirth**
+- Chinese L113: 如果说**轮回**观让生命有了长度 → EN: If the **rebirth** perspective gives life length
+- Issue: 轮回 rendered as saṃsāra in one place but rebirth in two others. The technical term is saṃsāra; "rebirth" is an explanation, not the term itself.
+- Suggest: Use saṃsāra consistently (with gloss on first use), or pick one and stick with it.
+
+### Finding 9 — 感悟 → "conversant" (L124–125)
+
+- Chinese: 对这个问题很有**感悟**
+- English: he is deeply **conversant** with these questions
+- Issue: 感悟 means experiential insight/realization, not intellectual familiarity. "Conversant" implies book knowledge, opposite of the intended meaning.
+- Suggest: "has deep insight into" or "is deeply attuned to"
+
+### Finding 10 — 成圣成贤 → "a sage" (L91–92, L112–113)
+
+- Chinese: 进而**成圣成贤** / 从有德君子到**成贤成圣**
+- English: and ultimately **a sage** / to becoming **a sage**
+- Issue: 圣贤 are two distinct categories — 圣 (sage) and 贤 (worthy). Collapsing to "a sage" loses the Confucian distinction.
+- Suggest: "a sage or worthy" / "sagehood and worthiness"
+
+---
+
+## IV. Buddhism and Contemporary Society
+
+### Finding 11 — 恨 → "resentment" (L178–179)
+
+- Chinese: 羡慕、嫉妒、**恨**
+- English: envy, jealousy, and **resentment**
+- Issue: 恨 means "hatred," not "resentment." "Resentment" is significantly weaker. The triad 羡慕嫉妒恨 is a well-known Chinese colloquialism where 恨 carries the full force of hatred.
+- Suggest: "hatred"
+
+### Finding 12 — 一荣俱荣、一损俱损 → "thrived together and suffered together" (L142–143)
+
+- Chinese: 形成**一荣俱荣、一损俱损**的局面
+- English: formed a relationship where they **thrived together and suffered together**
+- Issue: The idiom has a conditional structure: "if one prospers, all prosper; if one suffers, all suffer." The rendering loses both the parallelism and the mutual-dependence logic.
+- Suggest: "shared prosperity and adversity alike" or "rose and fell together"
+
+### Finding 13 — 教制建设 → adds "reforming" (L52–53)
+
+- Chinese: **教制建设**
+- English: **reforming** monastic institutions
+- Issue: 建设 means "building/developing/constructing," not "reforming." Adding "reforming" introduces a connotation of fixing something broken that isn't in the source.
+- Suggest: "developing monastic institutions" or "institutional development"
+
+---
+
+## V. Buddhism and the Belt and Road
+
+### Finding 14 — 富有感悟 → "heartfelt" (L244–245)
+
+- Chinese: 通过他们详细又**富有感悟**的讲解
+- English: through your detailed and **heartfelt** exposition
+- Issue: 感悟 means "insight/realization." "Heartfelt" adds an emotional dimension not in the source and misses the intellectual depth.
+- Suggest: "insightful"
+
+---
+
+## Front matter
+
+### Finding 15 — 学部委员 → "Member" (L4–5)
+
+- Chinese: 中国社科院**学部委员**魏道儒教授
+- English: Professor Wei Daoru, **Member** of the Chinese Academy of Social Sciences
+- Issue: 学部委员 is CASS's highest academic title, equivalent to "Academician." "Member" understates the prestige.
+- Suggest: "Academician" or "Member of the Academic Divisions"
+
+---
+
+## Summary
+
+| Severity | Count | Category |
+|----------|-------|----------|
+| High | 2 | Terminology conflation (人生佛教≠Humanistic Buddhism, 心性论≠buddha-nature) |
+| Medium | 4 | Inconsistency (轮回, 西来东渐), meaning shift (恨→resentment, 感悟→conversant) |
+| Low | 9 | Dilution/calque (修学, 实践, 永恒, 文明, 教制, 感悟, 成圣成贤, 一荣俱荣, 学部委员) |
+
+No mid-paragraph truncation or missing content detected. No garbled text.

@@ -37,7 +37,26 @@ Four registers observed, useful as style targets:
 4. **Voice**: Direct address ("you"), concrete images, and oral rhythm make Dharma land in English. Abstract noun chains (common in Chinese→English translationese) kill it.
 5. **Sutra quotes**: Use standard English Buddhist idiom. Check terse-idiom conventions (e.g., Diamond Sutra "lives" not "bodies").
 
-For register decisions: consult the register table above (scanning MB articles is optional).
+## Pitfalls
+
+### 1:1 line mapping
+
+Each physical source line maps to exactly one physical target line. Never merge
+continuation lines (lines ending with `  ` soft breaks) into a single
+translation entry. The bilingual format preserves the original line structure —
+breaking this destroys alignment.
+
+### Blank lines in bilingual
+
+When creating an initial bilingual template from source only: blank source
+lines pass through as-is. Only non-blank lines get an empty target placeholder.
+Treating blank lines as content lines (adding target+separator) creates
+excessive blank clusters. See `references/bilingual-format.md`.
+
+### Soft break markers
+
+Trailing `  ` (two spaces) on source lines indicate soft line breaks (paragraph
+continuations). Preserve these markers on both source and target lines.
 
 ## Quick-Find in MB Corpus
 

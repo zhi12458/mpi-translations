@@ -21,7 +21,8 @@ target-line
 
 ## Creating initial bilingual from source only
 
-Every source line gets an empty target placeholder + blank separator:
+Only non-blank source lines get an empty target placeholder. Blank lines in the
+source pass through as-is and serve as natural pair separators.
 
 ```
 source-A
@@ -29,8 +30,12 @@ source-A
 source-B
 ```
 
-(2 blank lines between consecutive source lines: empty target + separator.)
+The blank line between source-A and source-B is an original blank from the
+source — do NOT add an extra target+separator for it.
+
+Pitfall: treating blank source lines as content lines creates 3+ consecutive
+blank lines (source-blank → target-blank → separator-blank). This is wrong.
 
 ## Verification
 
-Source line count × 3 − 1 = bilingual line count (before trailing newline strip).
+`non_blank_source_lines × 2 + total_source_lines = bilingual_line_count`

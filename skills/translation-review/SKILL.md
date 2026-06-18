@@ -127,7 +127,29 @@ Finding N — Title (line numbers)
 
 Surgical string replacement. Verify every patch with `cat` — never rely on `read_file` (session dedup).
 
-### 5. Final sweep
+### 5. Add inline translation notes to bilingual.dj
+
+After findings are written, insert djot comments (`{% ... %}`) into `bilingual.dj` after translation pairs to document non-obvious translation decisions. This serves as a durable reference for future editors and bilingual readers.
+
+What to annotate:
+- **Terminology choices**: why a particular rendering was chosen (e.g. 人生佛教 → "Buddhism for Human Life" vs "Humanistic Buddhism")
+- **Cultural bridges**: how an idiom or reference was adapted for English readers (e.g. 天龙八部 → expanded to "devas, nāgas, and the rest of the eight classes of beings")
+- **Structural decisions**: heading patterns, name handling, parallelism preservation
+- **Sanskrit handling**: which terms get diacritics, which get glosses, why
+
+Format:
+```
+source line
+target line
+{% explanation of translation choice %}
+(blank)
+```
+
+The comment sits on its own line between the target line and the blank separator. Use `execute_code` to insert comments programmatically — key by source line number (1-indexed), build new file line by line. Verify with `head`/`tail`.
+
+Do NOT annotate literal/obvious translations (names, dates, simple connectives). Aim for ~1 comment per significant pair.
+
+### 6. Final sweep
 
 Run `python3 scripts/sweep.py <source.dj> <target.dj> [--stale term1,term2] [--new term1,term2]`. This runs all mechanical checks in one call: line parity, heading parity, Unicode em/en-dashes, Markdown bold, Chinese punctuation, TOC link artifacts, unbalanced quotes, and stale/new term assertions. Run even when no content patches were needed — it serves as final validation.
 
