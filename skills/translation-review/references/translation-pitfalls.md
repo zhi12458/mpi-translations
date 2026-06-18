@@ -9,7 +9,9 @@ Patterns found in CN→EN translation review. Add to this file as new patterns e
 人生佛教 (Taixu's "Buddhism for Human Life") and 人间佛教 (Yinshun's "Humanistic Buddhism")
 are distinct doctrinal positions in modern Chinese Buddhism. Do not conflate both into
 "Humanistic Buddhism." When the source uses 人生佛教, render as "Buddhism for Human Life"
-or "Human Life Buddhism."
+or "Human Life Buddhism." User may propose a deliberately non-standard rendering
+("Buddhism for daily lives") — that's their call. Don't unilaterally pick from
+the standard set without checking.
 
 ### 心性论 → buddha-nature (WRONG)
 
@@ -44,6 +46,20 @@ Check every occurrence of "compassion" in a translation against the source:
 生存层面 = the existential/survival dimension. Not just earning wages.
 → "survival-level needs" or "the level of basic existence"
 
+### 修学 → "practice" (drops study dimension)
+
+修学 combines 修 (practice/cultivation) and 学 (study/learning). Rendering only
+as "practice" loses the study dimension. Use "practice and study" or
+"cultivation and learning" — especially in 静心学堂/Dharma study contexts where
+the academic dimension is emphasized.
+
+### 信仰者 → "believers" (Christian connotation)
+
+信仰者 = "people of faith" but in Buddhist context, "believers" carries Christian
+overtones. Use "practitioners" or "adherents" to avoid the implication. Reserve
+"believers" for contexts where the source explicitly uses 信徒 or where the
+Christian parallel is the point.
+
 ## Loss of Dharma meaning
 
 ### 生生增上 → continuously elevate our life (INCOMPLETE)
@@ -53,6 +69,29 @@ Check every occurrence of "compassion" in a translation against the source:
 → "continuously elevate our life, life after life"
 
 ## Degree / register shifts
+
+### "tantamount to" drops 几乎
+
+几乎 = "almost." "tantamount to" = "is in fact." Dropping 几乎 strengthens the
+claim. Source "几乎等同于一次全球化运动" = "almost equivalent to a globalization
+movement," NOT "tantamount to a globalization movement."
+
+### "untenable" for 都是不行的 (overstates)
+
+都是不行的 = "is not acceptable / won't do." "Untenable" = "indefensible" or
+"cannot be maintained." Too strong. Use "impermissible" or "is not acceptable."
+
+### "monumental event" for 大事 (slight stretch)
+
+大事 = "a major event" or "an event of importance." "Monumental" is typically
+reserved for tasks, errors, or achievements (e.g. "monumental task,"
+"monumental mistake"). "Event of great importance" or "landmark event" is more
+idiomatic.
+
+### "perennial" for 永恒 (wrong register)
+
+永恒 = eternal/ultimate. "Perennial" = recurring (per year, per season). They
+are not synonyms. Use "eternal" or "ultimate."
 
 ### 学部委员 → Member (UNDERSTATES)
 
@@ -82,6 +121,19 @@ or "rose and fell together."
 
 圣 (sage) and 贤 (worthy) are distinct Confucian categories. Collapsing both
 to "a sage" loses the distinction. → "sagehood and worthiness" or "a sage or worthy."
+
+### "must" overuse from 应当/倡导
+
+Source patterns 应当 (should), 倡导 (advocate/champion), 今后要 (going forward, should)
+often get rendered as "must" by reflex. "must" in English is a strong directive
+appropriate only for 一定要, 必须, 务必. Default to "should" or "ought to" for
+recommendations. A whole section may be 倡导 without 一定 anywhere — don't
+manufacture urgency the source doesn't have.
+
+### 文明 → culture (WRONG)
+
+文明 is "civilization," not 文化 "culture." When a text discusses 文明传播
+(civilizational transmission), do not substitute "cultural transmission."
 
 #### 因病返贫 → "back into poverty"
 "返贫" means becoming poor due to illness, not returning to previous poverty. Use "into poverty" or "driven into poverty."

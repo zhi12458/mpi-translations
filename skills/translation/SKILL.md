@@ -58,6 +58,18 @@ excessive blank clusters. See `references/bilingual-format.md`.
 Trailing `  ` (two spaces) on source lines indicate soft line breaks (paragraph
 continuations). Preserve these markers on both source and target lines.
 
+### Terminology decisions: user is the source of truth
+
+When the user proposes a non-standard rendering (e.g. "人间佛教 should be
+'Buddhism for daily lives'") or asks for your input ("although I don't know
+what X should be"), respond with a brief options table — strengths and
+weaknesses — and let them choose. Do NOT unilaterally commit to a rendering
+and start applying it across the file. The user often has a reason for their
+proposal (e.g. deliberate departure from terms DB convention) or a strong
+opinion they haven't voiced yet. Once they pick, then apply consistently and
+annotate in the inline `{% %}` comment WHY this rendering was chosen so future
+editors know it was deliberate, not a slip.
+
 ## Quick-Find in MB Corpus
 
 Common article types to search for register examples:
