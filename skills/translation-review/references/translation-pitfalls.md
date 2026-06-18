@@ -153,6 +153,107 @@ When in doubt, search the DB and follow the highest-priority source. See dharma-
 the person was previously poor — not necessarily true. This is about medical bankruptcy.
 → "into poverty" or "fall into poverty" (no "back")
 
+## Subject-shift calques
+
+When the source uses an abstract/system noun as the grammatical subject (佛教,
+文明, 宗教, 文化) and the target reflexively substitutes a more concrete
+agent (Buddhist practitioners, civilization-builders, religious people, etc.),
+the English is wrong: the source is *not* talking about people, it's talking
+about the system.
+
+**Pattern**: 佛教都被社会大众赋予期望 → EN drifts to "Buddhist practitioners
+are looked upon with hope." Wrong subject — source is 佛教, not 佛教徒. Right:
+"Buddhism is regarded with hope by the broader society."
+
+**Detection**: For each translated sentence, find the *grammatical subject*
+in the English and check it matches the *grammatical subject* in the Chinese.
+If the English subject is a concrete agent and the Chinese is an abstract
+system noun, it's a subject-shift calque.
+
+## Factual inconsistencies across paired descriptions
+
+When the same person, place, or thing is described in two different paragraphs
+(intro + later reference), check that *every* descriptor matches: title,
+affiliation, role, credentials. A translation can be factually inconsistent
+even when each individual sentence is correct in isolation.
+
+**Pattern**: Prof. Wei's credentials in paragraph 1: "Academician of the
+Chinese Academy of Social Sciences (CASS) and research fellow at the
+Institute of World Religions." Paragraph 5 (same person, same source
+reference): "a member of the CASS academic committee and Director of the CASS
+Buddhist Research Center." Two different titles for the same CASS affiliation.
+One is right, the other is wrong.
+
+**Detection**: For each named person, build a dict {name → {credential:
+sentence_refs}} and check that all credentials in the dict match. Same
+institution or title can have different renderings in different paragraphs.
+
+## Calque checklist (subtle English calques of Chinese verbs)
+
+These are common Chinese-verb → English-verb pairs where the English word
+sounds natural in isolation but is a direct calque of the Chinese. They're
+easy to miss in a first-pass review because each one parses correctly:
+
+| Chinese verb | Wrong (calque) | Right (idiomatic) |
+|---|---|---|
+| 赋予 (entrust with) | "look to with hope" | "regard with hope" |
+| 得到 (obtain) | "draw forth" | "draw on" / "gain" |
+| 发挥 (bring into play) | "bring into full play" | "make the most of" |
+| 承担 (assume) | "shoulder" | "take on" |
+| 重视 | "attach importance to" | "value" / "emphasize" |
+| 体现 | "embody" / "reflect" | "show" / "demonstrate" (when abstract) |
+
+**Detection**: When the English uses an unusual verb that maps 1:1 to a
+Chinese word, and the Chinese word is a high-frequency academic verb (发挥,
+承担, 体现, 重视), check whether the English reads as a calque. A common
+smell: the English verb is "correct" but more formal/dramatic than the
+surrounding prose.
+
+## Tonal coherence inside a parallel list
+
+When a list of items in a section should have parallel structure (e.g. three
+"champion X, oppose Y" items; six "developing X, strengthening Y" items),
+check that the *verb choice* is consistent across the list. Inconsistency
+within a parallel structure is a strong signal of drift.
+
+**Pattern**: Section V lists "First, Buddhism should serve as... Second, it
+must serve as... Third, it must serve as..." Source has 应当/要做 for all
+three. The English should match: all three "should serve as" or all three
+"must serve as." Mixing is a tell.
+
+**Detection**: For each parallel-list section (First/Second/Third, etc.),
+extract the verb (or other repeated slot) and verify it's identical. Drift
+inside a parallel list is one of the easiest flow issues to catch
+mechanically — just look for variance.
+
+## Multi-pass review structure
+
+Translation review benefits from three distinct passes, run separately, each
+catching a different category of error:
+
+1. **Pass 1: terminology + consistency + line count** — fast, mechanical.
+   Catches: 人生佛教/人间佛教 conflation, 修行/修学, 恨→resentment,
+   paired inconsistencies (Buddhism vs Buddhist practitioners), missing
+   content, wrong numerals.
+
+2. **Pass 2: mechanical/formatting** — em-dash convention, double punctuation,
+   numbering mismatches, capitalisation typos, garbled text. Often skipped
+   if the file "looks clean." This pass is what makes the file safe to
+   publish; do it even when no content issues are obvious.
+
+3. **Pass 3: flow/tonal/calques** — *read the full English as a piece of
+   prose*. Catch: dramatic verbs that read as calques ("draw forth,"
+   "into full play," "shoulder"), intensifier drift ("profoundly important"
+   × 3 in one section), consistency of "must"/"should" inside parallel
+   lists, subject misattribution in calque. Often the user will prompt
+   this pass with "are you sure it reads well?" or "do the words hang
+   together?" Treat that prompt as a signal to re-read the whole English
+   target, not just spot-check.
+
+Pass 3 in particular is the one that catches the *most embarrassing* errors
+— the ones where the English is grammatical and faithful but reads as
+"translationese." Don't skip it.
+
 ## DoT定稿 term drift
 
 ### 念死 → recollection of death (WRONG per DoT定稿)
