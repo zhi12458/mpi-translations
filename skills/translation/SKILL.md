@@ -58,6 +58,15 @@ excessive blank clusters. See `references/bilingual-format.md`.
 Trailing `  ` (two spaces) on source lines indicate soft line breaks (paragraph
 continuations). Preserve these markers on both source and target lines.
 
+### Practice element lists: use noun forms
+
+When translating lists of Buddhist practice elements — especially the five
+essentials (皈依、发心、戒律、正见、止观) or similar enumerated components —
+render each as a noun phrase, not a gerund. "Refuge, aspiration, precepts,
+right view, śamatha-vipaśyanā" — not "taking refuge, arousing aspiration."
+These are named components of a system, not actions being described. The same
+applies to any catalog-style listing (三学, 八正道 components, etc.).
+
 ### Terminology decisions: user is the source of truth
 
 When the user proposes a non-standard rendering (e.g. "人间佛教 should be
