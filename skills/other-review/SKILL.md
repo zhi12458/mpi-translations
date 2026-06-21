@@ -1,26 +1,18 @@
 ---
-name: translation-review-comment
-description: Editorial polish pass for CN→EN Buddhist translation — voice, flow, readability. Applies patterns distilled from 473 editor comments across 3 manuscripts. Use AFTER translation-review for terminology/accuracy checks.
+name: other-review
+description: Editorial polish for CN→EN Buddhist translations you did NOT translate — voice, flow, readability. Load self-review first for terminology/accuracy.
 ---
 
-# Translation Review — Comment (Editorial Polish)
+{% Serves AGENTS.md Workflow B2 (Other-Review) %}
 
-Editorial polish for CN→EN Buddhist translation manuscripts. Focuses on voice, flow,
-and readability — the layer beyond terminology and accuracy. Distilled from 473
-editor comments by Wade across 3 manuscripts:
+# Other-Review — Editorial Polish（审他稿）
 
-| Document | Comments | Period |
-|----------|----------|--------|
-| 61 人生佛教在当代的弘扬 | 121 | 2026-06-19–20 |
-| 附录 我的判教观 | 151 | 2026-06-13–16 |
-| 16 觉醒的艺术 | 201 | 2026-04-17–05-24 |
+Review someone else's CN→EN translation. Focus on voice, flow, readability.
+You did NOT translate this — suggest, don't command. Load `self-review` first
+for terminology/accuracy checks.
 
-## When to Use
-
-After `translation-review` (terminology, accuracy, line parity). This skill targets the
-"Pass 3" layer — does the English read as natural prose, or as translationese?
-
-Apply to `.dj` files with `patch` or to Google Docs comment threads.
+Do NOT edit `bilingual.dj` — output to `review-comments.dj` instead.
+Use `patch` (mode='replace') for any file edits — not regex-replace.
 
 ## Core Principles
 
@@ -34,6 +26,14 @@ Three principles drive all the specific rules below:
 3. **Source faithfulness** — never add content not in the Chinese, and never drop
    content that is. But restructure freely for natural English flow — don't mirror
    Chinese word order when it produces awkward English.
+
+These patterns were distilled from 473 editor comments across three manuscripts:
+
+| Document | Comments | Period |
+|----------|----------|--------|
+| 61 人生佛教在当代的弘扬 | 121 | 2026-06-19–20 |
+| 附录 我的判教观 | 151 | 2026-06-13–16 |
+| 16 觉醒的艺术 | 201 | 2026-04-17–05-24 |
 
 ## Rule Checklist
 
@@ -401,7 +401,7 @@ This matters for three reasons:
    any criticism. The translator should feel their effort is seen and valued
 3. It names the translator explicitly — "随喜师兄" — making the praise personal,
    not generic. When reviewing, use the translator's name from the document title
-   (e.g. 妙蕊, 法轩, Fiona)
+   (e.g. from the document title)
 
 ## Workflow
 
@@ -475,7 +475,7 @@ Quoted text: `even discarded. Consequently, while countless companies emerged, t
 
 ## Pitfalls
 
-- Don't apply this skill before `translation-review` — terminology must be correct first.
+- Don't apply this skill before `self-review` — terminology must be correct first.
 - Don't over-correct: some formal constructions are appropriate for certain passages.
   Judge per context.
 - When converting nouns to verbs, keep the meaning intact — don't simplify away

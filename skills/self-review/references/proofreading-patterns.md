@@ -21,7 +21,14 @@ The DOCX English is the authoritative target text. No PDF needed.
 For articles where the body has strict CN→EN→CN→EN alternation, the simple
 extraction in that script (CN line, blank, EN line, blank) works directly.
 
-**Block-based extraction** (for articles with mixed ordering): when the DOCX has
+### A2. Bilingual from `.docx.md` (pandoc markdown output)
+
+When working with an already-converted `.docx.md` file (pandoc markdown, not plain
+text), use the techniques in `references/docx-md-extraction.md`. Key differences
+from plain-text extraction: merged CN+EN on heading lines, `{#anchor}` and
+`[text](#link)` artifacts, TOC pairing guards.
+
+### B. Bilingual from PDF (when PDF is the typeset target)
 sections that order CN content before EN content (CN heading → CN body → EN heading →
 EN body), the simple alternation fails. Use block-based extraction instead:
 
@@ -73,7 +80,7 @@ under the chapter headings where the issues occur. Use diff-style `-/+` notation
 - Garbled Chinese text (merged duplicate edits in source DOCX)
 - Repeated words (`the The`)
 - Chapter numbering mismatches (e.g. `九` ↔ `VIII`)
-- Translator notes in headings (`（善鑫翻，妙一审）`)
+- Translator notes in headings (`（某某翻，某某审）`)
 - Missing quotes around dialogue/speech
 
 ## Common source DOCX issues

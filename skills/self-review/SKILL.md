@@ -1,11 +1,20 @@
 ---
-name: translation-review
-description: Review Chinese-English translations for quality issues - terminology, grammar, consistency, formatting. Two workflows - CSV/XLSX batch review (write .dj suggestions) and .dj comparison line-by-line review (surgical patching).
+name: self-review
+description: Review your own CN→EN translations — three-pass review (terminology → mechanical → flow). Edit commented.dj with patch. For reviewing someone else's work, load other-review.
 ---
 
-# Translation Review
+{% Serves AGENTS.md Workflow B1 (Self-Review) %}
 
-Two workflows, used depending on input format.
+# Self-Review（自审）
+
+Review YOUR OWN translations. You created the English — you can edit freely.
+For reviewing someone else's work, load `other-review` instead.
+
+Two input formats: CSV/XLSX batch, or `.dj` comparison file.
+
+`bilingual.dj` is script-generated ground truth — **never edit it.**
+Copy to `commented.dj` for all review work. Always use `patch` (mode='replace')
+for edits — not regex-based string replacement in `execute_code`.
 
 ## Workflow A: CSV/XLSX batch review
 
@@ -54,25 +63,15 @@ translated: <current English>
 
 One entry per problem category, not per row. Mention affected row numbers.
 
-## Workflow B: .dj comparison file review
+## Workflow B: .dj file review (self-review)
 
-Use when input is a `.dj` comparison file (Chinese/English alternating line pairs).
+Use when you translated the text and want to review your own work.
 
-### Two modes — always clarify which one
+### File rules
 
-AGENTS.md defines two workflows. Before starting, determine which mode you're in:
-
-1. **Translation review** (Workflow A in AGENTS.md): agent translated the text.
-   Authoritative `target.dj` does not exist yet. Review everything:
-   terminology, grammar, formatting, consistency, calques, missing content.
-   Produces `translation-findings.dj` and applies patches.
-
-2. **Proofread** (Workflow B in AGENTS.md): English comes from an existing DOCX
-   manuscript. It is authoritative. Only flag manuscript-level mechanical issues:
-   typos, double words, numbering mismatches, garbled text, duplicate text.
-   Produces `edit-suggestions.dj` ONLY — do NOT apply patches without asking.
-   Do NOT flag: terminology choices, djot formatting,
-   translation style, calques, word order. These are translation-review concerns.
+1. `bilingual.dj` — extracted from script. **Never edit.**
+2. `cp bilingual.dj commented.dj` — all edits go here
+3. `{% ... %}` comments document non-obvious translation choices
 
 ### 1. Read the full file
 
@@ -119,7 +118,9 @@ category of error. Don't try to catch everything in one scan.
 - Fix both glossary comments AND body text
 - See `references/terms-db-alignment.md` for batch-lookup patterns
 
-### 3. Dump findings to `translation-findings.dj`
+### 3. Dump findings
+
+Write to `translation-findings.dj` for issues that don't fit as inline fixes:
 
 ```
 Finding N — Title (line numbers)
@@ -130,29 +131,14 @@ Finding N — Title (line numbers)
 
 ### 4. Apply fixes with `patch`
 
-Surgical string replacement. Verify every patch with `cat` — never rely on `read_file` (session dedup).
+Surgical string replacement in `commented.dj` with `patch` (mode='replace').
+Never use regex-based string replacement in `execute_code` for .dj edits.
+`patch` is safer, surfaces conflicts, and produces a reviewable diff.
+Verify with `cat` — never rely on `read_file` (session dedup).
 
-### 5. Add inline translation notes to bilingual.dj
+### 5. Add inline edit suggestions
 
-After findings are written, insert djot comments (`{% ... %}`) into `bilingual.dj` after translation pairs to document non-obvious translation decisions. This serves as a durable reference for future editors and bilingual readers.
-
-What to annotate:
-- **Terminology choices**: why a particular rendering was chosen (e.g. 人生佛教 → "Buddhism for Human Life" vs "Humanistic Buddhism")
-- **Cultural bridges**: how an idiom or reference was adapted for English readers (e.g. 天龙八部 → expanded to "devas, nāgas, and the rest of the eight classes of beings")
-- **Structural decisions**: heading patterns, name handling, parallelism preservation
-- **Sanskrit handling**: which terms get diacritics, which get glosses, why
-
-Format:
-```
-source line
-target line
-{% explanation of translation choice %}
-(blank)
-```
-
-The comment sits on its own line between the target line and the blank separator. Use `execute_code` to insert comments programmatically — key by source line number (1-indexed), build new file line by line. Verify with `head`/`tail`.
-
-Do NOT annotate literal/obvious translations (names, dates, simple connectives). Aim for ~1 comment per significant pair.
+Copy `bilingual.dj` → `commented.dj`, then apply inline corrections + `{% %}` comments.
 
 ### 6. Final sweep
 
@@ -204,8 +190,11 @@ Do not run extraction pipelines until scope is clear.
 - **InDesign PDFs insert extra spaces** around drop caps and special characters.
   Normalize multi-space to single space before comparison.
 
-## Pitfalls
+### Pitfalls
 
+- **Never edit `bilingual.dj`** — it's script-generated ground truth. Copy to `commented.dj` first.
+- **Use `patch`, not regex** — for all `.dj` edits. `patch` surfaces conflicts and produces diffs.
+- **`commented.dj` comments must not split paragraphs** — always place `{% %}` after the FULL EN paragraph, not mid-sentence. Scan for merged comments after insertions and split them. Collapse triple+ blank lines created by comment insertions.
 - **Clarify scope before diving into extraction pipelines** — if the user says
   "proofread this" or "校对这篇文章", ask what specifically they want checked
   before running pandoc/pdftotext. Getting interrupted mid-pipeline wastes
@@ -217,7 +206,6 @@ Do not run extraction pipelines until scope is clear.
 - **Verify patches with `cat`** — `read_file` dedup makes it unreliable
 - **Re-read before fixing** — user may have made interim edits
 - **Batch terminology lookups** — when checking many terms against the terms DB, run them in one `execute_code` script that loops over a query list and calls `search.py` via `subprocess.run`. One terminal call per term floods the context with repetitive output.
-- **Proofread ≠ translation review** — when the user says "校对" or "proofread" and the input is a DOCX manuscript with existing English, you are in proofread mode. Do NOT flag translation quality, terminology, or djot formatting. Do NOT apply patches to bilingual.dj unless asked. Write `edit-suggestions.dj` with manuscript-level issues only. If the user later asks for translation review of the same article, write findings to a separate `translation-findings.dj`.
 
 ## Human Review Protocol (审议)
 
@@ -249,6 +237,8 @@ Categories:
 - `references/terms-db-alignment.md` — Batch-aligning glossary terms against the MPI terms database
 - `references/translation-pitfalls.md` — Recurring CN→EN mistranslation patterns (关爱→compassion, 生生增上, etc.)
 - `references/proofreading-patterns.md` — DOCX/PDF extraction techniques, block-based pairing, common manuscript issues
+- `references/docx-md-extraction.md` — Extracting `.docx.md` (pandoc markdown) to bilingual, TOC guards, CN/EN boundary regex
+- `references/edit-suggestions-in-bilingual.md` — Inline edit suggestions + `{% %}` comments, two-file comparison (commented.dj / bilingual.dj)
 - `references/deliberation-protocol.md` — Oriental Translation Workshop review protocol: tiers, rejoicing, tone
 - `references/common-issues-taxonomy.md` — Structured taxonomy of accuracy and readability issues with examples
 

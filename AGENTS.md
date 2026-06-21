@@ -12,7 +12,11 @@ skills:
 
 {% `hermes config set` stringifies list values — edit config.yaml directly. %}
 
-Available: `translation`, `terms-search`, `translation-review`, `chinese-text-normalize`, `pptx-translate`, `pdf-to-docx-conversion`.
+When creating a new translation-related skill, use `skill_manage` with a
+`$MPI_PROJECT_ROOT/skills/` path. Do NOT create skills under `~/.hermes/skills/`
+— those are for personal/general skills, not project-specific workflows.
+
+Available: `translation`, `terms-search`, `self-review`, `other-review`, `chinese-text-normalize`, `pptx-translate`, `pdf-to-docx-conversion`.
 
 ## Terms Database
 
@@ -62,7 +66,7 @@ Source text in `.dj` or `.docx` (Chinese only).
 
 ### Review
 
-After translating, run `translation-review` skill (Workflow B) to check:
+After translating, run `self-review` skill to check:
 - Terminology consistency against terms DB
 - Grammar, fluency, calques
 - Missing content (mid-paragraph truncation)
@@ -70,62 +74,30 @@ After translating, run `translation-review` skill (Workflow B) to check:
 
 ---
 
-## Workflow B: Proofread（校对）
+## Workflow B: Proofread / Review（校对/审阅）
 
-Extract bilingual content from an existing DOCX manuscript and flag issues.
-The DOCX already contains BOTH Chinese and English — the English is the
-authoritative target, not something the agent creates.
+Two distinct sub-workflows depending on WHO did the translation.
 
-### Input
+### B1: Self-Review（自审）
 
-A `.docx` manuscript with Chinese and English in parallel (typically
-paragraph-level alternation: Chinese, blank, English, blank).
+You translated it. You own the English. Load `self-review` skill.
 
-### Deliverables
+1. Extract `bilingual.dj` — never edit
+2. `cp bilingual.dj commented.dj`
+3. Apply inline fixes + `{% %}` annotations
+4. Three-pass review: terminology → mechanical → flow
+5. Can edit freely with `patch`
 
-- `bilingual.dj` — extracted from DOCX (interleaved)
-- `edit-suggestions.dj` — mechanical/manuscript-level issues
-- `translation-findings.dj` — translation quality issues (always produced)
+### B2: Other-Review（审他稿）
 
-### Extraction
+Someone else translated it (volunteer, etc.). Load `other-review` +
+`self-review` skills.
 
-1. `pandoc input.docx -f docx -t plain --wrap=none` to plain text
-2. Script to extract CN/EN pairs. Write to `scripts/gen-bilingual-<name>-<hash>.py`.
-   Copy the approach from an existing script (e.g. `gen-bilingual-buddhist-attitude.py`).
-3. Write `bilingual.dj`.
-
-### What to flag (edit-suggestions.dj)
-
-Only flag objective/manuscript-level issues:
-
-- **Garbled text** — merged duplicate edits in source DOCX
-- **Double words** — `the The`, `is is`
-- **Double punctuation** — `warm or cold..`
-- **Numbering mismatches** — CN heading `三` vs EN heading `II`, or body heading
-  number doesn't match TOC
-- **Translator notes** — `（某某翻，某某审）` left in headings
-- **Missing content** — paragraphs present in CN but missing in EN (or vice versa)
-- **Duplicate text** — same name/phrase repeated (`岳麓书院岳麓书院`)
-- **Capitalization typos** — `Philosopher Nietzsche` → `philosopher Nietzsche`
-- **Stray/unusual characters** in either language
-
-Do NOT flag translation quality issues here — those go to `translation-findings.dj`:
-
-- Terminology choices, translation style, calques, fluency
-- Djot formatting conventions (em-dashes, italics)
-- Word order, added concepts, degree weakening
-
-### Translation review (translation-findings.dj)
-
-Always produced. Load `translation-review` skill after extraction, scan for:
-
-- **Terminology** — key Buddhist terms rendered correctly
-- **Content omission** — specific examples/explanations dropped
-- **Added concepts** — words not in source (e.g. "creator" for 主宰)
-- **Degree shifts** — 一切 → "many", weakening of claims
-- **Terminology dilution** — technical terms rendered as literary paraphrase
-- **Double renderings** — multiple translations of the same term side by side
-- **Word order** — reversed logical sequence (e.g. 内圣外王)
+1. Extract `bilingual.dj` — never edit
+2. Review — do NOT edit bilingual.dj or create commented.dj
+3. Write `review-comments.dj` with exact quoted text + suggestions
+4. Follow deliberation protocol: 随喜 first, questions not commands
+5. Address translator by name
 
 ---
 
@@ -135,6 +107,10 @@ Always produced. Load `translation-review` skill after extraction, scan for:
 - Emphasis: `*text*` (single asterisks)
 - Dashes in English: `---` em, `--` en. Pandoc converts in docx output.
 - Preserve source formatting — don't add/remove emphasis
+
+When editing `.dj` files, use `patch` (mode='replace') — not regex-based
+string replacement in `execute_code`. `patch` is safer, surfaces conflicts,
+and produces a diff you can review.
 
 ## Scripts
 
