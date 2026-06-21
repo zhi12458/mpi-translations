@@ -405,12 +405,72 @@ This matters for three reasons:
 
 ## Workflow
 
+Two output modes depending on target format:
+
+### Mode A: .dj file review (use `patch`)
+
 ```
 1. Read source.dj + target.dj (full files)
 2. Apply R1–R13 in order, scanning the English line by line
 3. For each issue found, apply with patch or write to translation-findings.dj
 4. Note well-translated passages (R14)
 5. Final pass: read the full English aloud — does it flow?
+```
+
+### Mode B: Google Docs review (output to review-comments.dj)
+
+Use when the translation manuscript is a Google Doc and you must add comments
+without editing the original text. The agent reads the document, produces a
+comment file, and the user manually inserts comments into the Google Doc.
+
+**Why manual insertion is required**: The Google Drive API `comments.create`
+with an `anchor` field is silently ignored by Google Docs editor apps. The
+kix anchor format used by the Google Docs UI is an undocumented internal
+format that has never been reverse-engineered. Line-based anchors
+(`{"region": {"kind": "drive#commentRegion", "line": N, "rev": "head"}}`)
+also do not display as anchored in the Google Docs UI. This is a known
+limitation since 2016 with no resolution. The only reliable way to add
+anchored comments is through the browser UI (select text → Insert → Comment).
+
+**Workflow**:
+
+```
+1. Load google-workspace skill (ensure OAuth is set up)
+2. Read the Google Doc body via Docs API: documents.get
+3. Read existing comments via Drive API: comments.list (paginate fully)
+4. Identify the translator from the document title (e.g., "maple 初翻")
+5. Review per R1–R14, scanning the English paragraphs
+6. For each issue, extract the EXACT quoted text from the document:
+   - Use the full document body to find the precise, case-exact string
+   - Each quoted snippet must be UNIQUE — long enough to find with Ctrl+F
+     (at minimum 10+ words or a complete short sentence)
+   - Test: can you find exactly one match when searching the document?
+7. Write review-comments.dj to the article directory:
+   $MPI_PROJECT_ROOT/translate-files/<article>/review-comments.dj
+8. Format each entry:
+   Quoted text: `<exact text from document>`
+   <comment content>
+9. Tell the user: "Comments written to <path>. For each, select the quoted
+   text in the Google Doc → Insert → Comment → paste the content."
+```
+
+**Quoted text rules** (critical — the user must be able to find the text):
+- Must match the document text EXACTLY: same case, same punctuation,
+  same whitespace (including non-breaking spaces like `\xa0`)
+- Must be UNIQUE within the document — verify by searching the full body
+- Must be long enough to disambiguate: prefer a full short sentence or a
+  10+ word phrase over single words like "Consequently"
+- Capitalize as it appears in the source. If the source has
+  "Consequently, while countless...", quote that, not "consequently"
+
+**Example output format**:
+
+```
+## 10. Conversational Tone (R6)
+
+Quoted text: `even discarded. Consequently, while countless companies emerged, they collapsed just as quickly.`
+
+整体语气适合对话场景。个别词可以更口语化：'Consequently' → 'So'...
 ```
 
 ## Pitfalls
@@ -423,3 +483,11 @@ This matters for three reasons:
 - The "we" subject is generally preferred but not absolute. If a passage describes
   a general principle without a specific agent, passive/impersonal may be correct.
 - Positive feedback (R14) is not optional fluff — it guides what to preserve.
+- **Google Docs anchor limitation**: The Drive API cannot create anchored comments
+  on Google Docs. Use Mode B (output to review-comments.dj) for Google Doc targets.
+  The user manually inserts comments in the browser UI. See the journey log at
+  `docs/google-docs-comment-journey.dj` for full details.
+- **Quoted text must be exact and unique**: when writing review-comments.dj, each
+  quoted snippet must match the document text case-exactly and be long enough to
+  find unambiguously with Ctrl+F. Short words like "consequently" are unacceptable
+  — quote the full sentence or a 10+ word phrase.

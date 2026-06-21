@@ -2,52 +2,48 @@
 # Translator: maple
 # Document: https://docs.google.com/document/d/1NmJKNavB4IBg56ZRBdS5ux9ObRVlHPnSxVmjjXCyITs/edit
 #
-# Google Drive API cannot create anchored comments on Google Docs.
-# The `anchor` field is silently ignored by Google Docs editor apps
-# (confirmed in official docs and by community since 2016).
-# These comments must be added manually by opening the document and
-# inserting each comment at the quoted text position.
+# NOTE: Google Drive API cannot create anchored comments on Google Docs.
+# The anchor field is silently ignored by Google Docs editor apps.
+# These comments must be added manually in the Google Docs UI:
+#   Select the quoted text → Insert → Comment → paste the comment content.
 
 ---
 
 ## 1. Overall Praise (R14: 随喜)
 
 Quoted text: `佛法与企业管理`
-(anchored to the document title)
 
 随喜 maple 师兄翻译整体很好，准确流畅，尤其是把中文讲法风格自然地转成了英文对话语气。像 'Dao (the Way)' 这样的文化加注处理得很恰当。以下是一些优化建议，主要集中在语言简洁性和口语化方面。
 
 ---
 
-## 2. Terminology: Chan (R9)
+## 2. Terminology: Chan not Zen (R9)
 
-Quoted text: `Create a Chan(Zen) Atmosphere`
+Quoted text: `Create a Chan(Zen) Atmosphere; Optimize Your Environment`
 
-术语统一：禅→Chan（不用Zen），禅宗→Chan school。标题和正文的多处 'Chan(Zen)' 和 'Zen-like' 建议统一为 'Chan' 和 'Chan-like'。参考：坐看云起等已出版的书都统一用 Chan。
-
-Also applies to: `Zen-like atmosphere` (later in document)
+术语统一：禅→Chan（不用Zen），禅宗→Chan school。标题和正文的 'Chan(Zen)' 建议统一为 'Chan'。后面出现的 'Zen-like atmosphere' 也改为 'Chan-like atmosphere'。参考：坐看云起等已出版的书都统一用 Chan。
 
 ---
 
 ## 3. Stray Digit
 
-Quoted text: `1This held back`
+Quoted text: `seen as valuable. 1This held back the development of science`
 
-有个小笔误：'1This held back' → 删去数字 '1'，改为 'This held back'。
+有个小笔误：'1This' → 删去数字 '1'，改为 'This held back...'。
 
 ---
 
 ## 4. Double Text Artifact
 
-Quoted text: `In Buddhism,  In Buddhism, the monastic community`
+Quoted text: `In Buddhism,  In Buddhism, the monastic community is built`
 
-有处文本重复：删去一个 'In Buddhism,'。
+有处文本重复：删去一个 'In Buddhism,'（注意两个之间有特殊空格）。
 
 ---
 
 ## 5. Typo: kingdom → kingdoms
 
-Quoted text: `kingdom may be won`
+Quoted text: `'kingdom may be won, but one's nature is hard to change.'`
 
 笔误：'kingdom may be won' → 'kingdoms may be won' 或 'a kingdom may be won'。漏了复数或冠词。
 
@@ -55,53 +51,48 @@ Quoted text: `kingdom may be won`
 
 ## 6. Simplify Vocabulary (R3)
 
-Quoted text: `squandering`
+Quoted text: `we are just squandering it, gaining only momentary pleasure`
 
 'squandering' 有些书面化，口语场景可用 'wasting' 或直接 'spending'。
-
-Also: 'insignificant' → 'tiny'/'small'; 'perpetuating' → 'creating more'。
+同类：'insignificant' → 'tiny'/'small'；'perpetuating' → 'creating more'。
 
 ---
 
 ## 7. Trim -ly Adverbs (R7)
 
-Quoted text: `completely new`
+Quoted text: `find the look and feel completely new. These were just old`
 
-英文现代风格可减少 -ly 副词。比如：
-- 'completely new' → 'fresh'
-- 'faithfully recorded' → 'recorded'
-- 'truly admirable' → 'admirable'
-能省则省。
+英文现代风格可减少 -ly 副词。'completely new' → 'fresh'。同类：'faithfully recorded' → 'recorded'；'truly admirable' → 'admirable'。不是每个都要删，能省则省。
 
 ---
 
 ## 8. Noun → Verb (R2)
 
-Quoted text: `the power of environment to attract, gain recognition, and create 'stickiness'`
+Quoted text: `This is the power of environment to attract, gain recognition, and create 'stickiness'`
 
-有几处名词偏多，可以试着转成动词。比如：
+名词偏多，可以转成动词。比如：
 'an environment that attracts, earns recognition, and keeps people coming back'
 
 ---
 
-## 9. Split Long Sentences (R4)
+## 9. Split Long Sentences (R4/R12)
 
 Quoted text: `How do we make the entrepreneur program better? How can we help everyone benefit from the teachings and bring Buddhist wisdom into their management? We've thought about these questions before, but not`
 
-有些句子比较长，可以考虑拆分为 2 句。TOC 后面的第一段 CN 含两个问句，EN 合并成一个句子偏长，读起来有点赶。
+TOC 后面第一段 CN 含两个问句，EN 合并成一个长句，读起来有点赶。可以考虑拆分，让读者有喘息的空间。
 
 ---
 
 ## 10. Conversational Tone (R6)
 
-Quoted text: `consequently`
+Quoted text: `even discarded. Consequently, while countless companies emerged, they collapsed just as quickly.`
 
-整体语气适合对话场景。个别词可以更口语化：'consequently' → 'so'；'therefore' → 'so'。这个讲座是对企业家班的开示，口语感越强越好。
+整体语气适合对话场景。个别词可以更口语化：'Consequently' → 'So' 或 'As a result'。同样 'Therefore' → 'So'。这个讲座是对企业家班的开示，口语感越强越好。
 
 ---
 
 ## 11. Keep Active Voice (R1)
 
-Quoted text: `one's nature is hard to change`
+Quoted text: `As the saying goes, 'kingdom may be won, but one's nature is hard to change.'`
 
 整体上已经大量用了 'we' 做主语，读者参与感很强。'one's nature' 在谚语语境下没问题。继续保持 'we' 为主就好。
