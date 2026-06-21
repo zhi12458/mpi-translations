@@ -95,6 +95,7 @@ category of error. Don't try to catch everything in one scan.
 - Buddhist terminology against the MPI terms DB (see terms-db-alignment below)
 - Mistranslation of key terms, wrong proper names, garbled text
 - Mid-paragraph truncation: CN covers 3–5 clauses but EN stops after 1–2 sentences. Signal: CN has quoted speech, poems, or a rhetorical climax absent from EN. Flag as "Missing Content" not "Incomplete."
+- Use `references/common-issues-taxonomy.md` as a structured checklist for accuracy issues
 
 **Pass 2 — mechanical/formatting** (also mechanical, but easy to skip):
 - TOC format: AGENTS.md says TOC must be plain bullet list, no link targets. Strip `[I. Heading](#...)` markdown links if present.
@@ -218,12 +219,38 @@ Do not run extraction pipelines until scope is clear.
 - **Batch terminology lookups** — when checking many terms against the terms DB, run them in one `execute_code` script that loops over a query list and calls `search.py` via `subprocess.run`. One terminal call per term floods the context with repetitive output.
 - **Proofread ≠ translation review** — when the user says "校对" or "proofread" and the input is a DOCX manuscript with existing English, you are in proofread mode. Do NOT flag translation quality, terminology, or djot formatting. Do NOT apply patches to bilingual.dj unless asked. Write `edit-suggestions.dj` with manuscript-level issues only. If the user later asks for translation review of the same article, write findings to a separate `translation-findings.dj`.
 
+## Human Review Protocol (审议)
+
+When giving feedback to human translators — whether in a review team or as an AI
+assistant flagging issues — follow the Oriental Translation Workshop protocol.
+See `references/deliberation-protocol.md` for full guidance.
+
+Key points:
+- **Rejoice first** (随喜): affirm what works before flagging issues
+- **Three-tier issues**: Level 1 (spelling/grammar/format) — fix directly. Level 2
+  (omission/mistranslation/wordiness) — suggest or fix with tracked changes. Level 3
+  (citation versions / marginal wording) — discuss with translator
+- **Tone**: questions, not commands; collaborative inquiry, not correction
+- **Address translator as 菩萨** (Bodhisattva) — respectful peer
+
+## Common Issues Taxonomy
+
+Use `references/common-issues-taxonomy.md` as a structured checklist when reviewing.
+Categories:
+
+- **Accuracy**: omission, mistranslation (over-free, over-literal, misunderstanding,
+  wrong word choice), overtranslation, terminology errors
+- **Readability**: redundancy (long sentences, passive voice, nominalization),
+  poor structure (top-heavy sentences), wrong register, weak transitions
+
 ## References
 
 - `references/buddhist-terminology.md` — Chinese-English Buddhist term mappings and pitfalls
 - `references/terms-db-alignment.md` — Batch-aligning glossary terms against the MPI terms database
 - `references/translation-pitfalls.md` — Recurring CN→EN mistranslation patterns (关爱→compassion, 生生增上, etc.)
 - `references/proofreading-patterns.md` — DOCX/PDF extraction techniques, block-based pairing, common manuscript issues
+- `references/deliberation-protocol.md` — Oriental Translation Workshop review protocol: tiers, rejoicing, tone
+- `references/common-issues-taxonomy.md` — Structured taxonomy of accuracy and readability issues with examples
 
 ## Scripts
 

@@ -1,0 +1,133 @@
+# Google Docs Comment Automation — Journey Log
+
+2026-06-21
+
+## Background
+
+Task: review Chinese→English Buddhist translation manuscripts on Google Docs
+by adding editorial comments (the "Wade" style — anchored suggestions on
+specific text). The reviewer is an AI agent running on Hermes with API access.
+
+## Phase 1: Google Workspace OAuth Setup
+
+Set up OAuth2 for Google Workspace access:
+- Created Google Cloud project (932146571366)
+- Enabled APIs: Gmail, Calendar, Drive, Sheets, Docs, People
+- Created Desktop OAuth client, downloaded client_secret.json
+- Completed OAuth PKCE flow → token at ~/.hermes/google_token.json
+
+Success: authenticated with scopes covering all needed services.
+
+## Phase 2: Reading Documents and Comments (Success)
+
+Used the Google Drive API v3 `comments.list` endpoint to fetch comments
+from existing review documents:
+
+- Doc 1 (1DTzH7...): 61 人生佛教在当代的弘扬 — 121 comments
+- Doc 2 (13S_0u...): 附录 我的判教观 — 151 comments
+- Doc 3 (1LxCcX...): 16 觉醒的艺术 — 201 comments
+
+Total: 473 editor comments by Wade, spanning 2026-04-17 to 2026-06-20.
+These comments were well-anchored (kix.XXXXXXXX format) and contained
+actionable editorial suggestions in Chinese.
+
+## Phase 3: Pattern Analysis (Success)
+
+Analyzed all 473 comments to extract systematic review rules. The editor's
+feedback follows clear patterns:
+
+R1  — Active voice + "we" subject
+R2  — Noun → verb conversion
+R3  — Simplify vocabulary
+R4  — Break long sentences
+R5  — Remove unnecessary words
+R6  — Conversational / interview tone
+R7  — No -ly adverbs
+R8  — Concrete over abstract
+R9  — Terminology alignment
+R10 — Missing content detection
+R11 — Source faithfulness
+R12 — Sentence structure clarity
+R13 — Specific word fixes
+R14 — Positive feedback (随喜), naming the translator
+
+Created skill: skills/translation-review-comment/SKILL.md
+
+## Phase 4: Attempting to Create Anchored Comments (Failure)
+
+Task: apply the review rules to a new document
+(1NmJKNavB4IBg56ZRBdS5ux9ObRVlHPnSxVmjjXCyITs — 佛法与企业管理, translator: maple).
+
+### Attempt 1: comments.create without anchor
+
+Result: comments appear as document-level (unanchored). The translator has no
+way to know which text each comment refers to. User rejected this approach:
+"Without anchors, there is no way to know where the translator should edit."
+
+### Attempt 2: kix anchors from Docs API response
+
+Searched the document body via `documents.get` for kix segment IDs.
+Result: the Docs API response does NOT expose kix anchors. Only footer IDs
+(kix.hf0, kix.list) appear. Text segments have no kix identifiers.
+
+### Attempt 3: kix anchors from HTML export
+
+Exported the document as HTML via Drive API `files.export_media`.
+Result: HTML export contains NO kix IDs. Since 2021, Google Docs renders
+content on `<canvas>`, so there are no DOM nodes with kix attributes in
+the exported HTML.
+
+### Attempt 4: Browser-based kix extraction
+
+Tried navigating to the document via browser to extract kix IDs from the
+live page DOM. Result: requires Google sign-in. Agent cannot authenticate
+to Google in a browser session.
+
+### Attempt 5: Line-based anchor format (official docs)
+
+The Drive API docs describe an alternative anchor format using line numbers:
+```json
+{"region": {"kind": "drive#commentRegion", "line": 1, "rev": "head"}}
+```
+Created a test comment with this format. Pending user verification on whether
+it actually anchors in the Google Docs UI.
+
+### Official Position
+
+The Google Drive API documentation states (as of 2025):
+
+> "The anchor is saved and returned when retrieving the comment, however
+> Google Workspace editor apps treat these comments as un-anchored comments."
+
+The kix.* anchor format is Google's internal, undocumented format that has
+never been reverse-engineered. A 2016 thread on the Google Apps Script
+community confirms this has been a known limitation for nearly a decade
+with no resolution.
+
+## Phase 5: Workaround
+
+Created `translate-files/佛法与企业管理/review-comments.dj` — a structured
+file listing each comment with:
+- The specific text it should anchor to (quoted)
+- The comment content
+
+The translator can manually add these comments in the Google Docs UI by
+selecting the quoted text and inserting each comment.
+
+## Key Findings
+
+1. **Reading comments works perfectly** via Drive API `comments.list`
+2. **Writing anchored comments does NOT work** — the anchor is silently
+   ignored by Google Docs editor apps
+3. **The only reliable way** to add anchored comments to Google Docs is
+   through the browser UI (select text → Insert → Comment), which requires
+   human interaction or a headless browser with Google authentication
+4. **Google Apps Script** might support anchored comments from within
+   the document environment (untested — requires different auth model)
+5. The `translation-review-comment` skill remains useful for `.dj` file
+   review where `patch` can be used instead of comments
+
+## Files Created
+
+- skills/translation-review-comment/SKILL.md — systematic review rule checklist
+- translate-files/佛法与企业管理/review-comments.dj — manual comment reference

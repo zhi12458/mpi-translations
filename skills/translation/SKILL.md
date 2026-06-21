@@ -10,24 +10,21 @@ terms DB query, workflows, output format) are in AGENTS.md.
 
 ## Mindfulness Bell Corpus
 
-Register/style patterns in English Buddhist prose.
+English Buddhist prose — register/style reference for translation.
 
-- Location: `/home/user/meta/www.files/public/The Mindfulness Bell/`
-- 6 issues: MB92–MB97 (2023–2026), each ~84–116 pages
-- Index: `index.yaml` (article titles, authors, pages)
-- **Articles**: `~/documents/jingxin-lessons/Mindfulness Bell/articles/MB{92..97}/*.md` — 93 individual markdown files with YAML frontmatter. Read directly with `read_file`.
-- Extraction script: `/tmp/extract_mb_articles.py` (re-run if PDFs change)
+- **PDFs + index**: `~/meta/www.files/public/The Mindfulness Bell/` — 6 issues (MB92–MB97, 2023–2026), `index.yaml` lists all articles by author/title/page
+- **Articles**: `~/documents/jingxin-lessons/Mindfulness Bell/MB{92..97}/*.md` — per-issue markdown files. Read with `read_file`.
 
-## Register Reference
-
-Four registers observed, useful as style targets:
+Four registers, useful as style targets:
 
 | Register | Example | Key features |
 |----------|---------|-------------|
-| Dharma talk | Thầy (MB94 "Roses and Garbage", MB97 "Go as a River") | Short sentences, concrete images, coined terms ("interbeing"), oral address ("It's clear?"), Sanskrit kept with narrative explanation |
-| Teaching lineage | Sister Đoan Nghiêm (MB93 "Our Patriarch Liễu Quán") | "We" voice, terms explained, cultural bridging ("like Jesus"), dates woven into narrative, still oral |
-| Personal narrative | Mick McEvoy (MB94 "Touching the True Nature") | First-person, confessional, borrowed Dharma vocabulary, emotional directness, vernacular |
+| Dharma talk | Thầy (MB94 "Roses and Garbage", MB97 "Go as a River") | Short sentences, concrete images, coined terms ("interbeing"), oral address, Sanskrit with narrative explanation |
+| Teaching lineage | Sister Đoan Nghiêm (MB93 "Our Patriarch Liễu Quán") | "We" voice, terms explained, cultural bridging ("like Jesus"), dates in narrative |
+| Personal narrative | Mick McEvoy (MB94 "Touching the True Nature") | First-person, confessional, borrowed Dharma vocabulary, vernacular |
 | Editorial | Brother Pháp Lưu (MB94 welcome letter) | Polished but warm, conceptual framing, "we" address |
+
+Quick-find in index: Thầy talks → `"Thích Nhất Hạnh"` + page ≤ 10; teachings → `"Sister"` or `"Brother"`; narratives → first-page articles by non-monastics; lineage → `"Patriarch"` or `"ancestor"`.
 
 ## Translation Principles
 
@@ -38,6 +35,16 @@ Four registers observed, useful as style targets:
 5. **Sutra quotes**: Use standard English Buddhist idiom. Check terse-idiom conventions (e.g., Diamond Sutra "lives" not "bodies").
 
 ## Pitfalls
+
+### Pre-flight accuracy check
+
+Before delivering a translation, run through the structured accuracy/readability
+taxonomy in `skills/translation-review/references/common-issues-taxonomy.md`.
+Catching these before review saves iteration cycles:
+- Omission, over-literal renderings, over-free renderings, subject confusion,
+  overtranslation, terminology errors
+- Long/nested sentences, passive voice clustering, nominalization, top-heavy
+  structure, obscure word choices, weak transitions
 
 ### 1:1 line mapping
 
@@ -79,13 +86,37 @@ opinion they haven't voiced yet. Once they pick, then apply consistently and
 annotate in the inline `{% %}` comment WHY this rendering was chosen so future
 editors know it was deliberate, not a slip.
 
-## Quick-Find in MB Corpus
+## Polishing (润色)
 
-Common article types to search for register examples:
-- Thầy's Dharma talks: search index for "Thích Nhất Hạnh" + page ≤ 10
-- Sister/brother teachings: search for "Sister" or "Brother" + "DHARMA TEACHING"
-- Personal narratives: first-person voice, often pages 8–60
-- Lineage/history: "Patriarch," "ancestor," dates in text
+After translating, do a deliberate readability pass before submitting for review.
+Read the English aloud — if a sentence can't be spoken in one breath, fix it.
+
+These are common patterns (not an exhaustive list). For the full taxonomy with
+more categories and examples, read
+`../translation-review/references/common-issues-taxonomy.md`.
+
+Examples of systematic adjustments:
+
+1. **Passive → active**. Passive clusters (3+ per paragraph) are the top
+   readability killer in CN→EN translation. `If meat consumption were reduced`
+   → `If people consume less meat`.
+2. **Nominalization → verb**. `placed emphasis on cultivating` → `emphasized
+   cultivating`; `the application of` → `applying`.
+3. **Sentence splitting**. If a sentence has 3+ clauses and runs past one breath,
+   split it. The source's period is not a contract — English readers need
+   shorter breath units than Chinese readers.
+4. **Academic → plain**. `constitute` → `make up`; `facilitate` → `help`;
+   `endeavor to` → `try to`; `in order to` → `to`. These texts are lectures
+   and conversations, not journal articles.
+5. **Register match**. Dharma talks and dialogues should sound spoken —
+   contractions, direct address, concrete images. If the English reads like a
+   paper abstract, warm it up. Check against the MB corpus registers for the
+   target genre.
+
+Do NOT apply these mechanically — each is a judgment call. A passive may be
+correct when the agent is unknown; a nominalization may be the right technical
+term. The goal is natural English that matches the source's register, not a
+formulaic rewrite.
 
 ## Meditation / Mindfulness Content
 
@@ -98,3 +129,4 @@ When translating guided meditation scripts, exercise guides, or posture instruct
 - `references/markdown-to-djot.md` — converting .docx.md to .dj for translation prep
 - `references/bilingual-format.md` — bilingual.dj layout: source/target adjacent, blank separator between pairs
 - `references/diacritics-convention.md` — diacritics rules
+- `../translation-review/references/common-issues-taxonomy.md` (cross-skill) — structured accuracy/readability checklist for pre-flight review
