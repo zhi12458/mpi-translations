@@ -1,0 +1,85 @@
+DOCX (0605-英文定稿) vs PDF (0624-二排-一校-0623) — discrepancies
+
+Source of truth: DOCX manuscript. PDF is the typeset output.
+
+---
+
+1. Extra words in PDF
+
+   DOCX: "The noble man is always at ease."
+   PDF:  "The noble man is always broad-minded and at ease."
+
+   → PDF adds "broad-minded and" not present in DOCX.
+
+---
+
+2. Nine stages of śamatha — completely different translations
+
+   Stage  DOCX                          PDF
+   -----  ----------------------------  --------------------------
+   1      placement of the mind         placement of the mind
+   2      continuous attention          continuous placement
+   3      repeated attention            repeated placement
+   4      close attention               close placement
+   5      tamed attention               taming the mind
+   6      pacified attention            pacifying the mind
+   7      fully pacified attention      fully pacifying the mind
+   8      single-pointed mind           single-pointing
+   9      balanced mind                 balanced placement
+
+   → DOCX uses noun phrases with "attention" / "mind".
+     PDF uses gerunds with "placement" / "the mind" / "-ing".
+
+---
+
+3. self‑reflection → self-assessment
+
+   DOCX: "standardized self‑reflection guides"
+         "self‑reflection checklist"
+   PDF:  "standardized selfassessment guides"
+         "self-assessment checklist"
+
+   → DOCX uses "self‑reflection" (2 occurrences in conclusion).
+     PDF uses "self-assessment" (same as the term used earlier in the body).
+
+---
+
+4. "or restlessness" dropped in PDF
+
+   DOCX: "When wandering thoughts or restlessness arise, they find it
+          difficult not only to accept these thoughts, but also to
+          accept themselves."
+   PDF:  "When wandering thoughts arise, they find it difficult..."
+
+   → PDF omits "or restlessness".
+
+---
+
+5. ", during meditation," repositioned in PDF
+
+   DOCX: "Some people even get caught in inner knots that have been
+          unresolved for decades during meditation, with all kinds of
+          emotions entangling them without end, unable to let them go."
+   PDF:  "Some people, during meditation, even get caught in inner
+          knots that have been unresolved for decades, with all kinds
+          of emotions entangling them without end, unable to let them go."
+
+   → PDF moves "during meditation" earlier and wraps it in commas.
+
+---
+
+6. Other PDF typesetting errors (not DOCX-vs-PDF but visible in the PDF)
+
+   a) Double space after deleted text (p.85)
+
+      PDF:  "When wandering thoughts  arise, they find it difficult…"
+      Note: After "or restlessness" was dropped (see #4), the extra
+            space was not collapsed — "thoughts  arise" shows a double
+            space visible in the typeset output.
+
+   b) Space before comma (p.87)
+
+      PDF:  "…have been unresolved for decades , with all kinds of
+             emotions entangling them…"
+      Note: There is an extra space between "decades" and the comma
+            that should not be there.

@@ -123,10 +123,19 @@ formulaic rewrite.
 When translating guided meditation scripts, exercise guides, or posture instructions
 (rather than Dharma talks), use a lighter workflow. See `references/meditation-translation.md`.
 
+## Pitfalls
+
+### article-specific scripts
+
+`scripts/proofread-pdf.py` is hardcoded for 佛教徒的人生态度 — body-start
+markers, header patterns, slug regex. Do NOT reuse for other articles.
+Create article-specific scripts per `references/proofread-pdf-workflow.md`.
+
 ## References
 
 - `references/meditation-translation.md` — lighter workflow for meditation/mindfulness content
 - `references/markdown-to-djot.md` — converting .docx.md to .dj for translation prep
 - `references/bilingual-format.md` — bilingual.dj layout: source/target adjacent, blank separator between pairs
 - `references/diacritics-convention.md` — diacritics rules
+- `references/proofread-pdf-workflow.md` — pattern for creating article-specific PDF-vs-DOCX comparison scripts
 - `../translation-review/references/common-issues-taxonomy.md` (cross-skill) — structured accuracy/readability checklist for pre-flight review
