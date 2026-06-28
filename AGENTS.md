@@ -112,6 +112,32 @@ When editing `.dj` files, use `patch` (mode='replace') — not regex-based
 string replacement in `execute_code`. `patch` is safer, surfaces conflicts,
 and produces a diff you can review.
 
+## Typst Bilingual Template
+
+For producing PDFs from bilingual Chinese-English articles:
+
+- Repo / project root: `~/documents/mpi/`
+- Template directory (contains `lib/`): `~/documents/mpi/translate-files/`
+- Template: `translate-files/lib/mpi-bilingual-template.typ`
+- Example host: `translate-files/从物品整理到心灵整理/mindful-organizing.typ`
+- Design notes: `references/typst-template-design.md`
+
+Host files should contain only one `#import` and one `#show:` rule; all
+formatting is handled by the template.
+
+Compile with the helper script:
+
+```bash
+~/documents/mpi/scripts/compile-typst.fish ./从物品整理到心灵整理/mindful-organizing.typ [output.pdf]
+```
+
+Or manually from the template directory:
+
+```bash
+cd ~/documents/mpi/translate-files
+typst compile --root . ./从物品整理到心灵整理/mindful-organizing.typ
+```
+
 ## Scripts
 
 Utility scripts in `scripts/` (fish for CLI wrappers, Python for data processing).

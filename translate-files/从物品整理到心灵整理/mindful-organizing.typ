@@ -1,33 +1,14 @@
 // Auto-generated from DOCX via pandoc + cleanup
-#set text(font: ("Noto Serif CJK SC", "Noto Serif"), size: 11pt, lang: "zh")
-#set page(margin: (top: 2.5cm, bottom: 2.5cm, left: 2.5cm, right: 2.5cm), numbering: "1")
-#set heading(numbering: none)
-#set par(justify: true, leading: 0.8em)
-#show heading: set block(spacing: 1.2em)
+// Reformatted to use lib/mpi-bilingual-template.typ
 
-#import "helpers.typ": toc
+#import "../lib/mpi-bilingual-template.typ": mpi-bilingual
 
-#align(center)[
-  #heading(outlined: false)[从物品整理到心灵整理]
-  #v(0.5em)
-  ——济群法师 2024年9月28日讲于泰宁甘露别院
-]
-
-#align(center)[
-  *From Organizing Belongings to Organizing the Mind*
-  #v(0.3em)
-  —Lectured by Master Jiqun at Amrita Retreat Center, Taining, September 28, 2024
-]
-
-#v(3em)
-#align(center)[#text(size: 1.2em)[目录 / Contents]]
-#v(0.8em)
-#set page(numbering: none)
-#toc()
-#pagebreak()
-#set page(numbering: "1")
-
-#set par(first-line-indent: (amount: 2em, all: true))
+#show: mpi-bilingual.with(
+  title-cn: [从物品整理到心灵整理],
+  title-en: [From Organizing Belongings to Organizing the Mind],
+  subtitle-cn: [——济群法师 2024年9月28日讲于泰宁甘露别院],
+  subtitle-en: [—Lectured by Master Jiqun at Amrita Retreat Center, Taining, September 28, 2024],
+)
 
 静心整理的项目已经研发很长时间，我们原来还做过断舍离的项目。静心整理和断舍离，可以说是两个项目，也可以说是一个项目的两部分。为什么我们讲了断舍离，还要再讲静心整理？主要是因为，断舍离落实起来相对较难。关于这个问题，我曾问过项目组：虽然社会上一直在倡导断舍离，但相关从业者有多少？真正在实践的人有多少？其实并不多。因为对普通人来说，舍弃物品并非易事，出离物欲更是难上加难。
 
