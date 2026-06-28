@@ -1,55 +1,11 @@
 // Auto-generated from DOCX via pandoc + cleanup
 #set text(font: ("Noto Serif CJK SC", "Noto Serif"), size: 11pt, lang: "zh")
-#set page(margin: (top: 2.5cm, bottom: 2.5cm, left: 2.5cm, right: 2.5cm))
+#set page(margin: (top: 2.5cm, bottom: 2.5cm, left: 2.5cm, right: 2.5cm), numbering: "1")
 #set heading(numbering: none)
 #set par(justify: true, leading: 0.8em)
 #show heading: set block(spacing: 1.2em)
 
-// Helpers to detect Chinese vs English headings in the outline
-#let to-string(content) = {
-  if type(content) == str {
-    content
-  } else if content.func() == text {
-    content.text
-  } else if content.has("children") {
-    content.children.map(to-string).join("")
-  } else {
-    ""
-  }
-}
-
-#let is-chinese-heading(content) = {
-  let txt = to-string(content)
-  let cn-re = regex("[\u{4e00}-\u{9fff}]")
-  let en-re = regex("[A-Za-z]")
-  for c in txt.clusters() {
-    if c.match(cn-re) != none { return true }
-    if c.match(en-re) != none { return false }
-  }
-  false
-}
-
-#let toc() = context {
-  let indent-per-level = 1.5em
-  let headings = query(heading.where(outlined: true))
-  for h in headings {
-    let is-cn = is-chinese-heading(h.body)
-    let is-pair-end = not is-cn
-    block(
-      inset: (left: (h.level - 1) * indent-per-level),
-      above: if is-cn { 0.3em } else { 0.7em },
-      below: if is-cn { 0.7em } else { 1.2em },
-      {
-        if is-cn {
-          h.body
-        } else {
-          let page-num = counter(page).at(h.location()).first()
-          h.body + box(width: 1fr, repeat[.]) + str(page-num)
-        }
-      }
-    )
-  }
-}
+#import "helpers.typ": toc
 
 #align(center)[
   #heading(outlined: false)[从物品整理到心灵整理]
@@ -66,11 +22,14 @@
 #v(3em)
 #align(center)[#text(size: 1.2em)[目录 / Contents]]
 #v(0.8em)
+#set page(numbering: none)
 #toc()
 #pagebreak()
+#set page(numbering: "1")
 
-#set par(first-line-indent: 2em)
-#h(2em)静心整理的项目已经研发很长时间，我们原来还做过断舍离的项目。静心整理和断舍离，可以说是两个项目，也可以说是一个项目的两部分。为什么我们讲了断舍离，还要再讲静心整理？主要是因为，断舍离落实起来相对较难。关于这个问题，我曾问过项目组：虽然社会上一直在倡导断舍离，但相关从业者有多少？真正在实践的人有多少？其实并不多。因为对普通人来说，舍弃物品并非易事，出离物欲更是难上加难。
+#set par(first-line-indent: (amount: 2em, all: true))
+
+静心整理的项目已经研发很长时间，我们原来还做过断舍离的项目。静心整理和断舍离，可以说是两个项目，也可以说是一个项目的两部分。为什么我们讲了断舍离，还要再讲静心整理？主要是因为，断舍离落实起来相对较难。关于这个问题，我曾问过项目组：虽然社会上一直在倡导断舍离，但相关从业者有多少？真正在实践的人有多少？其实并不多。因为对普通人来说，舍弃物品并非易事，出离物欲更是难上加难。
 
 Mindful Organizing program has been under development for a long time,
 and we previously worked on a Decluttering program. Mindful Organizing
