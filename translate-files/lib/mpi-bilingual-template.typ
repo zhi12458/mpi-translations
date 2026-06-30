@@ -59,7 +59,16 @@
           h.body
         } else {
           let page-num = counter(page).at(h.location()).first()
-          h.body + box(width: 1fr, repeat[.]) + str(page-num)
+          let page-spacing = 2em
+          box(
+            baseline: 100% - 0.65em,
+            box(width: 100% - page-spacing)[
+              #set par(justify: false, leading: 0.9em, spacing: 0.9em)
+              #h.body
+              #box(width: 1fr, inset: (left: 0.2em), repeat[.])
+            ]
+            + box(width: page-spacing, align(end, str(page-num)))
+          )
         }
       }
     )

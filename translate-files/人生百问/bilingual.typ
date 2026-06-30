@@ -1,6 +1,3 @@
-// MPI Bilingual Typst Document with Clickable TOC
-// Auto-generated from source.dj and chapter translations
-
 #let chinese-font = "Noto Serif CJK SC"
 #let english-font = "Noto Serif"
 
@@ -97,19 +94,19 @@
 
 _问：_ 我还没皈依，因为理性让我对个别法义不能完全接受，觉得贸然皈依是一种不诚实。但我也存在困惑和烦恼，希望有力量让我解脱，感觉很矛盾。
 
-_Q:_ I haven't taken refuge yet, because reason keeps me from fully accepting certain points of Dharma, and I feel that taking refuge hastily would be dishonest. Yet I also have confusion and afflictions, and hope for a power that can liberate me. I feel very conflicted.
+_Q:_ I haven't taken refuge yet, because reason keeps me from fully accepting certain points of the Dharma, and I feel that taking refuge lightly would be dishonest. Yet I also have confusion and afflictions, and hope for a power that can liberate me. I feel very conflicted.
 
 _答：_ 不论对生活还是学佛，理性思考都很重要，但要善用理性，否则会带来麻烦。动物吃饱喝足就没问题了，但人满足生存所需后还会妄念纷飞，烦恼重重，而且坏起来是动物望尘莫及的。这都是理性惹的祸。
 
-_A:_ Whether in life or in learning Buddhism, rational thinking is very important, but we must use reason skillfully; otherwise it will bring trouble. Animals are fine once they have eaten and drunk their fill, but after people have their basic needs met, their delusive thoughts still fly about and their afflictions weigh heavily, and when humans turn bad, they outdo animals by far. All this is caused by reason.
+_A:_ Whether in life or in learning Buddhism, rational thinking is very important, but we must use reason skillfully; otherwise it will bring trouble. Animals are fine once they have eaten and drunk their fill, but after people's basic needs are met, their delusions run wild and their afflictions weigh heavily, and when humans turn bad, animals are left far behind. All this is caused by reason.
 
 如何善用理性？必须接受智慧文化，对人生和世界有正确认识。如果三观有偏差，在此指导下的理性思考必然存在问题，结果害己害人。此外，理性无法直接抵达真理，这是西方哲学家也已认识到的。所以我们不要成为偏执的理性主义者，以理性作为认识世界的唯一标准，什么问题都希望通过理性得到解释和解决。
 
-How do we use reason skillfully? We must accept a wisdom culture and have a correct understanding of life and the world. If our worldview is off, then rational thinking guided by it will necessarily be flawed, and the result will harm ourselves and others. Furthermore, reason cannot directly reach the truth, a point recognized even by Western philosophers. Therefore we should not become fanatical rationalists who take reason as the only standard for knowing the world and hope that reason can explain and solve every problem.
+How do we use reason skillfully? We must accept a culture of wisdom and have a correct understanding of life and the world. If our worldview is off, then rational thinking guided by it will necessarily be flawed, and the result will harm ourselves and others. Furthermore, reason cannot directly reach the truth, a point recognized even by Western philosophers. Therefore we should not become dogmatic rationalists who take reason as the only standard for knowing the world and hope that reason can explain and solve every problem.
 
 尤其对佛法信仰来说，虽然理性是闻思修的重要基础，但最终必须超越理性，才能通达真相，所谓言语道断、心行处灭。否则还是意识层面的认识，是不究竟的。对个别法义不能接受时，不妨先以理性接受可以接受的部分，但保持开放的心态，不以现有认识排斥其他。随着学习的深入，认识也会随之提高。
 
-Especially for faith in the Dharma: although reason is an important foundation for study, contemplation, and practice, ultimately we must transcend reason in order to realize the true nature, as the saying goes, "Words are cut off, and mental activity ceases." Otherwise it remains a level of conceptual understanding, which is not ultimate. When you cannot accept certain points of Dharma, you may first use reason to accept the parts you can accept, but keep an open mind and do not reject the rest on the basis of your present understanding. As your study deepens, your understanding will also improve.
+Especially for faith in the Dharma: although reason is an important foundation for study, contemplation, and practice, ultimately we must transcend reason in order to realize the true nature, as the saying goes, "Words fail, and mental activity ceases."
 
 === 解脱的本身就是意义 / Liberation Itself Is the Meaning <ch01-q02>
 
@@ -119,15 +116,15 @@ _Q:_ In the end, is learning Buddhism only about liberating ourselves and all be
 
 _答：_ 什么是更有意义的事？不仅学佛是为了解脱，世人忙来忙去，也是为了解脱。挣钱是为了从贫困中解脱，成家是为了从单身状态中解脱。佛教所说的解脱，是解脱轮回，解脱生死，这才是究竟的解脱。
 
-_A:_ What could be more meaningful? Not only is learning Buddhism for the sake of liberation; worldly people bustle about for liberation too. Earning money is for liberation from poverty, and starting a family is for liberation from singlehood. The liberation spoken of in Buddhism is liberation from samsara, liberation from birth and death—this is the ultimate liberation.
+_A:_ What could be more meaningful? Not only is learning Buddhism for the sake of liberation; worldly people rush about for liberation too. Earning money is for liberation from poverty, and starting a family is for liberation from being single. The liberation spoken of in Buddhism is liberation from samsara, liberation from birth and death—this is the ultimate liberation.
 
 仅仅从现象看，人们会觉得青春、爱情、财富、事业都值得追求，如果解脱了，这些梦想怎么实现？其实我们真正要解脱的是轮回本质，是内心的迷惑和烦恼。迷惑，是看不清生命真相，不知道"我是谁”，不知道"生从何来，死往何去”，不知道"活着为什么”；烦恼，是孤独、恐惧、焦躁、没有安全感等负面情绪。一旦解脱惑业，不论做什么，也不论在什么时空，我们都能自由自在。所以说，解脱和做什么并不矛盾，只是立足点完全不同。
 
-Seen only from the surface, people feel that youth, love, wealth, and career are all worth pursuing; if one is liberated, how can these dreams be realized? In fact, what we truly need to liberate ourselves from is the nature of samsara: the confusion and afflictions within our minds. Confusion means failing to see the truth of life, not knowing "who am I," not knowing "where did I come from and where will I go after death," not knowing "why do I live." Afflictions are negative emotions such as loneliness, fear, restlessness, and insecurity. Once we are liberated from confusion and karma, no matter what we do or where or when we are, we can be free and at ease. Therefore, liberation is not in conflict with what we do; it is simply that our standpoint is completely different.
+On the surface, people feel that youth, love, wealth, and career are all worth pursuing; if one is liberated, how can these dreams still be realized? In fact, what we truly need to liberate ourselves from is the nature of samsara: the delusion and affliction within our minds.
 
 佛陀之所以得大自在，正是因为解脱惑业，开启无限的慈悲和智慧。尤其是大乘佛法，不仅要自己解脱，还要帮助众生共同解脱。所以解脱不仅是解决问题的过程，本身就是生命的意义所在，没什么比这更有意义了。
 
-The reason the Buddha attained great freedom is precisely that he was liberated from confusion and karma and opened up boundless compassion and wisdom. Especially in the Mahayana Dharma, we must not only liberate ourselves but also help all beings attain liberation together. Therefore liberation is not only the process of resolving problems; it is itself the meaning of life. Nothing is more meaningful than this.
+The reason the Buddha attained great freedom and ease is precisely that he was liberated from delusion and karma and awakened boundless compassion and wisdom.
 
 === 怎么找到适合自己的法门 / How to Find a Dharma Door That Suits You <ch01-q03>
 
@@ -137,11 +134,11 @@ _Q:_ How should I continue my study and practice after taking refuge? How can I 
 
 _答：_ 皈依后的进一步修学，是很多信众的普遍问题。在今天这个资讯发达的时代，我们可以接触不同宗派乃至不同语系的法门，可以听到全世界大德们的开示。但这些多样化的选择，对初学者不见得有益。因为他们并未具备选择能力，多半只能根据个人感觉而非对法义的理解作出判断。但凡夫的感觉又是变化无常的，所以不少人就热衷于跑庙找师父，天南地北，到处参访。而每位善知识的教导未必一致，最后就可能一片混乱。更有甚者，还会因此谤法谤僧。
 
-_A:_ Further study and practice after taking refuge is a common concern for many practitioners. In today's information-rich age, we can encounter methods from different schools and even different language traditions, and we can hear teachings from great masters around the world. But this variety of choices is not necessarily beneficial for beginners. They do not yet have the ability to choose, so for the most part they can only judge according to personal feeling rather than understanding of the Dharma. Yet the feelings of ordinary beings are impermanent and changeable, so many people become keen on running from temple to temple looking for teachers, traveling north and south, visiting everywhere. And the teachings of each wise teacher may not be consistent, so in the end things may become chaotic. What is worse, this can even lead to slandering the Dharma and the Sangha.
+_A:_ Further study and practice after taking refuge is a common concern for many practitioners. In today's information-rich age, we can encounter methods from different schools and even different language traditions, and we can hear teachings from great masters around the world. But this variety of choices is not necessarily beneficial for beginners. They do not yet have the ability to choose, so for the most part they can only judge according to personal feeling rather than understanding of the Dharma. Yet the feelings of ordinary beings are impermanent and changeable, so many people become eager to run from temple to temple looking for teachers, traveling far and wide.
 
 所以建议大家先奠定修学基础，知道佛法要领和修行次第是什么，这样就不会偏执一端或不得要领了。三级修学就是针对这些问题设立的大众化修学体系，类似公共课，能与任何法门兼容，也是学习任何法门不可或缺的基础。有了这样的基础，自然会知道什么是适合自己的。
 
-Therefore I suggest that you first establish a foundation in study and practice, knowing what the essentials of the Dharma are and what the stages of cultivation are, so that you will not be biased toward one extreme or miss the point. Three-Stage Practice is a popular system of study and practice designed to address these problems, similar to a general curriculum; it is compatible with any Dharma door and is an indispensable foundation for studying any method. With such a foundation, you will naturally know what suits you.
+Therefore I suggest that you first establish a foundation in study and practice, knowing what the essentials of the Dharma are and what the stages of cultivation are, so that you will not be biased toward one extreme or miss the point. Three-Stage Practice is a mass-oriented system of study and practice designed to address these problems, similar to a general curriculum; it is compatible with any Dharma door and is an indispensable foundation for studying any method.
 
 === 学佛该从学儒开始吗 / Should One Begin Learning Buddhism by Studying Confucianism? <ch01-q04>
 
@@ -155,11 +152,11 @@ _A:_ Studying worldly knowledge such as the Four Books and Five Classics is not 
 
 儒释道的相融古已有之。因为儒家是中国本土文化，其内容为人熟知，所以古德在弘法时，有时会借用儒家思想来解读，以此作为人们认识佛法的方便。那今天的人是否也需要这样呢？我觉得未必。因为时代变了，很多人并没有儒家文化的基础，直接学习佛典可能更容易。
 
-The integration of Confucianism, Buddhism, and Daoism has existed since ancient times. Because Confucianism is the indigenous culture of China and its contents are well known, ancient masters sometimes borrowed Confucian ideas to explain the Dharma when propagating it, using this as a skillful means for people to understand Buddhism. Do people today still need this? I do not think so necessarily. Times have changed, and many people do not have a foundation in Confucian culture; it may be easier for them to study Buddhist scriptures directly.
+The integration of Confucianism, Buddhism, and Daoism has existed since ancient times. Because Confucianism is the indigenous culture of China and its contents are well known, ancient masters sometimes borrowed Confucian ideas to explain the Dharma when propagating it, using this as a skillful means for people to understand Buddhism. Do people today still need this? Not necessarily.
 
 事实上，儒学和佛法并没有必然联系。虽然儒家的伦理纲常对建立世间道德很重要，但佛法本身也有完善的人伦道德，是建立在缘起因果的基础上，有强大的哲学体系为背景，更具有说服力。所以学佛不一定要以儒家道德为基础，不一定先学《弟子规》再学三皈依。当然，你在学三皈依的过程中，学学《弟子规》也无妨，但不要形成必然的关系。
 
-In fact, Confucian learning and the Buddhadharma have no necessary connection. Although Confucian ethics and social norms are important for establishing worldly morality, the Buddhadharma itself also has a perfect human ethics, founded on dependent origination and cause and effect, backed by a powerful philosophical system, and therefore more persuasive. So learning Buddhism does not necessarily require taking Confucian morality as a foundation, nor does it require first studying the _Dizigui_ and then the Three Refuges. Of course, while you are studying the Three Refuges, it is fine to study the _Dizigui_ as well, but do not make it into a necessary relationship.
+In fact, Confucian learning and the Buddhadharma have no necessary connection. Although Confucian ethics and social norms are important for establishing worldly morality, the Buddhadharma itself also has a complete human ethics, founded on dependent origination and cause and effect, backed by a powerful philosophical system, and therefore more persuasive.
 
 === 博采众长需要高度 / Drawing on Many Strengths Requires Height <ch01-q05>
 
@@ -169,15 +166,15 @@ _Q:_ I deeply respect the Buddhadharma, but I also feel that Confucianism and Da
 
 _答：_ 当我们有了佛法见地后，一切法都可以成为佛法。因为这种见地代表对人生的认识高度。立足于此，可以吸收儒家、道家包括西方哲学的长处。虽然他们的理论来自理性思考，缺乏实修体证，没能究竟通达心性，但也是古今中外智者们的智慧结晶，对很多人是有启发和借鉴作用的。
 
-_A:_ Once we have the view of the Dharma, all dharmas can become Dharma. Because this view represents a height of understanding about life. Based on this standpoint, we can absorb the strengths of Confucianism, Daoism, and even Western philosophy. Although their theories come from rational thinking, lack actual cultivation and realization, and do not ultimately penetrate the mind-nature, they are still the crystallized wisdom of wise ones ancient and modern, Chinese and foreign, and can inspire and serve as reference for many people.
+_A:_ Once we have the view of the Dharma, all dharmas can become Dharma. Because this view represents a higher understanding of life.
 
 需要注意的是，这些理论是基于不同的思想体系，如果没有很强的吸收能力，看多了容易消化不良，甚至觉得彼此矛盾，无所适从。所以自己的定位和认识高度很重要。此外，人的精力很有限，应该集中精力一门深入，以后真有余力了，再广泛涉猎也不迟。如果开始就把战线拉得很长，恐怕力有不逮。
 
-What needs attention is that these theories are based on different systems of thought; if you do not have strong ability to assimilate them, reading too much can easily lead to indigestion, and you may even feel that they contradict one another and not know what to do. Therefore one's own position and level of understanding are very important. Moreover, human energy is very limited; you should concentrate your energy and go deeply into one door, and only later, if you truly have extra strength, is it not too late to read widely. If at the start you stretch your front too long, you may find your strength insufficient.
+What needs attention is that these theories are based on different systems of thought; if you do not have strong ability to assimilate them, reading too much can easily lead to indigestion, and you may even feel that they contradict one another and not know what to do. Therefore one's own position and level of understanding are very important. Moreover, human energy is very limited; you should concentrate your energy and go deeply into one door, and only later, if you truly have extra strength, it is not too late to read widely.
 
 其实对于学佛者来说，不论生活还是修行，都能在佛法中得到智慧引导。佛法的作用并不仅仅在于顶层建筑，而是可以遍一切处。了解其他思想，主要是为了弘法的方便。因为众生根机各异，以他们感兴趣的内容作为切入点，才能引起共鸣。
 
-Actually, for those who study Buddhism, whether in life or in cultivation, wisdom guidance can be found in the Dharma. The function of the Dharma is not merely as an overarching framework; it can permeate every situation. Understanding other schools of thought is mainly for the convenience of propagating the Dharma. Because beings have different capacities and inclinations, using content they are interested in as an entry point can arouse resonance.
+Actually, for those who study Buddhism, whether in life or in cultivation, wisdom guidance can be found in the Dharma. The function of the Dharma is not merely as an overarching framework; it can permeate every situation. Understanding other schools of thought is mainly for the convenience of propagating the Dharma. Because beings have different capacities and inclinations, using content they are interested in as an entry point can strike a chord.
 
 === 信仰是自由的 / Faith Is Free <ch01-q06>
 
@@ -187,25 +184,25 @@ _Q:_ My family is Catholic, and I used to consider myself Catholic too, but I ne
 
 _答：_ 信仰是自由的，可以选择什么，也可以不选择什么。在成长过程中，随着眼界的开阔，我们的认识也在提高。如果觉得佛法智慧更究竟而作出新的选择，这很正常。更何况，你只是因为家庭原因默认自己是天主教徒，并不是主动选择，这种默认本身就没什么约束力。即使是自己的选择，也可以改变。在佛教戒律中，出家后如果不想再过修行生活，都可以正常还俗，所以不必有什么不安。
 
-_A:_ Faith is free: you can choose something, or choose not to. As we grow, our understanding improves along with the broadening of our horizons. If you make a new choice because you feel the wisdom of the Dharma is more ultimate, this is perfectly normal. Moreover, you only assumed you were Catholic because of your family; it was not an active choice, so that assumption itself has little binding force. Even if it were your own choice, you can still change it. In the Buddhist precepts, after becoming a monastic, if one no longer wishes to live the monastic life, one may return to lay life normally. So there is no need to feel uneasy.
+_A:_ Faith is free: you may choose a faith, or choose none. As we grow, our understanding grows as our horizons broaden.
 
 关键是，你确实要认识到佛法的殊胜，认识到这种智慧可以解决人生困惑，认识到佛法僧三宝可以作为尽未来际的依止，是思考后的理智选择，而不只是凭着某种感觉皈依了，那就容易患得患失。你会感到不安，说明学得不够深入，要加强学习。
 
-The key is that you must truly recognize the excellence of the Dharma, recognize that this wisdom can resolve the puzzles of life, and recognize that the Three Jewels of Buddha, Dharma, and Sangha can serve as a reliance for all future time. It should be a rational choice after reflection, not merely taking refuge on the basis of some feeling, which leaves one always worried about personal gains and losses. Your feeling uneasy shows that your study has not been deep enough; you should strengthen your study.
+The key is that you must truly recognize the excellence of the Dharma, recognize that this wisdom can resolve the puzzles of life, and recognize that the Three Jewels of Buddha, Dharma, and Sangha can serve as a reliance throughout all future time. It should be a rational choice after reflection, not merely taking refuge on the basis of some feeling, which leaves one always anxious about gain and loss. Your feeling uneasy shows that your study has not been deep enough; you should strengthen your study.
 
 === 带着问题来选择 / Choose by Bringing Your Questions <ch01-q07>
 
 _问：_ 我之前在美国留学十年，接触基督教的时间比较多。回国后在母亲引导下，看了济群法师的《百法明门论》系列讲座。现在母亲每天给我发佛教经典，阿姨给我发基督教的《圣经》。我深知脚踏两条船是错误的，但不知如何选择，非常困惑。
 
-_Q:_ I studied in the United States for ten years and had quite a lot of contact with Christianity. After returning to China, under my mother's guidance, I watched Master Jiqun's lecture series on the _Treatise on the Gateway to Understanding the Hundred Dharmas_. Now my mother sends me Buddhist scriptures every day, and my aunt sends me the Christian Bible. I deeply know that straddling two boats is wrong, but I do not know how to choose, and I am very confused.
+_Q:_ I studied in the United States for ten years and had quite a lot of contact with Christianity. After returning to China, under my mother's guidance, I watched Master Jiqun's lecture series on the _Treatise on the Gateway to Understanding the Hundred Dharmas_. Now my mother sends me Buddhist scriptures every day, and my aunt sends me the Christian Bible. I know full well that trying to walk two paths is wrong, but I do not know how to choose, and I am very confused.
 
 _答：_ 如果一方面学着佛法，一方面看着基督教教义，却分不清哪种道理更有价值，更能说服自己，说明你还没有能力判断------佛法到底好在哪里。在这样的情况下，两种学习可能对你都重要，只好继续学。学到哪一天，你确定什么更究竟，才能作出选择。
 
-_A:_ If on the one hand you are studying the Dharma while on the other hand you are reading Christian doctrine, yet you cannot tell which teaching is more valuable or more convincing to you, this shows you do not yet have the ability to judge—where the excellence of the Dharma actually lies. In such a situation, both kinds of study may be important for you; you just have to continue studying. Only when one day you determine which is more ultimate can you make a choice.
+_A:_ If on the one hand you are studying the Dharma while on the other hand you are reading Christian doctrine, yet you cannot tell which teaching is more valuable or more convincing to you, this shows you do not yet have the ability to judge—where the excellence of the Dharma actually lies. In such a situation, both kinds of study may be important for you; you just have to continue studying. Only when one day you determine which is more complete can you make a choice.
 
 但也可能，时间一天天过去，你却在"选择困难症”中陷得越来越深，越来越难以选择。所以还是要有方法，确定自己的诉求是什么，需要解决的是什么。然后带着问题考量，哪种教义对自己更有帮助，对生命和世界的解读更圆满。
 
-But it is also possible that as the days pass, you will sink deeper and deeper into "choice difficulty" and find it harder and harder to choose. So you still need a method: determine what you are seeking and what you need to resolve. Then examine with these questions in mind which teaching is more helpful to you and offers a more complete interpretation of life and the world.
+But it is also possible that as the days pass, you will sink deeper and deeper into "decision paralysis" and find it harder and harder to choose. So you still need a method: determine what you are seeking and what you need to resolve. Then examine with these questions in mind which teaching is more helpful to you and offers a more complete interpretation of life and the world.
 
 === 信佛后能否去其他宗教场所 / Can One Go to Other Religious Sites After Believing in Buddhism? <ch01-q08>
 
@@ -219,7 +216,7 @@ _A:_ From the standpoint of faith, one cannot take refuge in multiple religions 
 
 至于第二个问题，现在是一个信仰缺失的时代，原因很多，和十年浩劫有关，和长期以来的教育有关，也和教界的弘法薄弱有关。现在政府开始重视传统文化，为建设精神文明服务。我们也在不断探索，希望找到契合当代的传播方式。这需要大家共同努力，因为我们面对的是整个社会，不能仅仅靠几个人来做。
 
-As for the second question, the present is an age of loss of faith; there are many reasons. It is related to the decade of catastrophe, to long-standing education, and also to weakness in the propagation of the Dharma by the religious community. The government is now beginning to value traditional culture to serve the building of spiritual civilization. We are also continuously exploring, hoping to find forms of propagation suited to the contemporary era. This requires the joint effort of everyone, because we are facing the whole society; it cannot rely on just a few people.
+As for the second question, the present is an age of loss of faith; there are many reasons. It is related to the decade of catastrophe, to long-standing education, and also to weakness in the propagation of the Dharma by the Buddhist community. The government is now beginning to value traditional culture to serve the building of spiritual civilization. We are also continuously exploring, hoping to find forms of propagation suited to the contemporary era. This requires the joint effort of everyone, because we are facing the whole society; it cannot rely on just a few people.
 
 === 想出家该怎么做 / What to Do If You Want to Become a Monastic <ch01-q09>
 
@@ -243,11 +240,11 @@ _Q:_ Nowadays many places treat building temples and making statues as tourism d
 
 _答：_ 现在确实有地区为了发展经济、带动旅游而建寺造像，从佛教来说，这样做显然是不如法的。一个道场的存在，关键在于法的内涵，这样才能起到净化社会人心的作用，否则就和旅游景点没有本质区别了。遗憾的是，现在很多寺院也热衷于旅游开发，这和社会的大环境有关，也和教界缺乏良好的修学氛围有关。
 
-_A:_ It is true that some regions now build temples and make statues in order to develop the economy and promote tourism. From the Buddhist standpoint, this is obviously not in accordance with the Dharma. The existence of a practice place depends on its content of Dharma; only thus can it serve to purify the minds of people in society. Otherwise it is essentially no different from a tourist attraction. Regrettably, many temples are now also keen on tourism development; this is related to the general social environment and also to the lack of a good atmosphere of study and practice in the Buddhist community.
+_A:_ It is true that some regions now build temples and make statues in order to develop the economy and promote tourism. From the Buddhist standpoint, this is obviously not in accordance with the Dharma. The existence of a practice place depends on its content of Dharma; only thus can it serve to purify the minds of people in society. Otherwise it is essentially no different from a tourist attraction. Regrettably, many temples are now also eagerly pursuing tourism development; this is related to the general social environment and also to the lack of a good atmosphere of study and practice in the Buddhist community.
 
 我觉得，教界呈现一种什么状态，和众生的共业密切相关。如果众生恶业较重，就不易感得清净道场及大善知识的出现。所以我们不要过多责怪环境，也要考量自己：为什么生在这样的时代？由此策励自己精进修学。
 
-I believe that the state presented by the Buddhist community is closely related to the collective karma of beings. If beings' negative karma is heavy, it is not easy to attract the appearance of pure practice places and great wise teachers. Therefore we should not blame the environment too much, but also examine ourselves: Why were we born in such an age? From this we can encourage ourselves to study and practice diligently.
+I believe that the state presented by the Buddhist community is closely related to the collective karma of beings. If beings' negative karma is heavy, it is not easy to attract the appearance of pure practice places and great teachers. Therefore we should not blame the environment too much, but also examine ourselves: Why were we born in such an age? From this we can encourage ourselves to study and practice diligently.
 
 作为学佛人来说，在顺应环境的同时，还要主动选择清净道场，选择堪为依止的善知识，主动调整自己的心行状态。在努力过程中，相信我们感得的外缘也会发生变化。
 
@@ -333,7 +330,7 @@ _Q:_ In worldly organizations people are held together by interests, but the Bod
 
 _答：_ 书院是传承佛教文化、传播佛法智慧的平台，重点是施设一套课程，建立模式化、标准化的修学方式。这也符合佛教传统的管理方式。释迦牟尼入灭时，没有找谁当僧团领袖，而是告诫弟子们"以法为师，以戒为师”。法是佛法智慧和修行理路，戒则是个人行为规范和僧团管理规则。这种管理不是谁管谁，而是共同生活需要遵守的原则。不论四个人的团体，还是四百人的团体，在戒律中都是平等的。所以僧团之间是扁平化的，不是集权制，也没有上下级的关系。关于修行、生活、共住的所有问题，戒律中有一套羯磨作法，大家就按这个规范执行。每个出家人进入僧团后都要学戒，了解每件事的规则和处理模式，同时遵循六和的精神和合共住。
 
-_A:_ The Institute is a platform for transmitting Buddhist culture and spreading the wisdom of the Dharma. The focus is on setting up a curriculum and establishing a patterned, standardized way of study and practice. This also accords with the traditional Buddhist way of management. When Shakyamuni Buddha entered parinirvana, he did not appoint anyone as leader of the Sangha; instead, he admonished his disciples, "Take the Dharma as your teacher, take the precepts as your teacher." The Dharma is the wisdom of the Buddhadharma and the path of cultivation; the precepts are the norms of personal conduct and the rules for managing the Sangha. This kind of management is not a matter of someone controlling others, but principles that communal life needs to observe. Whether a group has four people or four hundred, all are equal before the precepts. Thus the Sangha is flat in structure, not centralized, and has no hierarchical relationships. For all matters concerning cultivation, daily life, and communal living, the precepts provide a set of kamma procedures; everyone simply follows these norms. Every monastic who enters the Sangha must study the precepts, understand the rules and procedures for each matter, and at the same time follow the spirit of the six harmonies and live together in accord.
+_A:_ The Institute is a platform for transmitting Buddhist culture and spreading the wisdom of the Dharma. The focus is on setting up a curriculum and establishing a structured, standardized way of study and practice. This also accords with the traditional Buddhist approach to management. When Shakyamuni Buddha entered parinirvana, he did not appoint anyone as leader of the Sangha; instead, he admonished his disciples, "Take the Dharma as your teacher, take the precepts as your teacher." The Dharma is the wisdom of the Buddhadharma and the path of cultivation; the precepts are the norms of personal conduct and the rules for managing the Sangha. This kind of management is not a matter of someone controlling others, but principles that communal life needs to observe. Whether a group has four people or four hundred, all are equal before the precepts. Thus the Sangha is flat in structure, not centralized, and has no hierarchical relationships. For all matters concerning cultivation, daily life, and communal living, the precepts provide a set of kamma procedures; everyone simply follows these norms. Every monastic who enters the Sangha must study the precepts, understand the rules and procedures for each matter, and at the same time follow the spirit of the six harmonies and live together in accord.
 
 书院也是同样，我们不是在做一个团体，而是成就大家在这个平台共同修学。当他们于法受益后，就会继续帮助他人修学，因为利他是提升自己的最好途径。所以我们需要的不是行政管理，更不是世间利益，而是建立一套规范，帮助大家尽快走上修学轨道。
 
@@ -351,7 +348,7 @@ _A:_ In the Buddhadharma, the precepts are called the foundation of unsurpassed 
 
 我们现有生命是无明制造的产品，是混乱无序的。受持戒律，是对种种不良习惯的修正，势必会和原有串习产生冲突。这种冲突使凡夫心感到压抑，也使我们不愿持戒，并寻找种种自我保护的理由。但要知道，如果我们想改善生命，就必须扭转这些不良串习。修行，是通过对观念和行为的修正，最终修正心态，修正人格，修正生命品质。在此过程中，戒律是必不可少的重要保障。
 
-Our present life is a product of ignorance, chaotic and disorderly. Receiving and upholding the precepts is a correction of all kinds of unwholesome habits, and it is bound to conflict with our existing patterns. This conflict makes the ordinary mind feel repressed, makes us unwilling to keep the precepts, and leads us to find all sorts of reasons to protect ourselves. But we should know that if we want to improve our lives, we must reverse these unwholesome patterns. Cultivation is the correction of mental states, character, and the quality of life through correcting our views and behavior. In this process, the precepts are an indispensable and important safeguard.
+Our present life is a product of ignorance, chaotic and disorderly. Receiving and upholding the precepts is a correction of all kinds of unwholesome habits, and it is bound to conflict with our existing patterns. This conflict makes the mind of an ordinary being feel repressed, makes us unwilling to keep the precepts, and leads us to find all sorts of reasons to protect ourselves. But we should know that if we want to improve our lives, we must reverse these unwholesome patterns. Cultivation transforms our mental states, character, and the quality of life by correcting our views and behavior. In this process, the precepts are an indispensable and important safeguard.
 
 真正认识到戒律对自身的意义，持戒就不再是被动的约束，而会成为我们主动的选择。学生学习是辛苦的，运动员训练是辛苦的，在社会上工作也是辛苦的，但没人因为辛苦而放弃，为什么？正是因为他们认识到学习、训练和工作的重要性。持戒同样如此，明了持戒的意义，即使暂时遇到困难，也不会成为阻碍。
 
@@ -421,7 +418,7 @@ _A:_ Stealing is also called taking what is not given. Its standard is that one 
 
 做股票之类，只要在合法理财的范畴中规范操作，是道德和法律允许的，谈不上犯戒。不过同样是做股票，有投资式和投机式之分。如果是投资式的，就是集中大家的力量一起做事，可以相互增上，共同受益，应该算是自利利他的好事。但如果是投机式的，因为急功近利，多少会夹杂欺骗行为，甚至让他人受到伤害，那是不如法的。作为学佛者，应该避免这样的心态和行为。
 
-Trading stocks and the like, as long as it is within the scope of lawful financial management and conducted according to regulation, is permitted by morality and law and cannot be called breaking the precept. However, stock trading can be either investment-oriented or speculation-oriented. If it is investment-oriented, it gathers everyone's strength to do something together, enabling mutual growth and shared benefit; this should be considered a good deed that benefits oneself and others. But if it is speculation-oriented, because of the eagerness for quick success, it will more or less involve deception and may even harm others; this is not in accord with the Dharma. As a Buddhist practitioner, one should avoid such attitudes and behavior.
+Trading stocks and the like, as long as it is within the scope of lawful financial management and conducted according to regulation, is permitted by morality and law and cannot be called breaking the precept. However, stock trading can be either investing or speculating. If it is investment-oriented, it gathers everyone's strength to do something together, enabling mutual growth and shared benefit; this should be considered a good deed that benefits oneself and others. But if it is speculation-oriented, because of the eagerness for quick success, it will more or less involve deception and may even harm others; this is not in accord with the Dharma. As a Buddhist practitioner, one should avoid such attitudes and behavior.
 
 === 不妄语的界定 / Defining False Speech <ch03-q08>
 
@@ -435,7 +432,7 @@ _A:_ If the precept against false speech were understood in that way, it would o
 
 至于分享自己对人生和世界的理解，不论是对是错，或是不那么完善，确实是你当下的想法，就不属于妄语的范畴。当然，学佛人确实应该谨言慎行。首先要本着利他心说，其次不要为逞口舌之快而说。一行禅师对不妄语有这样的解读："明了语言可以创造幸福或制造痛苦，我发誓学习讲实语，讲能够激发人的自信、给人带来快乐和希望的话。我决心不传播不确定的消息、不批评或谴责我没有把握的事情，避免讲会导致分裂或不和的话，或会导致家庭、团体破裂的话。”不仅告诉我们不说什么，还告诉我们该说什么，是很好的修行提醒。
 
-As for sharing your own understanding of life and the world, whether it is right or wrong or not quite complete, as long as it is genuinely your present thought, it does not fall within the scope of false speech. Of course, Buddhists should indeed be careful and cautious in speech. First, speak with the intention to benefit others; second, do not speak merely to show off your own cleverness. Thich Nhat Hanh offered this interpretation of the precept against false speech: "Aware that words can create happiness or suffering, I vow to learn to speak truthfully, to speak words that inspire confidence, joy, and hope. I am determined not to spread news whose truth I do not know, not to criticize or condemn things of which I am not sure, and to avoid words that cause division or discord, or that can break families or communities." This tells us not only what not to say but also what to say; it is a very good reminder for practice.
+As for sharing your own understanding of life and the world, whether it is right or wrong or not quite complete, as long as it is genuinely your present thought, it does not fall within the scope of false speech. Of course, Buddhists should indeed be careful and cautious in speech. First, speak with the intention to benefit others; second, do not speak merely to show off. Thich Nhat Hanh offered this interpretation of the precept against false speech: "Aware that words can create happiness or suffering, I vow to learn to speak truthfully, to speak words that inspire confidence, joy, and hope. I am determined not to spread news whose truth I do not know, not to criticize or condemn things of which I am not sure, and to avoid words that cause division or discord, or that can break families or communities." This tells us not only what not to say but also what to say; it is a very good reminder for practice.
 
 === 怎么面对不如法的现象 / How to Face Improper Phenomena <ch03-q09>
 
@@ -489,7 +486,7 @@ _Q:_ Having come this far in life, I have a deep appreciation of the Dharma's te
 
 _答：_ 在修行路上，我们虽然看到了觉醒的价值，但同时还有无所不在的串习，而从外部环境看，整个社会都在支持贪嗔痴。面对这样的内外夹攻，必须不断斗争，为修学创造善缘。你现在所处的胶着状态，是不少人会经历的。如果不突破，就会随波逐流，失去向道之心。
 
-_A:_ On the path of practice, although we have seen the value of awakening, we are still surrounded by habitual tendencies, and from the external environment, the whole of society supports greed, hatred, and delusion. Faced with this pincer attack from within and without, we must keep struggling and create favorable conditions for our practice. The stalemate you are in now is something many people experience. If you do not break through it, you will be swept along by the current and lose your aspiration for the Path.
+_A:_ On the path of practice, although we have seen the value of awakening, we are still surrounded by habitual tendencies, and from the external environment, the whole of society supports greed, hatred, and delusion. Faced with this pressure from within and without, we must keep struggling and create favorable conditions for our practice. The stalemate you are in now is something many people experience. If you do not break through it, you will be swept along by the current and lose your aspiration for the Path.
 
 关于精进，佛法的提醒方式是思维暇满人身的义大难得，还有念死无常、念三恶道苦等。有一篇《心匙》，对如何念死有发人深省的描述，经常听一听，随文入观，可以策励精进。此外还要学会管理时间，把每天的修学安排固定下来，以免晃晃悠悠，被惯性带着跑。三级修学重视氛围，有一群伙伴相互鼓励，也是修学的重要保障。但最关键的是有效修学，于法受益，这种法喜本身就是源源不断的动力。有句话叫兴趣是最好的老师，其实学佛也是同样，要激发并保持对法的好乐。随着正念不断增长，就能战胜串习。
 
@@ -581,7 +578,7 @@ _Q:_ I am studying in the Tongxi Class and encountered meditation at the retreat
 
 _答：_ 皈依定课的重点是强化对三宝的信心，其中包含安住修，就是一种禅修。我们可以选择佛像或佛陀名号为所缘，安住于此，训练定力；也可以直接观察心的本质是什么，由此培养观照力。静修营的禅修体验是采用内观，但对很多人来说，因为烦恼深重，串习强大，如果单纯修内观，往往树欲静而风不止。心静不下来，就很难得力。皈依定课的观察修和安住修，使我们认识轮回苦，生起出离心，就不易被外境所转，引发不良情绪，可以为修习内观营造清净的心灵氛围。而内观培养的专注和觉察，有助于我们在修习皈依时安住。两者具有相辅相成的作用。
 
-_A:_ The focus of the refuge daily practice is to strengthen faith in the Three Jewels. It includes _settling the mind_, which is itself a form of meditation. We may take a Buddha image or the Buddha's name as our object of focus, rest there, and train concentration; or we may directly observe what the nature of mind is, thereby developing contemplative insight. The meditation experience in the retreat uses _vipassana_, but for many people, because afflictions run deep and habitual patterns are strong, if they practice vipassana alone, it is often like the tree wishing stillness while the wind keeps blowing. When the mind cannot settle, it is hard to gain strength. The analytical meditation and settling meditation in the refuge daily practice help us recognize the suffering of samsara and give rise to renunciation, so we are not easily swayed by external conditions or provoked into unwholesome states, creating a pure mental atmosphere for practicing vipassana. In turn, the focus and awareness cultivated by vipassana help us abide in the refuge practice. The two complement and reinforce each other.
+_A:_ The focus of the refuge daily practice is to strengthen faith in the Three Jewels. It includes _settling the mind_, which is itself a form of meditation. We may take a Buddha image or the Buddha's name as our object of focus, rest there, and train concentration; or we may directly observe what the nature of mind is, thereby developing contemplative insight. The meditation experience in the retreat uses _vipassana_, but for many people, because afflictions run deep and habitual patterns are strong, if they practice vipassana alone, it is often like the tree may crave stillness, but the wind will not cease. When the mind cannot settle, it is hard to gain strength. The analytical meditation and settling meditation in the refuge daily practice help us recognize the suffering of samsara and give rise to renunciation, so we are not easily swayed by external conditions or provoked into unwholesome states, creating a pure mental atmosphere for practicing vipassana. In turn, the focus and awareness cultivated by vipassana help us abide in the refuge practice. The two complement and reinforce each other.
 
 === 想到就要做到 / Think of It, Then Do It <ch05-q02>
 
@@ -925,7 +922,7 @@ _Q:_ Since I was young I have cherished great aspirations—to become a scientis
 
 _答：_ 这要看你用什么标准衡量成功。现代的成功标准比较物质，比如事业的大小、财富的多少、名望的高低、粉丝的多少等等。中国古代的成功标准是立德、立功、立言，更重视做人和对社会的贡献。而佛法所说的成功是自利利他，自觉觉他。一方面是于自身成就高尚人格，断除烦恼，圆满悲智；另一方面还能引领众生改善生命。我想，这是更究竟的成功，意义也更为长久。
 
-_A:_ That depends on what standard you use to measure success. Modern standards tend to be materialistic: the size of one's career, the amount of wealth, the height of fame, the number of followers, and so on. In ancient China the standard was to establish virtue, merit, and worthy discourse, placing more importance on character and contribution to society. The Dharma's standard of success is benefiting self and others, awakening self and others. On the one hand, you perfect a noble personality, eliminate afflictions, and fulfill compassion and wisdom within yourself; on the other hand, you can guide living beings to improve their lives. I believe this is a more ultimate success, and its significance is more enduring.
+_A:_ That depends on what standard you use to measure success. Modern standards tend to be materialistic: the size of one's career, the amount of wealth, the height of fame, the number of followers, and so on. In ancient China the standard was to establish virtue, merit, and worthy discourse, placing more importance on character and contribution to society. The Dharma's standard of success is benefiting self and others, awakening self and others. On the one hand, you perfect a noble personality, eliminate afflictions, and fulfill compassion and wisdom within yourself; on the other hand, you can guide living beings to improve their lives. I believe this is a more complete success, and its significance is more enduring.
 
 至于当科学家、医生、教师，当然很有意义，但这和生命觉醒并不相违。如果在完善人格的基础上从事这些职业，将对世界作出更大贡献。否则的话，虽然职业本身很高尚，能够利益大众，但如果没有健全的心智，也会对自己和他人造成危害。职业只是一种工具，关键在于使用工具的人。
 
@@ -1063,7 +1060,7 @@ _Q:_ We all know that education should start when children are small. How can we
 
 _答：_ 现在整个社会缺乏做人的教育，从学校到社会都是如此。更麻烦的是，外在诱惑和负面影响无处不在。作为孩子的第一课堂，父母确实要关心孩子的精神生活，加强道德素质的教育。我们希望孩子从智慧文化受益，前提是自己真正受益。当我们的观念、心态、人格、言行得到改善，贪嗔痴减少了，慈悲智慧增加了，本身就能为孩子传递正向的信息和能量。
 
-_A:_ Society as a whole today lacks education in how to be a good person, from school to society at large. What is more troubling is that external temptations and negative influences are everywhere. As their first classroom, parents must indeed care about their children's spiritual life and strengthen their moral character. If we want our children to benefit from the wisdom culture, the prerequisite is that we ourselves truly benefit. When our views, mental state, character, and conduct improve, when greed, hatred, and delusion decrease and compassion and wisdom increase, we naturally transmit positive messages and energy to our children.
+_A:_ Society as a whole today lacks education in how to be a good person, from school to society at large. What is more troubling is that external temptations and negative influences are everywhere. As their first classroom, parents must indeed care about their children's spiritual life and strengthen their moral character. If we want our children to benefit from the culture of wisdom, the prerequisite is that we ourselves truly benefit. When our views, mental state, character, and conduct improve, when greed, hatred, and delusion decrease and compassion and wisdom increase, we naturally transmit positive messages and energy to our children.
 
 孩子是感性的，除了讲道理之外，最重要的是以身作则，让孩子看到你是什么样的人，是怎么待人处世、处理问题的。这样的身教最为直接，往往胜于言教。在孩子出现问题时要及时纠正，和他一起探讨：为什么错了，应该怎么做？同时融入一些做人的道理，就会更有效。因为这不是空洞的说教，而是与具体问题相结合的。此外，还要营造和谐的家庭氛围，让孩子打开心扉，愿意和父母交流，知道这种交流对自己有益。这是帮助孩子健康成长的重要前提。
 
@@ -1153,7 +1150,7 @@ _Q:_ I used to feel quite good about myself, but later, influenced by others, I 
 
 _答：_ 人往往看不清自己，就会不自觉地和人比较。有人爱用自己的长处和别人的不足比，就会自我感觉良好，甚至盲目自大；也有人总是夸大自己的不足，以此否定自己。这都不是如实的认知，也反映了对自身的不接纳。每个人都有自己的长处和不足，这很正常，因为生命的积累不同。了解自己当下的状态，如实接纳，才能在此基础上进步。否则，自大者会故步自封，自卑者会妄自菲薄，都不利于生命的优化。
 
-_A:_ People often cannot see themselves clearly and unconsciously compare themselves with others. Some like to compare their strengths with others' weaknesses, which makes them feel good about themselves, even blindly arrogant. Others always exaggerate their own shortcomings and use them to negate themselves. Neither is a true perception, and both reflect non-acceptance of oneself. Everyone has strengths and shortcomings; this is normal, because each person's accumulated life is different. Only by understanding one's present state and accepting it as it is can one progress on that basis. Otherwise, the arrogant will become stuck in their ways, and the inferior will sell themselves short; neither is conducive to the optimization of life.
+_A:_ People often cannot see themselves clearly and unconsciously compare themselves with others. Some like to compare their strengths with others' weaknesses, which makes them feel good about themselves, even blindly arrogant. Others always exaggerate their own shortcomings and use them to negate themselves. Neither is a true perception, and both reflect non-acceptance of oneself. Everyone has strengths and shortcomings; this is normal, because each person's accumulated life is different. Only by understanding one's present state and accepting it as it is can one progress on that basis. Otherwise, the arrogant will become stuck in their ways, and the inferior will sell themselves short; neither is conducive to the flourishing of life.
 
 在意别人的看法，同样是因为看不清自己，对人生追求不明确，不知道自己能做什么，也不知道自己究竟要什么不要什么，就容易受外界影响。如果能通过学佛树立正见，对人生有自主选择，就不会那么在意了。别人有什么看法，我们可以用来检查自己，有则改之，无则加勉。此外不必多想什么，否则只会增加无谓的烦恼。学佛的根本就在于去除我执，如果死死抱住这个"我”不放，连别人的看法都要在意，痛苦是没完没了的。
 
@@ -1171,7 +1168,7 @@ _A:_ Lay practitioners all have responsibilities in family, work, and society, a
 
 此外，当我们的心没能安住于法时，就会妄想纷飞。很多人每天忙来忙去，大量时间用于妄想，用于玩手机、聊天、逛街，或是制造各种无谓的应酬。学佛后生活变得简单，可以省出大量时间来学习，做利益众生的事。不仅如此，当你的智慧增长了，即使看孩子、做家务，也可以是修行的一部分，和学佛并不矛盾。如果是和人相处，就用来训练理解、陪伴、关爱；如果是单纯做事，就用来训练觉知和安住当下。当时间使用得更有价值，你的生命就会更有价值。
 
-Moreover, when our minds have not settled into the Dharma, random thoughts fly about. Many people busily pass their days, spending much time on wandering thoughts, playing with phones, chatting, shopping, or creating all kinds of unnecessary social engagements. After learning Buddhism, life becomes simpler and we can save a great deal of time for study and for doing things that benefit sentient beings. Not only that, when your wisdom grows, even caring for children and doing housework can be part of practice and is not in conflict with learning Buddhism. When relating to others, use it to train understanding, companionship, and care; when simply doing tasks, use it to train awareness and abiding in the present moment. When time is used more valuably, your life becomes more valuable.
+Moreover, when our minds have not settled into the Dharma, random thoughts fly about. Many people busily pass their days, spending much time on wandering thoughts, playing with phones, chatting, shopping, or creating all kinds of unnecessary social engagements. After learning Buddhism, life becomes simpler and we can save a great deal of time for study and for doing things that benefit sentient beings. Not only that, when your wisdom grows, even caring for children and doing housework can be part of practice and is not in conflict with learning Buddhism. When relating to others, use it to train understanding, companionship, and care; when simply doing tasks, use it to train awareness and abiding in the present moment. When time is used more wisely, your life becomes more valuable.
 
 === 鬼也是众生，别怕 / Ghosts Are Sentient Beings Too; Don't Be Afraid <ch10-q06>
 
@@ -1343,7 +1340,7 @@ _Q:_ We make our living by fishing and usually go to various temples to perform 
 
 _答：_ 职业和信仰的冲突，是个现实问题。尤其在特定地区，某些职业是祖祖辈辈的传统，选择相对较少。学佛后了解到这么做的果报，究竟该怎么办？取决于你的认识和信仰深度。如果真正认识到，自己为了生存和利益造下很多杀业，让众生失去生命，自己将来也要承受苦果，实在得不偿失，就应该重新选择正命的职业。就像看到工作严重危害身体健康时，你还会继续吗？人们之所以对某些犯戒的工作放不下，主要还是对其中的危害认识不足，心存侥幸。事实上，因果是丝毫不爽的。
 
-_A:_ The conflict between occupation and faith is a practical issue. Especially in certain regions, some occupations are ancestral traditions, and the choices are relatively few. After learning Buddhism and understanding the karmic consequences of doing this, what should one do? It depends on the depth of your understanding and faith. If you truly realize that in order to survive and profit you are creating much killing karma, causing sentient beings to lose their lives, and that you yourself will have to suffer the bitter results in the future, then the loss outweighs the gain and you should choose a right-livelihood occupation. Just as when you see that a job seriously harms your health, would you continue? The reason people cannot let go of certain precept-violating work is mainly insufficient understanding of the harm involved, plus a lucky mind. In fact, cause and effect never miss.
+_A:_ The conflict between occupation and faith is a practical issue. Especially in certain regions, some occupations are ancestral traditions, and the choices are relatively few. After learning Buddhism and understanding the karmic consequences of doing this, what should one do? It depends on the depth of your understanding and faith. If you truly realize that in order to survive and profit you are creating much killing karma, causing sentient beings to lose their lives, and that you yourself will have to suffer the bitter results in the future, then the loss outweighs the gain and you should choose a right livelihood. Just as when you see that a job seriously harms your health, would you continue? The reason people cannot let go of certain precept-violating work is mainly insufficient understanding of the harm involved, plus a lucky mind. In fact, cause and effect never miss.
 
 当然在难以改变职业的情况下，通过做佛事来弥补，总比不弥补要好。但如果有条件转行，还是应该选择符合法律和戒律的职业。因为职业是天天做的，一做几十年，不善业就这么日积月累，不断增长。
 

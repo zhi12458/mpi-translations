@@ -150,3 +150,7 @@ regenerating the same Python in execute_code each turn.
 - `scripts/proofread-pdf.py <docx> <pdf>` — word-level diff between manuscript and typeset PDF
 - `scripts/gen-bilingual.fish <dir>` — produce `bilingual.dj` from `source.dj` + `target.dj`
 - `scripts/gen-bilingual-<name>-<hash>.py` — article-specific extraction from DOCX
+
+Article-specific scripts (including Typst compile helpers) should be placed in
+the article directory itself, named with a short hash: e.g.
+`translate-files/<article>/compile-typst-<hash>.fish`.
