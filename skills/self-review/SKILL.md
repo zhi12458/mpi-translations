@@ -1,6 +1,8 @@
 ---
 name: self-review
 description: Review your own CN→EN translations — three-pass review (terminology → mechanical → flow). Edit commented.dj with patch. For reviewing someone else's work, load other-review.
+inputs: bilingual.dj, or CSV/XLSX (Chinese + English columns)
+outputs: commented.dj, translation-findings.dj (optional)
 ---
 
 {% Serves AGENTS.md Workflow B1 (Self-Review) %}
@@ -105,6 +107,7 @@ category of error. Don't try to catch everything in one scan.
 **Pass 3 — flow/tonal/calques** (read the whole English as prose):
 - Re-read the full English target. Does it hang together as prose, or does it read as "translationese"?
 - Dramatic verbs that are calques of Chinese: "draw forth," "into full play," "shoulder," "look to with hope." See `references/translation-pitfalls.md` for the full calque checklist.
+- New: review the *人生百问* pattern tables in `translation-pitfalls.md` for stiff calques ("keen on," "wisdom culture," "more ultimate," "choice difficulty," "serve as reference") and idiom renderings ("tree wishing stillness," "straddling two boats").
 - Subject-shift calques: English substitutes a concrete agent (practitioners, people) for an abstract system noun (Buddhism, religion) — see pitfalls.
 - Factual inconsistencies across paired descriptions of the same person/place/thing.
 - Tonal coherence inside parallel lists: verb choice should be identical across First/Second/Third items.
@@ -206,6 +209,7 @@ Do not run extraction pipelines until scope is clear.
 - **Verify patches with `cat`** — `read_file` dedup makes it unreliable
 - **Re-read before fixing** — user may have made interim edits
 - **Batch terminology lookups** — when checking many terms against the terms DB, run them in one `execute_code` script that loops over a query list and calls `search.py` via `subprocess.run`. One terminal call per term floods the context with repetitive output.
+- **Mine review comments for patterns** — when a `review-comments.dj` is produced, scan it for recurring calques and term choices and add them to `references/translation-pitfalls.md` and `references/buddhist-terminology.md` so the skill improves with each review.
 
 ## Human Review Protocol (审议)
 

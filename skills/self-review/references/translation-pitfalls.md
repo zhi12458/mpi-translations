@@ -279,6 +279,163 @@ initial/middle/great scope."
 
 ### Translating before consulting terms DB
 
-Always search key terms BEFORE translating. The dharma-translation skill says to do
-this, but it's easy to skip. Use the CLI: `$MPI_PROJECT_ROOT/terms-search/search.py <query>`.
-Prioritize DoT定稿 > 内部特色词 > 佛教术语 > 经论名.
+
+## Patterns from 人生百问 review (self-review findings)
+
+The review of *人生百问* surfaced a set of recurring calques, register
+mismatches, and Buddhist-term choices that keep reappearing in MPI
+CN→EN work. Treat these as a supplemental checklist after the main
+translation-pitfalls list.
+
+### Stiff / formal calques to soften
+
+| Source pattern | Stiff / literal rendering | Smoother options |
+|---|---|---|
+| 热衷于 / 很热衷 | "keen on" | "eager to," "enthusiastically pursuing" |
+| 善用理性 | "use reason skillfully" | "use reason well," "use reason wisely" |
+| 随缘 | "responding to conditions" | "in harmony with conditions" (when it flows better) |
+| 人云亦云 | "serve as reference" | "provide guidance," "serve as a reference" |
+| 引起共鸣 | "arouse resonance" | "resonate," "strike a chord" |
+| 强势而偏执 | "forceful and opinionated" | "forceful and dogmatic," "domineering and inflexible" |
+| 执着外境 | "cling to all sorts of external pursuits" | "cling to all sorts of external conditions" |
+| 一时兴起 | "spur-of-the-moment impulse" | "spur-of-the-moment idea" |
+| 大龄青年 | "older unmarried young people" | "older singles," "unmarried adults" |
+| 更受欢迎 | "more welcome" | "more well-liked," "more welcomed by others" |
+| 想起来很急，做起来又不急 | "feel urgent but do not act urgently" | "urgent in thought but not in deed" |
+| 随大流 / 大众化的 | "popular" | "mass-oriented," "public," "for the general public" |
+| 养生之道 | "wisdom culture" | "wisdom tradition," "culture of wisdom" |
+| 以此作为标准 | "take X as the only standard" | "make X the only standard" (when the sentence is top-heavy) |
+
+### 究竟 / 终极 / 更高层次
+
+| Source | Awkward | Preferred |
+|---|---|---|
+| 更究竟 | "more ultimate" | "more complete," "more profound," "higher" |
+| 更究竟的成功 | "a more ultimate success" | "a more complete success," "a higher success" |
+
+In conversational Q&A, 究竟 often reads better as "complete" or "profound"
+than as the technical "ultimate." Reserve "ultimate" for explicit doctrinal
+discussions of 究竟谛 / ultimate truth.
+
+### Buddhist term register
+
+| Source | Issue | Preferred guidance |
+|---|---|---|
+| 大自在 | "great freedom" loses the "ease" nuance | "great freedom and ease" |
+| 开启智慧 | "opened up boundless wisdom" is odd | "awakened," "brought forth," "unfolded" |
+| 迷惑 (as affliction) | "confusion" is too generic | "delusion" (in Buddhist contexts) |
+| 惑业 | "confusion and karma" | "delusion and karma" (check terms DB) |
+| 善知识 | "great wise teachers" is redundant | "great teachers," "wise teachers," "authentic teachers" |
+| 皈依三宝 | "take refuge hastily" | "take refuge lightly," "take refuge without being ready" |
+| 尽未来际 | "for all future time" is literal | "for all future lives," "throughout all future time" |
+| 患得患失 | "worried about personal gains and losses" | "anxious about gain and loss" |
+|  religious community | vague | "Buddhist community," "Sangha" |
+| 报身 | "enjoyment body" vs "reward body" | Verify target convention; MPI often prefers "reward body" |
+| 化身 | "transformation body" is common | Verify against target convention |
+| 等流果 | "continuative result" | Standard: "result of equal outflow," "correlative effect" |
+| 四力 (忏悔) | "power of eradication / remedy" | Use standard four powers terminology: remorse, support, restraint, refuge/reliance |
+| 末法 | "Dharma-ending age" / "Age of Dharma Decline" | Check terms DB; avoid inventing new renderings |
+| 暇满 | "well-endowed human form" | Standard: "leisure and endowment," "precious human life" |
+| 定课 | "fixed chanting session" | "daily practice," "daily recitation" (context-dependent) |
+| 八步骤三种禅修 | "Eight Steps and Three Kinds of Meditation" | DoT定稿: "Eight Steps and Three Types of Meditation" |
+| 功德 | "merit and virtue" (overused) | "merit" or "virtue" depending on context |
+| 福田 | "field of blessing" | Standard: "field of merit/blessing" |
+| 止观 | "calm abiding and special insight" | Or "śamatha-vipaśyanā"; avoid inventing new compounds |
+| 皈依 / 发心 / 戒律 / 正见 | gerund lists | Noun forms in catalogues: "refuge, aspiration, precepts, right view" |
+| 凡夫心 | "ordinary mind" | "mind of an ordinary being" (avoid Chan "ordinary mind" ambiguity) |
+| 加持 | "empowers one another" | "supports and blesses one another" (retain religious nuance) |
+| 登地菩萨 | "attained the grounds" | Standard rendering |
+| 弟子相 | "marks of a disciple" | Standard rendering |
+| 无缘大慈、同体大悲 | — | "unconditional great compassion and the great sympathy of seeing others as oneself" |
+| 人成即佛成 | — | "When a Human Is Perfected, Buddhahood Is Perfected" |
+| 人生佛教 | — | "Buddhism for Human Life" (do not conflate with 人间佛教 / Humanistic Buddhism) |
+| 三级修学 | — | DoT定稿: "Three-Stage Practice" |
+| 同喜班 | — | "Tongxi Class" (MPI convention; verify if glossary requires translation) |
+
+### Idioms and set phrases
+
+| Source | Literal / awkward | Preferred |
+|---|---|---|
+| 妄念纷飞 / 妄想纷飞 | "delusive thoughts still fly about" / "random thoughts fly about" | "delusions run wild," "wandering thoughts arise" |
+| 望尘莫及 | "outdo animals by far" (wrong direction) | "animals cannot compare," "are left far behind" |
+| 脚踏两条船 / 骑墙 | "straddling two boats" | "riding two boats," "trying to walk two paths" |
+| 选择困难症 | "choice difficulty" | "decision paralysis," "choice paralysis" |
+| 树欲静而风不止 | "the tree wishing stillness while the wind keeps blowing" | "the tree may crave stillness, but the wind will not cease" |
+| 磨刀不误砍柴工 | — | "sharpen the ax before cutting wood" (standard) |
+| 泥菩萨过江 | "clay bodhisattva" | Allude to the idiom; may need explanatory note |
+| 鄙视链 | "contempt chains" | Loan-translation is acceptable; keep if context is clear |
+| 十年浩劫 | "decade of catastrophe" | International readers may need a gloss |
+| 红尘滚滚 | "rolling red dust" | Acceptable in Buddhist register; do not soften |
+| 因上努力，果上随缘 | — | "work hard on the causes and let the results unfold as they may" |
+| 朝不保夕 | "we may not last until evening" | "life is precarious" |
+| 本末倒置 | — | "put the cart before the horse" |
+| 润物细无声 | — | "quiet, pervasive influence, like rain soaking into the earth unnoticed" |
+| 有口无心 | — | "with their mouths but not their hearts" |
+| 人非圣贤，孰能无过 | "To err is human" | Acceptable, but note it loses the Buddhist register |
+| Standard Buddhist idiom | — | Always prefer established English Buddhist idiom when one exists (e.g. Diamond Sutra "lives" not "bodies") |
+
+### Sentence structure / rhythm
+
+| Pattern | Problem | Fix |
+|---|---|---|
+| 3+ clause sentences | Can't be read in one breath | Split at natural breaks, especially after "world" or "Dharma" |
+| Top-heavy sentences | Main clause arrives too late | Move the main clause forward |
+| "is it not too late to X" | Inverted clause is awkward | "it is not too late to X" |
+| "patterned, standardized" | "patterned" is odd in English | "structured, standardized" or "model-based, standardized" |
+| "way of management" | awkward collocation | "approach to management," "style of governance" |
+| "correction of X through correcting Y" | repetitive | "transform X by correcting Y" |
+| "special circumstances are encountered" | passive/abstract | "special circumstances may create an exception" |
+| "formed from the Buddha's wisdom and merit" | mechanical | "arises from," "embodied wisdom and merit" |
+| "with every sound entering the ears" | flat idiom | "with every syllable clearly heard" |
+| "influenced by the liberation of individuality" | wrong collocation | "emancipation of the individual," "individual liberation" |
+| "the optimization of life" | technical-sounding | "flourishing of life," "growth in life" |
+| "right-livelihood occupation" | redundant | "right livelihood" |
+| "when time is used more valuably" | awkward adverb | "when time is used more wisely" |
+| "doing great things" | OK | Keep plain; do not overtranslate 做大事 |
+| "speak merely to show off your own cleverness" | misses idiom | 逞口舌之快 → "speak for the thrill of it," "indulge in sharp talk" |
+| "the power of eradication... the power of remedy" | non-standard | Use standard four powers terminology |
+| "pincer attack from within and without" | too militaristic in pastoral context | "pressure from within and without," "assault from both sides" |
+| "stalemate" | OK but possibly cold | "stuck place," "impasse" in spiritual contexts |
+| "persevere in one sutra" | loses metaphor | "go deeply into one sutra" |
+| "muddle-headedly" | rare adverb | "in a muddled way," "without understanding" |
+| "thoroughly applied" | slightly off | "when proficiency develops" |
+| "Using relics to check seems a little too late" | OK but flat | "Using relics as a measure seems rather late in the day" |
+| "unknowable mysticism" | 玄学 ≠ mysticism | "unknowable mystery" |
+| "reliance relationship" | awkward | "teacher-student relationship" |
+| "every place becomes a place of practice" | repetitive | "everywhere becomes a field of practice" |
+| "keeping an ordinary mind when things go well and still keeping an ordinary mind when things go badly" | wordy | "keeping an ordinary mind in both good times and bad" |
+| "ordinary, lax, and indulgent mind" | acceptable but loose | "ordinary mind of laxity and indulgence" |
+
+### Register: spoken Q&A vs. written Dharma
+
+*人生百问* is conversational Q&A. Keep the English warm and direct:
+
+| Stiff / written | Conversational |
+|---|---|
+| "I do not think so necessarily." | "Not necessarily." / "I don't think so." |
+| "bustle about for liberation" | "rush about," "busy themselves" |
+| "starting a family is for liberation from singlehood" | "liberation from being single" |
+| "Seen only from the surface" | "On the surface," "From a surface view" |
+| "If one is liberated, how can these dreams be realized?" | "...how can these dreams still be realized?" |
+| "I deeply know that..." | "I know full well that..." |
+| "For yourself, you must..." | "First, for yourself..." / "Personally, you must..." |
+| "I believe that the external conditions we attract will also change." | "the conditions we draw to ourselves will also change" |
+
+### Parallelism and grammar fixes
+
+| Issue | Example | Fix |
+|---|---|---|
+| Gerund/infinitive mismatch | "drawing near to wise teachers and to rely on them" | "draw near to wise teachers and rely on them" |
+| Missing "still" | "how can these dreams be realized?" | "how can these dreams still be realized?" |
+| Mixed singular/plural | "the largest debt, not all of them" | "the largest debt, not every debt" |
+| Redundant compound | "sharp and keen faculties" | "sharp faculties" or "keen faculties" |
+| "disorder" as verb | "'nao' is to disorder" | "'nao' is to disturb" |
+
+### Meta-pattern: when the review produces `review-comments.dj`
+
+After a self-review or other-review pass, scan the resulting
+`review-comments.dj` for **recurring patterns** and add them to this file
+and to `buddhist-terminology.md`. The review of *人生百问* began as a
+single article checklist and became a reusable pattern library; future
+reviews should do the same.
+

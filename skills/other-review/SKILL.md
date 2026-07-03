@@ -1,6 +1,8 @@
 ---
 name: other-review
 description: Editorial polish for CN→EN Buddhist translations you did NOT translate — voice, flow, readability. Load self-review first for terminology/accuracy.
+inputs: bilingual.dj (or source.dj + target.dj), or Google Doc
+outputs: review-comments.dj
 ---
 
 {% Serves AGENTS.md Workflow B2 (Other-Review) %}
@@ -486,8 +488,9 @@ Quoted text: `even discarded. Consequently, while countless companies emerged, t
 - **Google Docs anchor limitation**: The Drive API cannot create anchored comments
   on Google Docs. Use Mode B (output to review-comments.dj) for Google Doc targets.
   The user manually inserts comments in the browser UI. See the journey log at
-  `docs/google-docs-comment-journey.dj` for full details.
+  `references/google-docs-comment-journey.dj` for full details.
 - **Quoted text must be exact and unique**: when writing review-comments.dj, each
   quoted snippet must match the document text case-exactly and be long enough to
   find unambiguously with Ctrl+F. Short words like "consequently" are unacceptable
   — quote the full sentence or a 10+ word phrase.
+- **Mine review comments for reusable patterns**: when a review-comments.dj is produced, scan it for recurring calques and Buddhist term register issues and add them to `../self-review/references/translation-pitfalls.md` and `../self-review/references/buddhist-terminology.md`. The *人生百问* review produced a reusable pattern library — follow that example.

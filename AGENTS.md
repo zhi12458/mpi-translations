@@ -2,19 +2,7 @@
 
 ## Skills
 
-Skills in `skills/`. Loaded via `~/.hermes/config.yaml`:
-
-```yaml
-skills:
-  external_dirs:
-  - $MPI_PROJECT_ROOT/skills
-```
-
-{% `hermes config set` stringifies list values — edit config.yaml directly. %}
-
-When creating a new translation-related skill, use `skill_manage` with a
-`$MPI_PROJECT_ROOT/skills/` path. Do NOT create skills under `~/.hermes/skills/`
-— those are for personal/general skills, not project-specific workflows.
+Skills in `skills/`.
 
 Available: `translation`, `terms-search`, `self-review`, `other-review`, `chinese-text-normalize`, `pptx-translate`, `pdf-to-docx-conversion`.
 
@@ -34,13 +22,51 @@ translate-files/<topic>/<article>/
   bilingual.dj   — interleaved (source line, blank, target line, blank)
 ```
 
-`.docx` output → `/tmp/`. Don't commit binaries.
+Put `.docx` output in `/tmp/`. Don't commit binaries.
 
 ---
 
+## Translation State Machine
+
+All translation work follows this deterministic workflow. Non-deterministic LLM work (drafting, reviewing) happens at the edges; the states and transitions are fixed.
+
+```mermaid
+stateDiagram-v2
+    [*] --> idle
+    idle --> translating: SOURCE_LOADED
+    idle --> other_reviewing: BILINGUAL_LOADED
+    translating --> bilingual_ready: TRANSLATION_DRAFTED
+    bilingual_ready --> self_reviewing: BILINGUAL_GENERATED
+    self_reviewing --> translating: SELF_REJECTED
+    self_reviewing --> other_reviewing: SELF_APPROVED [peer review required]
+    self_reviewing --> approved: SELF_APPROVED [no peer review]
+    note right of self_reviewing
+        peer_review_required flag decides the branch
+    end note
+    other_reviewing --> translating: PEER_REJECTED
+    other_reviewing --> approved: PEER_APPROVED
+    approved --> typesetting: TYPESET_REQUESTED
+    approved --> done: COMPLETE
+    typesetting --> done: TYPESET_COMPLETE
+    done --> [*]
+```
+
+States:
+
+| State | Meaning | Output artifact |
+|---|---|---|
+| `idle` | Waiting for source or an existing bilingual file. | — |
+| `translating` | Agent loads `translation` + `terms-search` skills and drafts `target.dj`. | `target.dj` |
+| `bilingual_ready` | `bilingual.dj` generated from `source.dj` + `target.dj`. | `bilingual.dj` |
+| `self_reviewing` | Three-pass review: terminology → mechanical → flow. | `commented.dj`, `translation-findings.dj` |
+| `other_reviewing` | Peer review of someone else's translation. | `review-comments.dj` |
+| `approved` | Translation accepted. May typeset or finish. | — |
+| `typesetting` | Producing PDF/DOCX from approved bilingual content. | `.pdf` / `.docx` |
+| `done` | Complete. | — |
+
 ## Workflow A: Translation（翻译）
 
-Translate Chinese source into English. The agent IS the model — no external APIs.
+Translate Chinese source into English. The agent IS the model — no external APIs. This workflow covers the state machine path `idle` → `translating` → `bilingual_ready` → `self_reviewing`.
 
 ### Input
 
@@ -76,7 +102,7 @@ After translating, run `self-review` skill to check:
 
 ## Workflow B: Proofread / Review（校对/审阅）
 
-Two distinct sub-workflows depending on WHO did the translation.
+Two distinct sub-workflows depending on WHO did the translation. Both follow the review portion of the translation state machine (`self_reviewing` and `other_reviewing`).
 
 ### B1: Self-Review（自审）
 
@@ -116,27 +142,10 @@ and produces a diff you can review.
 
 For producing PDFs from bilingual Chinese-English articles:
 
-- Repo / project root: `~/documents/mpi/`
-- Template directory (contains `lib/`): `~/documents/mpi/translate-files/`
 - Template: `translate-files/lib/mpi-bilingual-template.typ`
 - Example host: `translate-files/从物品整理到心灵整理/mindful-organizing.typ`
 - Design notes: `references/typst-template-design.md`
-
-Host files should contain only one `#import` and one `#show:` rule; all
-formatting is handled by the template.
-
-Compile with the helper script:
-
-```bash
-~/documents/mpi/scripts/compile-typst.fish ./从物品整理到心灵整理/mindful-organizing.typ [output.pdf]
-```
-
-Or manually from the template directory:
-
-```bash
-cd ~/documents/mpi/translate-files
-typst compile --root . ./从物品整理到心灵整理/mindful-organizing.typ
-```
+- Produce rendered PDF files in: /tmp/
 
 ## Scripts
 

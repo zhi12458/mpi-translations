@@ -1,6 +1,8 @@
 ---
 name: translation
 description: Translate Chinese↔English Buddhist/Dharma content — register guidance from Mindfulness Bell corpus, tone, voice, cultural bridging technique.
+inputs: source.dj (Chinese djot), or .docx via docx2dj.fish
+outputs: target.dj (English djot), bilingual.dj, edit-suggestions.dj
 ---
 
 # Translation
@@ -39,7 +41,7 @@ Quick-find in index: Thầy talks → `"Thích Nhất Hạnh"` + page ≤ 10; te
 ### Pre-flight accuracy check
 
 Before delivering a translation, run through the structured accuracy/readability
-taxonomy in `skills/translation-review/references/common-issues-taxonomy.md`.
+taxonomy in `../self-review/references/common-issues-taxonomy.md`.
 Catching these before review saves iteration cycles:
 - Omission, over-literal renderings, over-free renderings, subject confusion,
   overtranslation, terminology errors
@@ -93,7 +95,7 @@ Read the English aloud — if a sentence can't be spoken in one breath, fix it.
 
 These are common patterns (not an exhaustive list). For the full taxonomy with
 more categories and examples, read
-`../translation-review/references/common-issues-taxonomy.md`.
+`../self-review/references/common-issues-taxonomy.md`.
 
 Examples of systematic adjustments:
 
@@ -112,18 +114,58 @@ Examples of systematic adjustments:
    contractions, direct address, concrete images. If the English reads like a
    paper abstract, warm it up. Check against the MB corpus registers for the
    target genre.
+6. **Review-specific calques**. For *人生百问*-style Q&A, check the pattern
+   tables in `../self-review/references/translation-pitfalls.md` for recurring
+   stiff calques ("keen on," "more ultimate," "choice difficulty," etc.) and
+   the Buddhist-term register notes in `../self-review/references/buddhist-terminology.md`.
 
 Do NOT apply these mechanically — each is a judgment call. A passive may be
 correct when the agent is unknown; a nominalization may be the right technical
 term. The goal is natural English that matches the source's register, not a
 formulaic rewrite.
 
+## Quality Gates (Before Declaring Done)
+
+Run this self-check before you hand off a first-pass translation. The goal is to
+catch the most expensive errors while they are still cheap to fix. For the full
+post-translation review workflows, load `self-review` and `other-review`.
+
+### Accuracy
+
+- [ ] **Line parity**: source and target line counts match exactly.
+- [ ] **No missing content**: every Chinese paragraph, quote, poem, or rhetorical
+  climax has a corresponding English rendering.
+- [ ] **No overtranslation**: no parenthetical expansions or explanations not in
+  the source.
+- [ ] **Terminology**: key Buddhist terms checked against the MPI terms DB
+  (`terms-search` skill). Consistent within the file.
+- [ ] **Source faithfulness**: no concepts added, no details dropped.
+
+### Readability
+
+- [ ] **Active voice**: abstract/subjectless passives converted to "we" or a
+  concrete agent where possible.
+- [ ] **Noun → verb**: `the propagation of` → `spread`; `placed emphasis on` →
+  `emphasized`.
+- [ ] **Sentence length**: no sentence that cannot be spoken in one breath; split
+  at natural breaks.
+- [ ] **Plain vocabulary**: `constitute` → `is/make up`; `facilitate` → `help`;
+  `endeavor to` → `try to`.
+- [ ] **Register**: match the genre — Dharma talks and dialogues should sound
+  spoken, not like paper abstracts.
+- [ ] **Concrete over abstract**: `mode of existence` → `way of living`;
+  `ideological content` → `ideas`.
+
+### Final pass
+
+Read the entire English target aloud. If anything stalls, rephrase it.
+
 ## Meditation / Mindfulness Content
 
 When translating guided meditation scripts, exercise guides, or posture instructions
 (rather than Dharma talks), use a lighter workflow. See `references/meditation-translation.md`.
 
-## Pitfalls
+## Other Pitfalls
 
 ### article-specific scripts
 
@@ -138,4 +180,4 @@ Create article-specific scripts per `references/proofread-pdf-workflow.md`.
 - `references/bilingual-format.md` — bilingual.dj layout: source/target adjacent, blank separator between pairs
 - `references/diacritics-convention.md` — diacritics rules
 - `references/proofread-pdf-workflow.md` — pattern for creating article-specific PDF-vs-DOCX comparison scripts
-- `../translation-review/references/common-issues-taxonomy.md` (cross-skill) — structured accuracy/readability checklist for pre-flight review
+- `../self-review/references/common-issues-taxonomy.md` (cross-skill) — structured accuracy/readability checklist for pre-flight review
