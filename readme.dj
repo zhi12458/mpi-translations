@@ -11,6 +11,27 @@
 | `guide/` | Reference materials — 术语库 source data |
 | `AGENTS.md` | Project conventions for AI agents — translation workflow, djot rules, skill usage |
 
+## Translation Stages
+
+A translation project moves through the following stages in order. Each stage
+has a clear output and a clear handoff to the next stage.
+
+| Stage | What happens | Output |
+|---|---|---|
+| **Extract** | The source document is cleaned and converted into a plain-text working file. | `source.dj` |
+| **Translate** | The Chinese source is drafted into English, matching the source line count. | `target.dj` |
+| **Self-review** | The translator reviews the draft for terminology, accuracy, grammar, and flow. | `translation-findings.dj` (optional) |
+| **Other-review** | A peer reviewer examines the draft and records findings for the translator. | `review-comments.dj` |
+| **Polish** | Review findings are applied to the translation, and the bilingual file is regenerated. | updated `target.dj`, `bilingual.dj` |
+| **Human review** | Human translators or editors review the polished text and approve or send it back. | approved `target.dj` |
+| **Typeset** | The approved bilingual content is laid out into a publishable document. | `.pdf` or `.docx` |
+| **Done** | The project is complete. | — |
+
+Reviews can send the project back to an earlier stage: self-review and
+other-review may return to **Translate** if the draft needs to be redrafted,
+or to **Polish** if only minor fixes are needed. Once human reviewers are
+satisfied, the project moves to **Typeset** and then **Done**.
+
 ## Links
 
 Study material source repo: https://git.sr.ht/~iacore/jingxin-lessons

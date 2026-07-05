@@ -10,6 +10,10 @@ outputs: target.dj (English djot), bilingual.dj, edit-suggestions.dj
 Core translation technique for Buddhist/Dharma content. Conventions (djot format,
 terms DB query, workflows, output format) are in AGENTS.md.
 
+## Source context
+
+Before translating, understand the source's format and delivery context. Is it a transcript of an oral talk, a book excerpt, a guided meditation script, a Q&A, a written article, or another genre? The register shapes the translation. If the context is not clear from the file path or source content, ask the user before proceeding.
+
 ## Mindfulness Bell Corpus
 
 English Buddhist prose — register/style reference for translation.

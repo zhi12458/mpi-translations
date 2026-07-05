@@ -3,3 +3,5 @@
 .~lock.*
 __pycache__/
 __pypackages__/
+bilingual.dj
+commented.dj
