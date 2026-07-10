@@ -1,0 +1,62 @@
+# Translation notes and terminology suggestions
+
+《初级正念禅修：从基础练习到觉知开启》
+
+## Unresolved / ambiguous terms
+
+1. **Resolved:** 八三 / 八三禅修 (lines 13, 85)
+   - Web search confirmed it is short for **八步骤三种禅修**.
+   - MPI term database (DoT定稿) renders this as **Eight Steps and Three Types of Meditation**.
+   - Updated both occurrences in `target.dj` from the placeholder “eight-three” framework to “Eight Steps and Three Types of Meditation.”
+
+2. **七支坐法** (lines 15, 17, 19)
+   - No term-DB entry found.
+   - Rendered as **seven-point sitting method**.
+   - Alternatives: *seven-point posture*, *seven-point sitting posture*.
+
+## Terminology choices applied
+
+| Chinese | English used | Source / rationale |
+|---|---|---|
+| 正念 | mindfulness | Standard in mindfulness-meditation context |
+| 觉知 | awareness | DB: 正见 (BAICKZ), 佛教术语 |
+| 觉性 | awakened nature | DB: 佛教术语 |
+| 本心 | true mind / original mind | DB: 佛教术语 |
+| 五蕴 | five aggregates | DB: 故道白云 (BAICKZ) |
+| 三世诸佛 | the Buddhas of the three periods of time | DB: 法华经 (BAICKZ) |
+| 七支坐法 | seven-point sitting method | No DB entry; descriptive |
+| 跏趺坐 | lotus position | DB: 佛教 |
+| 双跏趺 | full lotus | DB: 正念禅修的要领 |
+| 定印 | Dhyana Mudra | DB: 正念禅修的要领 |
+| 昏沉 | drowsiness | Meditation context (DB gives forgetfulness/torpor) |
+| 散乱 | distraction | Meditation context (DB gives dispersion) |
+| 掉举 | restlessness | Meditation context (DB gives restless) |
+| 念处经 | Satipatthana Sutta | DB: 经论名 |
+| 所缘 | object of focus | DB: 佛教术语; rendered as “object of focus (anchor)” |
+| 作意 | attention | DB: 佛教术语; technical Yogācāra term |
+| 心所 | mental factor | DB: 佛教术语 |
+| 信心铭 | Faith in Mind | DB: 经论名 / Xinxin Ming |
+| 无我 | non-self | DB: 小丛书 (BAICKZ) |
+| 无常 | impermanence | DB: 正见 (BAICKZ) |
+| 空 | emptiness | DB: 龙泉微开示 (BAICKZ) |
+| 缘起 | dependent origination | DB: 佛教常识问答 (BAICKZ) |
+| 达摩 | Bodhidharma | DB: 六祖坛经 (BAICKZ) |
+| 二祖 | the Second Patriarch Huike | DB: 煮茶观心 (佛教术语) |
+| 觅心了不可得 | The mind is nowhere to be found | DB: 偈颂经文名言 |
+| 了了明知 | clear and complete awareness | DB: 佛教术语 / DoT定稿 |
+| 妄心 | deluded mind | DB: 导师微博 (BAICKZ) |
+| 真心 | true mind | DB: 凡圣只在迷悟间 (佛教术语) |
+| 止禅 | Samatha | DB: DoT定稿 / 佛教术语 |
+| 观禅 | Vipassana | DB: DoT定稿 / 佛教术语 |
+| 正念盘坐八式 | Eight Mindful Exercises for Lotus Posture | DB: 禅意项目 |
+| 正念呼吸七式 | Seven Mindful Exercises for Breathing | DB: 禅意项目 |
+| 正念球 | Tai Chi Mindfulness Ball | DB: 内部特色词 / 禅意项目 |
+| 八段锦 | Baduanjin | DB: 内部特色词 |
+| 座上禅修 | seated meditation | DB: 正念禅修的要领 |
+| 座下禅修 | off-cushion practice | DB: DoT定稿 “cultivation in daily life” |
+
+## Register / style notes
+
+- The text is a structured teaching; English kept a clear, instructional register while using Dharma-idiomatic terms.
+- Quotations from Chan classics (e.g., *Faith in Mind*, the Bodhidharma–Huike exchange) are rendered in standard English Buddhist idiom rather than literal Chinese word order.
+- Em dashes are rendered as `---` per project djot convention.
