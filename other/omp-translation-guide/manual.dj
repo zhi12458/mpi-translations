@@ -1,0 +1,513 @@
+# Using omp to Translate Articles
+
+A beginner's guide for the MPI Translation Project.
+
+This guide assumes you have never used omp or an AI coding agent before. We will walk through every step: downloading omp, buying AI credits, connecting a provider, and running your first translation.
+
+---
+
+## What this guide will teach you
+
+By the end of this guide you will be able to:
+
+- Install omp on your computer.
+- Set up an AI model provider with credits.
+- Connect that provider to omp.
+- Open a translation project and start translating a Chinese article into English.
+- Understand the basic workflow from source to approved translation.
+
+---
+
+## What you need before you start
+
+- A computer running macOS, Linux, or Windows.
+- A terminal (on macOS or Linux) or PowerShell / Windows Terminal (on Windows).
+- An internet connection.
+- A payment method for AI credits: credit card, debit card, or the payment options each provider accepts.
+- A copy of the translation project files on your computer.
+
+No programming experience is required. You will mostly be typing plain commands and reading the output.
+
+---
+
+## What is omp?
+
+omp ("Oh My Pi") is a terminal-first AI assistant --- a *coding agent* --- that runs on your computer. It reads files, runs commands, edits text, and follows detailed instructions you give it.
+
+For translation work, you use omp to:
+
+- Read the Chinese source file.
+- Look up Buddhist terms in the project's term database.
+- Draft an English translation.
+- Review the draft for mistakes and awkward wording.
+- Generate side-by-side bilingual files.
+
+You stay in charge. omp drafts and checks; you approve and correct.
+
+---
+
+## What is an AI model provider?
+
+omp is the assistant. The *provider* is the AI service that actually thinks and writes. The provider charges you for the compute time used.
+
+For this project we recommend one of these three providers:
+
+| Provider | Best for | Pricing model |
+|---|---|---|
+| OpenCode Go | Low-cost, predictable monthly access to open coding models. | $5 first month, then $10/month. |
+| OpenRouter | Pay-as-you-go access to many models, including Claude and GPT. | Buy credits; no minimum spend. |
+| Kimi Code | Access to Kimi's coding models. | Recharge API credits; starts at $1. |
+
+You only need *one* of these to get started. Pick the one that is easiest to pay for in your region.
+
+---
+
+## Step 1: Install omp
+
+### macOS and Linux
+
+Open your terminal and run one of these commands.
+
+**Recommended --- installer script:**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/can1357/oh-my-pi/main/scripts/install.sh | sh
+```
+
+**If you use Homebrew:**
+
+```bash
+brew install can1357/tap/omp
+```
+
+**If you already have Bun installed (version 1.3.14 or newer):**
+
+```bash
+bun install -g @oh-my-pi/pi-coding-agent
+```
+
+### Windows
+
+Open PowerShell and run:
+
+```powershell
+irm https://omp.sh/install.ps1 | iex
+```
+
+### Verify the installation
+
+Close and reopen your terminal, then run:
+
+```bash
+omp --version
+```
+
+You should see a version number. If you see an error like "command not found," check that your terminal was restarted after installation.
+
+Also run:
+
+```bash
+omp config path
+```
+
+This shows where omp keeps its settings, usually `~/.omp/agent/`. You will use this folder later.
+
+---
+
+## Step 2: Get AI access
+
+Choose **one** provider below and follow the steps. You do not need all three.
+
+---
+
+### Option A: OpenCode Go
+
+OpenCode Go is a subscription that gives you reliable access to several open coding models for a flat monthly price.
+
+1. Open a browser and go to `https://opencode.ai/auth`.
+2. Create an account with email or a third-party login.
+3. Subscribe to **OpenCode Go**.
+   - The first month costs $5.
+   - After the first month it costs $10/month.
+4. Once you are subscribed, find the API key in your account page.
+5. Copy the key and save it somewhere safe. Treat it like a password.
+
+Models included with OpenCode Go include GLM-5.2, Kimi K2.7 Code, Kimi K2.6, Qwen3.7 Max, DeepSeek V4 Pro, and others. The exact list can change; see `https://opencode.ai/docs/go` for the current models.
+
+---
+
+### Option B: OpenRouter
+
+OpenRouter is a gateway that lets you use many different AI models through a single account. You pay only for what you use.
+
+1. Open a browser and go to `https://openrouter.ai/sign-up`.
+2. Create an account with GitHub, Google, MetaMask, or email.
+3. Sign in, then go to `https://openrouter.ai/settings/credits`.
+4. Click **Buy Credits** and choose an amount. There is no minimum spend; $10 is enough to start.
+5. Add a payment method and complete the purchase.
+6. Go to `https://openrouter.ai/keys` and create an API key.
+7. Copy the key and save it somewhere safe. Treat it like a password.
+
+OpenRouter charges a 5.5% platform fee on top of the model's price. You can explore models and prices at `https://openrouter.ai/models`.
+
+---
+
+### Option C: Kimi Code
+
+Kimi Code is the coding model from Moonshot AI. You use the Kimi API platform to create an account and recharge credits.
+
+1. Open a browser and go to `https://platform.kimi.ai/`.
+2. Create an account and sign in.
+3. Go to the console or user center.
+4. Recharge your account.
+   - You need at least $1 to start using the API.
+   - When your cumulative recharge reaches $5, you receive a $5 voucher.
+5. Go to the API key section and create a key.
+6. Copy the key and save it somewhere safe. Treat it like a password.
+
+Pricing for each model is listed at `https://platform.kimi.ai/docs/pricing/chat`. For coding, the relevant model is usually **Kimi K2.7 Code**. You are charged per token used.
+
+---
+
+## Step 3: Connect your provider to omp
+
+omp reads your provider key from an environment variable or a `.env` file. The easiest way to start is with a `.env` file in your home directory.
+
+### Create the `.env` file
+
+Run this in your terminal to open or create the file:
+
+```bash
+nano ~/.omp/.env
+```
+
+If you prefer a different editor, replace `nano` with `vim`, `code`, or another editor.
+
+Paste the block for the provider you chose:
+
+**OpenCode Go:**
+
+```bash
+OPENCODE_API_KEY=opencode-your-key-here
+```
+
+**OpenRouter:**
+
+```bash
+OPENROUTER_API_KEY=sk-or-v1-your-key-here
+```
+
+**Kimi Code:**
+
+```bash
+KIMI_API_KEY=your-kimi-key-here
+```
+
+Replace the placeholder after the `=` with the real API key you copied. Save the file and close the editor.
+
+### Restart your terminal
+
+Close and reopen your terminal so the new `.env` file is read. Then verify that omp launches:
+
+```bash
+omp
+```
+
+You should see the omp welcome screen. Press `Ctrl + C` to exit.
+
+### Test with a simple prompt
+
+Run:
+
+```bash
+omp -p "hello"
+```
+
+If everything is connected, omp will reply with a short greeting. If you see an authentication error, check that your API key is pasted correctly and that the terminal was restarted.
+
+---
+
+## Step 4: Open your translation project
+
+omp works inside a project folder. The project folder contains the Chinese source, the English translation, and the rules omp should follow.
+
+In your terminal, move to the project folder. For example:
+
+```bash
+cd ~/documents/mpi/other/omp-translation-guide
+```
+
+Or, if you are working on a specific article:
+
+```bash
+cd ~/documents/mpi/translate-files/<topic>/<article>
+```
+
+Once you are inside the project folder, launch omp:
+
+```bash
+omp
+```
+
+omp will detect the project files and rules. The current folder becomes the project root.
+
+---
+
+## Step 5: Translate your first article
+
+Inside an active omp session, you can ask the agent to translate. A typical first prompt looks like this:
+
+```text
+Please translate this article from Chinese to English following the project conventions. Read source.dj, look up key Buddhist terms in the terms database, and produce target.dj.
+```
+
+omp will:
+
+1. Read `source.dj` (the Chinese original).
+2. Look up Buddhist terms in the MPI term database.
+3. Draft `target.dj` (the English translation).
+4. Generate `bilingual.dj` (a side-by-side file) if you ask for it.
+
+You can watch the process in the terminal. Each step is shown as a compact card. Press `Ctrl + O` to expand a card and see the full output.
+
+---
+
+## The translation workflow
+
+All translation work in this project follows a fixed state machine. The AI handles the drafting and review stages; humans approve the result.
+
+```mermaid
+stateDiagram-v2
+    [*] --> idle
+    idle --> translating: SOURCE_LOADED
+    idle --> other_reviewing: BILINGUAL_LOADED
+    translating --> bilingual_ready: TRANSLATION_DRAFTED
+    bilingual_ready --> self_reviewing: BILINGUAL_GENERATED
+    self_reviewing --> translating: SELF_REJECTED
+    self_reviewing --> other_reviewing: SELF_APPROVED [peer review required]
+    self_reviewing --> approved: SELF_APPROVED [no peer review]
+    other_reviewing --> translating: PEER_REJECTED
+    other_reviewing --> approved: PEER_APPROVED
+    approved --> typesetting: TYPESET_REQUESTED
+    approved --> done: COMPLETE
+    typesetting --> done: TYPESET_COMPLETE
+    done --> [*]
+```
+
+States:
+
+| State | Meaning | Output artifact |
+|---|---|---|
+| `idle` | Waiting for source or an existing bilingual file. | --- |
+| `translating` | AI drafts the English translation. | `target.dj` |
+| `bilingual_ready` | `bilingual.dj` is generated from source and target. | `bilingual.dj` |
+| `self_reviewing` | AI checks its own draft against the source. | edited `target.dj` |
+| `other_reviewing` | A peer reviews the draft. | `review-comments.dj` |
+| `approved` | Translation accepted. | --- |
+| `typesetting` | Producing PDF or DOCX. | `.pdf` / `.docx` |
+| `done` | Complete. | --- |
+
+For a total beginner, the most important path is:
+
+1. **Prepare the source** --- clean the Chinese and save it as `source.dj`.
+2. **Draft** --- ask omp to create `target.dj`.
+3. **Generate bilingual** --- create `bilingual.dj` to read both languages side by side.
+4. **Self-review** --- ask omp to check its own draft for errors.
+5. **Human review** --- you read the bilingual file and approve or flag issues.
+
+---
+
+## Step 6: Prepare the source
+
+The source usually arrives as a Word document or a plain-text file. We clean it and convert it into a Djot file called `source.dj`.
+
+If you have a `.docx` file, run:
+
+```bash
+toolkit/scripts/docx2dj.fish <article>.docx
+```
+
+If you do not have a `.docx` file, you can create `source.dj` by hand in a text editor. Keep the line structure intact: one physical line per logical line, and preserve paragraph breaks.
+
+Before translating, understand the source's genre. Is it a transcript of an oral talk, a book excerpt, a guided meditation script, a Q&A, or a written article? The genre shapes the translation register. If the context is unclear, ask the team before proceeding.
+
+---
+
+## Step 7: Draft the translation
+
+Once `source.dj` exists, ask omp to draft the translation. A good prompt is:
+
+```text
+Load the mpi-translation and mpi-terms-search skills. Translate source.dj into English, preserving the line structure, and write target.dj. Look up key Buddhist terms in the MPI terms database before translating.
+```
+
+omp will read the Chinese line by line, check the terms database, and write one English line for every Chinese line.
+
+The terms database is searched with:
+
+```bash
+$MPI_PROJECT_ROOT/toolkit/terms-database/search.py <term> [limit]
+```
+
+Source priority is:
+
+1. DoT定稿
+2. 内部特色词
+3. 佛教术语
+4. 经论名
+
+omp also preserves emphasis markers (`*text*`) and soft-line markers (`  ` at the end of a line).
+
+---
+
+## Step 8: Generate the bilingual file
+
+Once `source.dj` and `target.dj` exist, generate the side-by-side file:
+
+```bash
+../../toolkit/scripts/gen-bilingual.py source.dj target.dj > bilingual.dj
+```
+
+The bilingual file interleaves source and target lines with a blank line between each pair. Do not edit `bilingual.dj` by hand. Regenerate it whenever `source.dj` or `target.dj` changes.
+
+---
+
+## Step 9: Self-review
+
+Ask omp to review its own draft:
+
+```text
+Load the mpi-translation-review skill in self mode. Read source.dj and target.dj fully, check for missing content, terminology consistency, and awkward English, then edit target.dj directly. After editing, regenerate bilingual.dj and verify the line counts match.
+```
+
+The review runs three passes:
+
+1. **Accuracy and completeness** --- missing content, mistranslation, terminology inconsistency, unnecessary additions, number/time/person mismatches.
+2. **Fluency and naturalness** --- calques, register drift, broken collocations, pronoun errors, sentence rhythm.
+3. **Dharma and cultural fitness** --- Buddhist term register, cultural anachronism, tone of the teacher, implicit meaning, formatting fidelity.
+
+After the three passes, it applies an R1--R14 editorial checklist covering spelling, punctuation, capitalization, articles, agreement, tense, voice, prepositions, modifiers, parallelism, redundancy, word choice, sentence openings, flow, and a final read-aloud.
+
+In self mode, omp edits `target.dj` directly and then regenerates `bilingual.dj`. It verifies that `source.dj` and `target.dj` have exactly the same number of lines.
+
+---
+
+## Step 10: Human review and peer review
+
+Read `bilingual.dj` carefully. You are checking that the English matches the Chinese, sounds natural, and keeps the right tone.
+
+If you want another person to review, they can ask omp to write a `review-comments.dj` file:
+
+```text
+Load the mpi-translation-review skill in other mode. Read source.dj and target.dj and write review-comments.dj with must-fix issues and optional suggestions. Do not edit target.dj directly.
+```
+
+The peer review follows a deliberation protocol: begin with appreciation, phrase most issues as questions or options, and distinguish "must fix" from "consider."
+
+When the team asks omp to apply the findings, it switches to direct-edit mode, updates `target.dj`, and regenerates `bilingual.dj`.
+
+---
+
+## Step 11: Typesetting and publishing
+
+Once the translation is approved, it can be exported.
+
+- **DOCX export** using `toolkit/scripts/dj2docx.fish <target.dj>` produces a Word document in `/tmp/`.
+- **Bilingual PDF** using the Typst template `translate-files/lib/mpi-bilingual-template.typ` produces a PDF through `toolkit/scripts/compile-typst.fish <typ>`.
+
+Rendered files are written to `/tmp/` and are not committed to the repository.
+
+---
+
+## Djot conventions
+
+All translation files are written in Djot. Keep these rules in mind:
+
+- Emphasis: use a single asterisk on each side: `*text*`. Never use `**` for bold.
+- Comments: wrap notes in `{% ... %}`.
+- Dashes: use `---` for an em dash and `--` for an en dash.
+- Preserve the source formatting. Do not add or remove emphasis.
+- Keep the one-to-one line mapping: one physical target line per physical source line.
+- Preserve soft-line markers (`  ` at the end of a line) on both source and target.
+- Table of contents: plain bullet lists only, no link targets and no page numbers.
+
+---
+
+## Useful omp commands for translation
+
+| Command | What it does |
+|---|---|
+| `omp` | Start an interactive session in the current project. |
+| `omp -p "<prompt>"` | Run a single prompt and exit. |
+| `Ctrl + O` | Expand the selected tool card to see full output. |
+| `Ctrl + C` | Exit omp. |
+| `/skill:<name>` | Load a specific skill manually. |
+| `/model` | Pick a different model from the providers you are signed into. |
+
+---
+
+## Useful scripts
+
+| Script | Purpose |
+|---|---|
+| `toolkit/scripts/docx2dj.fish <docx>` | Convert a Word document to Djot. |
+| `toolkit/scripts/split-bilingual.fish <combined.dj>` | Split a combined bilingual file into `source.dj` and `target.dj`. |
+| `toolkit/scripts/dj2docx.fish <target.dj>` | Convert a Djot translation to DOCX in `/tmp/`. |
+| `toolkit/scripts/gen-bilingual.py <source.dj> <target.dj>` | Generate `bilingual.dj` on stdout. |
+| `toolkit/scripts/compile-typst.fish <typ>` | Compile a Typst file to PDF. |
+
+Article-specific scripts are placed in the article directory itself and named with a short hash.
+
+---
+
+## Troubleshooting
+
+### "omp: command not found"
+
+- Restart your terminal after installation.
+- Check that the install directory is on your `PATH`. Common locations are `~/.local/bin` and `/usr/local/bin`.
+
+### Authentication error
+
+- Double-check that your API key is pasted correctly in `~/.omp/.env`.
+- Make sure you restarted your terminal after saving the `.env` file.
+- Make sure the key has not expired.
+
+### No response or very slow response
+
+- Check your internet connection.
+- Check the provider's status page (for example, `https://status.openrouter.ai/`).
+- Switch to a different model with `/model` if the current model is overloaded.
+
+### Translation line counts do not match
+
+- Run `wc -l source.dj target.dj` to see which file is longer.
+- Ask omp to regenerate `target.dj` or `bilingual.dj` from the current source.
+- Check that no blank lines were accidentally added or removed.
+
+---
+
+## Quick checklist
+
+Before declaring a translation ready for human review, confirm:
+
+- [ ] omp is installed and `omp --version` works.
+- [ ] An AI provider is connected and `omp -p "hello"` replies.
+- [ ] `source.dj` and `target.dj` have the same number of lines.
+- [ ] `bilingual.dj` has been regenerated from the latest source and target.
+- [ ] Key Buddhist terms have been checked in the MPI terms database.
+- [ ] No missing content, truncation, or overtranslation.
+- [ ] The English matches the source's genre and register.
+- [ ] Emphasis, paragraph breaks, and soft-line markers are preserved.
+- [ ] The final English has been read aloud.
+
+---
+
+## Next steps
+
+- Read the `mpi-translation` skill for the full translation principles.
+- Read the `mpi-terms-search` skill for how to query the MPI term database.
+- Read the `mpi-translation-review` skill for the three-pass review and R1--R14 checklist.
+- Read `AGENTS.md` for the project conventions and file layout.
+
+When you feel comfortable, try translating a short article from start to finish. The best way to learn is by doing.

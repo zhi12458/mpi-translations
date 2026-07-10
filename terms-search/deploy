@@ -1,2 +1,0 @@
-#!/usr/bin/fish
-fly deploy -y --depot=false

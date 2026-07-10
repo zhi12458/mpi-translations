@@ -1,0 +1,3 @@
+[submodule "toolkit"]
+	path = toolkit
+	url = git@git.sr.ht:~iacore/mpi-translation-toolkit
