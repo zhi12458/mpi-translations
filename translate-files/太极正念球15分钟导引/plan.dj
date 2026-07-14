@@ -1,0 +1,79 @@
+## 缘起
+
+I received the following WeChat messages.
+
+```
+[File:太极正念球15分钟导引-导师版.docx]
+
+师兄好，这篇内容请根据原英文版基础来翻，有些可能有补充的就翻译一下，跟之前重复的地方，就按之前观轩师父翻译的这个版本，感恩师兄[合十][玫瑰][玫瑰]
+
+[File:Tai Chi Mindfulness Ball  Basic Instructions  .docx]
+```
+
+## 文件关系分析
+
+- *Tai Chi Mindfulness Ball Basic Instructions.docx* 是基础版：中英对照，包含恭敬前行、安坐调息、正念转球（15/30 分钟通用说明）、两段引导（5/10 分、10/20 分）、结束收功、回向、慈心拍背、温馨提示。
+- *太极正念球15分钟导引-导师版.docx* 是在基础版之上的**15 分钟口播导引用扩展版**：中文单语，把基础版的姿势与转球要点整合成一段连续 15 分钟口令，增加了开场提示、重复三次深呼吸、把心拉回来的提示、对跖点所缘的说明、再次觉知身体、结尾随喜功德等。
+- 处理原则：**导师版为待译源文**，基础版英文为“观轩师父已译版本”，重复内容优先沿用，扩展/改动内容重新翻译，确保风格一致。
+
+| 导师版章节 | 对应基础版位置 | 处理说明 |
+|---|---|---|
+| 开场：跟随音乐，开始15分钟 | 无 | 新增，翻译 |
+| 【恭敬前行】 | Preparing with Reverence | 沿用基础版英文，按需微调 |
+| 【安坐调息】 | Settling the Body, Calming the Breath | 沿用，注意新增“将球心调整至与心脏齐平”及三次呼吸的重复 |
+| 正念转球主引导 | 15/30 min 通用说明 + 5/10 + 10/20 引导 | 整合、精简、沿用姿势与对跖点表述 |
+| 此刻…心在哪里？ | Guide for 5- or 10-minute 中的“where is your mind” | 扩展为“所缘是对跖点”的解释，新增翻译 |
+| 再次觉知身体 | Guide for 10- or 20-minute 中的身体觉知 | 沿用，注意“三个九十度”为基础版已有内容的浓缩 |
+| 【结束收功】 | Concluding the practice | 沿用 |
+| 【至诚回向】 | Dedication of Merit | 沿用 |
+| 【温馨提示】 | Gentle Reminder + Loving-kindness Back Patting | 沿用，顺序与基础版略有不同 |
+| 结尾随喜功德 | 无 | 新增，翻译 |
+
+## 关键术语预查
+
+已查询 MPI 术语库：
+
+- **四无量心**：DoT 定稿 `Four Immeasurable Minds`；基础版用 `Four Immeasurable minds`。沿用 `Four Immeasurable Minds`。
+- **正念球 / 太极正念球**：内部特色词/禅意项目 `Tai Chi Mindfulness Ball`。
+- **丹田**：`dantian`（ meditation/qigong 通用音译）。
+- **回向 / 功德**：基础版用 `Dedication of Merit` 与 `merits`；沿用。
+- **对跖点 / 对趾点**：术语库无结果；基础版译为 `opposite sides of the ball`。计划保留 `opposite sides of the ball`，必要时加 `antipodal points` 注释。
+- **虚领顶劲、沉肩坠肘、松腰落胯/坐胯、刚柔相济**：术语库无结果；沿用基础版已采用的 Taiji/qigong 英文表达。
+- **七支盘坐**：佛教术语 `the Seven-Point Postures of Vairochana`；基础版用 `Seven-Point Posture of Vairochana`。沿用。
+
+## 翻译策略
+
+1. **源文**：以导师版为 `source.dj`。
+2. **复用基础版英文**：凡是导师版与基础版中文一致或高度重合的句子，优先复制基础版英文，必要时为适应 15 分钟口播节奏做最小调整。
+3. **新增内容单独翻译**：开场、重复深呼吸、对跖点所缘说明、结尾随喜功德等。
+4. **口播/导引风格**：
+   - 第二人称直接称呼 (`you`)
+   - 现在时、祈使句
+   - 短句、可一口气念出
+   - 段落标签用普通方括号 `[...]`，不用加粗
+5. **格式**：Djot，`*...*` 表示强调，不用 `**`；保留 `{% ... %}` 术语注释。
+6. **行级对齐**：`source.dj` 与 `target.dj` 行数必须 1:1；每个非空中文行对应一行英文。
+
+## 执行计划
+
+1. **准备 source.dj**
+   - 从导师版 `.docx` 提取中文。
+   - 删除文末助手提问（“需要我为这段引导词配上…”）。
+   - 规范标点、去掉多余空行，保留段落结构。
+2. **术语复核**
+   - 再次查询术语库确认新增词（如“空掌拍打”等）。
+   - 把术语决定写入 `edit-suggestions.dj`。
+3. **翻译 target.dj**
+   - 按上表逐段翻译，复用基础版英文。
+   - 新增段落在 Meditation/Mindfulness 风格下直接翻译。
+   - 每段完成后核对行数。
+4. **自审**
+   - 加载 `mpi-translation-review`（self mode）。
+   - 检查：无缺漏、无过度翻译、术语一致、行数一致、口播可读性。
+5. **生成双语稿**
+   - 运行 `../../toolkit/scripts/gen-bilingual.py source.dj target.dj > bilingual.dj`。
+   - 检查 `bilingual.dj` 段落配对。
+6. **输出 docx**
+   - 用 `../../toolkit/scripts/dj2docx.fish target.dj` 生成到 `/tmp/`。
+7. **QA**
+   - 通读 bilingual.dj，对照导师版中文与基础版英文，确认扩展内容已译、重复内容一致。

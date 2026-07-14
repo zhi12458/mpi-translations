@@ -5,7 +5,7 @@
 | Directory | Contents |
 |---|---|
 | `toolkit/skills/` | Hermes Agent skills — loaded via `~/.hermes/config.yaml` `external_dirs`. [Install guide →](toolkit/skills/readme.dj) |
-| `toolkit/terms-database/` | Term database (DuckDB) + search CLI (`search.py`). Priority: DoT定稿 > 内部特色词 > 佛教术语 |
+| `toolkit/terms-database/` | Term database (SQLite) + search CLI (`search.py`). Priority: DoT定稿 > 内部特色词 > 佛教术语 |
 | `translate-files/` | Translation projects: `<topic>/<article>/` with `source.dj`, `target.dj`, `bilingual.dj` |
 | `toolkit/scripts/` | Utility scripts (fish shell): `dj2docx.fish` |
 | `references/` | Reference materials — Typst design notes, Google Docs review journey, formatting guides |

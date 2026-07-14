@@ -346,7 +346,7 @@ omp will read the Chinese line by line, check the terms database, and write one 
 The terms database is searched with:
 
 ```bash
-$MPI_PROJECT_ROOT/toolkit/terms-database/search.py <term> [limit]
+toolkit/terms-database/search.py <term> [limit]
 ```
 
 Source priority is:
