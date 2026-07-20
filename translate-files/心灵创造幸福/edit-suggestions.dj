@@ -1,0 +1,33 @@
+# Edit suggestions — 心灵创造幸福
+
+Terminology and consistency notes flagged for reviewer attention.
+
+## Terminology decisions (all verified against terms DB)
+
+- 心灵创造幸福 → *The Mind Creates Happiness*
+- 三法印 → the Three Dharma Seals (佛教术语, loc 心灵创造幸福)
+- 诸行无常 → all conditioned phenomena are impermanent (BAICKZ)
+- 《杂阿含经》 → the Samyuktagama (佛教术语/经论名, loc 心灵创造幸福). Note: DoT定稿 renders 《杂阿含经》 as "The Numerical Discourses of the Buddha" — that is the Anguttara Nikaya correspondence, not Samyuktagama. Article-specific entry used instead.
+- 两支毒箭 → two poisoned arrows (DoT初步)
+- 五福临门 → the Five Blessings descend upon this home; 康宁 → health and peace; 好德 → virtue; 善终 → a good death (佛教术语, loc 心灵创造幸福)
+- 善逝 → the Well-Gone One; 预知时至 → foresee one's time of death; 坐脱立亡 → pass away gracefully at one's own command, seated or standing (佛教术语)
+- 悲田 / 恩田 / 敬田 → the field of compassion / gratitude / respect (佛教术语, loc 心灵创造幸福)
+- 断德 / 智德 / 悲德 → the virtue of cessation / wisdom / compassion (佛教术语 + DoT定稿)
+- 贪嗔痴 → greed, hatred, and ignorance (BAICKZ majority; DB also has "delusion" — kept "ignorance" for consistency with 无明 → ignorance)
+- 勤修戒定慧，息灭贪嗔痴 → diligently practice the precepts, concentration, and wisdom to extinguish greed, hatred, and ignorance (偈颂经文名言, 传承国学)
+- 《金刚经》quote → DB 偈颂经文名言 version: "All conditioned phenomena are like dreams, illusions, bubbles, shadows, like dewdrops and a lightning flash. Contemplate them thus."
+- 念佛是谁 → "Who is actually reciting the Buddha's name?" (偈颂经文名言, loc 心灵创造幸福)
+- 本来面目 → original face; 心猿意马 → a mind like a capering monkey and a galloping horse; 举身微笑 → full-body smile; 知足常乐 → contentment brings happiness; 觉性 → awakened nature; 魔性 → demonic nature (all 佛教术语, loc 心灵创造幸福)
+- 塞翁失马 / 祸兮福之所倚 quotes → DB 偈颂经文名言 versions verbatim
+- 临终关怀 → hospice care; 《易经》 → the Book of Changes; 水中捞月 → scoop the moon out of the water
+
+## Open points for reviewer
+
+1. 福报 rendered as "blessings" throughout (DB also has "karmic reward", "merits"). "Blessings" keeps the 福 linkage with 幸福/五福 readable for a lay audience.
+2. 闽南人喝功夫茶 → "gongfu tea in Minnan" — kept the regional reference; consider "southern Fujian" if Minnan is too obscure.
+3. 胡润百富 → the Hurun Rich List (not in DB; standard media rendering).
+4. 明心见性 → "illuminate the mind and see its true nature" (literal Chan idiom) rather than DB's "realize the Buddha-nature within oneself", which would pre-empt the next section's 佛性 discussion.
+
+## Voice (语气) notes
+
+Per updated skill guidance, deliberately preserved: rhetorical questions as questions throughout; first-person teacher asides (我经常说 / 我曾在讲座中 / 我曾在微博 / 由此我想到); reasoning connectives (可见 → "clearly / so we can see", 所以说 → "so / that is why"); inclusive we/you address; homely analogies kept concrete (apple, leaking boat, teacup, mask).
