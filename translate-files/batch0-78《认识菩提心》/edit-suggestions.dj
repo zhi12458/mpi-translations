@@ -1,0 +1,66 @@
+# Edit Suggestions for 78 *Understanding Bodhicitta*
+
+Translator: AI (self-review)
+Date: 2026-08-06
+
+## Summary
+
+Self-review complete. No must-fix issues found. The translation preserves the
+source's 537-line structure, terminology is consistent with the MPI terms
+database, and the speaker's voice (语气) is maintained throughout. Below are
+notes on deliberate terminology choices and minor observations.
+
+## Terminology Decisions
+
+### Core terms (consistent with terms DB)
+
+| Chinese | English | Source |
+|---------|---------|--------|
+| 菩提心 | bodhicitta | Standard Buddhist term |
+| 凡夫心 | ordinary mind | 佛教术语 |
+| 出离心 | renunciation | 佛教术语 |
+| 空性见 | view of emptiness | 佛教术语 |
+| 我执 | self-grasping | DoT preliminary |
+| 胜义菩提心 | ultimate bodhicitta | 佛教术语, DoT定稿 |
+| 正见 | right view | BAICKZ |
+
+### Contextual renderings
+
+- **发心**: Rendered as "aspiration" for general contexts, "generate bodhicitta"
+  when explicitly referring to 发菩提心. This contextual split is necessary
+  because the Chinese term shifts meaning between general aspiration and the
+  specific generation of bodhicitta.
+- **法执**: Rendered as "dharma-grasping" parallel to "self-grasping" for 我执,
+  maintaining the symmetrical terminology of Yogācāra.
+- **六度四摄**: "Six perfections and four means of gathering" — follows
+  established project convention.
+- **愿菩提心 / 行菩提心**: "Aspiring bodhicitta" / "Engaging bodhicitta" —
+  standard renderings from Śāntideva's *Bodhicaryāvatāra* tradition.
+
+### Sanskrit diacritics
+
+Applied consistently: Māra, Śāriputra, Pūrṇamaitrāyaṇīputra, Śāntideva, Atiśa,
+Tsongkhapa, Mañjuśrī, Kṣitigarbha, Avalokiteśvara, Samantabhadra, Amitābha,
+Bhaiṣajyaguru, Maitreya, Subhūti, Śākyamuni, Milarepa, Dharmamati, Śakra,
+Dharmākara, Lokeśvararāja, Siṃhavikrīḍitapūrṇavikāsatathāgata, *Yogācārabhūmi*,
+*Bodhicaryāvatāra*, *Avatamsaka*, *Lamrim*, *Madhyānta-vibhāga*, etc.
+
+### Style notes
+
+- **Speaker's voice**: Venerable Jiqun's 语气 is preserved — first-person
+  asides ("I find...", "I believe..."), rhetorical questions kept as questions,
+  reasoning connectives ("Therefore", "Thus", "In fact"), concrete everyday
+  analogies unvarnished, gentle admonition without scolding tone.
+- **Hinayana**: Used where the source uses 小乘 in pedagogical contrast.
+  Consider whether "Śrāvakayāna" would be more appropriate for future editions
+  — this is a deliberate choice to mirror the source's register rather than
+  impose modern academic convention.
+- **Tripiṭaka**: Sanskrit term kept for 三藏十二部.
+- **Humanistic Buddhism**: Used for 人生佛教 per established convention (cf.
+  Master Taixu's "Buddhism for Human Life").
+
+## No corrections needed
+
+Three-pass review (accuracy, fluency, Dharma fitness) and R1–R14 editorial
+polish complete. No missing content, no calques, no terminology drift, no
+formatting issues found. Line counts verified: source 537 = target 537.

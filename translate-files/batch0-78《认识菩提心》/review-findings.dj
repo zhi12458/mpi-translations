@@ -1,0 +1,170 @@
+# Review Findings for 78 *Understanding Bodhicitta*
+
+Reviewer: independent translation review (source.dj vs target.dj)
+Date: 2026-08-07
+
+Method: full line-by-line comparison of all 537 source/target line pairs
+(blank-line alignment verified 1:1; all 19 blockquote headings match; every
+paragraph spot-read against the source, including all truncated long lines).
+
+Overall verdict: the translation is complete (no missing sections, no added
+material), doctrinally sound, and fluent. No critical errors. Two major
+accuracy defects and one omission need fixing; the rest are consistency and
+polish items. Note: edit-suggestions.dj (2026-08-06) reports "no must-fix
+issues" — this review found two must-fix items it missed (Major 1 and 2).
+
+## Critical
+
+None found. No doctrinal inversions, no dropped passages, no fabricated
+content. All scripture quotes checked against their Chinese sources render
+correctly (e.g. *Avatamsaka* "忘失菩提心…是為魔業", *Diamond Sutra*
+Subhūti passage, *Lamrim* common/uncommon cause, 受持菩提心 vow text).
+
+## Major
+
+### M1. 阿蘭那 rendered as "forest dwelling" (wrong word, internally incoherent)
+
+Location: target.dj line 407 (§VII.5, Diamond Sutra Subhūti quote): "…the
+World-Honored One would not say that Subhūti is one who delights in forest
+dwelling. It is because Subhūti truly has nothing practiced that he is called
+one who delights in forest dwelling."
+
+Problem: 阿蘭那 is *araṇa* ("non-contention"), not *araṇya* ("forest"). The
+same quote explicitly says two sentences earlier that Subhūti attained "the
+samādhi of non-contention" (無諍三昧) — so "forest dwelling" is both a
+mistranslation and contradicts the passage's own logic (the sutra glosses
+阿蘭那 precisely as freedom from conflict, "實無所行").
+
+Fix: "…the World-Honored One would not call Subhūti one who delights in
+dwelling free of contention. Because Subhūti truly dwells nowhere / practices
+nothing, he is called one who delights in dwelling free of contention." (Cf.
+Red Pine: "foremost in the practice of no-contention.")
+
+### M2. Factor-of-ten errors in the eon-count chain of the first analogy
+
+Location: target.dj line 169 (§IV.1, 初發心功德品 analogy).
+
+Problem: the chain is correct up to 百億劫 ("ten billion eons", ✓), then
+inflates by 10×:
+- 千億劫 → "a trillion eons" — should be "a hundred billion eons" (千億 = 10¹¹).
+- 百千億劫 → "a hundred trillion eons" — should be "ten trillion eons" (10¹³).
+- 那由他億劫 → "nayutas of billions of eons" — 億 here is a hundred million
+  (10⁸), as the translator correctly rendered two clauses earlier ("a hundred
+  million eons"); should be "a hundred million nayutas of eons".
+- 百千那由他億劫 → "a hundred thousand nayutas of billions of eons" — same
+  correction ("a hundred thousand nayutas of hundred-millions", or better:
+  keep "nayuta" and the Chinese-style multiplier).
+
+Fix: re-render the whole chain with one consistent numeral convention (億 =
+hundred million everywhere), e.g. "…for ten billion eons … a hundred billion
+eons … ten trillion eons … a hundred million nayutas of eons … a hundred
+thousand nayutas of hundred-millions of eons …"
+
+### M3. Omission: "每次三遍" dropped from the refuge-recitation instruction
+
+Location: target.dj line 249 (§V.1): "we should recite day and night, three
+times each session".
+
+Problem: source 應晝夜各念誦「…」三次，每次三遍 = recite three times (each day
+and each night), three repetitions each time. The "three repetitions per
+recitation" detail is lost, changing the practice instruction.
+
+Fix: "we should recite day and night, three times each, three repetitions
+each time: '…'"
+
+## Minor
+
+### Terminology / consistency
+
+1. 我法二執: rendered "the two attachments—to self and to phenomena" at line
+   37 but "the two graspings of self and phenomena" in six other places
+   (lines 101, 103, 301, 371, 437, 439). Unify to "two graspings" (matches
+   我執 "self-grasping" used throughout).
+
+2. 優波尼沙陀 (line 173): transliterated "Upaniṣad / upaniṣadth /
+   upaniṣadfold" — collides with the Upaniṣads and coins awkward forms.
+   Fix: "one upaniṣad part … an upaniṣad-fold … Upaniṣad is a Sanskrit
+   numeral, the largest unit of quantity" — or use "upaniṣat" and gloss "a
+   large numerical unit (not the Upaniṣads)".
+
+3. 億 rendered inconsistently: "hundred million" (line 169) vs "koṭi" (lines
+   233, 235, 357). At line 233, 二百一十億諸佛刹土 → "two hundred and ten
+   koṭis of buddha-lands" assumes 億 = koṭi (10⁷); the same passage is often
+   rendered 21 billion (億 = 10⁸). Either is defensible, but pick one
+   convention and apply it everywhere; add a translator's note for 233.
+
+4. 《略論》 (line 271) rendered as "the *Lamrim*", indistinguishable from
+   《道次第》(the 廣論) cited at lines 11, 203, 205, 399, 447, 451. Fix:
+   "the *Abbreviated Lamrim*" (or *Lamrim Chungba*).
+
+5. 正性離生 (line 219) → "definitive separation" loses 生 (birth).
+   Fix: "the stage of definitive deliverance [from rebirth]" or "definitive
+   freedom from birth".
+
+6. 覺有情 gloss (line 375): "The term 'bodhisattva' comes from the Sanskrit
+   *bodhisattva*, meaning awakened being." Redundant (English term =
+   Sanskrit term) and 有情 is dropped. Fix: 'The term "bodhisattva" comes
+   from the Sanskrit *bodhisattva*, "awakened sentient being" — one who is
+   awakened and awakens others.'
+
+7. 支那內學院 (line 63) → "Chinese Inner Studies Institute". Conventional
+   English name: "China Institute of Inner Learning". Fix to the attested
+   name.
+
+8. 《顯揚聖教論》 (line 213) given as *Ārya-śāsana-prakaraṇa-śāstra*. The
+   standard reconstruction is *Āryavācāprakaraṇa-śāstra* (Sakuma). Verify
+   against the project's Sanskrit title list and correct.
+
+9. 《大乘本生心地觀經》 (line 373) → "*Mahāyāna Sutra on the Contemplation
+   of the Mind-Ground*" drops 本生. Fix: "…Contemplation of the Originally
+   Arisen Mind-Ground" or keep short title and note the full title once.
+
+10. 攝受最勝 (line 259) → "supremacy of inclusion". Awkward; the item means
+    being sustained/gathered by non-conceptual wisdom. Fix: "supremacy of
+    being sustained" or "supremacy of embrace (by non-conceptual wisdom)".
+
+11. 因地: "causal ground" (5×) vs "causal stage" (line 413). Unify;
+    "causal stage" reads more naturally in English (e.g. "in his causal
+    stage, Amitābha was the monk Dharmākara").
+
+12. "buddha-name recitation" (line 47) vs "Buddha-name recitation"
+    (line 131): capitalization inconsistent; unify.
+
+### Fluency
+
+13. Line 311: "Just as it takes two pieces of wood rubbed together
+    continuously to produce the spark of compassion and wisdom." — sentence
+    fragment (a "just as" clause with no main clause). Fix: "It is like
+    drilling wood to make fire: two sticks must be rubbed together
+    continuously before the spark of compassion and wisdom can be struck."
+
+14. Line 61: "believing the treasury of Buddhist art holds rich treasures" —
+    treasury/treasures redundancy (source: 佛教藝術殿堂中有豐富的寶藏).
+    Fix: "believing the halls of Buddhist art hold rich treasures".
+
+15. Line 13: "only the Chan and Pure Land schools maintained the widest
+    influence" — "only … widest" jars. Fix: "only the Chan and Pure Land
+    schools retained wide influence" or "…exerted the widest influence".
+
+## Completeness
+
+Verified complete: 537/537 line alignment, all ten sections (intro through
+§X Q&A) and all 19 subsection headings present in matching order; every
+paragraph accounted for with no additions or deletions beyond M3 above. The
+Q&A section's eleven exchanges are all present and correctly attributed
+(學員/法師 → Student/Venerable).
+
+## Terminology (positive confirmation — no action needed)
+
+Consistent, standard renderings throughout: 發心 aspiration; 菩提心
+bodhicitta; 凡夫心 ordinary mind; 出離心 renunciation; 空性見 view of
+emptiness; 我執 self-grasping; 遍計所執 imagined nature; 願/行/勝義菩提心
+aspiring/engaging/ultimate bodhicitta; 七因果 sevenfold cause and effect;
+增上意樂 extraordinary attitude; 自他相換 exchanging self and other; 三輪體空
+threefold purity; 無緣大慈、同體大悲 unconditional great compassion and
+shared-essence compassion; 趣寂聲聞 śrāvaka fixed on tranquillity; 國王/船夫/
+牧人式發心 king-like/boatman-like/shepherd-like aspiration; 五種性 five
+lineages; 十二種最勝 twelve supremacies; 四弘誓願 four great vows; 十大願王
+ten great vow kings. Sanskrit names all correct (Pūrṇamaitrāyaṇīputra,
+Dharmamati, Dharmākara, Lokeśvararāja, Gaganagañja, etc.). The 三十六萬億一十
+一萬九千五百 Amitābha count (line 419) is computed correctly.

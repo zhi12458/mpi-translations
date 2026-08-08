@@ -1,0 +1,64 @@
+# Edit Suggestions for 70【佛法要领】
+
+Translator: model (self)
+Reviewer: model (self)
+Date: 2026-08-06
+
+## Summary
+
+Translation is complete and accurate. One proper-name fix applied during review. No
+terminology inconsistencies found. Diacritics and Sanskrit terms used consistently
+throughout.
+
+## Changes Made
+
+1. **戒幢佛学研究所** — "Jiechuo Buddhist Studies Institute" corrected to "Jiechuang
+   Buddhist Studies Institute" per official English name at jcedu.org. (line 673)
+
+## Terminology Notes
+
+Key terms used consistently per MPI terms database (DoT定稿 and 佛教术语 sources):
+
+| Chinese | English | Source |
+|---------|---------|--------|
+| 出离心 | renunciation | 佛教术语 |
+| 菩提心 | bodhicitta | standard convention |
+| 空性见 | the view of emptiness | 佛教术语/DoT定稿 |
+| 道次第 | the Stages of the Path / Lamrim | standard convention |
+| 三主要道 | Three Principal Aspects of the Path | standard convention |
+| 皈依 | refuge / taking refuge | standard convention |
+| 发心 | aspiration | standard convention |
+| 止观 | śamatha-vipaśyanā | standard convention |
+| 暇满人身 | precious human life (of leisure and endowment) | contextual |
+| 惑业苦 | delusion, karma, and suffering | DoT定稿 |
+| 我执 | self-grasping / self-clinging | consistent throughout |
+| 缘起 | dependent origination | standard convention |
+| 性空 | emptiness of self-nature | standard convention |
+
+## Deliberate Choices
+
+- **Renunciation** rather than "disillusionment" for 出离心 — "renunciation" is the
+  standard English Dharma term and matches the intended meaning of active letting-go
+  rather than passive disappointment.
+
+- **Precious human life** for 暇满人身 — contextual expansion of "leisure and
+  endowment" when the text describes the conditions; the fuller meaning is
+  preserved in context.
+
+- **Three Principal Aspects of the Path** (capitalized, italicized for the text
+  title) — standard rendering in English Buddhist literature for Tsongkhapa's text.
+
+- Verse translations preserve the single-line-per-verse structure matching the
+  source, using em dashes for caesura within verses.
+
+- Chinese Buddhist school names kept in standard romanization (Huayan, Tiantai,
+  Chan) rather than translated descriptively.
+
+## Items for External Review
+
+- Sanskrit diacritics used throughout (saṃsāra, śamatha-vipaśyanā, Śrāvaka, etc.).
+  Verify against project diacritics convention at
+  `../mpi-translation/references/diacritics-convention.md`.
+
+- "Jiechuang Buddhist Studies Institute" — confirm this romanization is the
+  project's preferred rendering for 戒幢佛学研究所.

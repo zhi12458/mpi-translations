@@ -1,0 +1,130 @@
+# Review Findings: 76【从住持三宝到自性三宝】
+
+Reviewer: kimi-code/k3-256k
+Date: 2026-08-07
+Scope: target.dj reviewed line-by-line against source.dj (both 297 lines, fully read). bilingual.dj and edit-suggestions.dj consulted. No source paragraphs omitted; all sections (I–IV and all subsections) are present in the translation.
+
+## Critical
+
+None found. No meaning inversions, no dropped sections, no additions that change doctrine.
+
+## Major
+
+### M1. *Diamond Sutra* quote 应无所住而生其心 mistranslated
+
+- Location: II.6 《坛经》的顿修之路 / "The Sudden Path of the *Platform Sutra*", paragraph quoting the *Diamond Sutra* (target: "A bodhisattva should practice giving without abiding in form... they should practice giving without abiding anywhere.")
+- Source: 菩萨布施应不住色生心，不住声、香、味、触、法生心，应无所住而生其心。若心有住，即为非住。
+- Problem: The famous line 应无所住而生其心 ("should give rise to a mind that abides nowhere") is flattened into "they should practice giving without abiding anywhere." 生其心 ("give rise to the mind") — the doctrinally load-bearing phrase — is lost, and the whole quotation is re-cast as being only about the act of giving. Earlier clauses 不住色生心 etc. are likewise about *not generating a mind* that abides in objects, not about "practicing giving."
+- Fix: "A bodhisattva practicing giving should not give rise to a mind that abides in form, nor a mind that abides in sound, smell, taste, touch, or mental objects; they should give rise to a mind that abides nowhere. If the mind abides anywhere, that is not true abiding."
+
+### M2. 两足尊 rendered "the Doubly Venerable" — opaque and misleading
+
+- Location: II.6, Sixth Patriarch's refuge quote ("this is called the Doubly Venerable").
+- Problem: 两足尊 in this *Platform Sutra* context means "the One Honored as Perfect in the Two" (merit and wisdom), a stock epithet of the Buddha. "Doubly Venerable" conveys neither the twofold perfection nor the epithet's status; readers will not understand it, and the parallel with 离欲尊 / 众中尊 is obscured.
+- Fix: "this is called the One Honored as Perfect in Both [wisdom and merit]" (optionally with a footnote); or "the Doubly Perfect Honored One." Keep 离欲尊 "the Honored One Free of Desire" and 众中尊 "the Honored One Among Beings" in parallel.
+
+### M3. 痴 and 无明 both rendered "ignorance" in the same sentence
+
+- Location: Introduction, paragraph "The reason we are ordinary beings..." ("which consists of greed, hatred, and ignorance---of ignorance and clinging to self").
+- Source: 那就是贪、嗔、痴，就是无明、我执。
+- Problem: The English reads "greed, hatred, and ignorance — of ignorance and clinging to self," which looks like a tautology or typo. 痴 (the third poison) and 无明 (root ignorance) are distinct terms; throughout the text 无明 is consistently "ignorance," so 痴 must be differentiated. The same collision occurs in the *Tathāgatagarbha Sūtra* quote (贪欲、恚、痴 → "greed, anger, and ignorance", I.4).
+- Fix: Render 痴 as "delusion" ("greed, hatred, and delusion") in both places; reserve "ignorance" for 无明.
+
+### M4. 剑走偏锋 rendered "wielding a sword's edge" — idiom's meaning lost
+
+- Location: II.7 顿修法门的思考 / "Reflections on the Sudden Approach" ("On the other hand, Chan practice can be somewhat like wielding a sword's edge.").
+- Problem: 剑走偏锋 means taking an unorthodox, off-center, risky line of attack — the author's point is that Chan is a *high-risk, unconventional* path (the next sentence develops its incompleteness). "Wielding a sword's edge" is literal and misses the "偏" (deviating/unorthodox) force.
+- Fix: "Chan practice is like a sword fighting off-center — an unorthodox, risky stroke" or "a gamble on an unconventional edge."
+
+### M5. Scope of 乃至涅槃，事无不办 shifted in the Vinaya quote
+
+- Location: III.2, *Mūlasarvāstivāda Vinaya Kṣudrakavastu* quote ("there is nothing that cannot be accomplished, even up to nirvāṇa").
+- Source: 若得善伴与其同住，乃至涅槃，事无不办，故名全梵行。
+- Problem: "Up to nirvāṇa" qualifies *dwelling together* (dwelling with a good companion all the way until nirvāṇa), not *what can be accomplished*. The target makes nirvāṇa the upper limit of accomplishments, which slightly distorts the logic.
+- Fix: "If one gains a good companion and dwells with them right up to nirvāṇa, there is nothing that cannot be accomplished; hence they are called the whole of the holy life."
+
+## Minor
+
+### m1. 感情 narrowed to "romantic attachment"
+
+- Location: Introduction, recollection paragraph ("If day after day we dwell on romantic attachment...").
+- Problem: 感情 means feelings/emotional attachment generally (relationships, affections); "romantic attachment" narrows it without warrant.
+- Fix: "If day after day we dwell on emotional attachment..." or "...on our affections and relationships..."
+
+### m2. 震慑作用 softened to "transformative effect"
+
+- Location: I.1 佛像 ("it will have no transformative effect on our mental state").
+- Problem: 不会对心行产生任何震慑作用 = it will have no *awing, mind-shaking* effect on our mental conduct — the point is that a mere artwork cannot jolt or discipline the mind, hence "妄想纷飞，烦恼重重" follows. "Transformative" is vaguer and weaker.
+- Fix: "it will have no power to awe or shake our mental conduct."
+
+### m3. "Corrupt officials" — adjective added
+
+- Location: II.3 ("Corrupt officials know that taking bribes breaks the law...").
+- Source: 那些当官的人，也知道受贿犯法，仍被贪婪左右着贪赃枉法。
+- Problem: Source says "those who hold office," not "corrupt officials"; the corruption is the behavior being described, not a pre-existing label. Adding "Corrupt" also weakens the parallel with "those who overeat" and "smokers" (ordinary people, not pathological classes).
+- Fix: "Officials know that taking bribes breaks the law, yet they are still driven by greed into graft and embezzlement."
+
+### m4. 仰之弥高 flattened to "inspiring awe"
+
+- Location: II.7 ("its view and its methods of practice are both piercing and swift, inspiring awe").
+- Problem: 仰之弥高 (Analects allusion) = "the more you look up to it, the loftier it appears" — it describes unreachable loftiness, reinforcing the section's "high entry point" theme. "Inspiring awe" loses the register of unattainability.
+- Fix: "...both piercing and swift, loftier the higher one looks up to them" or "...of towering, hard-to-reach loftiness."
+
+### m5. "信为道源功德母" garbled
+
+- Location: III.3 ("Faith is the mother of the wellspring of the path and all merits").
+- Problem: The *Avataṃsaka* formula is "faith is the source of the path and the mother of merit" (道源 = source of the path; 功德母 = mother of merits — two parallel phrases). "Mother of the wellspring" misgroups them.
+- Fix: "as the saying goes, 'Faith is the source of the path and the mother of all merits.'"
+
+### m6. Conclusion drops 认识 from the quoted theme
+
+- Location: IV. Conclusion ("an introduction to the theme 'From the Abiding Triple Gem to the Intrinsic Triple Gem'").
+- Source: 从"认识住持三宝到自性三宝"为大家作了介绍。
+- Problem: Source's in-text theme includes 认识 ("recognizing/understanding"); the target quotes the talk title instead, silently altering what was said.
+- Fix: "Today I have offered an introduction on the theme 'From Recognizing the Abiding Triple Gem to the Intrinsic Triple Gem.'"
+
+### m7. Bifeng / Jin Bifeng inconsistency
+
+- Location: II.2 ("a Chan master of profound attainment named Bifeng"; verse: "If you wish to seize Jin Bifeng").
+- Problem: Source introduces 碧峰禅师 and the verse uses his full name 金碧峰. Target gives "Bifeng" first, then "Jin Bifeng" in the verse with no bridge — readers cannot tell they are the same person.
+- Fix: Introduce as "a Chan master named Jin Bifeng" (or "Bifeng of the Jin [line]") so the verse's "Jin Bifeng" connects.
+
+### m8. Awkward/unclear English at several points
+
+- I.1-to-I.4 transition, introduction: "at some level of life they are not two, not different" (在生命某个层面是无二无别的) — clunky double negative. Fix: "on some level of life, they are nondual — no different from each other."
+- II.1: "Then why is what is not you the 'I'?" (为什么不是你的那个，就是"我"呢) — hard to parse. Fix: "Then why is the one that is *not* you precisely the 'I'?"
+- I.3: "great compassion from sharing the same body" (同体大悲) — nonstandard phrasing. Fix: "the great compassion of shared embodiment" or "great compassion of oneness with all beings."
+- II.3 title-adjacent simile "like a galloping horse glimpsed through a crack in the wall" (白驹过隙) — literal gloss is defensible but heavy; consider "like a white colt flashing past a crack in the wall" or simply "in a flash."
+- II.5: "gradually untangles the flow of delusion" (逐渐解除妄流) — "untangles" is odd for 解除 (dissolve/remove). Fix: "gradually dissolves the deluded current."
+
+### m9. 世尊 rendered "Buddha-Bhagavat" in the ten epithets
+
+- Location: I. introductory list of ten epithets.
+- Problem: 世尊 is Bhagavān; "Buddha-Bhagavat" is only defensible if one reads the Chinese list's tenth item as the combined 佛世尊 (to keep the count at ten). As printed, the list reads "如来、应供…世尊," so a plain "Bhagavān" (or "the World-Honored One") is the faithful rendering; add a note only if the ten-count is being explained.
+- Fix: "...Śāstā Deva-manuṣyāṇām, and Bhagavān (the World-Honored One)."
+
+### m10. 财色 rendered "wealth and sense objects"
+
+- Location: II.6, refuge quote ("can detach from wealth and sense objects").
+- Problem: 财色 is the stock pair "wealth and sensuality (sexual desire)"; "sense objects" (which would be 尘境) is broader and weaker.
+- Fix: "can detach from wealth and sensual pleasures."
+
+### m11. Title of summer camp: "Cool Breeze Journey"
+
+- Location: subtitle line 2.
+- Problem: 清凉之旅 — 清凉 is "cool and refreshing" (and evokes Mt. Wutai's ancient name 清凉山); "Cool Breeze" adds "breeze" not in the source.
+- Fix: "the 'Refreshing Journey' Summer Camp" or "the 'Journey to Cool Clarity' Summer Camp."
+
+### m12. Terminology polish (optional, not errors)
+
+- 正思维 → "right thought" (II.4): standard today is "right intention" or "right resolve." Either is defensible; "right thought" is dated.
+- 千百亿化身为行 (I.4) → "as function": 行 is conduct/action; "as action" or "as activity" is closer than "function" (which better suits 用).
+- 契入 consistently "merge with": uniform and acceptable, though "awaken to" / "enter into" emptiness is more standard in the genre. Consistency is preserved, so this is taste only.
+
+## Terminology consistency (verified, no action needed)
+
+觉性 "awakened nature," 皈依 "take refuge/go for refuge," 善知识 "good teacher," 住持三宝 "Abiding Triple Gem," 自性三宝 "Intrinsic Triple Gem," 化相三宝 "Manifested Triple Gem," 理体三宝 "Noumenal Triple Gem," 无我见/空性见, 我执/法执 "clinging to self/dharmas," 明空不二, 一行三昧 "Samādhi of One Practice," 三身四智, 十二因缘 — all rendered consistently and per the conventions documented in edit-suggestions.dj.
+
+## Completeness
+
+All source paragraphs, headings, sutra quotations, gong'an stories, verse, and the conclusion are present in target.dj; line-for-line correspondence holds throughout. TOC anchors retained in Chinese (matching bilingual.dj) — functional, no change needed.

@@ -1,0 +1,43 @@
+# Edit Suggestions — 75【如何建立信仰】 (How to Establish Faith)
+
+Translator: agent (self-review mode)
+Date: 2026-08-06
+
+## Summary
+
+Self-review complete. Three categories of fixes applied to target.dj. No remaining accuracy or fluency issues flagged.
+
+## Applied Fixes
+
+### 1. DoT定稿 terminology alignment
+
+| Term | Before | After | Source |
+|------|--------|-------|--------|
+| 三级修学 | three-level practice system/model/program | Three-Stage Practice | DoT定稿 |
+| 同喜班 | Joyful Fellowship class | Collective Joy Course | DoT定稿 |
+| 同修班 | Cultivation Fellowship class | Collective Practice Course | DoT定稿 |
+| 同德班 | Virtue Fellowship class | Collective Virtue Course | DoT定稿 |
+| 人生佛教 | Buddhism for daily life | Buddhism for Human Life | 佛教术语 |
+
+All occurrences globally replaced; verified no orphan patterns remain.
+
+### 2. Terminology decisions carried forward from first draft (no fix needed)
+
+| Chinese | English rendering | Rationale |
+|---------|------------------|-----------|
+| 皈依体 | refuge essence | Not in terms DB; coined consistently |
+| 三级修学 → Three-Stage Practice | Kept lower-case "practice" in running text | Follows DoT定稿 casing |
+| 自性三宝 | intrinsic Three Jewels | Standard Buddhist idiom |
+| 集资净障 | accumulate merit and purify obstacles | Standard; avoids "gather provisions" which is too literal |
+| 现行熏种子 | current actions perfume seeds | Yogācāra standard |
+
+### 3. Style/voice notes (no fix needed)
+
+- Speaker's 语气 preserved: first-person "I often say" patterns, rhetorical questions, reasoning connectives (so it is clear, thus, in sum)
+- TOC: plain bullet list, anchors as plain placeholders `{#}` per convention
+- Single `*` for Djot emphasis, no `**`
+- Line count verified: 445 source = 445 target
+
+## Open Considerations
+
+None. Translation ready for peer review or typesetting.

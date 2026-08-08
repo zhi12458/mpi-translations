@@ -1,0 +1,37 @@
+# Edit Suggestions for 77【出家与解脱】
+
+Translator: opencode-go/deepseek-v4-pro
+Reviewer: self
+Date: 2026-08-06
+
+## Summary
+
+Translation is accurate and readable. One minor terminology consistency fix applied. No structural or major content issues found. The three-pass review identified no missing content, mistranslation, or serious fluency problems.
+
+## Applied Fixes
+
+1. **Terminology consistency: 红尘** (line 163). "red dust of the world" → "that worldly dust" to match the earlier rendering of 红尘 as "worldly dust" in the same sentence. The metaphor is preserved; the rendering is now consistent.
+
+## Terminology Notes
+
+Key term decisions checked against the terms DB:
+
+- 出家 → "renunciation" / "leaving home" — varies by context, consistent throughout
+- 解脱 → "liberation" — consistent
+- 出离心 → "renunciation" — matches 佛教术语 source
+- 菩提心 → "bodhicitta" — standard convention
+- 空性 → "emptiness"
+- 五蕴 → "five aggregates"
+- 轮回 → "samsara"
+- 正见 → "right view"
+- 戒定慧 → "precepts, concentration, and wisdom"
+- 声闻乘 → "Śrāvakayāna"
+- 菩萨乘 → "Bodhisattva vehicle"
+- 凡夫心 → "ordinary mind" — consistent throughout
+
+## Considerations
+
+- The translation uses a formal-but-warm register appropriate for a Dharma talk by Master Jiqun to a monastic audience. Rhetorical questions and first-person asides are preserved.
+- Sanskrit terms (śramaṇa, saṅgha, bodhicitta, dhutaṅga, etc.) are used where appropriate with English glosses on first occurrence.
+- The three sufferings (苦苦、坏苦、行苦) include parenthetical Sanskrit for precision, suitable for this audience.
+- The "shaven-headed layperson" rendering of 光头俗汉 is deliberately colloquial to match the source's pointedness.

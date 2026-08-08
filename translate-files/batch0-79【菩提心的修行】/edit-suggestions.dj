@@ -1,0 +1,49 @@
+# Edit Suggestions — 79【菩提心的修行】
+
+## Summary
+
+Translation complete and self-reviewed. Line count matches source. Major structural issues (block quote line counts) resolved via merge script + two manual corrections.
+
+## Terminology decisions
+
+| Chinese | English | Notes |
+|---|---|---|
+| 菩提心 | bodhicitta | Standard. "aspiring bodhicitta" for 愿菩提心, "engaging bodhicitta" for 行菩提心 |
+| 出离心 | renunciation | Consistent throughout. 27 occurrences |
+| 空性 / 空性见 / 空性慧 | emptiness / view of emptiness / wisdom of emptiness | Clear distinction maintained |
+| 七支供 | Seven-Limbed Practice | Follows terms DB precedent |
+| 皈依 | refuge | Standard |
+| 菩萨戒 | bodhisattva precepts | Standard |
+| 菩萨行 | bodhisattva practice / bodhisattva conduct | Both used where appropriate; "bodhisattva practice" preferred |
+| 二乘 | the two vehicles | Used when general; śrāvaka/pratyekabuddha when specific |
+| 声闻 | śrāvaka | With diacritics, consistent |
+| 缘觉 / 辟支佛 | pratyekabuddha | With diacritics |
+| 六度 | six pāramitās | Standard |
+| 无我 | selflessness | "no-self" avoided except in quoted context |
+| 无自性 | absence of inherent existence | Chose over "lack of self-nature" for precision |
+| 自他相换 | exchanging self and others | Follows DB |
+| 三聚净戒 | the three pure precepts | Standard |
+| 止观 | śamatha-vipaśyanā | On first use; "calm abiding and special insight" also used |
+| 般若 | prajñā / wisdom | prajñā for the Sanskrit term, wisdom in general contexts |
+
+## Structural corrections applied
+
+1. **Block quote lines**: Verses in source use couplets (two half-lines per `>` line). Target initially used one half-line per `>` line, adding 108 extra lines. Merged via script to match source structure.
+
+2. **Liturgy section headers**: `(VII)` and `(IX)` headers share `>` lines with adjacent verse endings in source (same line). Manually corrected after script merge.
+
+3. **`**` bold markers**: 8 sub-headings had `**...**` (Markdown bold). Changed to plain text to match source (source has no emphasis on these headings).
+
+## Remaining observations (non-blocking)
+
+- **Sanskrit diacritics**: `śrāvaka`, `śamatha`, `vipaśyanā`, `prajñā` use diacritics; `samsara`, `nirvana`, `bodhicitta`, `bodhisattva` do not. Consistent with MPI conventions. `Pāramitā` used once on introduction, then `pāramitās` thereafter.
+- **Sutra quote ellipses**: Source uses `......` for elided scripture; target uses `...`. Acceptable.
+- **TOC anchor links**: Contain Chinese characters (e.g. `(#为什么要发菩提心)`) — these are djot internal anchors, must match source.
+- **No diacritics on Avalokiteśvara, Mañjuśrī, Samantabhadra**: These are proper names found in the reference material. Used consistently.
+
+## Source context
+
+- Genre: Dharma talk / transcribed oral teaching (book form)
+- Speaker: Master Jìqún (济群法师)
+- Date: 2007, Second Bodhi Meditation Retreat
+- Register: Measured authority, calm and composed. "We" for shared human condition; "you" for direct address. Rhetorical questions preserved. Everyday analogies kept concrete.

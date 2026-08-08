@@ -1,0 +1,116 @@
+# Review Findings — 79【菩提心的修行】(The Practice of Bodhicitta)
+
+Review of `target.dj` against `source.dj`. Both files are 913 lines, line-aligned 1:1; line numbers below are identical in both files. All quotes verified against the current files.
+
+Scope: full text, sections I–X plus introduction and TOC.
+
+**Overall verdict:** The translation is accurate, complete, and fluent. No critical errors: no contradicted meanings, no omissions, no unwarranted additions. Every source section, verse, and canonical quotation is covered. Terminology is consistent and standard throughout (bodhicitta, aspiring/engaging bodhicitta, refuge, śrāvaka, pratyekabuddha, Seven-Limbed Practice, six pāramitās, three pure precepts, śamatha-vipaśyanā, absence of inherent existence). Findings below: 5 major, 24 minor.
+
+## Critical
+
+None.
+
+## Major
+
+### M1. 殊胜 consistently rendered "distinction" — mis-shades a doctrinal term
+
+- **Lines:** 15 (TOC), 147 (heading), 171, 658, 660
+- **Source:** 大乘皈依的殊胜 / 忆念菩提心的殊胜
+- **Target:** "The Distinction of Mahayana Refuge" / "recollecting the distinction of bodhicitta"
+- **Problem:** 殊胜 means "supreme excellence, surpassing quality," and both passages argue the *superiority* of the Mahayana refuge and the *exceptional benefits* of bodhicitta. "Distinction" primarily reads as "distinguishing feature/difference," so section II.1's heading suggests the chapter is about how Mahayana refuge differs rather than why it is supreme. The rendering is internally consistent, so the drift recurs at every occurrence.
+- **Fix:** Use "supreme excellence" or "preeminence": "The Supreme Excellence of Mahayana Refuge" (147, TOC 15); "Only by recognizing the supreme excellence of Mahayana refuge..." (171); "by recollecting the supreme excellence of bodhicitta" (658); "First, we need to keep recollecting the supreme excellence of bodhicitta" (660).
+
+### M2. Tsongkhapa's lamrim texts cited under two unrelated-looking English names
+
+- **Lines:** 91, 757, 763 (《道次第》 → "the *Stages of the Path*") vs. 116, 120, 127 (《略论》 → "the *Lamrim*")
+- **Source:** 《道次第》云 / 《略论》云
+- **Problem:** 《道次第》 (i.e., the 广论 tradition) and 《略论》 (the *Abridged Stages of the Path*) are companion works by Tsongkhapa; the author's own gloss at 127 has the *Lamrim* quoting the *Ratnagotravibhaga*. An English reader cannot tell whether "Stages of the Path" and "Lamrim" are the same text, two texts, or a text and a genre — and "Lamrim" is simply Tibetan for "stages of the path," making the pair actively confusing.
+- **Fix:** Disambiguate once and stay consistent, e.g. render 《道次第》 as "the *Great Treatise on the Stages of the Path* (*Lamrim Chenmo*)" at first use (91) and 《略论》 as "the *Abridged Stages of the Path* (*Lamrim*)" at first use (116), then short forms thereafter.
+
+### M3. 慈/悲 distinction erased in 无缘大慈、同体大悲
+
+- **Lines:** 415, 757
+- **Source:** 长养佛菩萨那样的无缘大慈，同体大悲 / 成就无缘大慈、同体大悲的品质
+- **Target:** "nurture the unconditioned great compassion and the great compassion that sees all beings as one"
+- **Problem:** The fixed pair 大慈 (mahā-maitrī, great loving-kindness) / 大悲 (mahā-karuṇā, great compassion) is rendered "great compassion" twice, erasing the loving-kindness/compassion distinction the source deliberately makes.
+- **Fix:** "nurture the unconditioned great loving-kindness and the great compassion that sees all beings as one" (415); "the quality of unconditioned great loving-kindness and the great compassion that sees all beings as one" (757).
+
+### M4. Garbled clause in the Yogācārabhūmi quotation (eleven aspects of benefiting beings)
+
+- **Line:** 731
+- **Source:** 随顺世间事务言说，呼召去来，谈论庆慰，随时往赴，从受饮食
+- **Target:** "in accord with worldly affairs and conversation, calling out and coming, in discussion, congratulations, and consolation, go to them as the occasion requires, and accept from them such things as food and drink"
+- **Problem:** 呼召去来 means "answering when summoned, going and coming [to visit]"; "calling out and coming" misreads it, and the string of participial phrases makes the sentence's grammar collapse.
+- **Fix:** "...in accord with worldly affairs and conversation, respond when summoned, come and go to visit, engage in discussion, congratulation, and consolation, go to them as the occasion requires, and accept from them such things as food and drink."
+
+### M5. 般若 rendered "ultimate intelligence" — breaks document-wide consistency
+
+- **Line:** 871
+- **Source:** 般若，是彻见一切诸法实相的究竟智慧
+- **Target:** "Wisdom (prajñā) is the ultimate intelligence that directly sees the true nature of all phenomena."
+- **Problem:** 般若 is rendered "wisdom" everywhere else in the document (768, 873, 875, 877, and passim); "intelligence" is nonstandard for prajñā and breaks the term's consistency in its own definition paragraph.
+- **Fix:** "Wisdom (prajñā) is the ultimate wisdom that thoroughly sees the true nature of all phenomena."
+
+## Minor
+
+### Accuracy / terminology
+
+1. **Line 549** — 我以所修诸善根，为利有情愿成佛 → "Through the merit I cultivate through these practices, may I attain buddhahood for the sake of all beings." Double "through"; "through these practices" is an insertion; 善根 = roots of virtue. Fix: "With all the roots of virtue I have cultivated, for the benefit of sentient beings, may I attain buddhahood."
+
+2. **Line 635** — 百千万劫化阎浮 → "for a hundred thousand eons, he transforms the Jambu continent." 百千万劫 idiom = countless eons; "a hundred thousand" drops 万 and shrinks the scale. Fix: "for countless eons, he transforms the Jambu continent."
+
+3. **Line 729** — 已作未作一切善根 → "whether already performed, currently performed, or yet to be performed." 已作未作 is a binary (done / not yet done); "currently performed" is an addition. Fix: "whether already performed or not yet performed."
+
+4. **Line 737** — 此为正顺解脱之本，亦为无上菩提之本 → "this is the basis of genuine liberation and of unsurpassed bodhi." 正顺 ("rightly according with") is dropped; "genuine" inserts an idea absent from the source. Fix: "this is the root that rightly accords with liberation, and also the root of unsurpassed bodhi."
+
+5. **Line 769** — 主要指布施、持戒、忍辱、精进、禅定、般若六度，又称六波罗蜜 → "mainly refers to the six pāramitās of generosity..., also known as the six pāramitās." Because 六度 is already rendered "six pāramitās," the gloss "also known as the six pāramitās" becomes circular. Fix: "mainly refers to the six perfections of generosity..., also known as the six pāramitās."
+
+6. **Line 776** — 很多人生来具有菩萨心肠 → "some people are born with a bodhisattva heart." 很多 = many. Fix: "many people are born with a bodhisattva heart."
+
+7. **Lines 772–775 vs. 813, 847, 857** — 意乐 rendered "attitude" (inside the Abhidharmasamuccaya quotation, defensible as a technical term), but "joyful eagerness" (813, 857) vs. "eagerness" (847) in the colloquial usage. Fix: use one form for the colloquial sense, e.g. "eagerness" at 813, 847, and 857 alike.
+
+8. **Line 782** — 上求下化 → "seeking the higher and guiding the lower." Opaque calque of 上求菩提、下化众生. Fix: "seeking enlightenment above and guiding sentient beings below."
+
+9. **Line 882** — 现有的心行就充满着爱憎 → "our current mental activity is filled with partiality and attachment." 爱憎 = favoritism and aversion; the aversion half is lost and "attachment" is interpretive. Fix: "filled with favoritism and aversion."
+
+10. **Line 893** — 我们为什么要自寻烦恼 → "why do we deliberately bring suffering upon ourselves." "Deliberately" is an addition; 自寻烦恼 = needlessly courting trouble. Fix: "why would we needlessly court such trouble, injuring our body and mind?"
+
+### Fluency / register
+
+11. **Line 105** — 使内心成为充满污垢的垃圾场 → "turning the mind into a garbage heap coated in filth." "Coated" sits oddly with a heap. Fix: "a garbage heap filled with filth."
+
+12. **Line 191** — 支为肢体……如果把菩提心修法比作主干，七支供就是作为支撑的重点 → "If we compare the bodhicitta practice to the trunk, the Seven-Limbed Practice serves as the supporting branches." The source's metaphor is bodily (支 = limbs, 主干 = the body's trunk/main part); "branches" switches to a tree. Fix: "the Seven-Limbed Practice constitutes its vital supports."
+
+13. **Line 352** — typo: "...growing number by the day..." should be "...growing **numb** by the day..." (日渐麻木).
+
+14. **Lines 362 vs. 364, 366** — 死王/死神 rendered "the Lord of Death" (362) but "the god of death" (364, 366). Fix: use "the Lord of Death" (or "King of Death") in all three spots.
+
+15. **Line 441** — 从心里装着自己，装着个别人，到百十人，再到千万人 → "from holding only ourselves, or a few individuals, to a hundred, to thousands." 千万人 ≈ ten million; the escalation is understated. Fix: "to a hundred or so, and then to tens of thousands, even millions."
+
+16. **Line 466** — 我们现有的情绪和想法更非与生俱来 → "Our present emotions and ideas are even less something inborn." Unidiomatic calque. Fix: "are even more clearly not inborn."
+
+17. **Line 658** — 可以通过三个方面修习 → "We can practice through three dimensions." Fix: "in three aspects." Same line: 将修习菩提心作为每日定课 → "a daily commitment" loses the fixed-liturgy sense of 定课. Fix: "a fixed daily practice."
+
+18. **Line 662** — 每天昼夜三次修习菩提心仪轨 → "practice the bodhicitta liturgy three times every day and night." Awkward. Fix: "three times a day, day and night" or simply "three times a day."
+
+19. **Line 664** — 看看我们究竟能不能言行一致 → "can we truly walk our talk?" Colloquial idiom out of register for this measured Dharma-talk voice. Fix: "whether our words and deeds truly match."
+
+20. **Line 710** — 包括发毒誓 → "Taking a deadly oath is also a form of 'receiving precepts'." 毒誓 = a vicious/curse-laden oath; "deadly" misreads the modifier. Fix: "Swearing a vicious oath is also a form of 'receiving precepts'."
+
+21. **Line 733** — 八戒增加三条：一是…；二是…；三是… → "add three more on top of the five: not wearing flower garlands or perfumes, not singing or dancing or watching entertainments, not sitting on high or wide beds, and not eating at improper times." The source's three enumerated items are flattened into four clauses, obscuring the structure. Fix: "(1) not wearing flower garlands or anointing the body with perfume, not singing, dancing, or playing music, and not attending performances; (2) not sitting on high or wide beds; (3) not eating at improper times."
+
+22. **Line 751** — 此《修次中编》所说也 → "This is stated in the *Middle-Length Stages of Meditation*." 《修次中编》 is the middle volume of Kamalaśīla's *Bhāvanākrama*; "Middle-Length" misleadingly suggests a medium-sized text. Fix: "the middle section of the *Stages of Meditation* (*Bhāvanākrama*)."
+
+23. **Line 761** — 佛陀是福智两足尊，具备圆满的福德和智慧 → "The Buddha is the honored one replete with both merit and wisdom, possessing perfect merit and perfect wisdom." Merit and wisdom stated twice in one sentence. Fix: "The Buddha, the honored one replete in both, is endowed with perfect merit and perfect wisdom."
+
+24. **Line 797** — 法布施才是对他们最究竟的帮助 → "the giving of Dharma is what helps them most ultimately." "Most ultimately" is unidiomatic. Fix: "the giving of Dharma is the most fundamental help of all." Same paragraph: 851 — 甚至很辛苦 → "even to the point of exhaustion" overstates 辛苦. Fix: "even very hard at it."
+
+### Style observation (no line fix required)
+
+- 打开心量 → "open the scope of the mind" (175, 193, 281, 553, and passim) is a consistent but slightly wooden calque; "expand the mind" or "open the heart" would read more naturally. Consistent as-is, so optional.
+- 集资净障 → "accumulating merit and purifying obstacles" is used consistently; some traditions prefer "obscurations" for 障. Consistent as-is, so optional.
+- edit-suggestions.dj's note "no diacritics on Avalokiteśvara, Mañjuśrī" is stale: the target uses diacritics throughout (165, 205, etc.). No action needed in target.dj.
+
+## Completeness check
+
+All ten sections and all 39 subsections of the source are present in the target, in order, including the full TOC, the introductory material on the three faults and six perceptions, every verse quotation of the *Practices and Vows of Samantabhadra*, the *Mahayana-sutralamkara* refuge chapter excerpt, the *Lamrim* passages, the *Bodhicaryāvatāra* citations, the conferral liturgy (sections I–X within it), the Avalokiteśvara praise, the *Yogācārabhūmi* and *Abhidharmasamuccaya* quotations, the Jātaka references, and the conclusion. Source and target are line-aligned at 913 lines each; no paragraph was dropped, merged, or added.

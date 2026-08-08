@@ -1,0 +1,220 @@
+# Review Findings for 21【《心经》的人生智慧】
+
+Reviewer: AI (second-pass review)
+Date: 2026-08-07
+
+## Method
+
+Full read of `source.dj` and `target.dj` (all 831 lines each), sentence-by-sentence
+comparison across five section ranges, plus targeted cross-file terminology and
+format checks. Every finding below was verified against the verbatim source and
+target lines. The two files are content-aligned 1:1 (one paragraph per line);
+no source section or paragraph is missing from the target, and no content was
+added.
+
+Severity definitions: *critical* = doctrinal meaning reversed or corrupted,
+sentence/clause omitted, content invented; *major* = clear mistranslation,
+wrong technical term, or garbled English that misleads a reader; *minor* =
+polish-level wording, consistency, grammar, or formatting.
+
+## Summary
+
+- Critical: 0
+- Major: 7
+- Minor: 20 (incl. 2 formatting notes)
+
+Overall verdict: the translation is complete, fluent, and doctrinally sound.
+Terminology follows the project conventions consistently (prajna, five
+aggregates, conditioned arising, ordinary beings, deluded thoughts, alaya
+consciousness, Twelve Nidanas, `---` em dash). The Twelve Nidanas, Four Noble
+Truths, Eightfold Path, fivefold Dharma body, Six Paramitas, thirty-seven
+factors of awakening, the nine conditions for eye-consciousness, the 38
+six-direction buddha names, and the mantra are all complete and standard. All
+issues found are localized; none affects the argument of the text.
+
+## Critical
+
+None.
+
+## Major
+
+### 1. Garbled bodhisattva etymology; 觉有情 mistranslated
+- Lines: source.dj 668, target.dj 668
+- Source: 菩提萨埵是梵语，为菩萨的全称。唐译"觉有情”，具有觉悟和令他有情觉悟的内涵。
+- Target: "*Bodhisattva* is a Sanskrit word, the full term for a bodhisattva. The Tang translation renders it as 'awakened being,' carrying the meaning of one who is awakened and who causes other sentient beings to awaken."
+- Issue: "the full term for a bodhisattva" is circular and meaningless in English (the point is that Chinese 菩萨 is the abbreviation of 菩提萨埵). Separately, 觉有情 is "awakened *sentient* being" — 有情 (sentient beings) is dropped, and the term's second sense (one who awakens sentient beings) depends on it.
+- Fix: "*Bodhisattva* is Sanskrit; the Chinese *pusa* is short for the full transliteration *putisaduo*. The Tang gloss renders it as 'awakened sentient being,' carrying the meaning of one who is awakened and who causes other sentient beings to awaken."
+
+### 2. Same abbreviation point garbled again
+- Lines: source.dj 792, target.dj 792
+- Source: 菩萨，具称菩提萨埵，其中，菩提就是智义、觉义。
+- Target: "*Bodhisattva* is the full form of the term, in which *bodhi* means wisdom and awakening."
+- Issue: "the full form of the term" is dangling — full form of what? The source says 菩萨 is abbreviated from 菩提萨埵.
+- Fix: "*Pusa* (bodhisattva) is short for *putisaduo*, in which *puti* (*bodhi*) means wisdom and awakening."
+
+### 3. 十万亿 misrendered by four orders of magnitude (twice)
+- Lines: source.dj 731, target.dj 731
+- Source: 供养他方十万亿佛 … 与我们相距十万亿佛土世界
+- Target: "to make offerings to hundreds of thousands of myriads of buddhas in other directions … separated from us by a hundred thousand myriad buddha lands"
+- Issue: 十万亿 = 10^13 (ten trillion). "Hundreds of thousands of myriads" ≈ 10^9–10^10. The Amitabha Sutra's stock figure is "ten trillion buddha lands" in standard English renderings.
+- Fix: "…to make offerings to ten trillion buddhas in other directions." / "…separated from us by ten trillion buddha lands."
+
+### 4. Fourth-dhyana factor 舍念清净 mistranslated
+- Lines: source.dj 218, target.dj 218
+- Source: 唯有到四禅舍念清净，无喜无乐，才能平安无事。
+- Target: "Only upon reaching the fourth dhyana, where one abandons thought and attains purity---free from both joy and pleasure---can one be truly safe and undisturbed."
+- Issue: 舍念清净 (upekṣā-smṛti-pāriśuddhi) is the standard fourth-dhyana formula "purity of equanimity and mindfulness"; 舍 is equanimity, not abandonment, and 念 is mindfulness, not "thought."
+- Fix: "Only upon reaching the fourth dhyana, where equanimity and mindfulness are purified and one is free from both joy and pleasure, can one be truly safe and undisturbed."
+
+### 5. Tautological rendering of 集是因，苦是果
+- Lines: source.dj 564, target.dj 564
+- Source: 集是因，苦是果，由集感苦，是凡夫的杂染因果。
+- Target: "the cause of suffering is the cause, suffering is the result."
+- Issue: In English this reads as an empty tautology; the Chinese relies on the truth-names 集/苦 carrying technical weight. The English already translates 集 as "the cause of suffering," which collides with the generic word "cause."
+- Fix: "the truth of the cause is the cause, the truth of suffering is the result; suffering is summoned by its cause—this is the defiled cause and effect of ordinary beings."
+
+### 6. Abhidharma terms 形色/显色 mistranslated
+- Lines: source.dj 233, target.dj 233
+- Source: 我们往往是从形状（形色）、颜色（显色）这些色相来认识的。
+- Target: "We usually recognize material phenomena through their shape (figurative form) and color (visible form)."
+- Issue: 形色 (saṃsthāna-rūpa) is configurational form (shape); "figurative" means metaphorical — the opposite of the intent. 显色 (varṇa-rūpa) is color; "visible form" is wrong since both 形色 and 显色 are visible.
+- Fix: "We usually recognize material phenomena through their shape (configurational form) and color (chromatic form)."
+
+### 7. 一瓶一钵 → "a single bowl and a single robe"
+- Lines: source.dj 682, target.dj 682
+- Source: 禅者隐居山林，面对青山绿水，唯有一瓶一钵，了无牵挂。
+- Target: "…have only a single bowl and a single robe, utterly free of attachments."
+- Issue: 瓶钵 is the set phrase for a monk's meager possessions: a water pitcher and an alms bowl. "Bowl and robe" （衣钵） is a different set phrase and is not what the source says.
+- Fix: "…have only a single pitcher and a single bowl, utterly free of attachments."
+
+## Minor
+
+### 8. 丰富 rendered "profound"
+- Lines: source.dj 107, target.dj 107
+- Source: 文字最为简练而内容极为丰富的法宝
+- Target: "the most concise in wording and the most profound in content"
+- Issue: 丰富 = rich/abundant, not profound.
+- Fix: "the most concise in wording and the richest in content"
+
+### 9. Xin Qiji allusion garbled
+- Lines: source.dj 201, target.dj 201
+- Source: 是"为赋新诗强作愁”的想象
+- Target: "the kind of imagination that 'forces melancholy to compose a poem'"
+- Issue: The allusion is to feigning sorrow for the sake of writing verse; as rendered, melancholy becomes the forced agent of composition.
+- Fix: "the kind of imagination that 'feigns sorrow just to compose a new poem.'"
+
+### 10. 无自性 rendered "selfless"
+- Lines: source.dj 312, target.dj 312
+- Source: 透彻其虚幻、无常、无自性、空的本质
+- Target: "see through to its illusory, impermanent, selfless, and empty nature"
+- Issue: Elsewhere 无自性 is consistently "without intrinsic nature"; "selfless" renders 无我， a different term.
+- Fix: "…its illusory, impermanent, intrinsically natureless, and empty nature" (or "without intrinsic nature").
+
+### 11. Heading vs body for 空相
+- Lines: source.dj 322–324, target.dj 322–324 (also TOC line 33)
+- Target heading: "1. The Nature of Emptiness"; body: "The 'mark of emptiness' is neither emptiness nor existence…"
+- Issue: 空相 is "mark of emptiness" in the body but "The Nature of Emptiness" in the heading and TOC; heading and body should agree.
+- Fix: heading "1. The Mark of Emptiness" (and TOC line 33 likewise).
+
+### 12. Eight-winds pair 称讥 mislabeled and reversed
+- Lines: source.dj 419, target.dj 419
+- Source: 称和讥相对…称是称叹…讥是讥笑
+- Target: "Censure (ridicule, as when mocked by others) and praise (commendation…) are a pair."
+- Issue: Order reversed vs source; "censure" (formal blame) is a poor label for 讥 (ridicule/mockery). The inline glosses are correct, so meaning survives.
+- Fix: "Praise (commendation, as when others extol us) and ridicule (mockery, as when mocked by others) are a pair."
+
+### 13. 世出世间 shifted from realms to persons
+- Lines: source.dj 497, target.dj 497
+- Source: 遍及有漏无漏、世出世间
+- Target: "extends to both defiled and undefiled states, to worldlings and noble ones"
+- Issue: 世出世间 = the mundane and the supramundane (states/realms), parallel with 有漏无漏； "worldlings and noble ones" changes the referent.
+- Fix: "…extends to both defiled and undefiled, mundane and supramundane states…"
+
+### 14. Missing diacritic
+- Lines: target.dj 575
+- Target: "with all kinds of cliches"
+- Fix: "clichés"
+
+### 15. Alternate names dropped from the ten unwholesome actions
+- Lines: source.dj 596, target.dj 596
+- Source: 五、离间语，又称两舌…六、粗恶语，又称恶口…七、杂秽语，又称绮语
+- Target: "Fifth, divisive speech… Sixth, harsh speech… Seventh, frivolous speech…"
+- Issue: The traditional synonyms 两舌/恶口/绮语 are dropped (the glosses themselves are kept). Low impact but a small omission in an enumerated doctrinal list.
+- Fix: "Fifth, divisive speech （两舌， 'double tongue'): speech that sows discord. Sixth, harsh speech （恶口， 'evil mouth'): … Seventh, frivolous speech （绮语， 'flowery speech'): …"
+
+### 16. Grammar: number agreement
+- Lines: target.dj 634
+- Target: "there exist the distinction between ordinary beings and noble ones"
+- Fix: "there exist the distinctions between ordinary beings and noble ones" (or "there exists the distinction").
+
+### 17. Four foundations of mindfulness: list order contradicts explanation order
+- Lines: source.dj 638, target.dj 638
+- Source list: 观心无常、观法无我、观身不净、观受是苦 (and explanations follow that order).
+- Target: list normalized to the standard order (body, feelings, mind, phenomena) but the four explanations that follow keep the source order (mind, phenomena, body, feelings).
+- Issue: Within one paragraph the list and the explanations are in different orders; a careful reader stumbles.
+- Fix: Either keep the source order in the list ("contemplating the mind as impermanent, contemplating phenomena as without self, contemplating the body as impure, and contemplating feelings as suffering"), or reorder the explanations to match the normalized list. The former is more faithful.
+
+### 18. 三增上学 → "three progressive trainings"
+- Lines: source.dj 644, target.dj 644
+- Target: "Buddhist practice follows the three progressive trainings: the training in higher precepts, the training in higher concentration, and the training in higher wisdom."
+- Issue: The standard English term is "the three higher trainings" — which also matches the sentence's own continuation ("training in higher precepts…").
+- Fix: "Buddhist practice follows the three higher trainings: …"
+
+### 19. 开矿 rendered literally as "digging open a mine"
+- Lines: source.dj 693, target.dj 693
+- Source: 一省柴烧，二省开矿 (almost certainly 开圹， "digging a grave pit," in the original verse)
+- Target: "It saves on firewood for cremation, / And saves on digging open a mine."
+- Issue: As rendered, the poem says a water burial saves on mining — a non sequitur. The point is saving on grave-digging and tomb-building.
+- Fix: "It saves on firewood for cremation, / And saves on digging a grave." (Optionally footnote that the source reads 开矿， likely for 开圹.)
+
+### 20. 灭度 awkwardly glossed
+- Lines: source.dj 720, target.dj 720
+- Source: 涅槃为梵语，意译灭、寂灭、灭度。
+- Target: "translated by meaning as extinction, quiescence, or cessation through crossing over."
+- Issue: 灭度 is a compound gloss (extinction [of afflictions] and crossing over [birth and death]); "cessation through crossing over" mangles it.
+- Fix: "translated by meaning as extinction, quiescent extinction, or extinction-and-crossing-over."
+
+### 21. Dhyāna rendered two ways in adjacent passages
+- Lines: target.dj 784 vs 786
+- Target: Mahayana-samgraha quote "therefore it is called meditative absorption" （静虑） vs "the perfection of meditative concentration" （禅那波罗蜜）.
+- Issue: Both are dhyāna; the flip-flop within one subsection reads as two different attainments.
+- Fix: Use "meditative absorption" (or "dhyāna") in both places.
+
+### 22. One synonym dropped from the mantra list
+- Lines: source.dj 815, target.dj 815
+- Source: 又称神咒、禁咒、密咒、真言
+- Target: "It is also called a divine spell, a secret spell, or a true word."
+- Issue: 禁咒 dropped; four synonyms reduced to three.
+- Fix: "It is also called a divine spell, a binding spell, a secret spell, or a true word （真言， mantra)."
+
+### 23. Inserted subject in the mantra quotation
+- Lines: source.dj 822, target.dj 822
+- Source: 故说般若波罗蜜多咒，即说咒曰
+- Target: "Therefore, he spoke the Prajna Paramita mantra."
+- Issue: The Chinese has no subject; the sutra speaker here is Avalokiteshvara, so "he" invites misreading (the Buddha).
+- Fix: "Therefore, the Prajna Paramita mantra was proclaimed. The mantra goes:" (or "Therefore it is said:").
+
+### 24. Term splitting in heading: 文字般若
+- Lines: target.dj 94 (TOC) and 739 (heading)
+- Target: "Studying the Buddha-dharma Must Begin with Words and Prajna"
+- Issue: 文字般若 is the compound "prajna of the written word" (used consistently in the body); the heading reads as two separate things, "words" and "prajna."
+- Fix: "Studying the Buddha-dharma Must Begin with the Prajna of the Written Word"
+
+### 25. Formatting: literal em dashes
+- Lines: target.dj 766
+- Issue: Seven literal "—" characters ("a good reputation—to fish…") while the rest of the file uses the djot `---` convention.
+- Fix: Replace each "—" with "---".
+
+### 26. Formatting: dropped blank line
+- Lines: target.dj 290–315
+- Issue: One blank line is missing in this range (content lines sit one line lower than the source from 290 to 314, reconverging at 316). Content is complete and alignment is unaffected; noted only so line-citation tools are aware.
+
+## Non-issues checked (for the record)
+
+- Twelve Nidanas: TOC, chain list (451), and all body sections consistent.
+- Eightfold Path list complete and standard (609–644).
+- 五分法身 and 六度 lists complete and standard (751, 758).
+- 十万亿 was the only numeric error found; 八万四千， 二百多字， 三十七， 五十一种， etc. all correct.
+- 拳叉石掷 (source 186): verified complete — 拳叉 is one item ("fists"), all four weapons rendered (target 186).
+- Mantra transliteration and gloss (822–830) correct.
+- Terminology spot-checks: 般若/缘起/五蕴/凡夫/妄想/阿赖耶识/空性/自性 all follow conventions throughout.

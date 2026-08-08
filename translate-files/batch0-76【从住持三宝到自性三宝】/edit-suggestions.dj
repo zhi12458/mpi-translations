@@ -1,0 +1,64 @@
+# Edit Suggestions for 76【从住持三宝到自性三宝】
+
+Translator: opencode-go/deepseek-v4-pro
+Reviewer: self
+Date: 2026-08-06
+
+## Summary
+
+Translation is complete and accurate. Line count matches source (297 lines). No missing content, no overtranslation. Key terminology decisions documented below.
+
+## Terminology Decisions
+
+### 1. 住持三宝 → "Abiding Triple Gem"
+
+DB entry: "maintained Triple Gem" (nti_buddhist_terminology). Chose "Abiding Triple Gem" instead. Reasoning: 住持 means "to dwell in and uphold" — the Triple Gem that remains present in the world (Buddha images, scriptures, monastic community). "Abiding" better captures this sense of enduring presence than "maintained," and is more common in English Buddhist discourse. The contrast with 自性三宝 ("Intrinsic Triple Gem") is clearer: external/abiding vs. internal/intrinsic.
+
+### 2. 理体三宝 → "Noumenal Triple Gem"
+
+Not in DB. Coined based on 理体 ("noumenal principle/essence") + 三宝. This is a standard doctrinal category alongside 住持, 化相, and 自性. "Noumenal" is appropriate — it refers to the Triple Gem as principle/reality, not as tangible form.
+
+### 3. 化相三宝 → "Manifested Triple Gem"
+
+DB: "manifested Triple Gem" (nti_buddhist_terminology). Followed DB.
+
+### 4. 自性三宝 → "Intrinsic Triple Gem"
+
+DB: "intrinsic nature of the triple gem" (nti_buddhist_terminology) / "the triple jewel of our own self-nature" (BAICKZ). Chose "Intrinsic Triple Gem" — concise, matches the parallel naming pattern with the other three categories, and "intrinsic" captures 自性 (self-nature/inherent nature) well.
+
+### 5. 觉性 → "awakened nature"
+
+DB: "the nature of awakening/awakened nature/the Buddha-nature" (佛教术语). Chose "awakened nature" consistently throughout. This term is central to the text's argument — distinct from "buddha-nature" (佛性, which appears separately in sutra quotes). "Awakened nature" preserves the active, functional quality the text emphasizes (觉 = awakening as a dynamic capacity).
+
+### 6. 皈依 → "taking refuge" / "go for refuge"
+
+Standard rendering. Used "taking refuge" for noun-form contexts and "go for refuge" for verb-form when more natural. Both are in the DB.
+
+### 7. 善知识 → "good teacher"
+
+DB: "good teacher" / "good advisor." Used "good teacher" consistently — the text emphasizes the teacher-student relationship and the transmission of Dharma, where "teacher" is more natural.
+
+### 8. 宗门/教下 → "Chan school" / "doctrinal schools"
+
+DB: "Chan School of Buddhism; Zen" for 宗门 / "Chan Buddhism and other Buddhist teachings" for 宗门和教下. Used "Chan school" and "doctrinal schools" as a pair — standard in English Buddhist discourse about the sudden/gradual distinction in Chinese Buddhism.
+
+### 9. 人生佛教 → "Buddhism for Life"
+
+Master Jiqun's term. Not a literal translation of 人生 (human life) but a rendering that captures his emphasis on applying Buddhism to daily living rather than otherworldly concerns.
+
+### 10. 一行三昧 → "Samādhi of One Practice"
+
+DB: "Ekavyuda-Samadi; Samadi of Specific Mode" (nti_buddhist_terminology). Chose "Samādhi of One Practice" — more transparent for English readers and aligns with the Platform Sutra's teaching context where 一行 means "one practice" (single, unified practice).
+
+## No action required
+
+All other key terms follow DB conventions:
+- Three Jewels (三宝), Platform Sutra (坛经), Diamond Sutra (金刚经)
+- clinging to self (我执), clinging to dharmas (法执)
+- ignorance (无明), emptiness (空性), conditioned arising (缘起)
+- precepts/concentration/wisdom (戒定慧)
+- virtue of severing afflictions (断德), virtue of wisdom (智德), virtue of compassion (悲德)
+- Tathāgatagarbha (如来藏), Trikaya (三身), four wisdoms (四智)
+- no-thought (无念), formlessness (无相), non-abiding (无住)
+- Great Perfection (大圆满), Mahāmudrā (大手印)
+- anuttarā-samyak-saṃbodhi (阿耨多罗三藐三菩提)

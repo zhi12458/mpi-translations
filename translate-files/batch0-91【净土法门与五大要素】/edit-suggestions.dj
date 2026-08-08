@@ -1,0 +1,40 @@
+# Edit Suggestions for 净土法门与五大要素
+
+Translator: AI
+Reviewer: AI (self-review)
+Date: 2026-08-06
+
+## Summary
+
+Translation is accurate and natural, with consistent terminology and good preservation of the speaker's voice. Two terminology issues found during self-review.
+
+## Terminology Issues
+
+### 1. Five essential elements enumeration — use noun forms
+
+**Location:** Line 62 (target.dj), source line 62
+
+**Source:** "皈依、发心、戒律、正见、止观"
+**Current:** "taking refuge, aspiration, precepts, right view, and śamatha-vipaśyanā"
+**Suggested:** "refuge, aspiration, precepts, right view, and śamatha-vipaśyanā"
+
+**Reason:** Per the practice element list rule in mpi-translation skill: when translating lists of named practice components, render each as a noun phrase, not a gerund. "Refuge" not "taking refuge." The heading "Taking Refuge" is correct as a section title; only the enumeration in the element list needs the noun form.
+
+**Applied:** Yes — changed target line 62.
+
+### 2. "pessimistic" → "disengaged" for 消极
+
+**Location:** Line 100 (target.dj), source line 100
+
+**Source:** "大众觉得佛教是消极的，对社会没什么用处"
+**Current:** "the public to perceive Buddhism as pessimistic and of no use to society"
+**Suggested:** "the public to perceive Buddhism as disengaged and of no use to society"
+
+**Reason:** 消极 in this context means "passive," "withdrawn," or "disengaged from worldly affairs" — not "pessimistic," which carries a specific philosophical connotation (pessimism vs. optimism) not present in the source. The sentence pairs 消极 with "of no use to society," so "disengaged" captures the intended meaning: a religion seen as withdrawing from rather than engaging with social concerns.
+
+**Applied:** Yes — changed target line 100.
+
+## Notes
+
+- "self-centered streak" for 自了成分 is a deliberate choice: 自了 literally means "self-liberation focused," but "self-centered streak" better conveys the pejorative tone and flows more naturally in English. Not changed.
+- "taking refuge" as section heading and in body text is correct; only the element-list enumeration needed the noun form.

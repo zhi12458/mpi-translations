@@ -1,0 +1,110 @@
+# Review Findings --- 55【大道大商——佛教与企业文化】
+
+Scope: source.dj vs target.dj, full read (378 lines each, line-aligned 1:1).
+Completeness: every source paragraph is present in target.dj; no omissions found.
+Terminology: DB-confirmed terms (Three Imperishables, Human and Deva Vehicle, Bodhisattva Vehicle, six pāramitās, Five Precepts, four immeasurables, Three-Stage Practice, threefold emptiness, Shared Vows Shared Path) are used consistently per edit-suggestions.dj.
+The findings below are the exceptions.
+
+## Critical
+
+### C1. Stray duplicated TOC line embedded in body text
+- Location: target.dj line 28 (between Yang Jinlin's welcome paragraph and "Regardless of our wealth...").
+- Problem: source.dj line 28 is a blank line, but target.dj contains a spurious copy of the TOC entry: `[IV. Audience Interaction: Finding Solutions [21](#四观众互动解决问题)](#四观众互动解决问题)`. It will render as a nonsensical paragraph in the middle of the moderator's opening remarks. This is an addition with no basis in the source.
+- Fix: delete target.dj line 28 entirely (restore the blank line).
+
+### C2. Broken TOC anchor for Section IV
+- Location: target.dj line 14.
+- Problem: the TOC link points to `(#四大观众互动解决问题)`, but the actual section anchor at line 289 is `{#四观众互动解决问题}`. The link is dead. Note that the stray duplicate (C1) uses the correct anchor --- the real TOC entry was likely mangled during a copy.
+- Fix: change line 14 to `[IV. Audience Interaction: Finding Solutions [21](#四观众互动解决问题)](#四观众互动解决问题)`.
+
+## Major
+
+### M1. Criteria misattributed to Venerable Jiqun
+- Location: target.dj line 89.
+- Source: 济群法师作为出家人，他定了那么多标准，您觉得难吗？
+- Target: "Venerable Jiqun, as a monastic, you have set so many criteria --- do you find them hard to meet?"
+- Problem: the "six criteria" were set by Yang Zhao (career success + life success, immediately prior). 他 refers to Yang Zhao, not Jiqun. The translation attributes the criteria to Jiqun, reversing who is being asked to measure himself against them.
+- Fix: "Venerable Jiqun, as a monastic --- Mr. Yang has set all these criteria --- do you find them hard to live up to?"
+
+### M2. "闽人多阉" mistranslated
+- Location: target.dj line 294.
+- Source: 东汉时有人说"闽人多阉”，但今天大贤大德都出现了
+- Target: "In the Eastern Han, someone said that 'the people of Min are mostly mean-spirited' --- but today, great worthies and virtuous ones have all emerged."
+- Problem: 阉 means "eunuch / castrated", not "mean-spirited". The moderator's joke is that an ancient slur claimed Min (Fujian) people were mostly eunuchs, yet today the region produces great worthies. "Mean-spirited" replaces the slur with a different, unrelated insult and destroys the joke's setup.
+- Fix: "In the Eastern Han, someone said that 'the people of Min are mostly eunuchs' --- yet today, great worthies and virtuous ones have all emerged from there."
+
+### M3. Inconsistent rendering of the Buddhist vehicles
+- Location: target.dj line 300.
+- Source: 佛教有分层次，如人天乘、声闻、缘觉，还有菩萨乘。
+- Target: "there is the Human and Deva Vehicle, the śrāvaka, the pratyekabuddha, and also the Bodhisattva Vehicle."
+- Problem: mixes two conventions (English for 人天乘 and 菩萨乘, Sanskrit for 声闻 and 缘觉) and drops "Vehicle" for the two middle terms, so the list no longer reads as four parallel "levels". DB-confirmed renderings exist for 人天乘 and 菩萨乘; the middle two should match that pattern.
+- Fix: "there is the Human and Deva Vehicle, the Śrāvaka Vehicle, the Pratyekabuddha Vehicle, and also the Bodhisattva Vehicle."
+
+## Minor
+
+### m1. Same idiom, two renderings
+- Location: target.dj line 63 vs line 243.
+- Problem: 一样的米养百样的人 / 一样米百样人 is rendered "the same rice can feed a hundred kinds of people" (line 63) and "The same rice feeds a hundred kinds of people" (line 243).
+- Fix: standardize to one form, e.g. "the same rice feeds a hundred kinds of people" in both places.
+
+### m2. Muddled payroll logic
+- Location: target.dj line 137.
+- Source: 比如养不好福耀玻璃厂一两万的工人，因为你总得开支。
+- Target: "if you can't sustain the ten or twenty thousand workers at Fuyao Glass, you still have to make payroll."
+- Problem: source logic is "you must seek profit because you must always meet expenses" --- the translation reads as if payroll follows failure to sustain the workers.
+- Fix: "for instance, you cannot support the ten or twenty thousand workers at Fuyao Glass unless you can always meet the payroll."
+
+### m3. Awkward rendering of 不负其言
+- Location: target.dj line 142.
+- Source: 在其位，谋其职；在其位，不负其言。
+- Target: "When you take a seat, you must fulfill its duties; in that position, do not betray the words that come with it."
+- Problem: "the words that come with it" is unclear; the phrase means living up to the trust/speech that comes with the position.
+- Fix: "when you hold a position, fulfill its duties; when you hold a position, live up to the trust it carries."
+
+### m4. "社会行为" rendered as "social construct"
+- Location: target.dj line 160.
+- Source: 所以人们往往会觉得：道德是一种社会行为，和自身没有太大关系。
+- Target: "morality is a social construct, not really connected to the self."
+- Problem: "social construct" imports a technical claim the speaker is not making; 社会行为 here is "a matter of social behavior / an affair of society".
+- Fix: "morality is a social affair, not really connected to oneself."
+
+### m5. "善之长" flattened
+- Location: target.dj line 119.
+- Source: 元是善之长
+- Target: "Yuan is the primordial goodness"
+- Problem: 善之长 is "the chief/head of all virtues" (from the Wenyan commentary on the Yijing); "primordial goodness" shifts the sense.
+- Fix: "Yuan is the chief of all virtues --- whatever we do, we must begin with a wholesome and good intention."
+
+### m6. 生命共同体 vs official phrase
+- Location: target.dj line 287.
+- Source: 构建人类生命共同体
+- Target: "building a shared future for humanity"
+- Problem: the speaker said 生命共同体 ("a community of life"); the translation silently upgrades it to the standard official rendering of 命运共同体. Defensible, but it is an unmarked substitution.
+- Fix: either keep and note, or render literally: "building a community of shared life for humanity."
+
+### m7. "本家" wordplay lost
+- Location: target.dj line 81.
+- Source: 本家，您怎么看？
+- Target: "Brother, what is your take?"
+- Problem: 本家 is a pun on the shared surname Yang (Yang Jinlin addressing Yang Zhao); "Brother" loses it.
+- Fix: "My fellow Yang --- what is your take?"
+
+### m8. "智慧健康" phrasing
+- Location: target.dj line 125.
+- Source: 第一，身体要健康；第二，心理要健康；第三，智慧要健康。
+- Target: "First, physical health. Second, mental health. Third, wisdom health."
+- Problem: "wisdom health" is not idiomatic English; the triad works better with parallel "health of" phrasing.
+- Fix: "First, health of body. Second, health of mind. Third, health of wisdom."
+
+### m9. "careers are vast"
+- Location: target.dj line 20.
+- Source: 很多人拥有财富却不幸福，事业广大却不知意义何在。
+- Target: "many whose careers are vast have no idea what meaning their work holds."
+- Problem: "careers are vast" is unidiomatic; 事业 here is one's enterprise/undertaking.
+- Fix: "many whose enterprises are vast have no idea what meaning their work holds."
+
+## Notes (no change required)
+
+- 富翁 → "billionaire" (line 69): flagged in edit-suggestions.dj as a deliberate, context-justified choice; agree it stands given the Forbes discussion.
+- 上妙下湛老和尚 → "the late Elder Miaozhan" (line 125): "late" is an addition not in the source, but factually correct (Miaozhan of Nanputuo died in 1995) and helpful to readers; acceptable.
+- 三宝-style terms, 开示 ("teaching"), 烦恼 ("affliction"), 福报 ("blessing"), 居士 ("lay practitioner") are all handled consistently throughout.

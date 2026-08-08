@@ -1,0 +1,59 @@
+# Translation findings — 我们靠什么认识世界 / How Do We Know the World?
+
+Date: 2026-07-17
+Mode: self-review complete
+
+## Source notes
+
+- Genre: edited transcript of two oral dialogues (Master Jiqun x philosopher
+  Zhou Guoping, 2016). Register kept spoken and direct; sentences split for
+  breath where Chinese ran long.
+- Sections 一 and 四 carry the identical title 理性的作用和局限 in the source.
+  Kept identical in the target ("The Role and Limits of Reason") — this is a
+  source artifact, not a translation error.
+- Pandoc conversion: TOC links/page numbers removed, `{#...}` anchors dropped,
+  `------` kept as source dash convention.
+
+## Terminology decisions (terms DB priority: DoT定稿 > 内部特色词 > 佛教术语)
+
+- 现量/比量 → direct perception / inference; Sanskrit glosses (pratyaksha,
+  anumana) added once at first technical introduction (line 54). Diacritics
+  stripped per convention.
+- 因明 → hetuvidya, glossed "Buddhist logic" at first use (line 32).
+- 三性 (line 48) → "the falsely conceived nature, the dependent nature, and the
+  perfectly realized nature" per buddhist-terminology.md project standard
+  ("three natures: falsely conceived, dependent, perfectly realized").
+  Standalone 遍计所执 (line 50) → "attachment arising out of pervasive
+  discrimination" (佛教术语 DB form). The two renderings are deliberate.
+- 四种真实 (line 88) → 佛教术语 DB forms: reality as formulated by mundane
+  cognition / accurate reasoning / cognition purified of the afflictive
+  hindrances / cognitive hindrances. Framed as "four levels of reality".
+- 如实智 → "cognition of things as they really are" (DoT定稿).
+- 如理作意 → "thinking in line with the Dharma" (DoT定稿). 作意 standalone →
+  "attention" (颠倒作意/无倒作意 → distorted/undistorted attention). Different
+  renderings for 作意 are deliberate: DoT governs the set phrase; the dialogue
+  itself defines 作意 as 用心 ("how you use your mind").
+- 玄奘三藏 → "Xuanzang Sanzang" (DoT定稿); 戒日王 → "King Harsha"; 僧肇 →
+  "Seng Zhao"; 《肇论》→ *Zhao Lun*; 《瑜伽师地论》→ *Yogacarabhumi Shastra*;
+  《辩中边论》→ *Discerning the Middle and the Extremes*;
+  《因明入正理论》→ *Nyayapravesha*, glossed "Primer on Logic";
+  《正理经》→ *Nyaya Sutra*.
+- 天人 → "devas" (BAICKZ). Flag: if the intended audience is general readers
+  without Buddhist background, "heavenly beings" may read better.
+- 助缘 → "supportive conditions" (BAICKZ form).
+- 依正不二 → "non-duality of the circumstantial and the direct", with the
+  source's own gloss (依报/正报) rendered as circumstantial/direct reward
+  (BAICKZ "circumstantial and direct reward").
+- 幸福 discussion (line 186) is meta-linguistic: 幸福 kept visible as pinyin
+  "xingfu", 福 as "fu", so the argument about happy/Glück/Aristotle survives
+  in English.
+- 永恒 → "eternal" (perennial avoided per translation-pitfalls.md).
+
+## Open questions for peer review
+
+- Xuanzang's debate thesis (line 70) rendered structurally: "Truly and
+  commonly acknowledged, form is not necessarily separate from the
+  eye-consciousness; for what I myself admit is comprised in the first three,
+  which the eye does not comprise---like the eye-consciousness." Faithful but
+  compressed; a reviewer with hetuvidya background may refine.
+- Speaker labels: "Master Jiqun:" / "Zhou Guoping:" chosen over "Ji:"/"Zhou:".

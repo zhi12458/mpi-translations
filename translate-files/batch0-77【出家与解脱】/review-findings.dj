@@ -1,0 +1,73 @@
+# Review Findings for 77【出家与解脱】
+
+Reviewer: kimi-code/k3-256k
+Date: 2026-08-07
+Scope: full read of source.dj vs target.dj (both 232 lines, 1:1 section correspondence). Prior edit-suggestions.dj consulted; its single applied fix (红尘 consistency) is valid and present.
+
+## Summary Assessment
+
+No critical errors. Translation is complete (every source section and paragraph covered), generally accurate, and fluent. The systematic issues are: (a) one Vinaya term error, (b) one systematic terminology conflation (惑业), and (c) a handful of single-word drifts and clunky renderings. Details below.
+
+## Major
+
+1. **腐烂药 mistranslated as "discarded medicine"**
+   - Location: Part Four, §1 "A Life of Simplicity", paragraph on the four reliances (四依).
+   - Source: 即常乞食、树下坐、粪扫衣、腐烂药，又称头陀行.
+   - Target: "always begging for food, dwelling at the foot of a tree, wearing rag-robes, and using discarded medicine".
+   - Problem: 腐烂药 = medicine made from decomposed matter (the fourth nissaya, pūtimutta-bhesajja, traditionally fermented cow urine). "Discarded medicine" says thrown-away medicine — wrong substance, wrong rationale.
+   - Fix: "using medicine made from decomposed matter" (optionally gloss "(pūtimutta-bhesajja)"), consistent with the translator's Sanskrit-gloss convention.
+
+2. **惑业 systematically rendered "karmic delusion"**
+   - Locations: Part Two §4 ("the basis for this is the karmic delusion within our minds"); Part Three §2 ("all the happiness in samsara is built on karmic delusion"); Part Five ("a life built on karmic delusion").
+   - Problem: 惑业 is two things — 惑 (afflictive delusion) and 业 (karma) — the delusion that generates karma and the karma it generates. "Karmic delusion" collapses them into one modifier-head phrase. Worse, the same translator renders 惑业苦 in Part Five as "delusion, karma, and suffering", so the reader meets 惑业 as one compound and 惑业苦 as a three-item list — internally inconsistent.
+   - Fix: render all three occurrences as "delusion and karma", matching the 惑业苦 rendering.
+
+3. **Ambiguous "the basis for this" (Part Two, §4 "Leaving the Home of the Three Realms")**
+   - Source: 出离三界，就是要出离轮回，其基础就是我们内心的惑业.
+   - Target: "To leave the three realms is to leave samsara, and the basis for this is the karmic delusion within our minds."
+   - Problem: "the basis for this" naturally reads as "the basis for leaving samsara". The source means the *basis of samsara itself* — what keeps us bound is our inner delusion and karma. The next sentence confirms this ("the key is to leave behind the very source that produces samsara"). Risk of inverted meaning.
+   - Fix: "To leave the three realms is to leave samsara, and the foundation of samsara is the delusion and karma within our own minds."
+
+## Minor
+
+4. **苦苦 gloss drifted** (Part Three, §2, three-sufferings paragraph).
+   Source: 苦苦，即由内而外的痛苦. Target: "pain that is manifestly painful". The source gloss is "pain both internal and external". Fix: "pain experienced both inwardly and outwardly".
+
+5. **惭愧 → "humility"** (Part Three, §1, list of positive mental patterns: 慈悲、惭愧、善良 → "compassion, humility, and kindness"). 惭愧 (hrī–apatrapya) is moral shame/dread of blame, not humility. Fix: "compassion, integrity and a sense of shame, and kindness" or "conscience".
+
+6. **发心 / 正思惟 collision on "right intention"** (Part Three headings and Part Five final paragraph). 发心 → "Setting Your Intention" / "Setting the Right Intention"; 八正道的第二 (正思惟) → "right intention (reflection)". Two distinct concepts share one English term. Also "Your" in the heading is the only second-person heading in the text. Fix: render 发心 as "aspiration" — "The Importance of Generating the Aspiration", "Generating the Right Aspiration" — and keep "right intention" for the path factor.
+
+7. **人格 → inconsistent** ("character" vs "personality"). Part Three §1: 心态→"mental dispositions", 性格→"character", 人格→"personality"; two paragraphs later 成就怎样的人格 → "what kind of character we will form". Fix: use "personality" in the second occurrence to preserve the 心态→性格→人格 progression.
+
+8. **极权制 softened to "centralized power"** (Part Four, §2). Source: 方丈已开始出现极权制的倾向 — a deliberately strong word ("totalitarian"). Fix: "abbots have begun to show a drift toward totalitarian-style control".
+
+9. **自寻短见 weakened to "contemplate suicide"** (Part Three, §1). Source: 要去自虐，要去自寻短见 — attempted action, not ideation. Fix: "resort to self-harm or even try to take their own lives".
+
+10. **心存侥幸 → "take a chance"** (Part Three, §1). Source: 心存侥幸 = counting on getting away with it. "Take a chance" suggests voluntary risk. Fix: "we harbor the hope of getting away with it and think it does not matter".
+
+11. **标准的俗人 → "standard laypeople"** (Part Four, §2, closing paragraph). Unidiomatic. Fix: "we are still thoroughly ordinary laypeople".
+
+12. **僧宝 → "jewel of the saṅgha"** (Part Four intro). Inverts the established compound; 僧宝 is the Sangha Jewel (third of the Three Jewels). Fix: "a pure and dignified saṅgha jewel, consistent within and without".
+
+13. **"inwardly-and-outwardly consistent"** (same sentence, 表里如一). Awkward hyphen-chain. Fix folded into #12 above.
+
+14. **维那 double gloss "karmadāna (vaiyāpṛtya)"** (Part Four, §2). Two different Sanskrit etyma given for one office is confusing; 维那 conventionally transliterates karmadāna. Fix: "the karmadāna (rector)". Keep sthavira/vihārasvāmin glosses as-is.
+
+15. **产品改造 metaphor flattened** (Part Four intro). Source: 需要经历一个产品改造的过程 — the "product" image deliberately echoes 无明制造的一个产品 from Part Two §2. Target: "a process of transformation". Fix: "we need to undergo a process of being remade like a product".
+
+16. **正顺解脱之本 rendered clunkily** (Part Four intro). "the precepts are the very foundation that accords with and leads to liberation. 'Accords with and leads to' means that they serve liberation" — the quoted gloss-of-a-gloss is stilted. Fix: "the precepts are the foundation for rightly following the path to liberation. 'Rightly following' means the precepts serve liberation..."
+
+17. **Tautological sentence in Part Five final paragraph**: "The reflection in 'hearing, reflection, and cultivation' is reflection". Source: 闻思修的思是思维 — the point is that all four traditional frameworks name the same faculty. Fix: "The si in hearing–reflection–cultivation (闻思修) is precisely this reflection" or "the 'reflection' of hearing, reflection, and cultivation refers to exactly this".
+
+18. **三有 → "three realms" collides with 三界 → "three realms"** (Part Six final sentence, 智不住三有). Distinct source terms rendered identically. Fix: "with wisdom, one does not abide in the three realms of existence; with compassion, one does not abide in nirvāṇa" — or "the triple existence" for 三有.
+
+19. **Śrāvakayāna vs "Bodhisattva vehicle" inconsistency** (Part Six). One vehicle Sanskritized, the other translated. Fix: "the Śrāvakayāna and the Bodhisattvayāna" or "the śrāvaka vehicle and the bodhisattva vehicle".
+
+20. **心路规则 → "mental traffic rules"** (Part Four intro). The source coins "rules of the mind-path"; "traffic" adds imagery not in the source and reads oddly. Fix: "the rules of the road that keep us traveling safely toward liberation" (keeps the metaphor, drops the coinage mismatch).
+
+## Notes (non-errors)
+
+- Added Sanskrit glosses absent from the source (gṛhastha, vānaprastha, sannyāsa in Part One §1; prātimokṣa; the three duḥkhatās; naiḥsargika-pāyantika) match the convention declared in edit-suggestions.dj ("Sanskrit terms used where appropriate with English glosses on first occurrence"). Acceptable; flagged only so the convention is applied knowingly.
+- 四依 item 日食一麻一麦 → "one sesame seed and one grain of wheat" — 麻 as "sesame" follows common English renderings; "hemp seed" is the alternative. Not an error.
+- Terminology otherwise consistent and well-chosen throughout: 凡夫心 → "ordinary mind", 串习 → "habitual patterns", 增上缘 → "contributory condition", 止观 → "śamatha-vipaśyanā", 观照 → contextually varied ("clear awareness", "clear inner observation") without confusion.
+- Completeness: all six parts, all fifteen subsections, and every paragraph of the introduction and closing are present and in order. No omissions or additions of content detected (only the sanctioned glosses above).

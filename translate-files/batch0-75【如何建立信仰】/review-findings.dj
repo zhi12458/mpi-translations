@@ -1,0 +1,140 @@
+# Review Findings — 75【如何建立信仰】 (How to Establish Faith)
+
+Reviewer: agent (peer review of target.dj vs source.dj)
+Date: 2026-08-07
+
+Note: edit-suggestions.dj (2026-08-06) declares "no remaining accuracy or fluency issues" — that file is stale. The items below were found in a full side-by-side re-read of all 445 lines.
+
+## Summary
+
+- Completeness: full. All 33 headings and every source paragraph are present, line-aligned 1:1 (239 non-blank lines each side). No omissions, no untranslated passages.
+- Terminology: broadly consistent and well-chosen (Three-Stage Practice, Collective Joy/Practice/Virtue Courses, refuge essence, analytical/placement meditation, śamatha-vipaśyanā, bodhicitta). A few drift points noted below.
+- Two major accuracy errors, both in quoted doctrinal content; the rest are minor.
+
+## Critical
+
+None found.
+
+## Major
+
+### M1. 发愿 mistranslated as "dedication of merit"; 回向 as "transference of merit" — the vow is lost
+
+- Location: target.dj line 302 (§ IV.2 Practicing the Three Refuges, first paragraph).
+- Source: 包含发心、忏悔、供养、观察修、安住修、发愿、回向等一系列内容。
+- Current: "...which includes a complete sequence of generating aspiration, repentance, offerings, analytical meditation, placement meditation, dedication of merit, and transference of merit."
+- Problem: 发愿 (making vows) and 回向 (dedication of merit) are two distinct liturgical items, but the translation renders both as merit-transference terms ("dedication of merit" / "transference of merit" are synonyms). 发愿 disappears entirely, and the list appears to contain a redundancy the source does not have.
+- Fix: "...placement meditation, making vows, and dedication of merit." (发愿 = making vows; 回向 = dedication of merit.)
+
+### M2. The definition of 信 from the 百法明门论 is mistranslated
+
+- Location: target.dj line 162 (§ II.3, 正觉的佛教).
+- Source: 其定义是"于实德能深忍乐欲，心净为信"。
+- Current: "...defined as 'deeply bearing in mind the real, the virtuous, and the capable with joyful aspiration — faith is purity of mind.'"
+- Problem: 深忍 is profound acceptance/conviction in the truth of the object (the first of the three aspects of śraddhā: conviction 忍, aspiration 欲, purity 净), not "bearing in mind." This is a verbatim doctrinal definition the speaker uses to derive his three criteria; getting it wrong distorts the technical meaning.
+- Fix: "...defined as 'profound conviction and joyful aspiration toward the real, the virtuous, and the capable — purity of mind is faith.'"
+
+## Minor
+
+### m1. Line 271 — refuge vow gloss adds "Worthy One" and misreads 为我所尊
+
+- Source: 皈依佛，如来至尊等正觉为我所尊…
+- Current: "the Tathāgata, the Worthy One, the Perfectly Awakened One is my honored teacher"
+- "Worthy One" (arhat) does not appear in the source and does not parse 至尊等正觉 (supreme and perfectly awakened); 为我所尊 is "is the one I venerate / hold as supreme," not "my honored teacher."
+- Fix: "I go for refuge to the Buddha — the Tathāgata, supreme and perfectly awakened, is the one I venerate; I shall never go for refuge to misguided teachers or unorthodox paths."
+
+### m2. Line 286 — 住持三宝 rendered "manifest Three Jewels"
+
+- 住持三宝 is a fixed term: the "abiding" (or "presiding/sustaining") Three Jewels — Buddha images, scriptures, and the monastic Sangha that keep the Dharma present in the world. "Manifest" is non-standard and loses the sense of 住世 ("abiding in the world") that the very next clause explains (正法住世).
+- Fix: "As the abiding Three Jewels, the Sangha jewel is the symbol of the true Dharma's presence in the world…"
+
+### m3. Line 306 — "the Tang monk Xuanzang" conflates the fictional pilgrim with the historical monk
+
+- Source: 就像《西游记》中，唐僧取经要经过九九八十一难.
+- The *Journey to the West* character is Tang Sanzang/Tripitaka. Since Xuanzang the historical pilgrim appears in his own right at line 164 ("Xuanzang's ten-thousand-mile westward journey"), using "Xuanzang" for the novel's 唐僧 invites confusion.
+- Fix: "…where the monk Tang Sanzang (Tripitaka) had to pass through eighty-one ordeals…"
+
+### m4. Lines 188 and 426 — 心相续 rendered inconsistently ("mental continuum" / "mindstream")
+
+- Line 188 uses both within one sentence pair ("their mental continuum" … "enter our mindstream"); line 367 uses "mental continuum"; line 426 uses "mindstream."
+- Fix: standardize on "mental continuum" (or "mindstream") throughout.
+
+### m5. Line 204 — song title 《老无所依》 rendered "No Country for Old Men"
+
+- The literal rendering collides with the well-known McCarthy novel / Coen brothers film title, which will mislead English readers into thinking a Western work is being quoted.
+- Fix: "There is a song called 'Nothing to Rely On in Old Age' (老无所依)…" or add a clarifying gloss.
+
+### m6. Line 211 — 中国好人 rendered "Model Chinese Citizens"
+
+- 中国好人 refers to the official "Good People of China" commendation ("China Good Person" list); "Model Chinese Citizens" invents a different program.
+- Fix: "…so was Lei Feng, and the 'Good People of China' selected every year."
+
+### m7. Line 108 — the generational-轮回 joke drops 成家立业
+
+- Source: 陪着儿女再经历一番从成家立业到过好一点的轮回.
+- Current: "accompanying them through their own cycle from building a career to living a bit better" — omits the marrying/forming-a-family half of 成家立业, weakening the parallel with the parents' cycle described just before ("getting married and building a career").
+- Fix: "…their own cycle from marrying and building a career to living a bit better…"
+
+### m8. Line 103 — "long and widely mischaracterized" adds "widely"
+
+- Source: 这更是一个被长期误读的观点 ("a viewpoint that has long been misread"). The translation adds "widely," which the source does not claim.
+- Fix: "…a tool for the ruling class to control the people — a view that has long been misread."
+
+### m9. Line 176 (heading) and throughout — 前行 rendered "Prerequisites"
+
+- In refuge/practice contexts 前行/正行 is the standard pair "preliminaries / main practice." "Prerequisites" is intelligible but off-register for the genre, and line 178 then has to say "the prerequisites and the main practice fall short," which reads oddly.
+- Fix: heading "The Preliminaries and Main Practice of Taking Refuge"; adjust line 176/178 accordingly ("the preliminaries have been inadequately prepared").
+
+### m10. Line 144 — 相似相续 rendered "similar-yet-continuing"
+
+- "Similar-yet-continuing" is calque-awkward. 相似相续 (saṃtati of resemblance, neither identical nor different) is usually rendered "a continuity of resemblance" or "continuous succession without identity."
+- Fix: "But Buddhism sees life as a continuity of resemblance — neither permanent nor annihilated…"
+
+### m11. Line 317 — 成效 rendered "benchmarks"
+
+- Source: 次第就是流程，做好一件事的先后顺序是什么，每个阶段的成效是什么 ("what results each stage yields"). "Benchmarks" shifts from observed results to preset standards.
+- Fix: "The sequence is the process — the order of steps for doing something well, and the results to be expected at each stage."
+
+### m12. Lines 282 and 367 — 五欲六尘 rendered "the five objects and six dusts"
+
+- "Six dusts" is a calque unfamiliar outside Buddhist-studies circles; the text is a general-audience Dharma talk.
+- Fix: "the five sensual pleasures and six sense objects" (or add a one-time gloss).
+
+### m13. Line 348 — 《瑜伽菩萨戒品》 rendered "*Yogācāra Bodhisattva Precepts*"
+
+- The text is the Bodhisattva Precepts chapter (戒品) of the *Yogācārabhūmi*; the current rendering reads like a standalone work.
+- Fix: "…the *Bodhicaryāvatāra* and the Bodhisattva Precepts chapter of the *Yogācārabhūmi*…"
+
+### m14. Lines 348 and 436 — 三士道 rendered "the three types of practitioners"
+
+- In the Lamrim context invoked here (道前基础， 下中上三士道), the established English is "the three scopes" or "persons of the three capacities." "Three types of practitioners" is comprehensible but non-standard and blurs 三士 (the persons) with 道 (the path).
+- Fix: "…including the preliminary foundation and the paths of the three scopes (persons of small, middling, and great capacity)…"; at line 436: "…are also called the three scopes, representing three levels of Buddhist practice."
+
+### m15. Line 404 — pronoun slips from first person to "you" mid-anecdote
+
+- Current: "Influenced by my family, I began studying Buddhism… this sense of 'soundness' was only because *you* accepted this education from the start — a default-mode approval…"
+- The Chinese 你 is generic, but inside a first-person narrative the shift reads as an error.
+- Fix: "…was only because I had accepted this education from the start — a default-mode approval that was never, in fact, very deeply felt."
+
+### m16. Line 373 — explanation of 串 in 串习 is awkward
+
+- Current: "The Chinese character for 'habit-string' is telling: it is a string of beads strung together…"
+- "Habit-string" is not an English word; "a string of beads" adds 珠子, which is not in the source (一串串连起来).
+- Fix: "The character chuàn in chuànxí (habitual pattern) is telling: it depicts things strung together, one after another — thought after thought in continuous succession, like an unbroken thread."
+
+### m17. Line 255 — mixed metaphor for 熏: "perfume" vs "impregnate"
+
+- 现行熏种子 is "current actions perfume seeds," but later in the same paragraph 熏下了种子 becomes "actions in turn impregnate new seeds." The Yogācāra "perfuming" metaphor should be kept uniform.
+- Fix: "…on the other hand, actions in turn perfume new seeds."
+
+### m18. Line 135 — 讨伐 rendered "crusades"
+
+- 对异教徒的多次讨伐 is "repeated campaigns/expeditions against infidels." "Crusades" narrows it to the specific medieval Crusades; the speaker means religious persecution generally.
+- Fix: "…has sparked repeated persecutions of non-believers throughout history."
+
+## Verified as correct (no action needed)
+
+- Completeness and alignment: 445/445 lines, 33/33 headings, all subsections (1)–(5), (1)–(3) present in order; no dropped sentences detected in any paragraph.
+- DoT定稿 terminology from edit-suggestions.dj (Three-Stage Practice, Collective Joy/Practice/Virtue Courses, Buddhism for Human Life) is applied consistently.
+- Scripture titles consistent: *Diamond Sutra* (246, 350, 361), *Heart Sutra* (350, 361), *A Handbook for Refuge Practice* (51, 195, 293, 346), *The Liturgy for Group Refuge Practice* (47, 302), *Mahāyāna-śatadharma-prakāśa-mukha-śāstra* (162, 348), Bodhicaryāvatāra, Madhyānta-vibhāga, Triṃśikā, Platform Sutra.
+- Twelve links of dependent origination (148), Three Dharma Seals (144), eight benefits of refuge (195), the eight steps and three types of meditation (359–381), the six sufferings list (432) — all accurate and complete.
+- Idioms generally well domesticated: "shooting a pearl at a sparrow" (明珠弹雀, 166), "gazing at the sky from the bottom of a well" (坐井观天, 436), "rubber check" (空头支票, 365), "angels in white / engineers of the soul" (225).

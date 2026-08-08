@@ -1,0 +1,168 @@
+# Review Findings for 70【佛法要领】
+
+Reviewer: model (self)
+Date: 2026-08-07
+Scope: full read of source.dj and target.dj; spot-verified all long paragraph tails for
+omissions. Reference: edit-suggestions.dj (2026-08-06, prior pass; findings below are
+net-new).
+
+## Summary
+
+Completeness is excellent: every source paragraph, verse, and anecdote is present and
+in order (verified 1:1 line alignment and tails of all long paragraphs). Register and
+fluency are consistently good. No meaning-reversing mistranslations and no omissions
+were found. The findings below are one wrong Sanskrit gloss, one logical slip, one
+repeated grammar error in the root verse, and a set of small terminology / fluency
+polish items.
+
+## Critical
+
+None.
+
+## Major
+
+### M1. Wrong Sanskrit gloss for 三有 (three existences)
+
+Location: §2.4, target line 257 — "Why are the three realms called the three
+existences (*triloka*)?"
+
+三有 = trīṇi bhavāni / *tribhava* (the three states of existence); *triloka* = 三界
+(the three realms). The gloss contradicts the next sentence, which correctly glosses
+有 as *bhava*. The error is translator-added (the source gives no Sanskrit), so it
+injects a factual mistake into the commentary.
+
+Fix: change "the three existences (*triloka*)" to "the three existences
+(*tribhava*)", or drop the parenthetical and keep only the (*bhava*) gloss in the
+following sentence.
+
+### M2. Tautological sentence loses the 相对/究竟/胜义 distinction
+
+Location: §4 intro, target line 423 — "Bodhicitta is of two types: one is relative,
+the other ultimate. ... Ultimate bodhicitta, on the other hand, can only be revealed
+after realizing emptiness, and is also known as ultimate bodhicitta."
+
+Source: 菩提心有两种，一种是相对的，一种是究竟的。…是相对的菩提心。而究竟的菩提心…又称胜义菩提心。
+The final clause names a *different* term (胜义菩提心) as a synonym; the translation
+repeats "ultimate bodhicitta", producing a tautology and losing the
+世俗/胜义 (conventional/ultimate) pair — a distinction the text itself relies on in
+§5.1, where 世俗菩提心 is rendered "conventional bodhicitta".
+
+Fix: "Bodhicitta is of two types: relative and ultimate. Arousing the wish 'I want to
+become a buddha, I want to benefit all living beings' is relative bodhicitta.
+Ultimate bodhicitta, which can only be revealed after realizing emptiness, is also
+known as absolute bodhicitta (*pāramārthika-bodhicitta*)." Optionally align §5.1's
+"conventional bodhicitta" with a parenthetical: "relative (conventional)
+bodhicitta".
+
+### M3. Broken possessive in the root verse, repeated four times
+
+Location: target lines 157, 303, 313, 327 — "Because craving for existence'
+pleasures binds all beings..."
+
+"existence' pleasures" is not a valid English possessive. It appears in the root
+verse block in the Prologue, at the opening of §3, at the opening of §3.1, and in the
+§3.1 commentary quote — i.e. in the most-read lines of the book.
+
+Fix (all four occurrences): "Because craving for the pleasures of existence binds all
+beings, first you must seek renunciation." (Source: 由欲有乐缚众生，故先寻求出离心。)
+
+## Minor
+
+### Accuracy / terminology
+
+1. **"life's brevity" for 寿无常** — target lines 159, 305, 351 and commentary line
+   357. 寿无常 is the *impermanence* of life (lifespan), not merely its brevity; the
+   following commentary on death's certainty/uncertainty depends on the
+   impermanence sense. Fix: "life's impermanence" (verse: "This precious human life
+   so hard to find, and life's impermanence---...").
+
+2. **"a child of the Mahayana" for 大乘佛子** — target line 431. 佛子 = child of the
+   Buddha; the translation drops 佛. Fix: "Only when you have aroused bodhicitta are
+   you a Mahayana child of the Buddha; otherwise, you belong to the Hinayana."
+
+3. **"an awakened being" for 觉有情** — target line 429. The folk etymology the
+   author invokes is "awakened *sentient* being" (bodhi + sattva). Fix: "A
+   bodhisattva is also called an awakened sentient being."
+
+4. **"Prajñāpāramitā Madhyamaka view of emptiness" for 般若中观的空性见** — target
+   line 649 (end of §5.2). 般若 here is prajñā (the three prajñās were just
+   discussed); inflating it to Prajñāpāramitā over-specifies. Fix: "the
+   prajñā–Madhyamaka view of emptiness".
+
+5. **"Our great teacher, the Buddha" for 我佛大沙门** — target line 559 (§5.1).
+   Drops 大沙门 (great śramaṇa). Fix: "Our Buddha, the great Śramaṇa, always taught
+   in this way."
+
+6. **"Buddhism calls our living body the five aggregates"** — target line 277
+   (§2.4). 生命体 is the whole psycho-physical being; "living body" obscures that
+   four of the five aggregates are mental (which the next sentences explain). Fix:
+   "Buddhism calls our mind-body continuum the five aggregates." Also "the present
+   living body" later in the same paragraph → "the present mind-body".
+
+7. **"the three higher realms" for 三善道** — target line 129 (§1.3). Standard
+   rendering is "the three fortunate realms" (or "happy realms"). "Higher" is
+   intelligible but nonstandard. Fix: "the results of the three fortunate realms".
+
+8. **"self-liberated solitary" for 自了汉** — target line 439 (§4). Coinage is
+   unclear; 自了汉 = one concerned only with their own liberation. Fix: "such a
+   person becomes one who seeks only their own liberation".
+
+9. **"Lamp for the Path to Enlightenment" for 《菩提道灯论》** — target line 213
+   (§2.2). The standard English title of Atiśa's *Bodhipathapradīpa* is *A Lamp for
+   the Path to Awakening*. Using "Awakening" also avoids overloading "Enlightenment"
+   (already used in the *Stages of the Path* titles). Fix: "his *Lamp for the Path
+   to Awakening*".
+
+10. **Sutra-title diacritics inconsistent** — "*Platform Sutra of the Sixth
+    Patriarch*" (lines 87, 91) and "(Lotus Sutra)" (line 99) lack the diacritic used
+    everywhere else (*Diamond Sūtra*, *Heart Sūtra*, *Lotus Sūtra* at lines 439, 451,
+    453, *Nirvāṇa Sūtra*). Fix: *Platform Sūtra of the Sixth Patriarch* and "(Lotus
+    Sūtra)".
+
+### Fluency / register
+
+11. **"arise from causes and their results without exception"** — verse rendering of
+    从因生果皆不虚 (target lines 171, 529, 535 area). Reads as if things "arise from
+    causes and results"; 不虚 = unfailing. Fix: "arise from causes as results,
+    unfailingly" (cf. the commentary's own cleaner phrasing "all arise from causes
+    and produce results. This is genuinely true.").
+
+12. **"the low-level repetition of life"** — target line 331 (§3.1), for
+    生命的低级重复. "Low-level" suggests technical/low-priority in English. Fix: "a
+    base, mechanical repetition of life" or "life's dreary repetition".
+
+13. **"a capacity for non-adhesion"** — target line 385 (§3.3), for 不粘著的能力.
+    "Non-adhesion" is a physical-materials term. Fix: "a capacity for
+    non-attachment" (keeps parallel with the surrounding "does not stick" imagery,
+    which works well).
+
+14. **"The trouble is precisely that we cannot die."** — target line 567 (§5.1).
+    Intended: death offers no escape from karma (麻烦就在于死不了). As written it
+    reads as a complaint about immortality. Fix: "The trouble is precisely that we
+    cannot simply die and be done with it."
+
+15. **"The theme lecture for this Bodhi Meditation Retreat has chosen..."** —
+    target line 51 (opening paragraph). A lecture cannot "choose"; the speaker
+    chooses. Fix: "For the keynote lecture of this Bodhi Meditation Retreat, I have
+    chosen Master Tsongkhapa's *Song of the Three Principal Aspects of the Path*."
+
+16. **"day and night the wish for liberation never leaves your mind"** — verse
+    (lines 161, 307, 369), for 昼夜唯求解脱心. Slight drift: the verse is about
+    *seeking only* liberation day and night, not about the wish merely persisting.
+    Fix: "and day and night you long for liberation alone".
+
+## Notes (no action needed)
+
+- Terminology is otherwise consistent throughout: 出离心 = renunciation, 菩提心 =
+  bodhicitta, 空性见 = the view of emptiness, 我执/法执 = self-grasping /
+  dharma-grasping, 缘起 = dependent origination, 止观 = śamatha-vipaśyanā, 暇满人身 =
+  precious human life (with "leisure and endowment" given at first explanation),
+  三苦 = suffering of suffering / of change / pervasive suffering of conditioning
+  (standard rendering).
+- 小乘 = Hinayana is used consistently and matches the unapologetic 小乘 of the
+  source; retained as-is.
+- Section renumbering (### 解脱道和菩萨道 → ### 1.2., etc.) and ToC conversion to a
+  flat bullet list are clean and consistent.
+- edit-suggestions.dj (2026-08-06) remains accurate: "Jiechuang Buddhist Studies
+  Institute" (line 673) is in place; none of its open items conflict with the
+  findings above.

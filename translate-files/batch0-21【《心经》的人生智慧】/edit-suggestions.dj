@@ -1,0 +1,71 @@
+# Edit Suggestions for 21【《心经》的人生智慧】
+
+Translator: AI (self-review)
+Date: 2026-08-06
+
+## Summary
+
+Translation is complete and line counts match (830 source, 830 target). The
+translation follows MPI terminology conventions and preserves the speaker's
+voice—reasoned, measured, with direct address and concrete Dharma imagery.
+No missing content or serious accuracy issues found.
+
+## Terminology Notes
+
+### Confirmed against terms DB
+
+All key terms verified against `toolkit/terms-database/search.py`:
+
+- 般若 → prajna
+- 般若波罗蜜多 → Prajna Paramita
+- 般若波罗蜜多心经 → Prajnaparamita Heart Sutra
+- 五蕴 → five aggregates (matches 心经的人生智慧 source-specific entry; "five skandhas" is also attested)
+- 空性 → emptiness
+- 十二因缘 → Twelve Nidanas (matches 心经的人生智慧 entry)
+- 四谛 → Four Noble Truths
+- 观自在菩萨 → Avalokiteshvara Bodhisattva
+- 阿耨多罗三藐三菩提 → anuttara-samyak-sambodhi
+- 阿赖耶识 → alaya consciousness (matches 心经的人生智慧 entry)
+- 缘起性空 → the empty nature of conditioned arising (matches DoT定稿)
+
+### Consistent internal usage
+
+- "aggregates" (not "skandhas") used throughout for 蕴
+- "conditioned arising" used throughout for 缘起
+- "intrinsic nature" used for 自性
+- "deluded thoughts" used for 妄想
+- "ordinary beings" used for 凡夫 (not "common people" or "unenlightened beings")
+- "sentient beings" used for 众生 and 有情
+
+### Terms warranting attention
+
+1. **《大智度论》→ Mahaprajnaparamita Upadesha**: This is the scholarly
+   Sanskrit title reconstruction. Alternative English titles include "Great
+   Treatise on the Perfection of Wisdom." The first occurrence appends the
+   parenthetical gloss for accessibility.
+
+2. **波罗蜜/波罗蜜多 → Paramita**: Left untranslated as Sanskrit. "Perfection"
+   is the standard English rendering and is used in explanatory contexts
+   ("six perfections"). The Sanskrit is used when quoting sutras or in the
+   title.
+
+3. **Australia Mingyue Buddhist Society**: The venue name follows the Chinese
+   original "澳洲明月居士林". Could alternatively be rendered "Mingyue Buddhist
+   Society in Australia" but the current form matches the source's cadence.
+
+## Readability Observations (no changes needed)
+
+- Long doctrinal paragraphs have been split at natural breath points.
+- Passive voice is rare; "we" and active constructions predominate.
+- Teacher voice preserved: first-person asides ("I believe," "I recall"),
+  rhetorical questions, gentle admonition.
+- Poems rendered with attention to rhythm and imagery, not forced rhyme.
+- Sutra quotes use standard English Buddhist idiom.
+
+## Format Checks
+
+- Djot emphasis: `*text*` (single asterisk) used throughout. No `**` Markdown bold.
+- Em dashes: `---` used correctly.
+- Backslash-escaped quotes in TOC entries preserved.
+- Section anchors `{#...}` match source.
+- All source lines have corresponding target lines. No missing or extra content.

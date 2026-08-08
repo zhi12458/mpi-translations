@@ -1,0 +1,323 @@
+# Review Findings for 净土法门与五大要素
+
+Reviewer: AI
+Date: 2026-08-07
+Scope: Full review of target.dj against source.dj (accuracy, terminology, fluency, completeness)
+
+## Summary
+
+The translation is accurate, complete, and fluent throughout, with a consistent
+terminology system (自我 grasping → "self-grasping", 凡夫心 → "ordinary mind", 觉性
+→ "awakened nature", 串习 → "habitual patterns", 信愿行 → "faith, aspiration, and
+practice", 三资粮 → "three provisions"). No source paragraph is omitted; no critical
+mistranslations were found. Two major issues (both terminology) and a set of minor
+issues are listed below.
+
+Both items from edit-suggestions.dj were verified as applied: line 62 uses noun
+forms ("refuge, aspiration, precepts, right view, and śamatha-vipaśyanā") and line
+100 uses "disengaged" for 消极. No stale items.
+
+## Critical
+
+None.
+
+## Major
+
+### M1. 加行位 rendered "stage of earnest effort" — nonstandard term
+
+**Location:** target.dj line 58, source line 58
+
+**Source:** "所以教下的修行是从加行位、资粮位、见道位、修道位，直至究竟位。"
+**Current:** "the path goes from the stage of earnest effort and the stage of
+accumulation, through the stage of seeing and the stage of cultivation, all the way
+to the ultimate stage"
+
+**Issue:** 加行位 is the standard second of the five paths (pañcamārga), rendered
+in English as the "path/stage of preparation" (or "application"). "Earnest effort"
+is not a recognized rendering and will not be identified by readers of Buddhist
+literature. Note also that the source lists 加行位 before 资粮位, reversing the
+canonical order (资粮 accumulation → 加行 preparation); the translation mirrors the
+source order, which is the correct editorial choice, but the term itself must be
+standard.
+
+**Fix:** Change "the stage of earnest effort and the stage of accumulation" to
+"the stage of preparation and the stage of accumulation". Optionally add a
+translator's note flagging that the source order differs from the canonical five-path
+sequence.
+
+### M2. 惑业 mistranslated and inconsistent — karma dropped at line 84
+
+**Location:** target.dj line 84 (also lines 88, 90, 161 for the inconsistency)
+
+**Source:** "就是深刻意识到轮回和惑业的过患" (line 84); elsewhere "以惑业为基础的
+人生" (line 86), "解除惑业" (line 161)
+
+**Current:** line 84: "the perils of samsara and the afflictions born of delusion";
+lines 86/88 and 161: "deluded karma"
+
+**Issue:** 惑业 is a technical compound — 惑 (affliction/delusion) + 业 (karma), the
+two factors that drive samsara. Line 84's "the afflictions born of delusion" drops
+业 entirely and reframes the compound as a single concept, while other passages
+render it as the single noun phrase "deluded karma". The same term should not be
+split two ways, and karma must not disappear from the sentence.
+
+**Fix:** Render consistently as "delusion and karma" or "afflictions and karma".
+Line 84: "the perils of samsara, with its afflictions and karma". Line 86: "a life
+based on affliction and karma". Line 161: "dissolve affliction and karma".
+
+## Minor
+
+### m1. 万亿 understated as "millions and billions"
+
+**Location:** target.dj line 46, source line 46
+
+**Source:** "然后是百千次，万亿次......"
+**Current:** "then hundreds and thousands of times, then millions and billions of
+times..."
+
+**Issue:** 万亿 = 10^12, i.e. trillions; "millions and billions" understates the
+escalation.
+
+**Fix:** "then hundreds and thousands of times, then trillions of times..."
+
+### m2. 发心 ("Aspiration") collides with 愿 ("aspiration")
+
+**Location:** target.dj lines 11 (TOC), 80 (heading), 82; collision with lines 90,
+94, 96 (愿 rendered "aspiration")
+
+**Issue:** The section title 发心 is rendered "Aspiration", while 愿 (as in 信愿行,
+愿离娑婆) is also rendered "aspiration". In line 94 both senses appear in adjacent
+sentences ("Aspiration is setting the mind..."), and a reader cannot tell 发心 from
+愿. The body text manages the distinction, but the heading invites confusion.
+
+**Fix:** Consider heading III as "Setting the Intention" or "Arousing the Mind"
+(keeping "aspiration" for 愿). If "Aspiration" is retained, no change is strictly
+required — the surrounding text disambiguates.
+
+### m3. 万德洪名 rendered "greatly virtuous name"
+
+**Location:** target.dj line 151, source line 151
+
+**Source:** "不知道弥陀乃万德洪名"
+**Current:** "without knowing that Amitābha is the greatly virtuous name"
+
+**Issue:** 万德洪名 is a stock Pure Land epithet — "the august/great name of myriad
+virtues". "Greatly virtuous name" is weak and reads as generic praise.
+
+**Fix:** "without knowing that Amitābha is the great name of myriad virtues"
+
+### m4. 同圆种智 rendered "share the same perfect wisdom"
+
+**Location:** target.dj line 116, source line 116
+
+**Source:** "就和十方诸佛同圆种智了"
+**Current:** "you share the same perfect wisdom as all the Buddhas of the ten
+directions"
+
+**Issue:** 种智 (一切种智, sarvajñāna) is specifically omniscience/all-knowing
+wisdom, the Buddha's distinctive knowledge. "Perfect wisdom" flattens this and
+risks confusion with prajñā.
+
+**Fix:** "you equally perfect omniscience with all the Buddhas of the ten
+directions" or "you share the same all-knowing wisdom as the Buddhas of the ten
+directions".
+
+### m5. 西天 rendered "Western Paradise" — wrong connotation
+
+**Location:** target.dj line 67, source line 67
+
+**Source:** "学佛三年，佛在西天"
+**Current:** "Practice three years --- the Buddha is off in the Western Paradise."
+
+**Issue:** Here 西天 means the distant western heavens (India), i.e. the Buddha
+receding ever farther away as faith fades. "Western Paradise" evokes the Pure Land
+of Ultimate Bliss, a specific and unintended referent in a talk about Pure Land
+practice.
+
+**Fix:** "Practice three years --- the Buddha is far off in the west."
+
+### m6. 光头俗汉 loses the pejorative
+
+**Location:** target.dj line 29, source line 29
+
+**Source:** "出家人不过是剃发染衣的光头俗汉"
+**Current:** "they remain merely bald-headed laypeople in dyed robes"
+
+**Issue:** 俗汉 ("worldly fellow") is derogatory; "laypeople" is neutral and
+softens the rebuke. The point is that untransformed monastics are worldlings in
+disguise.
+
+**Fix:** "they remain nothing more than shaven-headed worldlings in dyed robes"
+
+### m7. 相似的利他 rendered "apparent altruism" — ambiguous
+
+**Location:** target.dj line 102, source line 102
+
+**Source:** "必须是真正而非相似的利他。所谓相似的利他，就是……"
+**Current:** "genuine and not merely apparent... What I call apparent altruism..."
+
+**Issue:** 相似 here is the technical sense of "semblance/seeming" (as in 相似般若).
+"Apparent" in English defaults to "obvious", nearly reversing the meaning.
+
+**Fix:** "genuine and not merely seeming... What I call seeming altruism..." (or
+"a semblance of altruism").
+
+### m8. 心路规则 rendered "rules of the mental road" — awkward
+
+**Location:** target.dj line 123, source line 123
+
+**Source:** "戒律是修行过程中的心路规则"
+**Current:** "The precepts are the rules of the mental road in the course of
+practice."
+
+**Issue:** "Rules of the mental road" is not idiomatic; the road-trip metaphor
+("行驶在三善道") works better if introduced naturally.
+
+**Fix:** "The precepts are the rules of the road for the mind in the course of
+practice."
+
+### m9. 三善道 rendered "three wholesome realms"
+
+**Location:** target.dj line 123, source line 123
+
+**Source:** "保护我们安全行驶在三善道"
+**Current:** "protect us as we travel safely along the path of the three wholesome
+realms"
+
+**Issue:** 三善道 (gods, asuras, humans) is standardly "the three fortunate
+rebirths/destinies". "Wholesome realms" blurs the rebirth-destination sense; the
+parallel 三恶道 is elsewhere "the three lower realms" (lines 132, 141), which is
+fine — but the pair should match.
+
+**Fix:** "the three fortunate destinies" (and optionally align 三恶道 as "the three
+unfortunate destinies", though "lower realms" is acceptable).
+
+### m10. 救度 rendered "help" — too weak
+
+**Location:** target.dj line 173, source line 173
+
+**Source:** "怎么救度他们？"
+**Current:** "How can we help them?"
+
+**Issue:** 救度 is soteriological — to save/deliver beings. "Help" loses the
+deliverance sense.
+
+**Fix:** "How can we bring them to the Dharma?" or "How can we deliver them?"
+
+### m11. 缘起 rendered inconsistently
+
+**Location:** target.dj line 132 ("the empty nature of conditioned arising") vs
+line 187 ("dependently arisen"); also "causes and conditions" at lines 44, 181
+
+**Issue:** 缘起 shifts between "conditioned arising" and "dependent arising" within
+one text. Both are standard, but one should be chosen.
+
+**Fix:** Prefer "dependent arising"/"dependently arisen" throughout: line 132
+"contemplating that dependent arising is empty by nature".
+
+### m12. 见道位/修道位 mix "path" and "stage" in one sentence
+
+**Location:** target.dj line 58, source line 58
+
+**Current:** "realizing awakened nature through the path of seeing... During the
+path of cultivation... through the stage of seeing and the stage of cultivation"
+
+**Issue:** The same 位 is "path" in one clause and "stage" in the next.
+
+**Fix:** Use "stage" (or "path") uniformly within the passage.
+
+### m13. 横超 rendered inconsistently
+
+**Location:** target.dj line 75 ("lead us directly beyond the three realms") vs
+line 151 ("the shortcut directly transcending the three realms")
+
+**Issue:** 横超三界 is a technical Pure Land expression (transverse/direct
+transcendence of the three realms, vs. vertical exit through gradual attainment).
+Two different renderings obscure that the same term is in play.
+
+**Fix:** Unify, e.g. "lead us straight out of the three realms" / "the shortcut
+straight out of the three realms", or keep "transcend the three realms directly" in
+both places.
+
+### m14. 在选择过程中 rendered "In the process of searching"
+
+**Location:** target.dj line 73, source line 73
+
+**Source:** "我们在选择过程中发现，唯有三宝才能让人走向解脱"
+**Current:** "In the process of searching, we discover that only the Three Jewels
+can lead us to liberation."
+
+**Issue:** 选择 = choosing, not searching; the passage is about weighing options
+(wealth, status), not seeking.
+
+**Fix:** "In the process of choosing, we discover..."
+
+### m15. Unmarked addition of Avataṃsaka attribution
+
+**Location:** target.dj line 108, source line 108
+
+**Source:** "我们知道，《行愿品》是关于菩提心教法的重要典籍"
+**Current:** "the *Avataṃsaka Sūtra*'s 'Chapter on the Vows of Samantabhadra' is a
+classic text..."
+
+**Issue:** The attribution is factually correct (《普贤行愿品》 is the final chapter
+of the Avataṃsaka), but it is an addition to the source. Given that the chapter
+title is used bare later, a one-time gloss is helpful — but it should be marked as
+a translator's clarification or trimmed.
+
+**Fix:** Either "the 'Chapter on the Vows of Samantabhadra' (of the *Avataṃsaka
+Sūtra*)" as an explicit gloss, or drop the attribution.
+
+### m16. 心、佛、众生三无差别 paraphrased
+
+**Location:** target.dj line 50, source line 50
+
+**Source:** "正是在这个层面上说，心、佛、众生三无差别"
+**Current:** "It is at this level that we say mind, Buddha, and sentient beings are
+not three separate things."
+
+**Issue:** "Not three separate things" suggests ontological merging; the formula
+means there is no difference among the three. The standard rendering is well known.
+
+**Fix:** "It is at this level that we say there is no difference among mind,
+Buddha, and sentient beings."
+
+### m17. Yogācārabhūmi quote: "for oneself" is interpretive
+
+**Location:** target.dj line 96, source line 96
+
+**Source:** "如是发心定自希求无上菩提，及求能作有情义利"
+**Current:** "Such an aspiration is determined to seek unsurpassed bodhi for
+oneself, and to seek the welfare of sentient beings."
+
+**Issue:** 定自希求 is "certainly aspires" (定自 as an adverbial modifier), not
+"seeks for oneself". The current reading is defensible as a contrast with
+有情义利 but introduces a self/other split the grammar does not require.
+
+**Fix:** "Such an aspirant surely seeks unsurpassed bodhi, and seeks to accomplish
+the welfare of sentient beings."
+
+## Completeness
+
+Verified complete. All source sections are present in target.dj: title, dateline,
+table of contents (all seven entries with matching anchors), opening remarks, the
+six numbered sections, closing summary, all ten Q&A exchanges, and Master Da'an's
+concluding remarks. Line alignment is 1:1 (195/195); no paragraph, quotation, or
+list item was omitted, and no unmarked additions beyond m15 were found.
+
+## Terminology Consistency (positive findings)
+
+The following are rendered consistently and to standard; no action needed:
+
+- 我执 → "self-grasping"; 法执 → "grasping at phenomena"
+- 觉性 → "awakened nature"; 菩提心 → "bodhicitta" (愿菩提心 → "aspirational
+  bodhicitta", 世俗/胜义 → "conventional/ultimate")
+- 串习 → "habitual patterns"; 相应 → "resonate/resonance"
+- 信愿行 → "faith, aspiration, and practice"; 三资粮 → "three provisions"
+- 出离心 → "renunciation"; 娑婆 → "Sahā world"; 极乐 → "Ultimate Bliss"
+- 善知识 → "virtuous teacher"; 四众弟子 → "fourfold assembly"
+- 戒定慧 → "precepts, concentration, and wisdom"; 正见 → "right view"
+- 前行/正行 → "preparatory practice/main practice"; 他力 → "other-power"
+- Quoted scriptures (*Platform Sutra*, *Śūraṅgama Sūtra*, *Yogācārabhūmi Śāstra*,
+  *Lamrim*, "Chapter on the Vows of Samantabhadra") are titled consistently and
+  quotations are faithful.

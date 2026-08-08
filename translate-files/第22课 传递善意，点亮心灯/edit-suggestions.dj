@@ -1,0 +1,59 @@
+# Edit Suggestions for 传递善意，点亮心灯 (Lesson 22)
+
+Translator: AI
+Reviewer: AI (self-review)
+Date: 2026-08-06
+
+## Summary
+
+Course practice manual (MPI 个人传灯实践课, Lesson 22 of the Mindful Peace Academy 同喜班 curriculum). Register is instructional and warm, in the "we/our" voice of the organization addressing its members. Terminology follows the Mindful Peace Academy Student Handbook translation and the 禅意项目 table in the terms DB. Three source anomalies flagged below; none affect the translation.
+
+## Terminology Decisions
+
+| Chinese | English | Source / rationale |
+|---------|---------|--------------------|
+| 传递善意，点亮心灯 | Passing on Goodwill, Lighting the Inner Lamp | Handbook TOC rendering of Lesson 22 (静心学堂学员手册 target.dj line 170) |
+| 心灯 | the inner lamp | Terms DB (BAICKZ); handbook TOC. Note: 用小读点亮心灯 rendered 心灯 as "lamp of awakening" with a glossary comment --- the handbook rendering takes precedence for course-series consistency |
+| 传灯 | lamp transmission | Follows 用小读点亮心灯 convention (glossed there as Chan "Transmission of the Lamp" metaphor, here meaning passing on the Dharma through personal outreach) |
+| 个人传灯实践课 | Personal Lamp-Transmission Practice Course | Course name on cover |
+| 静心学堂 | the Mindful Peace Academy | 内部特色词 / handbook |
+| 静心小院 | the Mindful Peace Yard | 内部特色词 |
+| 国际静心协会 | Mindful Peace International (MPI) | MPI组织架构 |
+| 济群法师 / 导师 | Master Jiqun / the Master | Handbook convention |
+| 禅意项目 | Chan-inspired programs | Handbook "Chan-inspired living" + 禅意项目 table pattern |
+| 安心禅茶 | Dhyana Tea | 禅意项目 table |
+| 正念咖啡 | Dhyana Coffee | 禅意项目 table |
+| 静心蔬食 | Dhyana Vegan Experience | 禅意项目 table lists 静心素食 = Dhyana Vegan Experience; source PDF writes 蔬食 --- treated as the same program (variant name). Verify against official program list |
+| 静心整理 | Mindful Decluttering | 禅意项目 table |
+| 安心茶室 | Dhyana Tea Space | 禅意项目 table |
+| 法语 | Dharma sayings | 导师法语 = "the Master's Dharma sayings"; 法语卡片 = "Dharma-saying cards" |
+| 法宝 | Dharma treasures | Contextual: books and materials given out to the public (cf. taxonomy example rendering 法宝 as "Buddhist materials"; "treasures" keeps the warmth of the term) |
+| 法宝结缘点 | Dharma gift point | Coined; a book corner / booth / experience zone giving out Dharma materials free of charge |
+| 结缘 | form affinities / share | Standard Buddhist English; cf. DB 结缘品 = giveaway |
+| 小小读书会 | small reading group | Follows 用小读点亮心灯 (小读 = "small reading group") |
+| 末法时代 | the Age of Dharma Decline | Terms DB |
+| 贪嗔痴 | greed, hatred, and ignorance | Terms DB (BAICKZ) |
+| 无明 | ignorance | Terms DB |
+| 安顿身心 | bring peace to body and mind | 佛教术语 table / handbook "peace of body and mind" |
+| 智慧文化 | a culture of wisdom / the culture of wisdom | 佛教术语 table |
+| 生命觉醒 | life awakening | Handbook |
+| 修学 | study and practice | Handbook |
+| 觉醒解脱 | awaken and attain liberation | Standard |
+
+## Source Anomalies (preserved as-is)
+
+### 1. Numbering inconsistency in section (二) 提升行动
+
+Under "1. 打造安心茶室" the sub-items are numbered 2.1, 2.2, 2.3 (expected 1.1--1.3); under "2. 开展小小读书会" the sub-items are numbered 1.1--1.6 (expected 2.1--2.6). This appears to be a numbering slip in the source PDF. Both source.dj and target.dj preserve the source numbering verbatim. Recommend flagging to the source editors.
+
+### 2. Unclosed quotation mark
+
+In 小小读书会 item 1.1: 哪怕一个人也可开始"自己的读书会，读到自心。 --- the opening " has no closing partner in the source. The English closes the quote naturally: 'Even one person can start "their own reading group," reading all the way to their own heart.' Recommend flagging to the source editors.
+
+### 3. 六字真言 playful usage
+
+"1.6 六字真言：越简单越高明" plays on the famous six-syllable mantra, but here denotes a six-character practical maxim. Rendered "The Six-Word Mantra: The Simpler, the Smarter" per the project convention that 字 = "words" in such contexts (see common-issues-taxonomy). No action needed; the content immediately disambiguates.
+
+## Table Note
+
+The social-media table's last row (WhatsApp 频道) contains four QR-code image cards in the PDF (Master Jiqun and MPI WhatsApp channels, one Chinese and one English card each). Text extraction has no account/URL for them; the row is rendered descriptively in both source.dj and target.dj.

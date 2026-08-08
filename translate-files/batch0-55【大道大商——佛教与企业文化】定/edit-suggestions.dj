@@ -1,0 +1,44 @@
+# Edit Suggestions — 55【大道大商——佛教与企业文化】
+
+## Terminology consistency notes
+
+### Terms confirmed from DB
+- 三不朽 → Three Imperishables (DoT/成语俗语: "the Three Imperishables — to establish one's merit, virtue, and teachings"). Used consistently.
+- 人天乘 → Human and Deva Vehicle (DoT定稿). Used consistently.
+- 菩萨乘 → Bodhisattva Vehicle (DoT定稿). Used consistently.
+- 六波罗蜜 → six pāramitās (nti_buddhist_terminology). Used consistently.
+- 五戒十善 → Five Precepts and Ten Wholesome Deeds (佛教术语). Used consistently.
+- 慈悲喜舍 → kindness, compassion, joy, and equanimity (DoT定稿). Used consistently.
+- 三级修学 → Three-Stage Practice (DoT定稿: "Three-Stage Practice"). Used consistently.
+- 直指人心，见性成佛 → "pointing directly at the mind, seeing one's nature and becoming a Buddha" (偈颂经文名言). Used consistently.
+- 三轮体空 → threefold emptiness: giver, receiver, gift are empty (佛教术语: "the three aspects of giving are empty"). Used consistently.
+- 同愿同行 → Shared Vows, Shared Path (内部特色词). Used consistently.
+- 见利思义 → "to see profit and remember righteousness" (nti_zh_en). Used consistently.
+
+### Terms NOT in DB — translator decisions
+- **大道大商** → "The Great Way, The Great Merchant". Based on MPI's own rendering "Great Path & Great Business" in MPI组织架构 but adapted for this panel's specific usage. The panel uses 大商 to mean "great merchant" (the entrepreneur as noble figure), aligning with 大道 (the Great Way/Dao).
+- **信愿行** → "faith, vow, and practice". Standard Buddhist rendering; not in terms DB.
+- **法财侣地** → "the four conditions of Dharma, resources, companions, and place". Not in DB. Classical Daoist/Buddhist cultivation term.
+- **元亨利贞** → kept as pinyin *yuan heng li zhen* with in-text explanation. DB has "one, two, three, four" (nti_zh_en) which is clearly incorrect for the I Ching context. The speaker glosses each character in his own words anyway.
+- **舍财，舍法，舍无畏** → "giving wealth, giving the Dharma, giving fearlessness". Following the three kinds of giving (财施、法施、无畏施) in Buddhist tradition. 舍法 here is 法施 (Dharma giving), distinct from 舍法 (abandoning Dharma).
+- **上妙下湛老和尚** → "the late Elder Miaozhan". 上X下Y is the traditional honorific format for monastic names; rendered as Elder + dharma name.
+- **济群** → "Benefiting the Multitude" (Li Jinyou's wordplay on the name). Translated literally to preserve the semantic play.
+- **贤雄** → *xianxiong* — "worthy hero". Li Jinyou's coinage for President Xi, a neologism paralleling Gandhi's "Mahatma" (圣雄). Kept in pinyin with glossed meaning.
+
+### Register and voice decisions
+- The source is an oral panel transcript. Translation maintains the spoken register throughout: contractions, direct address ("we," "you"), rhetorical questions kept as questions, first-person teacher asides kept in first person.
+- Cao Dewang's colloquial, blunt, occasionally rambling style preserved deliberately — he is a self-made industrialist speaking off the cuff.
+- Yang Zhao's more structured, measured delivery preserved with shorter sentences and clear logic chains.
+- Li Jinyou's reflective, wordplay-heavy, slightly philosophical style preserved with in-text pinyin glosses for his Chinese character deconstruction.
+- Yang Jinlin's role as provocateur/moderator preserved with his characteristic banter and self-deprecation.
+- Venerable Jiqun's measured authority: calm, reasoned, unaffected, never preachy.
+
+### Punctuation / formatting
+- Em dashes (---) used throughout per djot convention
+- Djot comments ({#...#}) for section anchors preserved exactly as in source
+- Chinese-style quotation marks converted to English double quotes where they indicate speech/titles
+- No Markdown ** bold — all emphasis uses *single asterisks* per djot convention
+
+### Minor issues noted (not severe enough to re-edit now)
+- Line-level soft breaks (trailing `  `): source.dj has none; target.dj likewise has none. Correct for docx extraction.
+- One rendering choice worth flagging: "富翁" rendered as "billionaire" (line 139 in target) rather than the more generic "tycoon" or "magnate." The word in the Chinese context at that time typically meant anyone very wealthy, not necessarily a USD billionaire. Kept as "billionaire" since the context (Forbes list discussion) implies the multi-billion dollar tier.
