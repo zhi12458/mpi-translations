@@ -24,6 +24,7 @@ has a clear output and a clear handoff to the next stage.
 | **Self-review** | The translator reviews the draft for terminology, accuracy, grammar, and flow. | `translation-findings.dj` (optional) |
 | **Other-review** | A peer reviewer examines the draft and records findings for the translator. | `review-comments.dj` |
 | **Polish** | Review findings are applied to the translation, and the bilingual file is regenerated. | updated `target.dj`, `bilingual.dj` |
+| **Verify** | The deterministic check suite runs: line/paragraph/heading parity, emphasis preservation, CJK and Chinese-punctuation leakage, digit fidelity, bilingual freshness. Run before delivering; keep green as a regression suite. | `toolkit/scripts/check-translation.py` output, all PASS |
 | **Human review** | Human translators or editors review the polished text and approve or send it back. | approved `target.dj` |
 | **Typeset** | The approved bilingual content is laid out into a publishable document. | `.pdf` or `.docx` |
 | **Done** | The project is complete. | — |
@@ -32,6 +33,16 @@ Reviews can send the project back to an earlier stage: self-review and
 other-review may return to **Translate** if the draft needs to be redrafted,
 or to **Polish** if only minor fixes are needed. Once human reviewers are
 satisfied, the project moves to **Typeset** and then **Done**.
+
+## Translating a batch of books
+
+To translate several books at once, run one omp session per book in its own
+herdr pane with the slow model (`omp --model slow --cwd <book dir>`), review
+all of them in parallel, then send each pane an apply pass and gate the batch
+with `check-translation.py` before packaging a zip. The full recipe, the three
+canonical prompts (translate / review / apply), and the hard-won gotchas live
+in `toolkit/AGENTS.md` → **Workflow C**. Proven on 9 books in a single run
+(2026-08-07): every book passed all 11 checks.
 
 ## Links
 
