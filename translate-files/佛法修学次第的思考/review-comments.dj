@@ -1,0 +1,61 @@
+# Review comments for 《佛法修学次第的思考》/《汉传佛教的反思》
+
+Translator: 代艺 (Dai Yi)
+Reviewer: Kimi (peer review, other mode)
+Date: 2026-08-11
+Files reviewed: source.dj, target.dj, bilingual.dj (214/214 lines, 92/92 paragraphs)
+
+## Summary
+
+随喜赞叹，这一稿整体质量很高：五大要素链条（taking refuge, generating aspiration, observing precepts, establishing right view, practicing samatha-vipassana）前后一致，引文（皈依誓言、《普贤行愿品》、《瑜伽师地论》、Lamrim、如人饮水）大多与术语库吻合，正文无遗漏、无截断——我逐段核对了全部 23 个长段落的收尾与中段，source 每句都有对应。`check-translation.py` 全部通过（行数、段落、标题、强调、CJK、数字、bilingual 时效）。以下问题都不涉及内容缺失，主要是 3 处措辞需要修，其余是可议的术语选择。
+
+## Must-fix issues
+
+1. **句法残缺（结说）。** 源文：由学佛至成佛的关键阶段
+   译文：`we grasp the key stages from beginning to study Buddhism to attaining buddhahood`（target L186）
+   问题：`from beginning to study Buddhism to attaining…` 动名词与名词并列，读不通。
+   建议：`the key stages from first taking up the study of Buddhism to the attainment of buddhahood`（或 `…from beginning to study Buddhism all the way to attaining buddhahood`）。
+
+2. **术语引注方向说反（止观一节）。** 源文：梵语毗婆舍那，汉译为观
+   译文：`Vipassana, rendered in Chinese as insight, encompasses…`（target L173）
+   问题：汉译是「观」，「insight」是英文对译；现在这句话等于说中文译作 insight，与源文不符。
+   建议：`Vipassana (vipaśyanā in Sanskrit), rendered in Chinese as guan, meaning "insight," encompasses…`——把中文与英文各归其位。
+
+3. **搭配生硬（计算机类比段）。** 源文：是佛教能否健康发展的命脉所在
+   译文：`is the lifeline of whether Buddhism can develop healthily`（target L43）
+   问题：`the lifeline of whether…` 英文不成立（介词短语带 whether 从句）。
+   建议：`is the lifeline on which the healthy development of Buddhism depends`，或 `is the lifeblood of Buddhism's healthy development`。
+
+## Considerations
+
+1. **维系不堕。** L195 尾：`to keep it from falling`（维系不堕）——「falling」太弱，修行传承语境下建议 `to keep it from dying out` 或 `to keep the lineage alive`。
+2. **殚精竭虑。** L198：`the exhausting efforts of the Tripitaka Master Xuanzang`——「exhausting efforts」字面是「令人精疲力竭的努力」，语义反了；建议 `painstaking efforts` 或 `tireless, exhaustive efforts`。
+3. **出世间正见。** L63：`transcendent right view`——术语库（BAICKZ/龙泉）倾向 `supramundane`；`transcendent` 亦可，若全书统一用 supramundane 更贴库。请定夺。
+4. **末法。** L83：`the degenerate age of the Dharma`——术语库有 `Dharma-ending age` / `Age of Dharma Decline`；现译是英文佛教文献的常见说法，可保留，仅提示与库的差异。
+5. **止持 / 作持。** L153：`precepts of restraint / precepts of performance`——库中 `止持` 为 `proscriptive observance`（作持即 prescriptive）；现译更易懂，若想更术语化可换。
+6. **禅和子。** L175：`Chan practitioners`——库（nti）为 `a Chan monastic`；原文指禅宗出家人，收窄为 monastic 更准，视行文需要。
+7. **学术化的佛教。** L207：`the academization of Buddhism`——coined word；可考虑 `the turn toward academic Buddhism` 或 `Buddhism's academic turn`。
+8. **六度四摄。** L210：`four means of embracing`——库（佛教术语，生命的痛苦及其解脱）为 `Four Means of Conversion`；`embracing` 亦为常见译法，统一即可。
+9. **增上心。** L211：`upward-striving mind`——此处语境（人天乘的增上心）译得贴切；库中 `增上心` 条目对应三学之 `adhicitta`（unsurpassed/meditative mind），与本句语境不同，可保留现译。
+10. **五分法身。** L202：`fivefold dharmakaya`——库（BAICKZ）有 `the five dharma bodies` / `five manifestations of the Buddha's Dharma body`；现译可读性好，提示备选。
+
+## Terminology notes
+
+- 皈依体 → `the refuge commitment`：库中无条目；文中与誓言（vows）区分清晰，前后一致（L123/125 一带），认可此选择。
+- 别解脱戒 → `precepts of individual liberation`：与库（vows of individual liberation）一致。✓
+- 普贤行愿品 → `Chapter on Samantabhadra's Practices and Vows`：与 BAICKZ 一致。✓
+- 瑜伽师地论 → `Yogacarabhumi Sastra`：与经论名表一致。✓
+- 菩提道次第论 → `The Lamrim (the Stages of the Path to Enlightenment)`：库为 Lamrim Chenmo / Great Treatise on the Stages of the Path；现译通用可接受。
+- 念佛 → `Buddha-name recitation`：常见译法，一致。✓
+- 三坛大戒 → `one of the three platforms of the triple-platform ordination`：达意，库条目过简，不冲突。
+- 五大要素链条、出离心/renunciation、凡夫心/ordinary mind、菩提心/bodhicitta、止观/samatha-vipassana：全文一致，未发现一处一词两译。
+
+## Structural notes
+
+- TOC 已按惯例转纯文本（无链接、无页码）。✓
+- 第二篇《汉传佛教的反思》全部 15 段均有对应，未省略内容。✓
+- 源文两处笔误（惮精竭虑、相似的的经论）照译无碍，无需处理。
+
+## Closing
+
+以上 3 处 must-fix 都是局部措辞，改完即可定稿。术语部分的考量项请按项目统一口径取舍。若需要我直接应用这些修改（direct-edit 模式改 target.dj 并重新生成 bilingual.dj），说一声即可。随喜代艺师兄的用心，这一稿可以放心交付。

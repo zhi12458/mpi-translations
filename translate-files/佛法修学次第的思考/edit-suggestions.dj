@@ -1,0 +1,40 @@
+# Edit suggestions for 《佛法修学次第的思考》/《汉传佛教的反思》
+
+## Terminology decisions (flagged for review)
+
+1. **Title.** 佛法修学次第的思考 → "Reflections on the Stages of Buddhist Practice", following the term map in 静心学堂学员手册/term-map.md. The companion title 汉传佛教的反思 → "Reflections on Chinese Buddhism", following 人生百问 (established).
+
+2. **Five-element chain.** 皈依、发心、戒律、正见、止观 rendered as "taking refuge, generating aspiration, observing precepts, establishing right view, practicing samatha-vipassana" — matching the established chain in 静心学堂学员手册/bilingual.dj ("Taking Refuge, Generating Aspiration, Observing Precepts, Establishing Right View, and Practicing Samatha-Vipassana"). DoT定稿 uses "Samatha and Vipassana" for 止观; heading/TOC uses "Samatha-Vipassana".
+
+3. **皈依体 → "the refuge commitment".** Technical term for the commitment generated through the refuge ceremony. Alternative: "refuge vow". Chose "commitment" because the source later distinguishes it from 誓言 (vows); consistent in lines 123/125.
+
+4. **省庵大师 → "Master Sheng'an".** Romanization uncertain; common alternatives are "Sheng'an" and "Xing'an". Verify against a published source (Pure Land literature).
+
+5. **五欲六尘 → "the five desires and six sense objects".** Terms DB (佛教术语, from 禅意设计) has "the Five Desires and the Six Dusts"; chose the more standard English collocation.
+
+6. **小乘 → "the Lesser Vehicle"** (line 173). DB contexts also show "Hīnayāna"/"Theravada"; chose neutral "Lesser Vehicle" per modern usage. 二乘 → "the two lesser vehicles".
+
+7. **观察修 / 安住修 → "analytical meditation" / "placement meditation".** 观想修 → "visualization meditation" (DoT定稿). Verify against 济群法师's published English (his books use these terms in the 三级修学 framework).
+
+8. **增上心 → "the upward-striving mind"** (line 211). Context: 人天乘的增上心 — the mind seeking higher rebirth.
+
+9. **地前菩萨 → "bodhisattvas who have not yet reached the grounds"** (line 211).
+
+10. **无漏智慧 → "undefiled wisdom"** (lines 52/76); 无漏/有漏 → "undefiled"/"defiled". 认识菩提心 uses "outflow"; kept "undefiled" for readability — consider aligning to "outflow-free" if consistency with that book matters.
+
+## Quote renderings (established or faithful)
+
+- Refuge vows: "For my entire life, I take refuge in the Buddha/Dharma/Sangha" (佛教术语 DB) and "I take refuge in the Buddha and will never take refuge in devas, maras, or followers of other paths; ..." (faithful).
+- 瑜伽师地论 definition of bodhicitta: "will certainly attain unexcelled, complete, perfect enlightenment" / "will be able to accomplish every benefit of sentient beings" (faithful).
+- 菩提道次第论: "If one learns only one of the two---skillful means or wisdom---one cannot attain buddhahood" (faithful).
+- 普贤行愿品: "The Buddhas and Tathagatas take great compassion as their very essence. Because of sentient beings, great compassion arises; because of great compassion, bodhicitta arises; because of bodhicitta, they attain perfect enlightenment."
+- Chan slogan 不立文字，教外别传，直指人心，见性成佛: published standard rendering.
+- 人成即佛成: "when one perfects being human, one attains buddhahood" (echoes 太虚's verse; DB 偈颂经文名言 has a garbled fuller version).
+- 如人饮水，冷暖自知: "the person who drinks the water knows best whether it is hot or cold" (nti_zh_en DB).
+- 一花开五叶: "one flower bloom into five petals" (佛教术语: "One Flower Blooms with Five Petals").
+
+## Structural notes
+
+- TOC converted to plain text per convention (no link targets, no page numbers).
+- Trailing `\` hard-break markers on source lines 192–211 preserved on target.
+- Second article 《汉传佛教的反思》 is a full excerpt of the 2004 essay; no content was omitted.
