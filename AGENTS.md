@@ -62,7 +62,15 @@ blocker stops for named human adjudication.
 Do not silently use a different commit, a built-in fallback, a generic glossary,
 or an old output. Missing dependencies, origin/SHA drift, dirty locked files,
 doctor failures, missing receipts, nonzero toolkit exits, stale hashes, or any
-strict-gate FAIL/SKIP block completion. A public release may be marked ready
-only after the referenced toolkit commit is present in the official Codeberg
-repository and this repository's official SourceHut revision records that exact
-submodule commit.
+strict-gate FAIL/SKIP block completion.
+
+The Strategy C distribution may use a verified compatibility fork when an
+upstream maintainer has not merged the required cross-platform runtime. Such a
+release must identify both official upstream origins and base SHAs, identify
+the exact compatibility-fork origins and locked SHAs, keep the real toolkit Git
+submodule pinned to the verified fork commit, and pass the same doctor, test,
+fault-injection, and cross-platform gates. It must be labelled as a
+compatibility fork and must never be represented as an official upstream
+release. Switching between official upstream and a compatibility fork requires
+an explicit lock-file release, not an automatic update to either repository's
+latest main branch.
