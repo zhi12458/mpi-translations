@@ -4,7 +4,7 @@
   "status": "candidate_pending_upstream_merge",
   "mpi_origin": "https://git.sr.ht/~iacore/mpi-translations/",
   "toolkit_origin": "https://codeberg.org/eastwind/translation-toolkit.git",
-  "toolkit_expected_sha": "c649374161c1513d084758e8f2f46f27813a7696",
+  "toolkit_expected_sha": "7077d962c065f85f70ad67c80daba63315279ee9",
   "toolkit_review_url": "https://codeberg.org/eastwind/translation-toolkit/pulls/3",
   "release_blockers": [
     "Merge the toolkit Strategy C changes into the official Codeberg main branch.",
