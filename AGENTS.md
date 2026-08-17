@@ -40,7 +40,8 @@ Before the first model call of every Strategy C project, the orchestrator must:
 
 1. Validate the installation `READY.json`, the absolute repository paths,
    canonical HTTPS origins, locked Git SHAs, clean worktrees, critical-file
-   hashes, and both repository doctor results.
+   hashes, and both repository doctor results (`scripts/doctor.py --strategy-c`
+   here and `toolkit/scripts/doctor.py --strategy-c` in the submodule).
 2. Read this file, `toolkit/AGENTS.md`, and the toolkit skills required by the
    translation and review workflow. Record path, Git SHA, file SHA-256, byte
    count, and timestamp in `instruction-receipt.json`.
