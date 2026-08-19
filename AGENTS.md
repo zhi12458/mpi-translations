@@ -54,10 +54,21 @@ Before the first model call of every Strategy C project, the orchestrator must:
    bind its script hash, inputs, outputs, exit status, and repository identity
    into `tool-execution-receipts.jsonl` and the project `MANIFEST.json`.
 
-Flash may analyze only toolkit-frozen Chinese and terminology. GPT-5.6-Sol is
-the English wording authority. V4 Pro reviews the bilingual text without access
-to Flash analysis. A second Pro review that still contains a critical or major
-blocker stops for named human adjudication.
+Flash/high may analyze only toolkit-frozen Chinese and terminology. Reuse that
+analysis when the Chinese source hash is unchanged. GPT-5.6-Sol medium is the
+provisional default English wording authority; Sol high is reserved for
+targeted adjudication after the second Pro review, not an automatic full-draft
+rerun. V4 Pro/max performs two independent full bilingual reviews without
+access to Flash analysis. A second Pro review that still contains a critical or
+major blocker triggers targeted Sol high adjudication and, if unresolved, stops
+for named human adjudication.
+
+MPI terminology remains authoritative. Network terminology research is
+exception-based: use it only for missing or conflicting MPI terms,
+context-dependent senses, doctrinal terms, titles, names, quotations, or an
+explicit model uncertainty. Freeze each supported decision with its source
+context, evidence URLs, rationale, confidence, and scope; unresolved or
+conflicting low-confidence decisions must enter the human-review list.
 
 Do not silently use a different commit, a built-in fallback, a generic glossary,
 or an old output. Missing dependencies, origin/SHA drift, dirty locked files,
