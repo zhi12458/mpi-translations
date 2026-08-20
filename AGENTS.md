@@ -36,6 +36,16 @@ repository and take precedence if the checked-out toolkit submodule is older:
   paragraph audit per nonblank source line and separately check temporal/aspect,
   condition, negation, degree, elliptical subject, and semantic roles. Missing
   coverage blocks strict QA.
+- **Strategy M researches cultural expressions before drafting.** Flash must
+  populate `cultural_allusions` for idioms, proverbs, classical/canonical or
+  scriptural quotations, fixed classical expressions, and historical
+  references. Every declared expression requires a current authoritative web
+  lookup receipt and a matching `allusion-decisions.json` entry before Sol may
+  start. Pro must independently check the contextual sense in every paragraph.
+  `独善其身` is a release regression: distinguish its Mencian sense of
+  cultivating one's character and preserving integrity in seclusion from the
+  later pejorative sense of looking after only oneself. Missing or stale
+  cultural evidence blocks finalization.
 
 ## Strategy C release and runtime requirements
 

@@ -8,7 +8,7 @@
   "toolkit_origin": "https://github.com/zhi12458/translation-toolkit.git",
   "toolkit_upstream_origin": "https://codeberg.org/eastwind/translation-toolkit.git",
   "toolkit_upstream_base_sha": "07ebbc90c60c32d9078cceac02d0d502d37b6c0c",
-  "toolkit_expected_sha": "1e17954b30d9d8d70b511fa2c964b69838ff0002",
+  "toolkit_expected_sha": "bc6e3310fe2df1abf23eb2bb3eda9f5b45837a2c",
   "toolkit_upstream_review_url": "https://codeberg.org/eastwind/translation-toolkit/pulls/3",
   "model_policy": {
     "source_analysis": "DeepSeek V4 Flash/high (reuse when source hash is unchanged)",
@@ -16,9 +16,16 @@
     "translation_fallback": "GPT-5.6-Sol high (targeted adjudication only)",
     "bilingual_review": "DeepSeek V4 Pro/max (two independent full reviews)"
   },
+  "semantic_contract": {
+    "source_analysis_schema_version": 3,
+    "semantic_review_schema_version": 3,
+    "cultural_allusions_required": true,
+    "external_allusion_receipts_required": true,
+    "regression_expression": "独善其身"
+  },
   "validation": {
     "toolkit_doctor": "pass",
-    "toolkit_tests": "290 passed, 32 subtests passed",
+    "toolkit_tests": "291 passed, 32 subtests passed",
     "strategy_c_fault_injection": "pass",
     "cross_platform_ci": "pass"
   }
