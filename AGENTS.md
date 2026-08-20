@@ -27,6 +27,15 @@ repository and take precedence if the checked-out toolkit submodule is older:
   entire draft for meaning, titles, readability, and register. A clear semantic
   certificate proves only that its review cycle found no blocking accuracy
   issue; it is not style or title approval.
+- **Strategy M preserves temporal and implicit-subject structure.** Flash must
+  separately record `temporal_relations`; time/aspect markers including `时`,
+  `后`, `才`, `已`, `仍`, and `再` must also appear in `must_preserve`. For
+  Buddhist aphorisms, compact classical formulas, parallel clauses, and
+  ellipsis, Flash must separately record `elliptical_subject` and distinguish
+  agent, cause, instrument, and state holder. Every Pro review must emit one
+  paragraph audit per nonblank source line and separately check temporal/aspect,
+  condition, negation, degree, elliptical subject, and semantic roles. Missing
+  coverage blocks strict QA.
 
 ## Strategy C release and runtime requirements
 
