@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "terms": [
+    {"source":"释迦牟尼佛","sense":"Shakyamuni Buddha","preferred":"Shakyamuni Buddha","allowed":[],"forbidden":["Śākyamuni Buddha"],"sources":["DoT定稿","佛教术语"],"rationale":"Use the project-authorized unaccented form.","status":"selected","reviewer":"experiment adjudication"},
+    {"source":"阿弥陀佛","sense":"Buddha Amitabha","preferred":"Buddha Amitabha","allowed":[],"forbidden":["Amitābha Buddha"],"sources":["DoT定稿"],"rationale":"Use the DoT finalized word order and spelling.","status":"selected","reviewer":"experiment adjudication"},
+    {"source":"地藏菩萨","sense":"Bodhisattva Ksitigarbha","preferred":"Bodhisattva Ksitigarbha","allowed":[],"forbidden":["Kṣitigarbha Bodhisattva"],"sources":["DoT定稿"],"rationale":"Use the DoT finalized word order and spelling.","status":"selected","reviewer":"experiment adjudication"},
+    {"source":"人天乘","sense":"Human and Deva Vehicle","preferred":"Human and Deva Vehicle","allowed":["the Human and Deva Vehicle"],"forbidden":["human and heavenly vehicle"],"sources":["DoT定稿"],"rationale":"Use the DoT finalized vehicle name.","status":"selected","reviewer":"experiment adjudication"},
+    {"source":"声闻","sense":"Sravaka or Sound Hearer Vehicle","preferred":"Sravaka (Sound Hearer) Vehicle","allowed":["the Sravaka (Sound Hearer) Vehicle"],"forbidden":["śrāvaka vehicle"],"sources":["DoT定稿","佛教术语"],"rationale":"Match the exact contextual vehicle rendering used in this passage.","status":"selected","reviewer":"experiment adjudication"},
+    {"source":"菩萨乘","sense":"Bodhisattva Vehicle","preferred":"Bodhisattva Vehicle","allowed":["the Bodhisattva Vehicle"],"forbidden":[],"sources":["DoT定稿"],"rationale":"Use the project capitalization; the QA matcher is case-insensitive, so capitalization is verified separately.","status":"selected","reviewer":"experiment adjudication"},
+    {"source":"六波罗蜜","sense":"the six bodhisattva perfections","preferred":"Six Perfections","allowed":["the Six Perfections"],"forbidden":[],"sources":["佛教术语"],"rationale":"Use concise established English in this publication context.","status":"selected","reviewer":"experiment adjudication"},
+    {"source":"三轮体空","sense":"the threefold purity of giver, gift, and recipient","preferred":"purity of the three spheres","allowed":["the purity of the three spheres"],"forbidden":["empty of inherent existence"],"sources":["佛教术语","project adjudication"],"rationale":"Preserve the accepted concise rendering without adding doctrinal explication.","status":"selected","reviewer":"experiment adjudication"},
+    {"source":"济群法师","sense":"fixed English form of the teacher's name and title","preferred":"Master Jiqun","allowed":[],"forbidden":["Venerable Jiqun"],"sources":["user-fixed project term"],"rationale":"User-fixed project rendering.","status":"selected","reviewer":"user"},
+    {"source":"大道大商","sense":"fixed English title and forum name","preferred":"Great Path, Great Business","allowed":[],"forbidden":["The Great Way, Great Entrepreneurs","Great Way, Great Entrepreneurs"],"sources":["user-fixed project term"],"rationale":"User-fixed project rendering.","status":"selected","reviewer":"user"}
+  ]
+}

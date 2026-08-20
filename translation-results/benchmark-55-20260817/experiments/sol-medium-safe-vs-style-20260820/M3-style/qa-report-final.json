@@ -1,0 +1,106 @@
+{
+  "target": "source.dj -> target.dj",
+  "mode": "draft",
+  "overall": "WARN",
+  "passed": [
+    "non-empty inputs",
+    "line-count parity",
+    "blank-line alignment",
+    "paragraph parity",
+    "heading parity",
+    "repeated title consistency",
+    "emphasis preservation",
+    "comment parity",
+    "CJK leakage",
+    "Chinese punctuation",
+    "bold leakage",
+    "bilingual freshness",
+    "semantic review freshness",
+    "external semantic review policy"
+  ],
+  "warned": [
+    "digit fidelity",
+    "terminology"
+  ],
+  "skipped": [
+    "release governance"
+  ],
+  "failed": [],
+  "strict": false,
+  "ok": true,
+  "approval": {
+    "approved": false,
+    "approver": "",
+    "note": ""
+  },
+  "details": {
+    "non-empty inputs": {
+      "status": "PASS",
+      "detail": "source non-blank=192 target non-blank=192"
+    },
+    "line-count parity": {
+      "status": "PASS",
+      "detail": "source=378 target=378"
+    },
+    "blank-line alignment": {
+      "status": "PASS",
+      "detail": "all blank lines aligned"
+    },
+    "paragraph parity": {
+      "status": "PASS",
+      "detail": "source=187 target=187"
+    },
+    "heading parity": {
+      "status": "PASS",
+      "detail": "all heading levels aligned by line"
+    },
+    "repeated title consistency": {
+      "status": "PASS",
+      "detail": "all repeated TOC/body titles use one English rendering"
+    },
+    "emphasis preservation": {
+      "status": "PASS",
+      "detail": "all source emphasis preserved"
+    },
+    "comment parity": {
+      "status": "PASS",
+      "detail": "all comment markers aligned by line"
+    },
+    "CJK leakage": {
+      "status": "PASS",
+      "detail": "clean"
+    },
+    "Chinese punctuation": {
+      "status": "PASS",
+      "detail": "clean"
+    },
+    "bold leakage": {
+      "status": "PASS",
+      "detail": "clean"
+    },
+    "digit fidelity": {
+      "status": "WARN",
+      "detail": "extra target digit(s); verify Chinese-number rendering: L8:2, L10:9, L12:13, L14:21"
+    },
+    "terminology": {
+      "status": "WARN",
+      "detail": "26 term(s) checked; 企业家 (41× in source, 24× rendered; 58.5% coverage) — verify; 企业文化 (8× in source, 7× rendered; 87.5% coverage) — verify; 利他 (12× in source, 8× rendered; 66.7% coverage) — verify; 大道大商 (6× in source, 5× rendered; 83.3% coverage) — verify; 居士 (14× in source, 3× rendered; 21.4% coverage) — verify; 慈善 (60× in source, 55× rendered; 91.7% coverage) — verify; 成功 (87× in source, 75× rendered; 86.2% coverage) — verify; 道德 (49× in source, 41× rendered; 83.7% coverage) — verify"
+    },
+    "bilingual freshness": {
+      "status": "PASS",
+      "detail": "762 lines match a regeneration"
+    },
+    "release governance": {
+      "status": "SKIP",
+      "detail": "no translation-project.yaml provided"
+    },
+    "semantic review freshness": {
+      "status": "PASS",
+      "detail": "final semantic-review certificate is not required in draft mode"
+    },
+    "external semantic review policy": {
+      "status": "PASS",
+      "detail": "no project-level external semantic review restriction"
+    }
+  }
+}

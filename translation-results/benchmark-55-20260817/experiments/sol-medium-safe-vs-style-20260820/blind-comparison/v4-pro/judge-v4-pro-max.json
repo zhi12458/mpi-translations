@@ -1,0 +1,143 @@
+{
+  "stage": "blind_comparative_judgment",
+  "model": "deepseek-v4-pro",
+  "reasoning_effort": "max",
+  "thinking_mode": "enabled",
+  "source_sha256": "09e326b291653c0c3c321a1ef1eee81ad6742a9609bb4435a800e82229a22e98",
+  "source_analysis_sha256": null,
+  "candidate_sha256": {
+    "X": "d76d55a85ca06eb39f6531d9963e674e70dcc49bd821bac593659ec5e20dcb03",
+    "Y": "e5d20f97e9746a495cf64dfcab2563c9c95ef3da2b531aec7852641b33fb686d"
+  },
+  "ranking_normalization": null,
+  "result": {
+    "candidates": [
+      {
+        "label": "X",
+        "scores": {
+          "accuracy_completeness": 33,
+          "buddhist_doctrine_terminology": 19,
+          "english_concision_readability": 18,
+          "teacher_voice_publication_register": 14,
+          "title_heading_accuracy": 9
+        },
+        "total": 93,
+        "evidence": [
+          {
+            "paragraph_id": "L14",
+            "source_evidence": "四、观众互动，解决问题",
+            "target_evidence": "IV. Audience Q&A: Addressing Practical Concerns",
+            "assessment": "Heading slightly narrows 'audience interaction' to Q&A and adds 'practical'; acceptable but less exact than the source."
+          },
+          {
+            "paragraph_id": "L75",
+            "source_evidence": "可以亲近济群法师这样的大善知识……虚心学习是一个过程，但一定要有“日久见功”的过程",
+            "target_evidence": "Today we have the chance to learn in the presence of a great Dharma teacher like Master Jiqun…… Learning with humility takes time; only sustained effort will bear fruit.",
+            "assessment": "Natural and clear; condenses the clause but preserves the meaning."
+          },
+          {
+            "paragraph_id": "L117",
+            "source_evidence": "商人一定要创造利益",
+            "target_evidence": "a merchant must create profit",
+            "assessment": "Correctly renders commercial profit as 'profit,' while broader uses of 利益 are rendered as 'benefit.'"
+          },
+          {
+            "paragraph_id": "L132",
+            "source_evidence": "易地而处，从他人的立场和观点去考虑，也叫同理心",
+            "target_evidence": "put yourself in another person's shoes and see things from their perspective——what we call empathy",
+            "assessment": "Idiomatic and readable; good dialogue voice."
+          },
+          {
+            "paragraph_id": "L271",
+            "source_evidence": "牛头不对马嘴",
+            "target_evidence": "completely off the mark",
+            "assessment": "Natural English idiom avoids an opaque literal rendering."
+          },
+          {
+            "paragraph_id": "L304",
+            "source_evidence": "其实他后面都是准备打他的明枪暗箭",
+            "target_evidence": "though in fact both open and hidden attacks await him",
+            "assessment": "Natural rendering of the idiom; maintains Cao's blunt tone."
+          },
+          {
+            "paragraph_id": "L354",
+            "source_evidence": "盲修瞎炼……只是机械地做各种事，流于表面",
+            "target_evidence": "blind practice: people may recite scriptures and mantras every day, yet without right view they do not know how to work with the mind and simply go through the motions.",
+            "assessment": "Concise and readable, though it drops 'mechanically and superficially'; still acceptable."
+          }
+        ],
+        "blockers": [],
+        "assessment": "High-quality publication translation with natural English and strong dialogue voice. Minor heading looseness and small condensations do not affect overall accuracy. No critical or major blockers."
+      },
+      {
+        "label": "Y",
+        "scores": {
+          "accuracy_completeness": 34,
+          "buddhist_doctrine_terminology": 19,
+          "english_concision_readability": 16,
+          "teacher_voice_publication_register": 13,
+          "title_heading_accuracy": 10
+        },
+        "total": 92,
+        "evidence": [
+          {
+            "paragraph_id": "L14",
+            "source_evidence": "观众互动，解决问题",
+            "target_evidence": "Audience Interaction, Solving Problems",
+            "assessment": "Literal and accurate heading."
+          },
+          {
+            "paragraph_id": "L79",
+            "source_evidence": "给一个提示",
+            "target_evidence": "given us a cue",
+            "assessment": "Faithful to 提示."
+          },
+          {
+            "paragraph_id": "L117",
+            "source_evidence": "商人一定要创造利益",
+            "target_evidence": "a merchant must create profit",
+            "assessment": "Correctly distinguishes commercial profit from broader benefit; later social/charitable uses are rendered as 'benefit' or 'revenue' appropriately."
+          },
+          {
+            "paragraph_id": "L189",
+            "source_evidence": "通过反思、检讨和总结",
+            "target_evidence": "Through reflection, self-examination, and review",
+            "assessment": "Faithful and complete; no added interpretation."
+          },
+          {
+            "paragraph_id": "L271",
+            "source_evidence": "牛头不对马嘴",
+            "target_evidence": "the head of the ox does not match the mouth of the horse",
+            "assessment": "Literal but not idiomatic; likely to distract general readers and weakens publication register."
+          },
+          {
+            "paragraph_id": "L320",
+            "source_evidence": "正本清源，回归到它的基本职能",
+            "target_evidence": "return to its source and clarify what is truly central, returning to its basic functions",
+            "assessment": "More complete rendering of 正本清源 but wordy."
+          },
+          {
+            "paragraph_id": "L354",
+            "source_evidence": "机械地做各种事，流于表面",
+            "target_evidence": "merely perform various tasks mechanically and superficially",
+            "assessment": "Faithful and explicit, though somewhat listy."
+          }
+        ],
+        "blockers": [
+          {
+            "severity": "major",
+            "paragraph_id": "L271",
+            "issue": "Unidiomatic literal rendering of 牛头不对马嘴 as 'the head of the ox does not match the mouth of the horse' is opaque and unsuitable for publication prose.",
+            "constraint": "English publication register requires natural idiom; use an equivalent such as 'completely off the mark' or 'irrelevant.'"
+          }
+        ],
+        "assessment": "Highly faithful and precise, with a better heading for Section IV. However several literal renderings compromise readability and the edited public-forum register. The unidiomatic idiom at L271 should be revised before publication."
+      }
+    ],
+    "ranking": [
+      "X",
+      "Y"
+    ],
+    "winner": "X"
+  }
+}

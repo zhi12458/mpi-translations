@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "source_sha256": "09e326b291653c0c3c321a1ef1eee81ad6742a9609bb4435a800e82229a22e98",
+  "authority": "explicit_user_decision",
+  "terms": [
+    {
+      "source": "济群法师",
+      "preferred": "Master Jiqun",
+      "scope": "global"
+    },
+    {
+      "source": "大道大商",
+      "preferred": "Great Path, Great Business",
+      "scope": "title and deliberate title callbacks"
+    }
+  ],
+  "locked_runtime_note": "The workspace term database contains both entries, but the Strategy C dependency lock predates those additions. The failed terminology receipt preserves this version drift; the updated shared term map remains the QA authority for these two user-fixed entries."
+}

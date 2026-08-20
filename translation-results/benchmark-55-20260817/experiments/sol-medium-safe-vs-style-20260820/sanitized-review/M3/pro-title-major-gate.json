@@ -1,0 +1,14 @@
+{
+  "stage": "title_and_major_final_gate",
+  "model": "deepseek-v4-pro",
+  "reasoning_effort": "max",
+  "thinking_mode": "enabled",
+  "source_sha256": "09e326b291653c0c3c321a1ef1eee81ad6742a9609bb4435a800e82229a22e98",
+  "target_sha256": "d76d55a85ca06eb39f6531d9963e674e70dcc49bd821bac593659ec5e20dcb03",
+  "result": {
+    "title_heading_findings": [],
+    "major_findings": [],
+    "clear": true,
+    "summary": "No critical or major issues found."
+  }
+}

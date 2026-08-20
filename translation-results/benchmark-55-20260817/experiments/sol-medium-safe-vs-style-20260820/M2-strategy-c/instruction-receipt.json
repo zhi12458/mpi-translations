@@ -1,0 +1,92 @@
+{
+  "created_at": "2026-08-20T01:20:02Z",
+  "input_type": "document",
+  "instructions": [
+    {
+      "absolute_path": "/Users/jingzhi/Library/Application Support/MPI-Strategy-C/repos/mpi-translations/AGENTS.md",
+      "bytes": 5318,
+      "read_at": "2026-08-20T01:20:02Z",
+      "repository_sha": "f3e7ad8868954b2dbc9258ef179394a1e26210e9",
+      "sha256": "7c2e6c97428cb8798d450df783cae328ee4c47e03caa52ac0f9bd60954c97070"
+    },
+    {
+      "absolute_path": "/Users/jingzhi/Library/Application Support/MPI-Strategy-C/repos/mpi-translations/toolkit/AGENTS.md",
+      "bytes": 29844,
+      "read_at": "2026-08-20T01:20:02Z",
+      "repository_sha": "2805cc742100b1bf294780572c2f65a1ab31567a",
+      "sha256": "d796e8ee41412409f936f213a9ec2249c443156defd3dee99f384304dacdcf5c"
+    },
+    {
+      "absolute_path": "/Users/jingzhi/Library/Application Support/MPI-Strategy-C/repos/mpi-translations/toolkit/skills/mpi-translation/SKILL.md",
+      "bytes": 26035,
+      "read_at": "2026-08-20T01:20:02Z",
+      "repository_sha": "2805cc742100b1bf294780572c2f65a1ab31567a",
+      "sha256": "c3fe05ce5405c78665549831add8eb2ccd46107193aa7583f4c09fb1a5573c90"
+    },
+    {
+      "absolute_path": "/Users/jingzhi/Library/Application Support/MPI-Strategy-C/repos/mpi-translations/toolkit/skills/mpi-terms-search/SKILL.md",
+      "bytes": 3160,
+      "read_at": "2026-08-20T01:20:02Z",
+      "repository_sha": "2805cc742100b1bf294780572c2f65a1ab31567a",
+      "sha256": "f9da4bb0bc4d1c3d59406b383edb6a867275c2f915b304fe31d31cb5cf2c6cb1"
+    },
+    {
+      "absolute_path": "/Users/jingzhi/Library/Application Support/MPI-Strategy-C/repos/mpi-translations/toolkit/skills/mpi-translation-review/SKILL.md",
+      "bytes": 14006,
+      "read_at": "2026-08-20T01:20:02Z",
+      "repository_sha": "2805cc742100b1bf294780572c2f65a1ab31567a",
+      "sha256": "8458d84dae9a6f975680a42e219faea18e09840c0816e7fee414cd6b7c98f4f7"
+    }
+  ],
+  "mpi_translations": {
+    "absolute_path": "/Users/jingzhi/Library/Application Support/MPI-Strategy-C/repos/mpi-translations",
+    "clean_worktree": true,
+    "compatibility_fork": true,
+    "critical_file_sha256": {
+      ".gitmodules": "a28fa1c94df929451ce5bacf53e0f424b030b77011a81b626645ab500145d201",
+      "AGENTS.md": "7c2e6c97428cb8798d450df783cae328ee4c47e03caa52ac0f9bd60954c97070",
+      "scripts/doctor.py": "35d7aa3fa9456b6c589ba1ef76b2ec8adf4c74d3faee1774ad37bfa0cc0d38c4",
+      "strategy-c-release.json": "6989e793073a8df4e900cfb802b31bab24d36952337e1d1b21a2e68665a571fa"
+    },
+    "doctor_exit_code": 0,
+    "doctor_report_sha256": "720c6db39b9039bcd9d5142796acfecdba49e88d1953d245aa6183a3ccfed186",
+    "expected_sha": "f3e7ad8868954b2dbc9258ef179394a1e26210e9",
+    "git_sha": "f3e7ad8868954b2dbc9258ef179394a1e26210e9",
+    "origin": "https://github.com/zhi12458/mpi-translations.git",
+    "upstream_base_sha": "4a6d4af31c89d3ce43d010550e6c7090587e5ebf",
+    "upstream_origin": "https://git.sr.ht/~iacore/mpi-translations/"
+  },
+  "ready_sha256": "17a4d4d6c9be10ad938b933990a483a1ac570bd09e441c2c999627768a4c4f1c",
+  "receipt_id": "5e14984f-1e61-4ae9-b27a-3b85298f873c",
+  "schema_version": 1,
+  "translation_toolkit": {
+    "absolute_path": "/Users/jingzhi/Library/Application Support/MPI-Strategy-C/repos/mpi-translations/toolkit",
+    "clean_worktree": true,
+    "compatibility_fork": true,
+    "critical_file_sha256": {
+      "AGENTS.md": "d796e8ee41412409f936f213a9ec2249c443156defd3dee99f384304dacdcf5c",
+      "scripts/build-term-map.py": "4dee30d4a8c5054960506124b448782aeee8927a89caecd7548db7b92a2769c9",
+      "scripts/check-docx.py": "9da63934b39d025898688aadc0dc8ac1ba26fcca7579daac80611526ea1db0ca",
+      "scripts/check-subtitles.py": "77b5b2a70a6f988c76571463c17d9fe287834557696343ea2b3230533a4481f3",
+      "scripts/check-translation.py": "b0688ff39e47e9a9502504aeae1c4bca8746d4094f001f1c97b1ed32fe845139",
+      "scripts/deepseek-review.py": "fe7534b6d3061d0643d6c7bfb79f16b46cb1be4976c30b1dcf413bfcdb796393",
+      "scripts/deepseek-source-analysis.py": "623eb4a43f5a8e09c9483d9a2b2ab1abd61a6dc7c7616e3c28307f467f153d77",
+      "scripts/dj2docx.py": "769e1b0e6eb7da5bd9bd7fa4ce8d647923bed8e9e079d044e00288c611472350",
+      "scripts/doctor.py": "a58de6440b7d606776a0bc291ceb96860055cb58ca3c0e338456083e1a53c82a",
+      "scripts/docx2dj.py": "b2d3273510b4a1eca17f44cb8c1aed5409dbfab924645b6b2acb8caf5a6b2f4d",
+      "scripts/freeze-target.py": "24340d451841dc6a2c14f90b00de9664ac810aa4a018bf53af184739f5392a2d",
+      "scripts/gen-bilingual.py": "31ee034f84b6b865e23459d702579dffcd599acbe64cb4e6e743c5e65c67f9ad",
+      "scripts/gen-subtitles.py": "bd172188cb9047afd2b4bc00ead151362411648ba690a3b1633d036a64054e45",
+      "scripts/source2dj.py": "137b6ecd20c5af62c963de3fc65f26e670b4a2d2dda5d2a375bf9c553f04b973",
+      "terms-database/search.py": "e94d88e1801d414728643617f0b2b140d94708dd4844b5c43e21f3ef7180fc84",
+      "terms-database/termlib.sqlite": "75346a1a151f459f13149776e560b3ffca95cb107391c6875964eb480d5ffc12"
+    },
+    "doctor_exit_code": 0,
+    "doctor_report_sha256": "eff7b5056616219bb90f560215f925d1f1eabecd85b3b781b080298b8b112409",
+    "expected_sha": "2805cc742100b1bf294780572c2f65a1ab31567a",
+    "git_sha": "2805cc742100b1bf294780572c2f65a1ab31567a",
+    "origin": "https://github.com/zhi12458/translation-toolkit.git",
+    "upstream_base_sha": "07ebbc90c60c32d9078cceac02d0d502d37b6c0c",
+    "upstream_origin": "https://codeberg.org/eastwind/translation-toolkit.git"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "terms": [
+    {"source": "释迦牟尼佛", "sense": "Shakyamuni Buddha"},
+    {"source": "阿弥陀佛", "sense": "Buddha Amitabha"},
+    {"source": "地藏菩萨", "sense": "Bodhisattva Ksitigarbha"},
+    {"source": "人天乘", "sense": "the Human and Deva Vehicle"},
+    {"source": "声闻", "sense": "the Sravaka or Sound Hearer vehicle"},
+    {"source": "菩萨乘", "sense": "the Bodhisattva vehicle"},
+    {"source": "六波罗蜜", "sense": "the Six Perfections"},
+    {"source": "三轮体空", "sense": "the threefold purity of giver, gift, and recipient"}
+  ]
+}

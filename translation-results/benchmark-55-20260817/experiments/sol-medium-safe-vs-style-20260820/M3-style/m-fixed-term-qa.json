@@ -1,0 +1,17 @@
+{
+  "checked": [
+    {
+      "preferred": "Master Jiqun",
+      "source": "济群法师",
+      "source_count_excluding_structural_anchors": 26,
+      "target_count": 27
+    },
+    {
+      "preferred": "Great Path, Great Business",
+      "source": "大道大商",
+      "source_count_excluding_structural_anchors": 5,
+      "target_count": 5
+    }
+  ],
+  "terminology_policy_version": "1.0.0"
+}

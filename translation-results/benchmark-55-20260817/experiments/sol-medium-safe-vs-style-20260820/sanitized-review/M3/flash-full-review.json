@@ -1,0 +1,338 @@
+{
+  "stage": "independent_bilingual_semantic_review",
+  "model": "deepseek-v4-flash",
+  "reasoning_effort": "high",
+  "thinking_mode": "disabled",
+  "source_sha256": "09e326b291653c0c3c321a1ef1eee81ad6742a9609bb4435a800e82229a22e98",
+  "target_sha256": "af4fe3d75933fd73776ce814b89eadfb1689d95592ebb015bc565f1b0897eb2f",
+  "findings": [
+    {
+      "paragraph_id": "L20",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "中文：'这是一个以商业为主流的时代' 英文：'We live in an age dominated by commerce.'",
+      "message": "英文开头'We live in'比中文更口语化，但整体风格尚可，可考虑更简洁的'This is an age dominated by commerce'以贴近原文。",
+      "constraint": "保留原文的陈述语气，不增删信息。"
+    },
+    {
+      "paragraph_id": "L41",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "中文：'成为一场全民热追并津津乐道的连续剧' 英文：'It has become a serial drama avidly followed and discussed by the whole nation.'",
+      "message": "英文'avidly followed and discussed'略显冗长，可简化为'followed and enjoyed by the whole nation'，但需保留'津津乐道'的意味。",
+      "constraint": "保留'全民热追'和'津津乐道'两个动作，不改变比喻。"
+    },
+    {
+      "paragraph_id": "L43",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "中文：'甚至到了一叶蔽目的地步' 英文：'until it blinds people'",
+      "message": "英文'blinds people'丢失了'一叶蔽目'的典故意象，可考虑'until a leaf blocks their view'，但需确保不显生硬。",
+      "constraint": "保留'一叶蔽目'的比喻，不直译但需传达其意。"
+    },
+    {
+      "paragraph_id": "L47",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "中文：'首先从完善自身道德开始，其次是处理好家庭关系，然后治理国家，造福社会，令天下和平安乐。' 英文：'begin by perfecting one's moral character, then manage family relationships well, govern the country, benefit society, and bring peace and well-being to the world.'",
+      "message": "英文'manage family relationships well'略显口语化，可考虑'regulate the family'以对应'齐家'，但需保持流畅。",
+      "constraint": "保留'修身、齐家、治国、平天下'的层次，不增删。"
+    },
+    {
+      "paragraph_id": "L51",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "中文：'将此深心奉尘刹' 英文：'dedicating this profound heart to worlds as numerous as dust'",
+      "message": "英文'worlds as numerous as dust'准确但稍显冗长，可考虑'countless worlds'，但需保留'尘刹'的意象。",
+      "constraint": "保留'尘刹'的佛教意象，不简化过度。"
+    },
+    {
+      "paragraph_id": "L65",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "中文：'我也是福布斯上榜的老演员了' 英文：'I am an old hand at appearing on Forbes'",
+      "message": "英文'old hand'准确但丢失了'演员'的幽默感，可考虑'veteran actor'，但需保持口语化。",
+      "constraint": "保留'老演员'的幽默自嘲，不改为正式表达。"
+    },
+    {
+      "paragraph_id": "L67",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "中文：'或许一个变故，或许一个什么，马上让你的财产一夜间没有了。' 英文：'One sudden event, whatever it may be, can wipe out your property overnight.'",
+      "message": "英文'whatever it may be'略显冗余，可简化为'One sudden event can wipe out your property overnight.'，但需保留'或许一个什么'的随意感。",
+      "constraint": "保留'变故'的不确定性，不增删。"
+    },
+    {
+      "paragraph_id": "L77",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "中文：'施施然地去说人生、健康、快乐' 英文：'leisurely discuss life, health, and happiness'",
+      "message": "英文'leisurely'准确但可考虑'calmly'或'at ease'，但需保留'施施然'的从容感。",
+      "constraint": "保留'施施然'的从容态度，不改为正式。"
+    },
+    {
+      "paragraph_id": "L79",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“But Master Jiqun has also given us something to think about.” vs “但济群法师也给我们一个提示”",
+      "message": "“something to think about” 略显冗长，可更简洁地表达“提示”之意。",
+      "constraint": "保留“提示”的含义，不增补解释。"
+    },
+    {
+      "paragraph_id": "L81",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“Chasing empty fame and gain is one of society's present ills.” vs “图虚名，图虚利，这是当今社会一个弊端”",
+      "message": "“present ills” 稍显书面化，可更自然。",
+      "constraint": "保留“当今社会一个弊端”的语义。"
+    },
+    {
+      "paragraph_id": "L83",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“Mr. Yang------my fellow Yang------what do you think?” vs “本家，您怎么看？”",
+      "message": "“my fellow Yang” 略显生硬，可更自然表达“本家”的亲切感。",
+      "constraint": "保留“本家”的称呼含义和口语感。"
+    },
+    {
+      "paragraph_id": "L87",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“Success in life therefore requires spiritual wealth.” vs “因此，人生的成功需要精神财富。”",
+      "message": "“therefore” 位置稍显正式，可更自然。",
+      "constraint": "保留逻辑关系。"
+    },
+    {
+      "paragraph_id": "L89",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“Master Jiqun, as a monastic, what do you think of the many standards Mr. Yang has set? Are they hard to meet?” vs “济群法师作为出家人，他定了那么多标准，您觉得难吗？”",
+      "message": "“the many standards Mr. Yang has set” 略显冗长，可更简洁。",
+      "constraint": "保留“标准”和“难”的询问。"
+    },
+    {
+      "paragraph_id": "L91",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“But separating career success from success as a human being can still easily cause problems.” vs “但我觉得，如果把事业的成功和做人的成功分开，还是容易出问题的。”",
+      "message": "“can still easily cause problems” 稍显冗长，可更简洁。",
+      "constraint": "保留“容易出问题”的含义。"
+    },
+    {
+      "paragraph_id": "L93",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“This happens everywhere.” vs “这种现象比比皆是。”",
+      "message": "“This happens everywhere” 略显口语化，可更正式一点。",
+      "constraint": "保留“比比皆是”的普遍性含义。"
+    },
+    {
+      "paragraph_id": "L95",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“make sound choices, and know what to do and what to refuse” vs “能够正确取舍，有所为而有所不为”",
+      "message": "“know what to do and what to refuse” 略显直译，可更自然。",
+      "constraint": "保留“正确取舍”和“有所为有所不为”的含义。"
+    },
+    {
+      "paragraph_id": "L158",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“多少有点把义和利对立起来” vs “sets righteousness and benefit somewhat in opposition”",
+      "message": "“somewhat in opposition”略显抽象，可更自然表达为“tends to set...against each other”，但非必须。",
+      "constraint": "保留“多少有点”的弱化语气，不增补源文没有的解释。"
+    },
+    {
+      "paragraph_id": "L160",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“道德多少钱一斤” vs “How much is morality per pound?”",
+      "message": "“per pound”直译“一斤”，但英文读者可能不熟悉，可考虑“How much does morality weigh?”或保留，但需注意文化传达。",
+      "constraint": "保留挑衅语气和“斤”的量化意象，不增补解释。"
+    },
+    {
+      "paragraph_id": "L164",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“无非是让你做什么，不做什么” vs “just a list of things to do and not do”",
+      "message": "“a list of things”稍显口语化，但符合对话风格，可接受。",
+      "constraint": "保留“无非”的轻蔑语气，不增补。"
+    },
+    {
+      "paragraph_id": "L166",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“生命是无尽的积累” vs “life is an endless accumulation”",
+      "message": "“endless accumulation”稍显抽象，可考虑“life is an ongoing accumulation”，但非必须。",
+      "constraint": "保留“无尽”的强调，不增补。"
+    },
+    {
+      "paragraph_id": "L172",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“法律就是最低限度的道德” vs “the law is morality's minimum”",
+      "message": "“morality's minimum”稍显生硬，可考虑“the law is the minimum standard of morality”，但非必须。",
+      "constraint": "保留“最低限度”的准确含义，不增补。"
+    },
+    {
+      "paragraph_id": "L193",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“我被‘企业家’这个名称困扰了很多年” vs “the Chinese title *qiyejia*, ‘entrepreneur,’ troubled me for years”",
+      "message": "“troubled me”稍弱，可考虑“bothered me”或“weighed on me”，但非必须。",
+      "constraint": "保留“困扰”的负面情感，不增补。"
+    },
+    {
+      "paragraph_id": "L199",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“生财有大道” vs “There is a great way to produce wealth”",
+      "message": "“great way”可能被误解为“好方法”，但原文“大道”有哲学意味，可考虑“the great way”，但非必须。",
+      "constraint": "保留“大道”的哲学含义，不增补。"
+    },
+    {
+      "paragraph_id": "L211",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“贵己贵人” vs “honor yourself and honor others”",
+      "message": "“honor yourself and honor others”略显直白，但符合对话风格，可接受。",
+      "constraint": "保留“贵”的双关，不增补。"
+    },
+    {
+      "paragraph_id": "L237",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“愿景是美好的，但路在脚下------每一步怎么走？” vs “The vision is inspiring, but the road lies beneath our feet------how should we take each step?”",
+      "message": "“路在脚下”直译略显生硬，可考虑更自然的表达，但意义保留。",
+      "constraint": "保留“路在脚下”的比喻和设问语气，不增补解释。"
+    },
+    {
+      "paragraph_id": "L239",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“一样米百样人” vs “The same rice feeds a hundred kinds of people”",
+      "message": "直译虽可理解，但英文读者可能不熟悉，可考虑意译，但需保留比喻。",
+      "constraint": "保留“一样米养百样人”的比喻，不增补解释。"
+    },
+    {
+      "paragraph_id": "L245",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“叫杨爸爸？” vs “Papa Yang?”",
+      "message": "“Papa Yang”略显生硬，可考虑更自然的称呼，但需保留亲昵感。",
+      "constraint": "保留亲昵称呼，不改变语义。"
+    },
+    {
+      "paragraph_id": "L257",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“莫名其妙地发了财” vs “Somehow I made a fortune”",
+      "message": "“Somehow”略显口语化，但符合语境，可保留。",
+      "constraint": "保留口语化语气，不增补解释。"
+    },
+    {
+      "paragraph_id": "L259",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“佛门提出，心怀慈悲，众生平等” vs “Buddhism teaches us to hold compassion in our hearts and regard sentient beings as equal”",
+      "message": "“hold compassion in our hearts”略显冗长，可简化，但需保留“心怀慈悲”的意象。",
+      "constraint": "保留“心怀慈悲”的意象，不增删。"
+    },
+    {
+      "paragraph_id": "L275",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“为善而急人知，善处即是恶根” vs “one who does good and hastens to make it known has the root of evil within the good”",
+      "message": "“hastens to make it known”略显书面，可更自然，但需保留原意。",
+      "constraint": "保留引文原意，不增删。"
+    },
+    {
+      "paragraph_id": "L279",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“在我心目中，中国的习主席称得上是贤雄” vs “In my heart, China's President Xi deserves to be called a worthy hero”",
+      "message": "“worthy hero”可能不够准确，但“贤雄”是特定称谓，需保留。",
+      "constraint": "保留“贤雄”的特定含义，不增删。"
+    },
+    {
+      "paragraph_id": "L294",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“闽人多阉” vs “Fujian produces many eunuchs”",
+      "message": "“阉”直译为“eunuchs”可能引起误解，但历史语境如此，需保留。",
+      "constraint": "保留历史引文，不增删。"
+    },
+    {
+      "paragraph_id": "L316",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“这个品牌” translated as “this brand”",
+      "message": "“品牌”在此是比喻，指佛教的声誉或形象，直译“brand”在英文中略显突兀，可考虑更自然的表达如“reputation”或“image”。",
+      "constraint": "保留比喻意义，不增删源文内容。"
+    },
+    {
+      "paragraph_id": "L318",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“人生的出路在哪里？社会的出路在哪里？国家的出路在哪里？” translated as “where is the way forward for life? For society? For the country?”",
+      "message": "英文省略了重复的“出路”，虽简洁但可能削弱排比修辞的强调效果，可考虑保留重复以增强语气。",
+      "constraint": "保留排比修辞和源文的强调语气。"
+    },
+    {
+      "paragraph_id": "L320",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“妄议是非” translated as “judge what they do not understand”",
+      "message": "“妄议是非”指轻率评论对错，英文“judge what they do not understand”侧重“不理解”，未完全传达“妄议”的轻率之意，可考虑更贴近的“rashly comment on right and wrong”。",
+      "constraint": "保留“妄议”的轻率、不负责任含义。"
+    },
+    {
+      "paragraph_id": "L324",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“赢的” translated as “come out ahead”",
+      "message": "“赢的”在此指不亏本、获益，英文“come out ahead”口语化且自然，但“win”可能更直接，不过“come out ahead”可接受，无需修改。",
+      "constraint": "保留源文“赢”的语义，不增删。"
+    },
+    {
+      "paragraph_id": "L328",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“法财侣地” translated as “Dharma, wealth, companions, and place”",
+      "message": "“法财侣地”是佛教术语，指修行四缘，英文直译虽准确，但可考虑加注或更清晰表达，如“the four conditions of Dharma, wealth, companions, and place”已足够，无需修改。",
+      "constraint": "保留术语的准确性和佛教语境。"
+    },
+    {
+      "paragraph_id": "L332",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“大德云集” translated as “eminent and virtuous people have gathered”",
+      "message": "“大德”是佛教尊称，指高僧大德，英文“eminent and virtuous people”虽准确但略显泛化，可考虑“eminent monastics”或“great masters”，但当前表达可接受。",
+      "constraint": "保留对讲者的尊敬语气。"
+    },
+    {
+      "paragraph_id": "L336",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“国泰民安，以经济之” translated as “When the country prospers and the people live in peace, use the *jing* to *ji* them.”",
+      "message": "“以经济之”中的“经济”是动词，意为“治理、救助”，英文“use the *jing* to *ji* them”虽保留原文结构，但“them”指代不明，可考虑更清晰表达，如“use the *jing* to bring order to them”。",
+      "constraint": "保留“经济”的动词用法和双关含义。"
+    },
+    {
+      "paragraph_id": "L348",
+      "severity": "minor",
+      "category": "style",
+      "evidence": "“正知正信” translated as “right understanding and right faith”",
+      "message": "“正知正信”是佛教术语，英文“right understanding and right faith”准确，但“right”重复，可考虑“correct understanding and faith”，但当前可接受。",
+      "constraint": "保留术语的准确性和佛教语境。"
+    }
+  ],
+  "blockers": false,
+  "batch_summaries": [
+    "整体翻译准确流畅，仅发现少量风格上的小瑕疵，如个别表达略显冗长或丢失原文的幽默感，但不影响理解。",
+    "主要发现为风格上的小问题，如冗长、书面化或口语感不足，均不影响理解，建议优化以更自然流畅。",
+    "整体翻译准确流畅，仅有个别风格上的小瑕疵，不影响理解。",
+    "整体翻译准确流畅，仅个别表达略显生硬或直译，建议微调以更自然，但不影响理解。",
+    "整体翻译准确流畅，仅发现少量风格上的小问题，如比喻直译、排比省略、术语表达等，均不影响理解，可酌情优化。"
+  ]
+}

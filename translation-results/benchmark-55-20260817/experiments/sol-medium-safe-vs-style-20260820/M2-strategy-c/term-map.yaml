@@ -1,0 +1,146 @@
+{
+  "version": 1,
+  "terms": [
+    {
+      "source": "释迦牟尼佛",
+      "sense": "Shakyamuni Buddha",
+      "preferred": "Shakyamuni Buddha",
+      "allowed": [
+        "Sakyamuni Buddha; Śākyamuni Buddha"
+      ],
+      "forbidden": [],
+      "sources": [
+        "BAICKZ",
+        "nti_buddhist_terminology"
+      ],
+      "rationale": "由锁定版 MPI术语库按权威顺序选择；译者仍须结合上下文核实词义。",
+      "status": "selected",
+      "reviewer": "translation-toolkit/build-term-map.py"
+    },
+    {
+      "source": "阿弥陀佛",
+      "sense": "Buddha Amitabha",
+      "preferred": "Buddha Amitabha",
+      "allowed": [
+        "Amitabha",
+        "Amitabha Buddha",
+        "Amitabha Buddha; Amitābha Buddha"
+      ],
+      "forbidden": [],
+      "sources": [
+        "DoT定稿",
+        "BAICKZ",
+        "DoT初步",
+        "nti_zh_en",
+        "nti_buddhist_terminology"
+      ],
+      "rationale": "由锁定版 MPI术语库按权威顺序选择；译者仍须结合上下文核实词义。",
+      "status": "selected",
+      "reviewer": "translation-toolkit/build-term-map.py"
+    },
+    {
+      "source": "地藏菩萨",
+      "sense": "Bodhisattva Ksitigarbha",
+      "preferred": "Bodhisattva Ksitigarbha",
+      "allowed": [
+        "Ksitigarbha Bodhisattva"
+      ],
+      "forbidden": [],
+      "sources": [
+        "DoT定稿",
+        "佛教术语",
+        "nti_buddhist_terminology"
+      ],
+      "rationale": "由锁定版 MPI术语库按权威顺序选择；译者仍须结合上下文核实词义。",
+      "status": "selected",
+      "reviewer": "translation-toolkit/build-term-map.py"
+    },
+    {
+      "source": "人天乘",
+      "sense": "the Human and Deva Vehicle",
+      "preferred": "Human and Deva Vehicle",
+      "allowed": [
+        "the Vehicle of Human and Devas/Human and Heavenly Vehicle",
+        "human and heavenly vehicles"
+      ],
+      "forbidden": [],
+      "sources": [
+        "DoT定稿",
+        "佛教术语",
+        "nti_buddhist_terminology"
+      ],
+      "rationale": "由锁定版 MPI术语库按权威顺序选择；译者仍须结合上下文核实词义。",
+      "status": "selected",
+      "reviewer": "translation-toolkit/build-term-map.py"
+    },
+    {
+      "source": "声闻",
+      "sense": "the Sravaka or Sound Hearer vehicle",
+      "preferred": "the Sravakayana\nSravakas",
+      "allowed": [
+        "Shrāvakas",
+        "Hearers",
+        "solitary realizers",
+        "the Hearer",
+        "hearers",
+        "listener",
+        "sravaka; a distinguished disciple of the Buddha"
+      ],
+      "forbidden": [],
+      "sources": [
+        "佛教术语",
+        "BAICKZ",
+        "nti_buddhist_terminology"
+      ],
+      "rationale": "由锁定版 MPI术语库按权威顺序选择；译者仍须结合上下文核实词义。",
+      "status": "selected",
+      "reviewer": "translation-toolkit/build-term-map.py"
+    },
+    {
+      "source": "菩萨乘",
+      "sense": "the Bodhisattva vehicle",
+      "preferred": "Bodhisattva vehicle",
+      "allowed": [
+        "the Bodhisattva Vehicle"
+      ],
+      "forbidden": [],
+      "sources": [
+        "DoT定稿",
+        "佛教术语",
+        "nti_buddhist_terminology"
+      ],
+      "rationale": "由锁定版 MPI术语库按权威顺序选择；译者仍须结合上下文核实词义。",
+      "status": "selected",
+      "reviewer": "translation-toolkit/build-term-map.py"
+    },
+    {
+      "source": "六波罗蜜",
+      "sense": "the Six Perfections",
+      "preferred": "Six Paramitas",
+      "allowed": [
+        "six pāramitas; six perfections"
+      ],
+      "forbidden": [],
+      "sources": [
+        "BAICKZ",
+        "nti_buddhist_terminology"
+      ],
+      "rationale": "由锁定版 MPI术语库按权威顺序选择；译者仍须结合上下文核实词义。",
+      "status": "selected",
+      "reviewer": "translation-toolkit/build-term-map.py"
+    },
+    {
+      "source": "三轮体空",
+      "sense": "the threefold purity of giver, gift, and recipient",
+      "preferred": "the three aspects of giving are empty; giving",
+      "allowed": [],
+      "forbidden": [],
+      "sources": [
+        "nti_buddhist_terminology"
+      ],
+      "rationale": "由锁定版 MPI术语库按权威顺序选择；译者仍须结合上下文核实词义。",
+      "status": "selected",
+      "reviewer": "translation-toolkit/build-term-map.py"
+    }
+  ]
+}

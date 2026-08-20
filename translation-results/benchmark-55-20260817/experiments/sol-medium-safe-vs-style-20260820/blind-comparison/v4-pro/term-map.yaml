@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "terms": [
+    {
+      "source": "济群法师",
+      "sense": "fixed public-facing form of the teacher's name and title",
+      "preferred": "Master Jiqun",
+      "allowed": [],
+      "forbidden": ["Venerable Jiqun"],
+      "status": "frozen"
+    },
+    {
+      "source": "大道大商",
+      "sense": "fixed public-facing title and deliberate title callbacks",
+      "preferred": "Great Path, Great Business",
+      "allowed": [],
+      "forbidden": ["Great Way, Great Entrepreneurs"],
+      "status": "frozen"
+    }
+  ]
+}

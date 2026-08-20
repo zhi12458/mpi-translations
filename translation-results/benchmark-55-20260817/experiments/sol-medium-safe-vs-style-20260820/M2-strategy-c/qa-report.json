@@ -1,0 +1,106 @@
+{
+  "target": "/Users/jingzhi/puti/mpi-translations/translation-results/benchmark-55-20260817/experiments/sol-medium-safe-vs-style-20260820/M2-strategy-c/source.dj -> /Users/jingzhi/puti/mpi-translations/translation-results/benchmark-55-20260817/experiments/sol-medium-safe-vs-style-20260820/M2-strategy-c/target.dj",
+  "mode": "draft",
+  "overall": "FAIL",
+  "passed": [
+    "non-empty inputs",
+    "line-count parity",
+    "blank-line alignment",
+    "paragraph parity",
+    "heading parity",
+    "repeated title consistency",
+    "emphasis preservation",
+    "comment parity",
+    "CJK leakage",
+    "Chinese punctuation",
+    "bold leakage",
+    "bilingual freshness",
+    "semantic review freshness",
+    "external semantic review policy"
+  ],
+  "warned": [],
+  "skipped": [
+    "release governance"
+  ],
+  "failed": [
+    "digit fidelity",
+    "terminology"
+  ],
+  "strict": false,
+  "ok": false,
+  "approval": {
+    "approved": false,
+    "approver": "",
+    "note": ""
+  },
+  "details": {
+    "non-empty inputs": {
+      "status": "PASS",
+      "detail": "source non-blank=192 target non-blank=192"
+    },
+    "line-count parity": {
+      "status": "PASS",
+      "detail": "source=378 target=378"
+    },
+    "blank-line alignment": {
+      "status": "PASS",
+      "detail": "all blank lines aligned"
+    },
+    "paragraph parity": {
+      "status": "PASS",
+      "detail": "source=187 target=187"
+    },
+    "heading parity": {
+      "status": "PASS",
+      "detail": "all heading levels aligned by line"
+    },
+    "repeated title consistency": {
+      "status": "PASS",
+      "detail": "all repeated TOC/body titles use one English rendering"
+    },
+    "emphasis preservation": {
+      "status": "PASS",
+      "detail": "all source emphasis preserved"
+    },
+    "comment parity": {
+      "status": "PASS",
+      "detail": "all comment markers aligned by line"
+    },
+    "CJK leakage": {
+      "status": "PASS",
+      "detail": "clean"
+    },
+    "Chinese punctuation": {
+      "status": "PASS",
+      "detail": "clean"
+    },
+    "bold leakage": {
+      "status": "PASS",
+      "detail": "clean"
+    },
+    "digit fidelity": {
+      "status": "FAIL",
+      "detail": "missing in target: L344:20"
+    },
+    "terminology": {
+      "status": "FAIL",
+      "detail": "8 term(s) checked; 三轮体空 (1× in source) — none of ['the three aspects of giving are empty; giving'] found in target; 六波罗蜜 (2× in source) — none of ['Six Paramitas', 'six pāramitas; six perfections'] found in target; 声闻 (1× in source) — none of ['the Sravakayana\\nSravakas', 'Shrāvakas', 'Hearers', 'solitary realizers', 'the Hearer', 'listener', 'sravaka; a distinguished disciple of the Buddha'] found in target"
+    },
+    "bilingual freshness": {
+      "status": "PASS",
+      "detail": "762 lines match a regeneration"
+    },
+    "release governance": {
+      "status": "SKIP",
+      "detail": "no translation-project.yaml provided"
+    },
+    "semantic review freshness": {
+      "status": "PASS",
+      "detail": "final semantic-review certificate is not required in draft mode"
+    },
+    "external semantic review policy": {
+      "status": "PASS",
+      "detail": "no project-level external semantic review restriction"
+    }
+  }
+}

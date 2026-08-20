@@ -1,0 +1,19 @@
+{
+  "blocking_finding_ids": [],
+  "blocking_findings": 0,
+  "finding_ids": [
+    "deepseek-11ff5c05f754-L1-1",
+    "deepseek-11ff5c05f754-L1-2"
+  ],
+  "findings_sha256": "169ed9921e1dfd37e05ad06bb611be25a25c15a67205ac7899099397fc69680b",
+  "generated_at": "2026-08-20T03:45:06.109994Z",
+  "model": "deepseek-v4-pro",
+  "provider": "deepseek",
+  "review_round": 3,
+  "schema_version": 1,
+  "source_sha256": "51975981e8928c36c772d5d8e723f3dec18d850dc6d7ffe153d3cfcb2477f798",
+  "stage": "semantic_review",
+  "status": "clear",
+  "summary": "分段聚焦复核共1批。第1/1批：本轮复核未发现 L1 译文在意义层面存在可核验的偏差；实义谓词、施事/受事关系、时体情态与逻辑关系均基本对应，未发现误增 must 或改写原文意图的明确证据。",
+  "target_sha256": "767b34fa8724b06fd41f74be0fd2c76a15061a24fc0199ee233a327f4a170ef6"
+}

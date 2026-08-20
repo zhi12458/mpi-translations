@@ -1,0 +1,36 @@
+{
+  "model": "deepseek-v4-pro",
+  "reasoning_effort": "max",
+  "thinking_mode": "enabled",
+  "elapsed_seconds": 434.0,
+  "calls": [
+    {
+      "call": 1,
+      "retry_count": 0,
+      "response_model": "deepseek-v4-pro",
+      "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+      "usage": {
+        "prompt_tokens": 30015,
+        "completion_tokens": 33509,
+        "total_tokens": 63524,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33470
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 29631
+      }
+    }
+  ],
+  "totals": {
+    "prompt_tokens": 30015,
+    "completion_tokens": 33509,
+    "total_tokens": 63524,
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 29631
+  },
+  "estimated_cost_usd": null,
+  "cost_note": "Calculated later from the experiment's frozen official pricing snapshot."
+}

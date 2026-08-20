@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "strategy_id": "M",
+  "workflow_version": "1.0.0",
+  "baseline": "M3 bounded style polish",
+  "status": "AI draft; named human Buddhist translation review still required",
+  "models": {
+    "source_analysis": "DeepSeek V4 Flash/high",
+    "translation_accuracy_and_concision": "GPT-5.6 Sol/medium",
+    "independent_bilingual_review": "DeepSeek V4 Pro/max",
+    "targeted_fallback_only": "GPT-5.6 Sol/high"
+  },
+  "fixed_terms": {
+    "济群法师": "Master Jiqun",
+    "大道大商": "Great Path, Great Business"
+  },
+  "sha256": {
+    "source.dj": "09e326b291653c0c3c321a1ef1eee81ad6742a9609bb4435a800e82229a22e98",
+    "target.dj": "5ca852fbbaba9ac799e01d965e38f1ed65a3dc1e0e15ccebb9629e85ac63c889",
+    "term-map.yaml": "141336daba8fac1ac6ac5cc83ce0ad8a09b214c8867ec3ce8c74a0b944a41516",
+    "bilingual.dj": "15d98391e0841b13e897fe0a27f9e975954e987df6a7c0ebf6afe875bba9a93e",
+    "l344-pro-review-findings.jsonl": "169ed9921e1dfd37e05ad06bb611be25a25c15a67205ac7899099397fc69680b",
+    "l344-pro-semantic-review.json": "f07284fa4aff6b37366cc5d9efb5103975db2157ff0768caa44d470f8ad157c1",
+    "Great-Path-Great-Business_M3-Style_Bilingual.docx": "45a1f05a4f74ad5098aa915d18fee070c1347b10e885ad16d3afb840bb63b471",
+    "Great-Path-Great-Business_M2-vs-M3_Human-Comparison.docx": "93143c26e9c2418af50c554f9ef17ff2024de616646efff50368085ec2aeb10f"
+  },
+  "targeted_final_gate": {
+    "scope": "L344",
+    "review_round": 3,
+    "status": "clear",
+    "critical_or_major_blockers": 0
+  },
+  "blind_results": {
+    "note": "Scores apply to the pre-final-L344 blind target hash d76d55a85ca06eb39f6531d9963e674e70dcc49bd821bac593659ec5e20dcb03.",
+    "GPT-5.6 Sol/high": {
+      "M3": 96.9,
+      "M2": 95.6,
+      "winner": "M3"
+    },
+    "DeepSeek V4 Pro/max": {
+      "M3": 93,
+      "M2": 92,
+      "winner": "M3"
+    }
+  }
+}

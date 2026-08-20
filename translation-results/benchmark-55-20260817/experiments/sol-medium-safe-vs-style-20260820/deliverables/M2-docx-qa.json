@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "djot_absolute_path": "/Users/jingzhi/puti/mpi-translations/translation-results/benchmark-55-20260817/experiments/sol-medium-safe-vs-style-20260820/deliverables/M2-bilingual-render.dj",
+  "docx_absolute_path": "/Users/jingzhi/puti/mpi-translations/translation-results/benchmark-55-20260817/experiments/sol-medium-safe-vs-style-20260820/deliverables/Great-Path-Great-Business_M2-Safe_Bilingual.docx",
+  "djot_sha256": "f9589eca105a3adc2af9043b4c0940785cbace6d9a5e25c3fdf365538ec60e69",
+  "docx_sha256": "0b15339dcb6cbf05d6d8ede5c230693ef1bf8b54c7a9f079cd4fe6972cc4b823",
+  "expected_plain_sha256": "91a0cee53f4149582ef90b656841af86d9f075ae1c237174d1f5492142b674b7",
+  "actual_plain_sha256": "91a0cee53f4149582ef90b656841af86d9f075ae1c237174d1f5492142b674b7",
+  "zip_integrity": "PASS",
+  "text_fidelity": "PASS"
+}

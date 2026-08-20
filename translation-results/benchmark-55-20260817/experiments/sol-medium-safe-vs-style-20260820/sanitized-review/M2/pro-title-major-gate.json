@@ -1,0 +1,14 @@
+{
+  "stage": "title_and_major_final_gate",
+  "model": "deepseek-v4-pro",
+  "reasoning_effort": "max",
+  "thinking_mode": "enabled",
+  "source_sha256": "09e326b291653c0c3c321a1ef1eee81ad6742a9609bb4435a800e82229a22e98",
+  "target_sha256": "e5d20f97e9746a495cf64dfcab2563c9c95ef3da2b531aec7852641b33fb686d",
+  "result": {
+    "title_heading_findings": [],
+    "major_findings": [],
+    "clear": true,
+    "summary": "No title, heading, or key callback issues and no critical or major translation issues were found."
+  }
+}
