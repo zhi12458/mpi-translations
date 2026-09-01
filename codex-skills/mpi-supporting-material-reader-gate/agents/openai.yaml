@@ -1,0 +1,4 @@
+interface:
+  display_name: "MPI 辅助材料翻译"
+  short_description: "Translate Buddhist course handouts for small-group discussion"
+  default_prompt: "Use $mpi-supporting-material-reader-gate to translate this Buddhist supporting material into a discussion-ready English DOCX."
