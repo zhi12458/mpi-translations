@@ -63,3 +63,50 @@ repository and take precedence if the checked-out toolkit submodule is older:
   entire draft for meaning, titles, readability, and register. A clear semantic
   certificate proves only that its review cycle found no blocking accuracy
   issue; it is not style or title approval.
+
+## Strategy C release and runtime requirements
+
+The public `mpi-strategy-c` Codex workflow treats this repository and its real
+`toolkit` Git submodule as mandatory runtime dependencies, not documentation or
+optional installation assets. The rules in this section override any statement
+in an older toolkit checkout that describes the translation workflow as
+flexible.
+
+Before the first model call of every Strategy C project, the orchestrator must:
+
+1. Validate the installation `READY.json`, the absolute repository paths,
+   canonical HTTPS origins, locked Git SHAs, clean worktrees, critical-file
+   hashes, and both repository doctor results (`scripts/doctor.py --strategy-c`
+   here and `toolkit/scripts/doctor.py --strategy-c` in the submodule).
+2. Read this file, `toolkit/AGENTS.md`, and the toolkit skills required by the
+   translation and review workflow. Record path, Git SHA, file SHA-256, byte
+   count, and timestamp in `instruction-receipt.json`.
+3. Use the checked-out toolkit entry points for source extraction, MPI term
+   search and map generation, canonical Djot management, bilingual generation,
+   mechanical QA, DOCX generation, and subtitle generation/QA. The orchestrator
+   may schedule models and write receipts, but must not implement substitute
+   versions of these toolkit responsibilities.
+4. Route every mandatory toolkit subprocess through the audit executor and
+   bind its script hash, inputs, outputs, exit status, and repository identity
+   into `tool-execution-receipts.jsonl` and the project `MANIFEST.json`.
+
+Flash may analyze only toolkit-frozen Chinese and terminology. GPT-5.6-Sol is
+the English wording authority. V4 Pro reviews the bilingual text without access
+to Flash analysis. A second Pro review that still contains a critical or major
+blocker stops for named human adjudication.
+
+Do not silently use a different commit, a built-in fallback, a generic glossary,
+or an old output. Missing dependencies, origin/SHA drift, dirty locked files,
+doctor failures, missing receipts, nonzero toolkit exits, stale hashes, or any
+strict-gate FAIL/SKIP block completion.
+
+The Strategy C distribution may use a verified compatibility fork when an
+upstream maintainer has not merged the required cross-platform runtime. Such a
+release must identify both official upstream origins and base SHAs, identify
+the exact compatibility-fork origins and locked SHAs, keep the real toolkit Git
+submodule pinned to the verified fork commit, and pass the same doctor, test,
+fault-injection, and cross-platform gates. It must be labelled as a
+compatibility fork and must never be represented as an official upstream
+release. Switching between official upstream and a compatibility fork requires
+an explicit lock-file release, not an automatic update to either repository's
+latest main branch.
