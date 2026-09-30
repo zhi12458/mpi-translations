@@ -15,6 +15,22 @@ See [toolkit/AGENTS.md](toolkit/AGENTS.md) for the full project conventions.
   `AI-reviewed draft` until a named Buddhist/Dharma reviewer approves its exact
   final target hash.
 
+## Mind-map translation routing
+
+- For MPI mind maps / 思维导图 / `.xmind` translation or revision, follow
+  [the mind-map translation workflow](references/workflows/xmind-translation.md).
+  This media-specific route takes precedence over article or supporting-material
+  routing when the deliverable is a mind map, unless the user explicitly chooses
+  another workflow. Read the installed `mpi-strategy-t1-codex` skill for its
+  underlying semantic and independent-review gates.
+- Preserve source node identity, hierarchy, order, relations and effective styles.
+  A human-approved reference article informs wording; it does not approve the
+  adapted map or authorize omissions. Require native Xmind visual acceptance
+  as well as structural checks; Markdown round-tripping proves neither.
+- Record incomplete gates honestly. Unresolved final reader actionable findings
+  remain blocked even when approved reference wording is retained. Only a named
+  Buddhist/Dharma reviewer approving the exact final map can confer human approval.
+
 ## Supporting-material routing
 
 - For Chinese Buddhist lesson supporting materials, study guides, reflection
